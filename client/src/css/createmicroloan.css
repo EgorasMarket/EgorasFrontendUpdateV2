@@ -1,0 +1,47 @@
+.createMicroLoanSection {
+  padding: 8em 0em;
+  position: relative;
+}
+
+.createMicroLoanCard1 {
+  display: flex;
+    align-items: baseline;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #e0e0e0;
+  justify-content: space-between;
+  margin-top:50px;
+}
+
+.microLoanPic .MuiBackdrop-root {
+  background-color: rgb(0 0 0 / 74%) !important;
+}
+
+.microLoanPic:focus-visible {
+  border: none !important;
+  outline: none !important;
+}
+.imageMicroTitle {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #6fc190;
+}
+
+.MicroLoanHeader {
+  font-size: 34px;
+  font-weight: 700;
+  color: #229e54;
+}
+
+.hr{
+      margin: 5px 0px;
+
+}
+
+.renderedTxt{
+    font-size: 14px;
+    color: #5a5a5a;
+    font-weight: 700;
+}

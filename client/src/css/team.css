@@ -1,0 +1,51 @@
+.reserve-team .button {
+  margin-right: 15px;
+  padding: 5px 20px;
+  background-color: #212121;
+  -webkit-transition: background-color 300ms cubic-bezier(.333, -.022, .713, 1.089);
+  transition: background-color 300ms cubic-bezier(.333, -.022, .713, 1.089);
+  color: #fff !important;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.image-box, .overlay{
+  height: 176px;
+  margin-right: 2px !important;
+  width: 99%;
+}
+.resetLPadding{
+  padding-left: 30px !important;
+  padding-right: 0 !important;
+}
+.resetPadding{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.bioHeading {
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  color: #000 !important;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+
+.bioHeadingSub {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

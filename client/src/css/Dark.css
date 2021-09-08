@@ -1,0 +1,199 @@
+
+.dark-mode .b-shadow {
+    background: #0f1734 !important;
+}
+
+.create-loan-dark {
+    padding-top: 78px !important;
+    margin-top: 0 !important;
+}
+
+.dark-mode .announcement, .dark-mode .create-loan-dark {
+    background: #030d1d;
+}
+.dark-mode .modal-dark .modal-content {
+    background-color: #030d1d !important;
+}
+
+.dark-mode .nav-tabs {
+    border-bottom: 1px solid #464646;
+}
+
+.dark-mode .nav-tabs .active {
+    background: #030d1d !important;
+    border-color: #464646 #464646 #464646;
+}
+
+.dark-mode .dark-input, .dark-mode .custom-select {
+    background: #0b1229 !important;
+    color: #fff !important;
+    border: 1px solid #434343 !important;
+}
+
+.dark-mode .dark-input::placeholder, .dark-mode .custom-select option {
+    /* background: #0b1229 !important; */
+    color: #fff !important;
+}
+
+.dark-mode .rdw-editor-main {
+    background: #fff !important;
+    padding: 8px !important;
+}
+
+.dark-mode .wallet-id {
+    color: #a6a0a0;
+}
+
+
+.dark-mode .nav-link, .dark-mode p, .dark-mode .theading, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h5, .dark-mode h6, .dark-mode .loanHeadings, .dark-mode .for-des p span, .dark-mode .navbar-toggler {
+    color: #fff !important;
+}
+
+.dark-mode .toggleNight, .dark-mode .night-btn  {
+    color: #fff !important;
+    background: #2b3139 !important;
+    border-color: #12161c !important;
+}
+
+.dark-mode .toggleNight i {
+    color: #fff !important;
+  }
+
+
+.dark-mode .home-body {
+    background: #030d1d !important;
+    background-image: url(/Mask_Group_1.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: right top !important;
+}
+
+.dark-mode .custom-white {
+    background: #030d1d !important;
+    /* padding-top: 100px !important ; */
+  }
+
+  .dark-mode .custom-white2 {
+      background: #030d1d !important;
+      padding-top: 100px !important ;
+    }
+
+.dark-mode .bg-slide {
+    background: #192234 !important;
+}
+
+.dark-mode .fancy-box {
+    -moz-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.57);
+    box-shadow: 0px 0px 16px rgb(0 0 0 / 57%);
+}
+
+.dark-mode .connect-btn {
+    border: unset !important;
+}
+
+.dark-mode .multiple-bg {
+    background-color: #030d1d !important;
+    background: url(/image2.svg) left -40px top 300px no-repeat;
+
+}
+
+.dark-mode button.category-options {
+    color: #cacaca !important;
+}
+
+.dark-mode .loanWrapper {
+    background-color: #030d1d;
+    -moz-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.57);
+    box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 57%);
+}
+
+.dark-mode .video-wrapper, .dark-mode .egoras-team {
+    background: #0303038c !important;
+}
+
+.dark-mode .porfolio-card {
+    background: #080d1c !important;
+}
+
+.dark-mode .token-card {
+    background: #0b1229 !important;
+    box-shadow: 0px 0px 16px rgb(0 0 0 / 57%);
+}
+
+.dark-mode .metrics-table tbody tr th, .dark-mode .metrics-table tbody tr td {
+    background: #0a1024;
+    color: #fff;
+  }
+
+.dark-mode .vesting {
+    background: #0a1024;
+}
+
+.dark-mode tspan {
+    fill: #fff !important;
+}
+
+.dark-mode .community-btn {
+    background: transparent !important;
+    color: #fff;
+}
+
+.dark-mode .token-card .t-inner {
+    background: #0a1024;
+    border: 1px solid #a29e9e1a;
+}
+
+.dark-mode .porfolio-card .text-muted {
+    color: #a5a6a8 !important;
+}
+
+.dark-mode .ttx-lm {
+    color: #b6b6b6 !important
+}
+
+.dark-mode .justify-content-between span, .dark-mode .text-black  {
+    color: #fff !important
+}
+
+.dark-mode .for-dark {
+    color: #c7c7c7 !important
+}
+
+.dark-mode .asset-card {
+    border: 1px solid #b5a8a817 !important;
+    background: #030d1d !important;
+}
+
+.dark-mode .modal-content {
+    background: #030d1d !important;
+}
+
+.dark-mode .modal-body {
+    background: #030d1d !important;
+}
+
+.dark-mode .custom-dropdown{
+    background: #0c1125 !important;
+    color: #fff !important;
+}
+
+.dark-mode .custom-dropdown .dropdown-item {
+    color: #fff !important;
+}
+
+.dark-mode .close {
+    color: #fff;
+}
+
+.dark-mode .company-tab .nav-item .active {
+    background: #2b3139 !important;
+    border-color: #dee2e6 #dee2e6 #fff;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+
+.dark-mode #footer {
+    background: url(/down-line.svg) left -195px top -100px no-repeat, #0f1734 !important;
+    opacity: unset !important;
+}

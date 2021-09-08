@@ -1,0 +1,85 @@
+.heroSection3 {
+  padding: 6em 6em;
+  padding-bottom: 2em;
+  position: relative;
+}
+.heroArea3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0em 4em;
+}
+.heroTxts3 {
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.heroTitle3 {
+  font-size: 58px;
+  font-weight: 800;
+  color: #229e54;
+}
+
+.hero3para {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.hero-images3 {
+  position: relative;
+}
+.aboutPhone {
+  width: 450px;
+}
+
+.AboutLine {
+  width: 20%;
+  height: 5px;
+  border-radius: 10px;
+  background: #e4a788;
+}
+
+/* .aboutTxts {
+  margin-top: -100px;
+} */
+
+.ATitle {
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.AboutUsPara {
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: 500;
+  color: #414141;
+}
+
+.aboutArea {
+  text-align: center;
+}
+.AboutLine {
+  margin: auto;
+  width: 5%;
+}
+
+.partnerlog {
+  filter: grayscale();
+  transition: 0.3s ease-in-out;
+  width: 300px;
+}
+.partnerlog:hover {
+  filter: none;
+  transition: 0.3s ease-in-out;
+}
+
+.partnerCards {
+  margin-top: 30px;
+  position: relative;
+  z-index: 3;
+}
+.footerCard3 {
+  display: none;
+}

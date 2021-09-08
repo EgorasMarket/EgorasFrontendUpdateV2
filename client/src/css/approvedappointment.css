@@ -1,0 +1,88 @@
+.approvedAppointmentSection {
+  padding: 4em;
+  padding-top: 6em;
+  position: relative;
+}
+
+.approvedAppointmentTitle {
+  font-weight: 800;
+  font-size: 48px;
+  text-align: center;
+}
+.approvedAppointmentPara {
+  color: #3a9960;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.bookedArea {
+  margin-top: 100px;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.txtWarning {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 45px;
+  color: #229e54;
+}
+.txtWarningTxts {
+  font-weight: 700;
+  color: #646464;
+  margin-top: 20px;
+}
+.readNow {
+  margin-top: 20px;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background: #229e54;
+  color: #ffff;
+  /* outline: none; */
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.readNow:hover {
+  border: #e4a788;
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+}
+.bookedAreaMapArea {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background: #ffff;
+  box-shadow: 0px 0px 15px #ddf2e6;
+  border-radius: 8px;
+}
+.mapAreaLocation,
+.mapAreaDate,
+.mapAreaContact {
+  display: flex;
+  padding: 4em;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.location,
+.schedule {
+  margin-right: 15px;
+  color: #3a9960;
+}
+.locateTitle {
+  color: #b0b0b0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.blur-img {
+  position: absolute;
+  width: 40%;
+  left: -66px;
+  z-index: -1;
+}

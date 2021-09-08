@@ -1,0 +1,287 @@
+.headerSection {
+  padding: 1em 2em;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: Roboto;
+  box-shadow: 0px 0px 15px #efefef;
+}
+.header-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.egr-logo {
+  width: 180px;
+  margin-right: 50px;
+}
+.egr-logo2 {
+  width: 180px;
+  margin-right: 50px;
+  display: none;
+}
+
+.headerLinks {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.borrow {
+  padding-top: 5px !important;
+  padding: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  margin: 0;
+  box-shadow: 0px 6px 3px #f4f4f4;
+  color: #229e54;
+}
+.validate {
+  padding-top: 5px !important;
+  padding: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  margin: 0;
+  box-shadow: 0px 6px 3px #f4f4f4;
+  color: #229e54;
+}
+
+.borr {
+  display: none;
+}
+.valid {
+  display: none;
+}
+
+.menuIcons {
+  display: flex;
+  align-items: center;
+}
+
+.Icon1 {
+  width: 60px !important;
+  font-size: 40px !important;
+}
+
+.sign_up_link2 {
+  color: #fff;
+}
+.sign_in_link {
+  color: #55bc7e;
+}
+.sign_in_link:hover {
+  color: #fff;
+}
+.docs,
+.about {
+  margin-right: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  color: #383838;
+  position: relative;
+}
+
+.product {
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  color: #383838;
+  position: relative;
+}
+.company {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  color: #383838;
+  position: relative;
+}
+.about {
+  margin-right: 30px;
+}
+
+.docs:hover,
+.about:hover {
+  color: #229e54;
+}
+.product:hover,
+.company:hover {
+  color: #229e54;
+}
+.activeLink {
+  color: #229e54;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+.activeLink:hover {
+  color: #383838;
+}
+.Line {
+  position: absolute;
+  width: 84px;
+  height: 2.5px;
+  background: #229e54;
+  bottom: -9px;
+  left: -8px;
+  border-radius: 100px;
+}
+vl {
+  width: 1px;
+  height: 34px;
+  background: #e6e6e6;
+  margin-right: 10px;
+}
+
+.headerButtons {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 0;
+  padding: 0;
+}
+.getLoan {
+  margin-right: 15px;
+  padding: 1.15em 3.5em;
+  border: solid;
+  border-color: #229e54;
+  color: #229e54;
+  border-width: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  font-size: 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.css-zddlty-MuiButtonBase-root-MuiButton-root:hover {
+  background: none !important;
+}
+.css-zddlty-MuiButtonBase-root-MuiButton-root {
+  background: none !important;
+  text-transform: none !important;
+}
+.css-1yhn5ap-MuiModal-root-MuiPopover-root-MuiMenu-root .MuiPaper-root {
+  margin-top: 31px;
+  top: 26px;
+  left: 577px;
+  z-index: 200;
+}
+.companyLinks.css-1yhn5ap-MuiModal-root-MuiPopover-root-MuiMenu-root
+  .MuiPaper-root {
+  margin-top: 31px !important;
+  top: 32px !important;
+  left: 680px !important;
+  z-index: 200;
+}
+
+.getLoan:hover {
+  border: solid #e4a788;
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+}
+.connect {
+  padding: 1.15em 3em;
+  background: #229e54;
+  color: #ffff;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  font-size: 13px;
+  transition: 0.3s ease-in-out;
+}
+
+.connect:hover {
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+}
+
+.hamburgerOpen {
+  display: none;
+}
+.ExploreLoanDropdown {
+  width: 400px;
+  position: absolute;
+  top: 40px;
+  /* display: none; */
+}
+.loanCatDropdown {
+  display: flex;
+  padding: 2em;
+  background: #ffff;
+  justify-content: space-between;
+  box-shadow: 0px 0px 15px gainsboro;
+  border-radius: 10px;
+}
+.loanCatTitle,
+.loanStatusTitle {
+  color: #229e54;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.loanStatli1,
+.loanCatli1 {
+  color: #525252;
+  font-size: 13px;
+}
+.loanStatli1:hover,
+.loanCatli1:hover {
+  color: #229e54;
+  text-decoration: underline;
+}
+.onMobile {
+  display: none;
+}
+
+.MuiAccordionSummary-root {
+  display: flex;
+  padding: 0px !important;
+  min-height: 48px;
+}
+
+.MuiButton-label{
+  text-transform: none !important;
+}
+.borrower, .validator{
+  background: #ffff !important;
+  /* box-shadow: 0px 6px 3px #f1f1f1; */
+  color: #229e54 !important;
+  text-decoration: unset !important;
+}
+.DropLink{
+  color: #424242 !important;
+  font-size: 14px !important;
+  margin-left: 10px !important;
+}
+.DropLink:hover{
+  color: #229e54 !important;
+}
+/* .benefitsSection .container-md,
+.container-sm,
+.container {
+  max-width: 950px !important;
+} */
+
+/* .explore:active + .ExploreLoanDropdown {
+  display: block;
+}
+.ExploreLoanDropdown:active {
+  display: block;
+} */

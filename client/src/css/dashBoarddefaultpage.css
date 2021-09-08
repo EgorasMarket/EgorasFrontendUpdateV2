@@ -1,0 +1,276 @@
+.dashboard-home {
+  flex: 4;
+  padding: 4em 2em;
+  width: 100vh;
+  background: #f6fff9;
+}
+
+.homeprofile-area {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 20px;
+}
+
+.profilepic-text {
+  margin-left: 20px;
+}
+.profilepic-heading {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.profile-picPara {
+  font-size: 14px;
+  font-weight: 700;
+  color: #949494;
+}
+/* 
+.profileCards {
+  display: flex;
+  align-items: center;
+} */
+
+.profilecard {
+  position: relative;
+  width: 300px;
+  box-shadow: 0px 0px 10px #dadada;
+  border-radius: 20px;
+  position: relative;
+  width: 300px;
+  box-shadow: 0px 0px 10px #dadada;
+  border-radius: 20px;
+  -webkit-user-drag: none;
+  user-select: none;
+  cursor: pointer;
+}
+.profileCardArea {
+  margin-top: 30px !important;
+
+  padding: 0em 1em;
+
+  position: relative;
+  z-index: 3;
+  height: 200px;
+  position: relative;
+}
+
+.profileCardArea .react-multiple-carousel__arrow--left,
+.profileCardArea .react-multiple-carousel__arrow--right {
+  background-color: #ffffff !important;
+  box-shadow: 0px 0px 15px #b8d2c2;
+  right: 0;
+  top: 40%;
+}
+.profileCardArea .react-multiple-carousel__arrow--left {
+  left: 0;
+}
+.profileCardArea .react-multiple-carousel__arrow::before {
+  font-weight: 900;
+  color: #000;
+}
+.profileCardArea .react-multi-carousel-dot button {
+  border-color: #229e54 !important;
+}
+.profileCardArea .react-multi-carousel-dot--active button {
+  background: #229e54 !important;
+}
+/* .cardTxts {
+  position: relative;
+} */
+
+.profileCards {
+  position: relative;
+}
+
+.cardTxtHeading,
+.cardTxtHeadingDark,
+.cardTxtHeadingDark2 {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  color: #229e54;
+  font-size: 14px;
+  font-weight: 600;
+  user-select: none;
+}
+.savingsAmount,
+.savingsAmountDark,
+.savingsAmountDark2 {
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  font-weight: 800;
+  font-size: 24px;
+  user-select: none;
+}
+.savingsCardNumber,
+.savingsCardNumberDark,
+.savingsCardNumberDark2 {
+  position: absolute;
+  width: 250px;
+  margin-bottom: 20px;
+  bottom: 0;
+  left: 20px;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.savingsCardNumber:hover,
+.savingsCardNumberDark:hover,
+.savingsCardNumberDark2:hover {
+  color: #229e54;
+}
+.cardTxtHeadingDark {
+  color: #229e54;
+}
+
+.savingsAmountDark {
+  color: rgb(0, 0, 0);
+}
+
+.egrextend{
+    font-size: 16px;
+    font-weight: 500;
+    color: #e4a788;
+}
+.savingsCardNumberDark {
+  color: rgb(0, 0, 0);
+}
+.cardTxtHeadingDark2 {
+  color: #229e54;
+}
+.savingsAmountDark2 {
+  color: rgb(0, 0, 0);
+}
+.savingsCardNumberDark2 {
+  color: rgb(0, 0, 0);
+}
+
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+/* getstarted section start */
+
+.getStartedSection {
+  margin-top: 50px;
+  background-color: #ffff;
+  padding: 2em;
+  box-shadow: 0px 0px 15px #b8d2c2;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.getStartedTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #55bc7e;
+}
+
+.getStartedCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.getStartedCard1 {
+  padding: 1em;
+  background: #f6fff9;
+  box-shadow: 0px 0px 10px #ced6d1;
+  border-radius: 10px;
+  width: 22%;
+}
+
+.getStartedCardHeading {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #000;
+}
+.getStartedCardHeading:hover {
+  color: #229e54;
+}
+
+/* getstarted section end */
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+/* payments section start */
+.transactionSection {
+  margin-top: 50px;
+  background-color: #ffff;
+  padding: 2em;
+  box-shadow: 0px 0px 15px #b8d2c2;
+  border-radius: 10px;
+}
+.transactionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #55bc7e;
+}
+
+.transaction {
+  font-size: 24px;
+  font-weight: 800;
+}
+.transactionlink {
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+}
+.transactionlink:hover {
+  color: #229e54;
+  text-decoration: underline;
+}
+.transactionsArea {
+  border: solid #e4e4e4 0.5px;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.transac1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transacDate {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: 33.3%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.transacIcon {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 33.3%;
+  justify-content: flex-start;
+}
+
+.time {
+  color: #e4a788;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.transacPurpose {
+  color: #229e54;
+  display: flex;
+  align-items: center;
+  width: 33.3%;
+  justify-content: flex-end;
+}
+/* payments section end */
+
+/* transactions section start */
+
+/* transactions section end */

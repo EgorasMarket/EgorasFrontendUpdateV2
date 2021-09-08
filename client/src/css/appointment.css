@@ -1,0 +1,166 @@
+.appointmentSectionHero {
+  padding: 4em;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.appointmentHeroArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scheduleTitle {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.appoint-img {
+  width: 700px;
+}
+.egr-microFinance {
+  margin-top: 30px;
+  color: #e4a788;
+}
+
+.filledSection {
+  padding: 4em;
+  padding-top: 0;
+  position: relative;
+}
+.filledArea .MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -12px) scale(0.75);
+  background: #ffff;
+}
+.filledArea .MuiFormLabel-root.Mui-focused {
+  color: #229e54;
+}
+
+.filledArea .MuiFormLabel-root {
+  color: rgb(127 127 127 / 54%);
+  font-family: "Mulish", "Helvetica", "Arial", sans-serif;
+}
+.filledArea .MuiInputBase-root {
+  font-family: "Mulish", "Helvetica", "Arial", sans-serif;
+}
+.checkbox {
+  margin-right: 10px;
+}
+.checkpara {
+  font-size: 14px;
+  font-weight: 700;
+}
+.buttonLast {
+  background: #229e54 !important;
+  padding: 0.5em 2em !important;
+  color: #ffff !important;
+  transition: 0.3s ease-in-out !important;
+}
+.buttonLast:hover {
+  background: #e4a788 !important;
+  color: #fff !important;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+}
+/* .MuiInputLabel-root {
+  display: block;
+  transform-origin: top left;
+} */
+
+/* .MuiInputLabel-root {
+  display: block;
+  transform-origin: top left;
+}
+
+.filledArea .MuiFormLabel-root {
+  color: rgb(127 127 127 / 54%);
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Mulish", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.00938em;
+}
+
+.filledArea .MuiFilledInput-root:hover {
+  background-color: rgb(85 188 126 / 18%);
+}
+.filledArea .MuiFilledInput-root.Mui-focused {
+  background: rgb(85 188 126 / 18%) !important;
+}
+.filledArea .MuiFilledInput-underline:before {
+  border-bottom: 1px solid #358956;
+}
+.filledArea .MuiFilledInput-underline:after {
+  border-bottom: 3px solid #55bc7e;
+}
+.filledArea .MuiFormLabel-root.Mui-focused {
+  color: #229e54;
+} */
+.filledArea .MuiOutlinedInput-root.Mui-focused {
+  background: rgb(85 188 126 / 18%) !important;
+}
+.filledArea .MuiOutlinedInput-root.Mui-focused {
+  background: none !important;
+}
+.filledArea
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #229e54 !important;
+}
+/* .filledArea .MuiOutlinedInput-notchedOutline:hover {
+  border-color: #229e54 !important;
+}
+.filledArea .MuiOutlinedInput-root:hover {
+  border-color: #229e54 !important;
+} */
+.filledArea .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #229e54 !important;
+}
+/* .filledArea .MuiInputBase-formControl:hover {
+  border-color: #229e54 !important;
+}
+.filledArea .MuiInputBase-root:hover {
+  border-color: #229e54 !important;
+} */
+
+.custom-inputs2 .PrivateNotchedOutline-root-6 {
+  border-color: #229e54 !important;
+}
+.custom-textarea
+  .MuiOutlinedInput-multiline:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #229e54 !important;
+}
+
+.custom-inputs2
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #229e54 !important;
+}
+
+.custom-inputs2 .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #229e54 !important;
+}
+.filled1 {
+  margin-right: 300px !important;
+}
+.filledName {
+  font-size: 14px;
+  display: inline-flex;
+}
+.flexMe {
+  display: flex;
+  flex-direction: column;
+}
+.width {
+  width: 520px;
+}
+
+.appoint-bg {
+  position: absolute;
+  width: 500px;
+  bottom: 0;
+  right: 0;
+}

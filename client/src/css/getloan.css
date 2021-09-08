@@ -1,0 +1,1179 @@
+/* hero section start */
+
+.gtheroSection {
+  padding: 8em 0em;
+  padding-bottom: 3em;
+  position: relative;
+}
+.gtheroArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.gtheroTxts {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.gtheroTitleloan {
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+}
+
+/* 
+.interestFree {
+  font-weight: 900;
+  font-size: 50px;
+  color: #229e54;
+} */
+.interestFree2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+}
+.gtheroCaption {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  /* color: #e4a788; */
+  color: #e4a788;
+}
+.gtheroPara {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 0px;
+  color: #373737;
+  line-height: 26px;
+}
+.gtherobuttons {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+}
+.gtgetLoan {
+  margin-right: 15px;
+  padding: 1.15em 3.5em;
+  color: #229e54;
+  border: solid #229e54;
+  border-width: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  font-size: 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.gtgetLoan:hover {
+  padding: 1.15em 3.5em;
+  border-color: #e4a788;
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+  border: solid #e4a788;
+}
+
+.gtconnect {
+  padding: 1.15em 6em;
+  background: #229e54;
+  color: #ffff;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  font-size: 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.gtconnect:hover {
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+}
+
+.joinCommunitybtns {
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.joinCommunitybtnsTitle {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.communitybtn1 {
+  color: #000000;
+  margin-right: 20px;
+  border: solid;
+  padding: 0.8em 1.5em;
+  border-radius: 50px;
+  border-width: 1px;
+  border-color: #55bc7e;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+.communitybtn1:hover {
+  border-color: #e4a788;
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+  border: solid #e4a788;
+}
+
+.gthero-images {
+  position: relative;
+  margin-right: 100px;
+  position: relative;
+}
+
+.gtheroPhone {
+  width: 245px;
+  margin-right: 50px;
+  position: relative;
+}
+.gtdebitCard {
+  position: absolute;
+  right: -87px;
+  bottom: 55px;
+  z-index: 1;
+  width: 250px;
+}
+.gtgreenCircle {
+  position: absolute;
+  bottom: 0%;
+  right: -80px;
+}
+.gteggShape {
+  position: absolute;
+  right: -108px;
+  bottom: 2px;
+  z-index: -2;
+  width: 500px;
+}
+.gtdots {
+  position: absolute;
+  left: -100px;
+  top: -50px;
+  width: 250px;
+  z-index: -2;
+  border-radius: 100px;
+}
+
+.gtx {
+  position: absolute;
+  left: -162px;
+  bottom: 300px;
+  z-index: -2;
+  border-radius: 100px;
+}
+
+.gtcircle {
+  position: absolute;
+  left: -150px;
+  top: -30px;
+  z-index: -2;
+  border-radius: 100px;
+}
+
+
+.joinCommunitybtns{
+  display: flex;
+
+}
+
+
+.gtblurDrop {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  z-index: -2;
+  width: 550px;
+}
+
+.gtcard-amount {
+  display: flex;
+  justify-content: space-evenly;
+  background: #fff;
+  padding: 1em 2em;
+  border-radius: 10px;
+  align-items: center;
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  right: 50%;
+  box-shadow: 0px 0px 15px #a2a2a2;
+}
+
+.gtamount {
+  font-size: 16px;
+  font-weight: 800;
+  color: #e4a788;
+  margin-left: 10px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.gtbottomCards {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  position: relative;
+}
+
+.gtheroCard {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.gtheroCard .react-multiple-carousel__arrow--left,
+.gtheroCard .react-multiple-carousel__arrow--right {
+  display: none;
+}
+
+.gtcard1,
+.gtcard2 {
+  background: #ffff;
+  box-shadow: 0px 0px 25px #e0e0e0;
+  padding: 2em;
+  border-radius: 10px;
+  padding-top: 4em;
+  display: flex;
+  position: relative;
+  width: 45%;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+.gtcard1:hover.gtcard1::after,
+.gtcard2:hover.gtcard2::after {
+  content: "";
+  background: #229e54;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  transition: 0.3s ease-in-out;
+}
+/* 
+.gtcard1::after,
+.gtcard2::after {
+  content: "";
+  background: #229e54;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+} */
+.gtcardDetails {
+  margin-top: 30px;
+}
+.gtsupport {
+  color: #5a5a5a;
+  font-weight: 800;
+  font-size: 20px;
+}
+.gtsupportPara {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.gtarrowIcon {
+  background: #d4ebdd;
+  color: #229e54;
+  padding: 0.2em;
+  border-radius: 50px;
+  font-size: 35px !important;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+.gtcard1:hover .gtarrowIcon,
+.gtcard2:hover .gtarrowIcon {
+  background: #229e54;
+  color: #fff;
+  padding: 0.2em;
+  border-radius: 50px;
+  font-size: 35px !important;
+  transition: 0.3s ease-in-out;
+}
+
+/* hero section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+
+/* collateralize section start */
+
+.collateralize {
+  padding: 4em 6em;
+  position: relative;
+}
+
+.collateral-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collateral-txt {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.collat {
+  color: #229e54;
+  font-size: 40px;
+  font-weight: 800;
+}
+.collat-para {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.collat-btn {
+  margin-right: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  color: #229e54;
+}
+.collat-btn:hover {
+  color: #e4a788;
+}
+.collateralize-image {
+  position: relative;
+}
+
+.collat-vector {
+  width: 500px;
+}
+
+.collat-circle {
+  width: 350px;
+  position: absolute;
+  left: 70px;
+  z-index: -1;
+  bottom: 15px;
+}
+
+/* collateralize section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* how it works section start */
+
+.gthowItWorks {
+  padding: 2em 0em;
+  position: relative;
+}
+
+.gttitleLine {
+  width: 5%;
+  height: 5px;
+  border-radius: 10px;
+  background: #e4a788;
+  margin: auto;
+}
+
+.gthowItWorksTitle {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 50px;
+}
+
+.gttitle {
+  font-size: 44px;
+  font-weight: 800;
+  color: #373737;
+}
+.gthowItWorksBtns {
+  display: flex;
+  border: solid;
+  border-color: #229e54;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+    width: 25%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 0.5em 0.5em;
+  border-width: 0.5px;
+}
+
+.gtbtn1.active {
+  background: #229e54;
+  padding: 1em 3em;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+}
+.gtbtn2 {
+  font-size: 12px;
+  font-weight: 400;
+  background: #ffffff;
+  padding: 1em 3em;
+  color: #229e54;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.gtbtn2:hover {
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+}
+.gthowItWorksArea {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10%;
+  justify-content: space-around;
+  /* animation: bounce 1s linear; */
+}
+.gthowItWorksArea2 {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10%;
+  justify-content: space-around;
+  /* animation: bounce 1s linear; */
+}
+
+.gthowCard1Title,
+.gthowCard2Title,
+.gthowCard3Title {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.gtstakeNumb {
+  font-family: Inter;
+  font-size: 81px;
+  color: #e4a788;
+}
+.gthowCard1Texts,
+.gthowCard2Texts,
+.gthowCard3Texts {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.gthowCard1TextsP,
+.gthowCard2TextsP,
+.gthowCard3TextsP {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #717171;
+}
+.gtgetStartedButton {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  padding: 1em;
+  border: solid;
+  border-color: #229e54;
+  color: #229e54;
+  font-weight: 400;
+  font-size: 13px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 3%;
+  border-width: 2px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.gtgetStartedButton:hover {
+  border-color: #e4a788;
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+}
+
+.gtleftBack {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.gtsecondDots {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+/* how it works section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+
+/* benefits section start  */
+
+.gtbenefitsSection {
+  padding: 4em 0em;
+  padding-bottom: 6em;
+  position: relative;
+}
+.gtbenefitsSection .container {
+  max-width: 1302px;
+}
+.gtbenefitsArea {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gtbenefitCard2,
+.gtbenefitCard1,
+.gtbenefitCard3,
+.gtbenefitCard4 {
+  margin-top: 50px;
+  background: #fff;
+  box-shadow: 0px 0px 15px #dbdbdb;
+  padding-top: 4em;
+  padding: 2em;
+  border-radius: 10px;
+  transition: 0.2s linear;
+  width: 300px;
+  height: 400px;
+}
+.gtbenefitCard2:hover,
+.gtbenefitCard1:hover,
+.gtbenefitCard3:hover,
+.gtbenefitCard4:hover {
+  transform: scale(1.1);
+  transition: 0.2s linear;
+}
+
+.gtbCardTexts {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.gtbCardTitle {
+  font-size: 16px;
+  font-weight: 650;
+  font-family: "Mulish";
+}
+.gtbCardPara {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.gtrightBack {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.gteggShape2 {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  z-index: -2;
+}
+/* benefits section end  */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* discount section start */
+
+.discountSection {
+  padding: 4em 8em;
+  position: relative;
+  /* color: aliceblue; */
+  background: #f8fffb;
+}
+.discountArea {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin: 0em 3em;
+  margin-top: 100px;
+  position: relative;
+}
+
+.discountTxt {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.discount-para {
+  /* font-size: 14px; */
+  line-height: 20px;
+  /* margin-top: 20px; */
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.discount-btn {
+  margin-right: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  color: #229e54;
+}
+
+.discount-btn:hover {
+  color: #e4a788;
+}
+
+.egr {
+  color: #229e54;
+  font-size: 40px;
+  font-weight: 800;
+}
+.discountImages {
+  position: relative;
+}
+.discountCircle {
+  position: absolute;
+  right: -30px;
+  width: 410px;
+  bottom: -2px;
+}
+.discountVector {
+  width: 350px;
+  position: relative;
+  z-index: 3;
+}
+.discountCard {
+  position: absolute;
+  width: 300px;
+  right: 25px;
+  z-index: 2;
+  top: -121px;
+  box-shadow: 0px 0px 10px #e2e2e2;
+}
+
+/* discount section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+
+/* atm cards section start */
+
+.atmCards {
+  padding: 4em 8em;
+  position: relative;
+}
+.atmCardsArea {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin: 0em 3em;
+  position: relative;
+}
+.atmCardsImage {
+  position: relative;
+}
+.atmCardsTxt {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.atmCards-para {
+  /* font-size: 14px; */
+  line-height: 20px;
+  /* margin-top: 20px; */
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.atmspan {
+  color: #229e54;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.atmcard-Image {
+  width: 500px;
+}
+
+/* atm cards section end */
+/* ================================== */
+/* ================================== */
+/* ================================== */
+/* ================================== */
+/* savings section start */
+
+.savingsSection {
+  padding: 4em 8em;
+  position: relative;
+  /* color: aliceblue; */
+  background: #f8fffb;
+}
+.savingsArea {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin: 0em 3em;
+  position: relative;
+}
+
+.savingsText {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  position: relative;
+}
+.savings-para {
+  /* font-size: 14px; */
+  line-height: 20px;
+  /* margin-top: 20px; */
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+/* .discount-btn {
+  margin-right: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  color: #229e54;
+}
+
+.discount-btn:hover {
+  color: #e4a788;
+} */
+
+.egr {
+  color: #229e54;
+  font-size: 40px;
+  font-weight: 800;
+}
+.savingsImages {
+  position: relative;
+}
+.savingsCircle {
+  width: 350px;
+  position: relative;
+}
+.savingsVector {
+  position: absolute;
+  width: 340px;
+  z-index: 3;
+  bottom: 0px;
+  right: 0px;
+}
+.savingsMoney {
+  position: absolute;
+  width: 200px;
+  right: 122px;
+  z-index: 5;
+  top: 32px;
+}
+/* .savingsLens {
+  position: absolute;
+  width: 244px;
+  right: 180px;
+  z-index: 4;
+  top: 28px;
+} */
+
+/* savings section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* stories section start */
+
+.gtstoriesSection {
+  position: relative;
+  padding: 2em 0em;
+}
+iframe {
+  border: 0;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+.gtstoriesArea {
+  position: relative;
+}
+.gtstoriesArea .react-multiple-carousel__arrow--left,
+.gtstoriesArea .react-multiple-carousel__arrow--right {
+  background: #ffff;
+  box-shadow: 0px 0px 5px grey;
+}
+.gtstoriesArea .react-multiple-carousel__arrow--left {
+  left: 3px;
+}
+.gtstoriesArea .react-multiple-carousel__arrow--right {
+  right: 3px;
+}
+.gtstoriesArea .react-multiple-carousel__arrow::before {
+  font-weight: 900;
+  color: #000;
+}
+.gtstoriesArea .react-multi-carousel-track {
+  align-items: center !important;
+}
+.storiesCard {
+  margin-top: 100px;
+  position: relative;
+  z-index: 3;
+}
+.storiesCard1 {
+  background: #ffff;
+  box-shadow: 0px 0px 20px #dadada;
+  position: relative;
+  z-index: 3;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 2em;
+  border-radius: 20px;
+}
+
+.storiesIframe {
+  border-top-right-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+.storiesCardVideo {
+  border-top-right-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+
+.storiesCardTxts {
+  padding: 1em;
+}
+
+.storiesCardTitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+.storiesCardDate {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #229e54;
+}
+
+.gtvidDots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  border-radius: 100px;
+  z-index: -1;
+}
+.carouselLinkStories {
+  display: flex;
+  transition: 0.3s ease-in-out;
+  justify-content: flex-end;
+}
+.carouselLinkbtn {
+  color: #ffffff !important;
+  background: #229e54;
+  padding: 1em 2em;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+.carouselLinkbtn:hover {
+  color: #ffff;
+  background: #e4a788;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px #c0c0c0;
+}
+
+/* .iFrame {
+  display: none;
+} */
+
+/* .playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  cursor: pointer;
+} */
+
+/* .playButton:hover > .iFrame {
+  display: block;
+} */
+
+/* .snapShot {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+} */
+
+/* stories section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+
+/* Partners Section Start */
+
+.gtpartnersSection {
+  padding: 4em 0em;
+  position: relative;
+  background: #f8fffb;
+  overflow: hidden;
+}
+
+.gtPartnersArea {
+  transform: translateZ(0);
+  min-width: 2800px;
+  animation: nonStop 120s linear 0s infinite normal none running;
+  -webkit-animation: nonStop 120s linear 0s infinite normal none running;
+  display: flex;
+  margin-top: 55px;
+}
+@keyframes nonStop {
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+/* .gtPartnersArea .react-multiple-carousel__arrow--left,
+.gtPartnersArea .react-multiple-carousel__arrow--right {
+  display: none !important;
+}
+.gtPartnersArea .react-multiple-carousel__arrow::before {
+  font-weight: 900;
+  color: #000;
+}
+.gtPartnersArea .react-multi-carousel-track {
+  align-items: center !important;
+} */
+.gtpaid {
+  width: 300px;
+}
+.gtpartnersCircle {
+  right: 0;
+  bottom: 10%;
+  position: absolute;
+  z-index: 2;
+}
+.gtpatLogo {
+  text-align: center;
+
+  padding: 2em 1em;
+  border-radius: 20px;
+  position: relative;
+  width: 250px;
+  margin: auto;
+}
+
+.gtpartnerLogos {
+  text-align: center;
+  width: 200px;
+}
+
+/* .partnerLogos.nuls {
+  width: 150px;
+} */
+
+/* Partners Section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* compare section  start */
+
+.gtcompareSection {
+  padding: 4em 0em;
+  position: relative;
+  background: #ffffff;
+}
+
+.gtcompareArea {
+  position: relative;
+  z-index: 20;
+}
+
+hr {
+  color: #a7a7a7;
+}
+.compareCard {
+  padding: 2em 0em;
+  background: #fff;
+  box-shadow: 15px 15px 50px #eaeaea;
+  border-radius: 10px;
+  border: solid;
+  border-width: 1px;
+  border-color: #eaeaea;
+}
+.compareCardContent1 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 24.5em;
+  padding-right: 9em;
+
+  align-items: center;
+}
+.cardContentTitles {
+  font-weight: 800;
+  color: #229e54;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.content-img {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.compareCardContent2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7em;
+  padding-right: 8em;
+  align-items: center;
+}
+.cardContentTxt {
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.checkCircle {
+  margin-right: 5px;
+  width: 20px !important;
+  color: #99e6b8;
+}
+.removeCircle {
+  margin-right: 5px;
+  width: 20px !important;
+  color: #e4a788;
+}
+.gtcompareDots {
+  position: absolute;
+  right: 0;
+  top: -100px;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+
+/* compare section  end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+
+/* explore section  start */
+
+.gtexploreSection {
+  padding: 4em 0em;
+}
+
+.gtexploreArea {
+  background: #229e54;
+  color: #fff;
+  padding: 6em;
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gtgood {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.gtexploreLoansbtn {
+  color: #229e54;
+  background: #fff;
+  padding: 1em 2em;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.gtexploreLoansbtn:hover {
+  color: #000000;
+  margin-bottom: 20px;
+}
+.gtexploretxts {
+  position: relative;
+  z-index: 3;
+}
+
+.gtexploreLink {
+  margin-top: 100px;
+  transition: 0.5s ease-in-out;
+}
+.gtexploreLink:hover {
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+}
+.gtexploreLink:hover > .gtexploreLoansbtn {
+  box-shadow: 0px 4px 15px #0e542a;
+}
+.gtexploreDots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 100%;
+  width: 30%;
+}
+.gtexploreShape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* explore section  end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */

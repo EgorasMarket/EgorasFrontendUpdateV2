@@ -1,0 +1,10 @@
+{
+    "DatabaseHost": "localhost",
+    "DatabaseUser": "mainnet",
+    "DatabasePassword": "H.K%,6.X#ego+=**--+++RSbql",
+    "DatabaseName": "mainnet",
+    "jwtSecret": "%%6ha*%^ndMe**9^%$_)+&$",
+    "imgURSecret": "8a5368d680513a94cea551d41915e3c96f9f0ac4",
+    "imgURClientID": "7ec73a674f4fca6",
+    "DatabaseDialect": "mysql"
+}

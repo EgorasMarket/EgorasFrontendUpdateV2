@@ -1,0 +1,846 @@
+/* hero section start */
+
+.heroSection {
+  padding: 8em 0em;
+  position: relative;
+}
+.heroArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.heroTxts {
+  margin-bottom: 50px;
+}
+
+.heroTitle {
+  font-weight: 700;
+  font-size: 48px;
+  color: #373737;
+}
+.heroCaption {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 30px;
+  /* color: #e4a788; */
+  color: #e4a788;
+}
+.heroPara {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #373737;
+  line-height: 26px;
+}
+
+.heroButton {
+  margin-top: 50px;
+}
+.heroBtn {
+  padding: 1em 4em;
+  background: #229e54;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.heroBtn:hover {
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+}
+
+.hero-images {
+  position: relative;
+  margin-right: 100px;
+}
+
+.heroPhone {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.eggShape {
+  position: absolute;
+  right: -80px;
+  bottom: 2px;
+  z-index: -2;
+  width: 500px;
+}
+
+.dots {
+  position: absolute;
+  left: -100px;
+  top: -50px;
+  width: 300px;
+  z-index: -2;
+  border-radius: 100px;
+}
+
+.x {
+  position: absolute;
+  left: -162px;
+  bottom: 300px;
+  z-index: -2;
+  border-radius: 100px;
+}
+
+.circle {
+  position: absolute;
+  left: -150px;
+  top: -30px;
+  z-index: -2;
+  border-radius: 100px;
+}
+
+.blurDrop {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  z-index: -2;
+  width: 550px;
+}
+
+.card-amount {
+  display: flex;
+  justify-content: space-evenly;
+  background: #fff;
+  padding: 1em 2em;
+  border-radius: 10px;
+  align-items: center;
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  right: 50%;
+  box-shadow: 0px 0px 15px #a2a2a2;
+}
+
+.amount {
+  font-size: 16px;
+  font-weight: 800;
+  color: #e4a788;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.bottomCards {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin-top: 100px;
+}
+
+.heroCard {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card1,
+.card2 {
+  background: #ffff;
+  box-shadow: 0px 0px 25px #e0e0e0;
+  padding: 2em;
+  border-radius: 10px;
+  padding-top: 4em;
+  display: flex;
+  position: relative;
+}
+.card1.active::after,
+.card2.active::after {
+  content: "";
+  background: #229e54;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cardDetails {
+  margin-top: 30px;
+}
+.support {
+  margin-right: 60px;
+}
+.supportPara {
+  font-size: 12px;
+}
+
+.arrowIcon {
+  background: #d4ebdd;
+  color: #229e54;
+  padding: 0.2em;
+  border-radius: 50px;
+}
+.arrowIcon.active {
+  background: #229e54;
+  color: #fff;
+  padding: 0.2em;
+  border-radius: 50px;
+}
+/* hero section start */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* how it works section start */
+
+.howItWorks {
+  padding: 6em 0em;
+  position: relative;
+}
+
+.titleLine {
+  width: 5%;
+  height: 5px;
+  border-radius: 10px;
+  background: #e4a788;
+  margin: auto;
+}
+
+.howItWorksTitle {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 600;
+  color: #373737;
+}
+.howItWorksBtns {
+  display: flex;
+  border: solid;
+  border-color: #229e54;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 1em 0.5em;
+  border-width: 2px;
+}
+
+.btn1.active {
+  background: #229e54;
+  padding: 1em 3em;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.btn2 {
+  font-size: 12px;
+  font-weight: 400;
+  background: #ffffff;
+  padding: 1em 3em;
+  color: #229e54;
+  border-radius: 5px;
+}
+.btn2:hover {
+  color: #000000;
+}
+
+.howItWorksArea {
+  display: flex;
+  align-items: end;
+  margin-top: 10%;
+  justify-content: space-around;
+}
+
+.howCard1Title,
+.howCard2Title,
+.howCard3Title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.stakeNumb {
+  font-family: Inter;
+  font-size: 81px;
+  color: #e4a788;
+}
+.howCard1Texts,
+.howCard2Texts,
+.howCard3Texts {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.howCard1TextsP,
+.howCard2TextsP,
+.howCard3TextsP {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.getStartedButton {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  padding: 1em;
+  border: solid;
+  border-color: #229e54;
+  color: #229e54;
+  font-weight: 400;
+  font-size: 13px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10%;
+  border-width: 2px;
+  position: relative;
+}
+.getStartedHover {
+  border: solid;
+  border-color: #61ab00;
+  border-width: 2px;
+  background: #61ab00;
+  color: #ffff;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  left: 0;
+  display: none;
+  animation: growInRight 0.3s linear;
+  z-index: -1;
+}
+@keyframes growInRight {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.getStartedButton:hover {
+  color: #ffff;
+  border-color: #61ab00;
+}
+.getStartedButton:hover > .getStartedHover {
+  display: block;
+}
+
+.leftBack {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.secondDots {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+/* how it works section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+
+/* projects Section start */
+.projectsSection {
+  padding: 3em 0em;
+  position: relative;
+  background: #ffff;
+}
+.caroCard .react-multiple-carousel__arrow--left,
+.caroCard .react-multiple-carousel__arrow--right {
+  background-color: #ffffff !important;
+  box-shadow: 0px 0px 15px #b8d2c2;
+  right: 10px;
+  top: 20%;
+}
+.caroCard .react-multiple-carousel__arrow--left {
+  left: 10px;
+}
+.caroCard .react-multiple-carousel__arrow::before {
+  font-weight: 900;
+  color: #000;
+}
+.projectsLine {
+  width: 5%;
+  height: 5px;
+  border-radius: 10px;
+  background: #e4a788;
+  margin-left: 2em;
+}
+.projectsTitleContents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 2em;
+}
+.projectTitle {
+  margin-top: 2%;
+}
+
+.pTitle {
+  font-size: 44px;
+  font-weight: 600;
+  color: #373737;
+}
+.projectsPara {
+  color: #229e54;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 2%;
+  color: #229e54;
+}
+
+.projectsLink {
+  padding: 1.15em 1.5em;
+  background: #229e54;
+  color: #ffff;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 4;
+  font-size: 13px;
+  transition: 0.3s ease-in-out;
+}
+.projectsLink:hover {
+  border-color: #e4a788;
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
+}
+
+.caroCard {
+  margin-top: 100px;
+  position: relative;
+  z-index: 3;
+}
+
+.cardA,
+.cardB,
+.cardC,
+.cardD,
+.cardE,
+.cardF,
+.cardG,
+.cardH,
+.cardI,
+.cardJ {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+  cursor: pointer;
+
+  display: grid;
+}
+.img {
+  position: relative;
+}
+
+.img-amount {
+  position: absolute;
+  color: #e4a788;
+  background: #fff;
+  padding: 0.7em 1em;
+  left: 4%;
+  border-radius: 10px;
+  top: 70%;
+  font-size: 14px;
+  box-shadow: 0px 4px 5px #808080;
+}
+
+.cardHeader {
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #373737;
+}
+.cardPara {
+  font-weight: 400;
+  font-size: 14px;
+  color: #229e54;
+}
+/* projects Section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* benefits section start  */
+
+.benefitsSection {
+  padding: 4em 0em;
+  padding-bottom: 6em;
+  position: relative;
+}
+.benefitsSection .container {
+  max-width: 1302px;
+}
+.benefitsArea {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.benefitCard2,
+.benefitCard1,
+.benefitCard3,
+.benefitCard4 {
+  margin-top: 50px;
+  background: #fff;
+  box-shadow: 0px 0px 15px #dbdbdb;
+  padding-top: 4em;
+  padding: 2em;
+  border-radius: 10px;
+  transition: 0.2s linear;
+  height: 350px;
+}
+.benefitCard2:hover,
+.benefitCard1:hover,
+.benefitCard3:hover,
+.benefitCard4:hover {
+  transform: scale(1.1);
+  transition: 0.2s linear;
+}
+
+.bCardTexts {
+  margin-top: 30px;
+}
+
+.bCardTitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+.bCardPara {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.rightBack {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.eggShape2 {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  z-index: -2;
+}
+/* benefits section end  */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* stories section start */
+
+.landingstoriesSection {
+  position: relative;
+  padding: 2em 0em;
+}
+iframe {
+  border: 0;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+.landingstoriesArea {
+  position: relative;
+}
+.landingstoriesCard {
+  margin-top: 100px;
+  position: relative;
+  z-index: 3;
+}
+.landingstoriesCard1 {
+  background: #ffff;
+  box-shadow: 0px 0px 20px #dadada;
+  position: relative;
+  z-index: 3;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 5em;
+  border-radius: 20px;
+}
+
+.landingstoriesCardTxts {
+  padding: 1em;
+}
+
+.landingstoriesCardTitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+.landingstoriesCardDate {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #229e54;
+}
+
+.landingvidDots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  border-radius: 100px;
+  z-index: -1;
+}
+.landingcarouselLinkStories {
+  color: #ffffff !important;
+  background: #229e54;
+  padding: 1em 2em;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-left: 1060px;
+  transition: 0.3s ease-in-out;
+}
+.landingcarouselLinkStories:hover {
+  color: #ffff;
+  background: #e4a788;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px #c0c0c0;
+}
+
+/* stories section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+
+/* Partners Section Start */
+
+.partnersSection {
+  padding: 4em 0em;
+  position: relative;
+}
+
+.PartnersArea {
+  display: flex;
+  align-items: center;
+}
+
+.PartnersArea .react-multiple-carousel__arrow--left,
+.PartnersArea .react-multiple-carousel__arrow--right {
+  display: none !important;
+}
+.PartnersArea .react-multiple-carousel__arrow::before {
+  font-weight: 900;
+  color: #000;
+}
+.PartnersArea .react-multi-carousel-track {
+  align-items: center !important;
+}
+.paid {
+  width: 300px;
+}
+.caroCard .react-multi-carousel-dot button {
+  border-color: #229e54 !important;
+}
+.caroCard .react-multi-carousel-dot--active button {
+  background: #229e54 !important;
+}
+
+.partnersCircle {
+  right: 0;
+  bottom: 10%;
+  position: absolute;
+  z-index: 2;
+}
+.patLogo {
+  text-align: center;
+
+  padding: 2em 1em;
+  border-radius: 20px;
+  position: relative;
+  width: 250px;
+  margin: auto;
+}
+
+.partnerLogos {
+  text-align: center;
+  width: 100%;
+}
+
+/* .partnerLogos.nuls {
+  width: 150px;
+} */
+
+/* Partners Section end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+/* tokens section  start */
+
+.tokenSection {
+  padding: 4em 0em;
+  position: relative;
+  background: #fff9f4;
+}
+
+.tokenArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  z-index: 20;
+}
+
+.mainToken {
+  box-shadow: 0px 0px 15px #ecc6a6;
+  border-radius: 100px;
+  width: 100px;
+}
+
+.tokenLine {
+  width: 10%;
+  height: 5px;
+  border-radius: 10px;
+  background: #e4a788;
+  margin-top: 30px;
+}
+.tokenCard1 {
+  padding: 2em;
+  transition: 0.01s linear;
+}
+
+.tokenCard1texts {
+  margin-top: 20px;
+}
+
+.tokenCard1Heading {
+  font-weight: 600;
+}
+
+.tokenCard1Para {
+  line-height: 29px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.tokenDots {
+  position: absolute;
+  right: 0;
+  top: -100px;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+
+/* tokens section  end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+
+/* explore section  start */
+
+.exploreSection {
+  padding: 6em 0em;
+}
+
+.exploreArea {
+  background: #229e54;
+  color: #fff;
+  padding: 6em;
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.good {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.exploreLoansbtn {
+  color: #229e54;
+  background: #fff;
+  padding: 1em 2em;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.exploreLoansbtn:hover {
+  color: #000000;
+  margin-bottom: 20px;
+}
+.exploretxts {
+  position: relative;
+  z-index: 3;
+}
+
+.exploreLink {
+  margin-top: 100px;
+  transition: 0.5s ease-in-out;
+}
+.exploreLink:hover {
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+}
+.exploreLink:hover > .exploreLoansbtn {
+  box-shadow: 0px 4px 15px #0e542a;
+}
+.exploreDots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 100%;
+  width: 30%;
+}
+.exploreShape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* explore section  end */
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+
+/* mobile view code start */
+/* first break point ========================================= */
+@media screen and (max-width: 1177px) {
+}
+
+@media screen and (max-width: 548px) {
+}
+
+/* 2nd break point ========================================= */
+@media screen and (max-width: 470px) {
+}
+
+@media screen and (max-width: 432px) {
+}
+
+/* 3rd break point ========================================= */
+@media screen and (max-width: 420px) {
+}
+
+@media screen and (max-width: 320px) {
+}
+
+/* 4th break point ========================================= */
+
+@media screen and (max-width: 300px) {
+}
+
+/* last break point ========================================= */
+@media screen and (max-width: 240px) {
+}
+
+/* mobile view code end */
