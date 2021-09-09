@@ -1173,7 +1173,7 @@
   }
 
   .gtexploreSection {
-    padding: 4em 0em;
+    padding: 2em 0em;
   }
   /* compare section */
 }
@@ -1295,9 +1295,6 @@
     padding: 0.5em 2em;
     font-size: 16px;
   }
-  .gtheroPhone {
-    width: 120px;
-  }
   .gtcircle {
     width: 40px;
     top: -57px;
@@ -1312,22 +1309,23 @@
     left: -73px;
   }
 
-  .gteggShape {
-    width: 300px;
-    bottom: 8px;
-    right: -56px;
-  }
-
   .gtdebitCard {
-    right: -35px;
+    right: -42px;
     top: 5px;
+    width: 134px;
+  }
+  .gtheroPhone {
     width: 128px;
   }
-
+  .gteggShape {
+    width: 314px;
+    bottom: 8px;
+    right: -60px;
+  }
   .collat-circle {
-    width: 200px;
-    left: 74px;
-    bottom: 7px;
+    width: 236px;
+    left: 52px;
+    bottom: 10px;
   }
   .collat-vector {
     width: 350px;
@@ -1361,7 +1359,7 @@
     line-height: 40px;
   }
   .gthowItWorksBtns {
-    width: 70%;
+    width: 65%;
   }
   .gtbCardPara {
     font-size: 14px;
@@ -1372,7 +1370,7 @@
   }
 
   .savingsText {
-    font-size: 32px;
+    font-size: 36px;
   }
   .discount-para {
     font-size: 14px;
@@ -1380,7 +1378,7 @@
     line-height: 25px;
   }
   .egr {
-    font-size: 32px;
+    font-size: 36px;
   }
   .gtgetStartedButton {
     width: 40%;
@@ -1396,7 +1394,7 @@
     width: 300px;
   }
   .discountTxt {
-    font-size: 32px;
+    font-size: 36px;
   }
   .discountCard {
     width: 130px;
@@ -1408,7 +1406,7 @@
     width: 230px;
   }
   .atmCardsTxt {
-    font-size: 32px;
+    font-size: 36px;
     line-height: 50px;
   }
   .atmCards-para {

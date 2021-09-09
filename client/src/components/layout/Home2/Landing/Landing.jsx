@@ -302,7 +302,11 @@ const Landing = ({
               </div>
             </div>
 
-            <div className="hero-images">
+            <div
+              className="hero-images"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <img src="/img/phone-hero.png" alt="" className="heroPhone" />
               <img src="/img/shape-egg.svg" alt="" className="eggShape" />
               <img src="/img/dots.svg" alt="" className="gtdots" />
@@ -323,8 +327,16 @@ const Landing = ({
       {/* How it Works Section Start */}
       <section className="gthowItWorks" id="howitworks">
         <div className="container">
-          <div className="gttitleLine"></div>
-          <div className="gthowItWorksTitle">
+          <div
+            className="gttitleLine"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          ></div>
+          <div
+            className="gthowItWorksTitle"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <h1 className="gttitle">How it works</h1>
           </div>
           <div className="gthowItWorksBtns">
@@ -348,7 +360,11 @@ const Landing = ({
 
           {page === "change" ? (
             <div className="gthowItWorksArea">
-              <div className="gthowCard1">
+              <div
+                className="gthowCard1"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div className="gthowCard1Title">
                   <h1 className="gtstakeNumb">1.</h1>
 
@@ -370,7 +386,11 @@ const Landing = ({
                   </p>
                 </div>
               </div>
-              <div className="gthowCard2">
+              <div
+                className="gthowCard2"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div className="gthowCard2Title">
                   <h1 className="gtstakeNumb">2.</h1>
 
@@ -390,7 +410,11 @@ const Landing = ({
                   </p>
                 </div>
               </div>
-              <div className="gthowCard3">
+              <div
+                className="gthowCard3"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div className="gthowCard3Title">
                   <h1 className="gtstakeNumb">3.</h1>
 
@@ -415,7 +439,11 @@ const Landing = ({
             </div>
           ) : (
             <div className="gthowItWorksArea2">
-              <div className="gthowCard1">
+              <div
+                className="gthowCard1"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div className="gthowCard1Title">
                   <h1 className="gtstakeNumb">1.</h1>
 
@@ -436,7 +464,11 @@ const Landing = ({
                   </p>
                 </div>
               </div>
-              <div className="gthowCard2">
+              <div
+                className="gthowCard2"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div className="gthowCard2Title">
                   <h1 className="gtstakeNumb">2.</h1>
 
@@ -456,7 +488,11 @@ const Landing = ({
                   </p>
                 </div>
               </div>
-              <div className="gthowCard3">
+              <div
+                className="gthowCard3"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div className="gthowCard3Title">
                   <h1 className="gtstakeNumb">3.</h1>
 
@@ -494,7 +530,11 @@ const Landing = ({
       {/*  Projects Section start*/}
       <section className="projectsSection" id="projects">
         <div className="container">
-          <div className="projectsArea">
+          <div
+            className="projectsArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="projectsLine"></div>
             <div className="projectsTitleContents">
               <div className="projectTitle">
@@ -588,13 +628,25 @@ const Landing = ({
       {/* Benefits Section start */}
       <section className="gtbenefitsSection" id="benefits">
         <div className="container">
-          <div className="gttitleLine"></div>
-          <div className="gthowItWorksTitle">
+          <div
+            className="gttitleLine"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          ></div>
+          <div
+            className="gthowItWorksTitle"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <h1 className="gttitle">Benefits</h1>
           </div>
 
           <div className="gtbenefitsArea">
-            <div className="gtbenefitCard1">
+            <div
+              className="gtbenefitCard1"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div className="gtbCardIcon">
                 <img src="/img/b-icon1.svg" alt="" className="gtbIcon" />
               </div>
@@ -613,7 +665,11 @@ const Landing = ({
               </div>
             </div>
 
-            <div className="gtbenefitCard2">
+            <div
+              className="gtbenefitCard2"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div className="gtbCardIcon">
                 <img src="/img/b-icon2.svg" alt="" className="gtbIcon" />
               </div>
@@ -633,7 +689,11 @@ const Landing = ({
               </div>
             </div>
 
-            <div className="gtbenefitCard3">
+            <div
+              className="gtbenefitCard3"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div className="gtbCardIcon">
                 <img src="/img/b-icon3.svg" alt="" className="gtbIcon" />
               </div>
@@ -649,7 +709,11 @@ const Landing = ({
               </div>
             </div>
 
-            <div className="gtbenefitCard4">
+            <div
+              className="gtbenefitCard4"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div className="gtbCardIcon">
                 <img src="/img/b-icon4.svg" alt="" className="gtbIcon" />
               </div>
@@ -929,7 +993,7 @@ const Landing = ({
           </div>
         </div>
 
-        <img src="../img/video-dots.svg" alt="" className="gtvidDots" />
+        <img src="/img/video-dots.svg" alt="" className="gtvidDots" />
       </section>
       {/* Stories Section End  */}
       {/* =================================================================================================================================================================================================================================================================== */}
@@ -1154,7 +1218,11 @@ const Landing = ({
       <section className="tokenSection" id="token">
         <div className="container">
           <div className="tokenArea">
-            <div className="tokenCard1">
+            <div
+              className="tokenCard1"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <img src="/img/main-token.svg" alt="" className="mainToken" />
               <div className="tokenLine"></div>
               <div className="tokenCard1texts">
@@ -1175,7 +1243,11 @@ const Landing = ({
               </div>
             </div>
 
-            <div className="tokenCard1">
+            <div
+              className="tokenCard1"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <img src="/img/token-right.svg" alt="" className="mainToken" />
               <div className="tokenLine"></div>
               <div className="tokenCard1texts">
@@ -1228,13 +1300,9 @@ const Landing = ({
               </div>
             </div>
 
+            <img src="/img/explore-dots.svg" alt="" className="gtexploreDots" />
             <img
-              src="../img/explore-dots.svg"
-              alt=""
-              className="gtexploreDots"
-            />
-            <img
-              src="../img/explore-shape.svg"
+              src="/img/explore-shape.svg"
               alt=""
               className="gtexploreShape"
             />

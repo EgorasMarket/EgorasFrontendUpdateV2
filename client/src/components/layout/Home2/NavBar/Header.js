@@ -297,7 +297,7 @@ const Header = () => {
           <div className="header-area">
             <a href="/" className="egrLogo2Cont">
               <img
-                src="../img/egoras-logo.svg"
+                src="/img/egoras-logo.svg"
                 alt="..."
                 className="egr-logo2"
               />
@@ -307,7 +307,7 @@ const Header = () => {
               <a href="/">
                 {" "}
                 <img
-                  src="../img/egoras-logo.svg"
+                  src="/img/egoras-logo.svg"
                   alt="..."
                   className="egr-logo"
                 />
@@ -486,7 +486,7 @@ const Header = () => {
               </a>
             </ul>
             {/* <img
-              src="../img/hamburger-open.svg"
+              src="/img/hamburger-open.svg"
               alt=""
               className="hamburgerOpen"
             /> */}
