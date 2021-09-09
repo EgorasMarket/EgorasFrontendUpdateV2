@@ -3,6 +3,8 @@ import Select from 'react-select';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/layout/home/Home';
 import Opd from './components/layout/home/Opd';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // import Aos from "aos";
 // import "aos/dist/aos.css";
@@ -89,6 +91,13 @@ import About from './components/layout/Home2/About/About';
 
 
 const App = () => {
+
+
+  useEffect(() => {
+    Aos.init({});
+  }, []);
+
+
   function getLibrary(provider) {
     const library = new Web3Provider(provider);
     library.pollingInterval = 8000;

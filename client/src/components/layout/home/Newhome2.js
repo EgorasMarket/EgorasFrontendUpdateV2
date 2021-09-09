@@ -33,7 +33,7 @@ const responsive = {
   },
 };
 
-const Newhome2 = () => {
+const GetLoan = () => {
   const [page, setPage] = useState("change");
 
   const clickMe1 = () => {
@@ -90,7 +90,7 @@ const Newhome2 = () => {
                     className="communitybtn1"
                     target="_blank"
                   >
-                    <TelegramIcon className='mr-1' />
+                    <TelegramIcon />
                     Telegram
                   </a>
                   <a
@@ -98,7 +98,7 @@ const Newhome2 = () => {
                     className="communitybtn1"
                     target="_blank"
                   >
-                    <TwitterIcon className='mr-1' />
+                    <TwitterIcon />
                     Twitter
                   </a>
                 </div>
@@ -107,24 +107,24 @@ const Newhome2 = () => {
 
             <div className="hero-images">
               <img
-                src="/img/phone-hero2.svg"
+                src="../img/phone-hero2.svg"
                 alt=""
                 className="gtheroPhone"
               />
               <img
-                src="/img/egrdebitCard.png"
+                src="../img/egrdebitCard.png"
                 alt=""
                 className="gtdebitCard"
               />
-              <img src="/img/shape-egg.svg" alt="" className="gteggShape" />
-              <img src="/img/dots.svg" alt="" className="gtdots" />
+              <img src="../img/shape-egg.svg" alt="" className="gteggShape" />
+              <img src="../img/dots.svg" alt="" className="gtdots" />
               <img
-                src="/img/greencircle.svg"
+                src="../img/greencircle.svg"
                 alt=""
-                className="greenCircle"
+                className="gtgreenCircle"
               />
-              <img src="/img/x-shape.svg" alt="" className="gtx" />
-              <img src="/img/circle.svg" alt="" className="gtcircle" />
+              <img src="../img/x-shape.svg" alt="" className="gtx" />
+              <img src="../img/circle.svg" alt="" className="gtcircle" />
             </div>
           </div>
         </div>
@@ -138,7 +138,27 @@ const Newhome2 = () => {
       <section className="collateralize">
         <div className="container">
           <div className="collateral-area">
-            <div className="collateral-txt">
+            <div className="collateralize-image">
+              <img
+                src="../img/collat-vector.svg"
+                alt=""
+                className="collat-vector"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              />
+              <img
+                src="../img/collat-circle.svg"
+                alt=""
+                className="collat-circle"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              />
+            </div>
+            <div
+              className="collateral-txt"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               What would you like
               <br /> <span className="collat"> to collateralize.</span>
               <div className="collat-para">
@@ -160,18 +180,6 @@ const Newhome2 = () => {
                 <ArrowRightIcon />
               </a>
             </div>
-            <div className="collateralize-image">
-              <img
-                src="/img/collat-vector.svg"
-                alt=""
-                className="collat-vector"
-              />
-              <img
-                src="/img/collat-circle.svg"
-                alt=""
-                className="collat-circle"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -185,7 +193,11 @@ const Newhome2 = () => {
           <div className="gthowItWorksTitle">
             <h1 className="gttitle">How it works</h1>
           </div>
-          <div className="gthowItWorksBtns">
+          <div
+            className="gthowItWorksBtns"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="gtbutton1">
               <button
                 className={page === "change" ? "gtbtn1 active" : "gtbtn2"}
@@ -205,13 +217,17 @@ const Newhome2 = () => {
           </div>
 
           {page === "change" ? (
-            <div className="gthowItWorksArea">
+            <div
+              className="gthowItWorksArea"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div className="gthowCard1">
                 <div className="gthowCard1Title">
                   <h1 className="gtstakeNumb">1.</h1>
 
                   <img
-                    src="/img/check-value-icon.svg"
+                    src="../img/check-value-icon.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -233,7 +249,7 @@ const Newhome2 = () => {
                   <h1 className="gtstakeNumb">2.</h1>
 
                   <img
-                    src="/img/schedule-icon.svg"
+                    src="../img/schedule-icon.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -253,7 +269,7 @@ const Newhome2 = () => {
                   <h1 className="gtstakeNumb">3.</h1>
 
                   <img
-                    src="/img/instant-loan-icon.svg"
+                    src="../img/instant-loan-icon.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -278,7 +294,7 @@ const Newhome2 = () => {
                   <h1 className="gtstakeNumb">1.</h1>
 
                   <img
-                    src="/img/stake-loan.svg"
+                    src="../img/stake-loan.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -299,7 +315,7 @@ const Newhome2 = () => {
                   <h1 className="gtstakeNumb">2.</h1>
 
                   <img
-                    src="/img/approve-loan.svg"
+                    src="../img/approve-loan.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -319,7 +335,7 @@ const Newhome2 = () => {
                   <h1 className="gtstakeNumb">3.</h1>
 
                   <img
-                    src="/img/claim-interest.svg"
+                    src="../img/claim-interest.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -347,24 +363,28 @@ const Newhome2 = () => {
           </a>
         </div>
 
-        <img src="/img/left-back-drop.svg" alt="" className="gtleftBack" />
-        <img src="/img/second-dots.svg" alt="" className="gtsecondDots" />
+        <img src="../img/left-back-drop.svg" alt="" className="gtleftBack" />
+        <img src="../img/second-dots.svg" alt="" className="gtsecondDots" />
       </section>
       {/* How it Works Section End */}
       {/* =================================================================================================================================================================================================================================================================== */}
 
       {/* Benefits Section start */}
-      <section className="gtbenefitsSection">
+      <section className="gtbenefitsSection"  id="benefits">
         <div className="container">
           <div className="gttitleLine"></div>
           <div className="gthowItWorksTitle">
             <h1 className="gttitle">Why Choose Us</h1>
           </div>
 
-          <div className="gtbenefitsArea">
+          <div
+            className="gtbenefitsArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="gtbenefitCard1">
               <div className="gtbCardIcon">
-                <img src="/img/b-icon1.svg" alt="" className="gtbIcon" />
+                <img src="../img/b-icon1.svg" alt="" className="gtbIcon" />
               </div>
               <div className="gtbCardTexts">
                 <h1 className="gtbCardTitle">Your loans in 5mins</h1>
@@ -379,22 +399,22 @@ const Newhome2 = () => {
 
             <div className="gtbenefitCard2">
               <div className="gtbCardIcon">
-                <img src="/img/b-icon2.svg" alt="" className="gtbIcon" />
+                <img src="../img/b-icon2.svg" alt="" className="gtbIcon" />
               </div>
               <div className="gtbCardTexts">
                 <h1 className="gtbCardTitle">Best Value For Your Assets</h1>
                 <p className="gtbCardPara">
                   Unlike other lenders that charge exorbitant interest rate
-                  (over 30% monthly). Egoras offers the Market leading interest
-                  rates(1% monthly) which makes the repayment stressfree with
-                  zero hassle.
+                  (over 30% monthly). Egoras offers the Market leading zero
+                  interest rate which makes the repayment stressfree with zero
+                  hassle.
                 </p>
               </div>
             </div>
 
             <div className="gtbenefitCard3">
               <div className="gtbCardIcon">
-                <img src="/img/b-icon3.svg" alt="" className="gtbIcon" />
+                <img src="../img/b-icon3.svg" alt="" className="gtbIcon" />
               </div>
               <div className="gtbCardTexts">
                 <h1 className="gtbCardTitle">No guarantor</h1>
@@ -408,33 +428,37 @@ const Newhome2 = () => {
 
             <div className="gtbenefitCard4">
               <div className="gtbCardIcon">
-                <img src="/img/b-icon4.svg" alt="" className="gtbIcon" />
+                <img src="../img/b-icon4.svg" alt="" className="gtbIcon" />
               </div>
               <div className="gtbCardTexts">
                 <h1 className="gtbCardTitle">No Interest Rate</h1>
                 <p className="gtbCardPara">
                   Unlike other lenders that charge exorbitant interest rate
-                  (over 30% monthly). Egoras offers the Market leading interest
-                  rates(1% monthly) which makes the repayment stressfree with
-                  zero hassle.
+                  (over 30% monthly). Egoras offers the Market leading zero
+                  interest rates which makes the repayment stressfree with zero
+                  hassle.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <img src="/img/right-back-drop.svg" alt="" className="gtrightBack" />
-        <img src="/img/shape-egg2.svg" alt="" className="gteggShape2" />
+        <img src="../img/right-back-drop.svg" alt="" className="gtrightBack" />
+        <img src="../img/shape-egg2.svg" alt="" className="gteggShape2" />
       </section>
       {/* Benefits Section start */}
       {/* =================================================================================================================================================================================================================================================================== */}
 
       {/* savings    section start */}
 
-      <section className="savingsSection">
+      <section className="savingsSection2">
         <div className="container">
-          <div className="savingsArea">
-            <div className="savingsText">
+          <div className="savingsArea2">
+            <div
+              className="savingsText"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
               Your collaterals are
               <br /> represented as <span className="egr"> NFTs,</span>
               <br />
@@ -451,8 +475,12 @@ const Newhome2 = () => {
                 <br /> (Thus every transaction is public and immutable).
               </p>
             </div>
-            <div className="savingsImages">
-              <img src="/img/block-chain.svg" alt="" className="blockChain img-fluid" />
+            <div
+              className="savingsImages"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <img src="../img/block-chain.svg" alt="" className="blockChain" />
             </div>
           </div>
         </div>
@@ -465,24 +493,32 @@ const Newhome2 = () => {
       <section className="discountSection">
         <div className="container">
           <div className="discountArea">
-            <div className="discountImages">
+            <div
+              className="discountImages"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <img
-                src="/img/discount-vector.svg"
+                src="../img/discount-vector.svg"
                 alt=""
                 className="discountVector"
               />{" "}
               <img
-                src="/img/discount-circle.svg"
+                src="../img/discount-circle.svg"
                 alt=""
                 className="discountCircle"
               />
               <img
-                src="/img/discount-card.svg"
+                src="../img/discount-card.svg"
                 alt=""
                 className="discountCard"
               />
             </div>
-            <div className="discountTxt">
+            <div
+              className="discountTxt"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
               Get 50% discount
               <br /> when you pay fees
               <br />
@@ -510,7 +546,11 @@ const Newhome2 = () => {
       <section className="atmCards">
         <div className="container">
           <div className="atmCardsArea">
-            <div className="atmCardsTxt">
+            <div
+              className="atmCardsTxt"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
               3% Cashback on All
               <br />
               <span className="egr"> Transactions</span>
@@ -526,9 +566,13 @@ const Newhome2 = () => {
                 <ArrowRightIcon />
               </a> */}
             </div>
-            <div className="atmCardsImage">
+            <div
+              className="atmCardsImage"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <img
-                src="/img/atm-cards.png"
+                src="../img/atm-cards.png"
                 alt=""
                 className="atmcard-Image"
               />
@@ -543,7 +587,33 @@ const Newhome2 = () => {
       <section className="savingsSection">
         <div className="container">
           <div className="savingsArea">
-            <div className="savingsText">
+            <div
+              className="savingsImages"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <img
+                src="../img/savingsCircle.svg"
+                alt=""
+                className="savingsCircle"
+              />
+              <img
+                src="../img/savingsVector.svg"
+                alt=""
+                className="savingsVector"
+              />
+              <img
+                src="../img/savingsMoney.svg"
+                alt=""
+                className="savingsMoney"
+              />
+              {/* <img src="../img/savingsLens.svg" alt="" className="savingsLens" /> */}
+            </div>
+            <div
+              className="savingsText"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
               Save money as you
               <br />
               repay your
@@ -564,24 +634,6 @@ const Newhome2 = () => {
                 <ArrowRightIcon />
               </a> */}
             </div>
-            <div className="savingsImages">
-              <img
-                src="/img/savingsCircle.svg"
-                alt=""
-                className="savingsCircle"
-              />
-              <img
-                src="/img/savingsVector.svg"
-                alt=""
-                className="savingsVector"
-              />
-              <img
-                src="/img/savingsMoney.svg"
-                alt=""
-                className="savingsMoney"
-              />
-              {/* <img src="../img/savingsLens.svg" alt="" className="savingsLens" /> */}
-            </div>
           </div>
         </div>
       </section>
@@ -592,11 +644,25 @@ const Newhome2 = () => {
       {/* Stories Section Start  */}
       <section className="gtstoriesSection">
         <div className="container">
-          <div className="gttitleLine"></div>
-          <div className="gthowItWorksTitle">
-            <h1 className="gttitle">Popular Stories</h1>
+          <div
+            className="gttitleLine"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          ></div>
+          <div
+            className="gthowItWorksTitle"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <h1 className="gttitle" data-aos="fade-up" data-aos-duration="3000">
+              Popular Stories
+            </h1>
           </div>
-          <div className="gtstoriesArea">
+          <div
+            className="gtstoriesArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             {/* Carousel start==============================
 ==============================================
 ============================= */}
@@ -832,22 +898,34 @@ const Newhome2 = () => {
           </div>
         </div>
 
-        <img src="/img/video-dots.svg" alt="" className="gtvidDots" />
+        <img src="../img/video-dots.svg" alt="" className="gtvidDots" />
       </section>
       {/* Stories Section End  */}
       {/* =================================================================================================================================================================================================================================================================== */}
       {/* Partners Section start  */}
       <section className="gtpartnersSection">
         <div className="container">
-          <div className="gttitleLine"></div>
-          <div className="gthowItWorksTitle">
+          <div
+            className="gttitleLine"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          ></div>
+          <div
+            className="gthowItWorksTitle"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
             <h1 className="gttitle">Our Partners</h1>
           </div>
-          <div className="gtPartnersArea">
+          <div
+            className="gtPartnersArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="gtpatLogo">
               <a href="https://paidnetwork.com/" target="blank">
                 <img
-                  src="/img/partners/PAIDNETWORK.svg"
+                  src="../img/partners/PAIDNETWORK.svg"
                   alt=""
                   className="gtpartnerLogos   paid"
                 />
@@ -856,7 +934,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="https://yellowroad.app/" target="blank">
                 <img
-                  src="/img/partners/yellow-road-white.svg"
+                  src="../img/partners/yellow-road-white.svg"
                   alt=""
                   className="gtpartnerLogos yellow"
                 />
@@ -865,7 +943,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="https://www.threem.capital/" target="blank">
                 <img
-                  src="/img/partners/threecapital-black.svg"
+                  src="../img/partners/threecapital-black.svg"
                   alt=""
                   className="gtpartnerLogos three"
                 />
@@ -874,7 +952,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="https://buidlhodl.capital/" target="blank">
                 <img
-                  src="/img/partners/build-logo-white.svg"
+                  src="../img/partners/build-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos build"
                 />
@@ -883,7 +961,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="https://exnetwork.community/" target="blank">
                 <img
-                  src="/img/partners/ex-capital-white.svg"
+                  src="../img/partners/ex-capital-white.svg"
                   alt=""
                   className="gtpartnerLogos ex"
                 />
@@ -892,7 +970,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="https://ferrum.network/" target="blank">
                 <img
-                  src="/img/partners/ferrum-network-white.svg"
+                  src="../img/partners/ferrum-network-white.svg"
                   alt=""
                   className="gtpartnerLogos ferrum"
                 />
@@ -901,7 +979,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="https://titans.ventures/" target="blank">
                 <img
-                  src="/img/partners/TITANS2.svg"
+                  src="../img/partners/TITANS2.svg"
                   alt=""
                   className="gtpartnerLogos titans"
                 />
@@ -910,7 +988,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="https://www.juncapital.io/" target="blank">
                 <img
-                  src="/img/partners/jun-logo-white.svg"
+                  src="../img/partners/jun-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos jun"
                 />
@@ -919,7 +997,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="https://nuls.medium.com/" target="blank">
                 <img
-                  src="/img/partners/NULS.svg"
+                  src="../img/partners/NULS.svg"
                   alt=""
                   className="gtpartnerLogos nuls"
                 />
@@ -928,7 +1006,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="https://launchpool.xyz/" target="blank">
                 <img
-                  src="/img/partners/launchpooldark-image.svg"
+                  src="../img/partners/launchpooldark-image.svg"
                   alt=""
                   className="gtpartnerLogos launch"
                 />
@@ -937,7 +1015,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="https://www.mantradao.com/" target="blank">
                 <img
-                  src="/img/partners/mantra-logo-white.svg"
+                  src="../img/partners/mantra-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -946,7 +1024,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/resurgence-logo-white.svg"
+                  src="../img/partners/resurgence-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -955,7 +1033,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/QUIVERX.svg"
+                  src="../img/partners/QUIVERX.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -964,7 +1042,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/propel-logo-white.svg"
+                  src="../img/partners/propel-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -973,7 +1051,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/blackdragon-dark.svg"
+                  src="../img/partners/blackdragon-dark.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -982,7 +1060,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/n3rd-logo-white.svg"
+                  src="../img/partners/n3rd-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -991,7 +1069,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/MUTUALBENEFITS.svg"
+                  src="../img/partners/MUTUALBENEFITS.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1000,7 +1078,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/skyfast-dark.svg"
+                  src="../img/partners/skyfast-dark.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1009,7 +1087,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/chaos-black.svg"
+                  src="../img/partners/chaos-black.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1018,7 +1096,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/aussie-black.svg"
+                  src="../img/partners/aussie-black.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1027,7 +1105,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/ventures-black.svg"
+                  src="../img/partners/ventures-black.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1036,7 +1114,7 @@ const Newhome2 = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="/img/partners/everse-logo-1.png"
+                  src="../img/partners/everse-logo-1.png"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1046,7 +1124,7 @@ const Newhome2 = () => {
         </div>
 
         <img
-          src="/img/partner-circle.svg"
+          src="../img/partner-circle.svg"
           alt=""
           className="gtpartnersCircle"
         />
@@ -1056,22 +1134,34 @@ const Newhome2 = () => {
       {/* gtcompare Section Start */}
       <section className="gtcompareSection">
         <div className="container">
-          <div className="gttitleLine"></div>
-          <div className="gthowItWorksTitle">
+          <div
+            className="gttitleLine"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          ></div>
+          <div
+            className="gthowItWorksTitle"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
             <h1 className="gttitle">
               Choose the freedom
               <br />
               you need.
             </h1>
           </div>
-          <div className="gtcompareArea">
+          <div
+            className="gtcompareArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="compareCard">
               <div className="compareCardContent1">
                 <h4 className="cardContentTitles">Other Lenders</h4>
                 <div className="content-img">
                   {" "}
                   <img
-                    src="/img/egoras-logo.svg"
+                    src="../img/egoras-logo.svg"
                     alt=""
                     className="Content"
                   />
@@ -1129,7 +1219,7 @@ const Newhome2 = () => {
               </div>
               <hr />
               <div className="compareCardContent2">
-                <h6 className="cardContentTxt">Approval Speed</h6>
+                <h6 className="cardContentTxt">Approval Spped</h6>
                 <h6 className="cardContentTxt">
                   <RemoveCircleIcon className="removeCircle" />7 days
                 </h6>
@@ -1181,16 +1271,26 @@ const Newhome2 = () => {
           </div>
         </div>
 
-        <img src="/img/token-dots.svg" alt="" className="gtcompareDots" />
+        <img src="../img/token-dots.svg" alt="" className="gtcompareDots" />
       </section>
       {/* gtcompare Section End */}
       {/* =================================================================================================================================================================================================================================================================== */}
       {/* explore section  start */}
       <section className="gtexploreSection">
         <div className="container">
-          <div className="gtexploreArea">
+          <div
+            className="gtexploreArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="gtexploretxts">
-              <h1 className="gtgood">Sounds good?</h1>
+              <h1
+                className="gtgood"
+                data-aos="fade-down"
+                data-aos-duration="3000"
+              >
+                Sounds good?
+              </h1>
               <div className="gtexploreLink">
                 <a
                   href="https://egoras.ng/appointment"
@@ -1202,12 +1302,12 @@ const Newhome2 = () => {
             </div>
 
             <img
-              src="/img/explore-dots.svg"
+              src="../img/explore-dots.svg"
               alt=""
               className="gtexploreDots"
             />
             <img
-              src="/img/explore-shape.svg"
+              src="../img/explore-shape.svg"
               alt=""
               className="gtexploreShape"
             />
@@ -1220,4 +1320,4 @@ const Newhome2 = () => {
   );
 };
 
-export default Newhome2;
+export default GetLoan;
