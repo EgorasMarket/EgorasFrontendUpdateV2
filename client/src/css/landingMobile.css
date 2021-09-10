@@ -301,6 +301,12 @@
 @media screen and (max-width: 767px) {
   /* hero section start */
 
+  .loanDetailsLine {
+    margin: auto;
+  }
+  .loanDetailsSection {
+    text-align: center;
+  }
   .heroPhone {
     width: 200px;
     margin-right: 0;

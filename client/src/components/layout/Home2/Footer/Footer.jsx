@@ -106,11 +106,7 @@ const Footer = () => {
                 <a href="/explore" className="c1link1" target="_blank">
                   Explore loans
                 </a>
-                <a
-                  href="/documentation"
-                  className="c1link1"
-                  target="_blank"
-                >
+                <a href="/documentation" className="c1link1" target="_blank">
                   Documentation
                 </a>
               </div>
@@ -185,7 +181,7 @@ const Footer = () => {
                       Explore loans
                     </a>
                     <a
-                      href="https://docs.egoras.com/"
+                      href="/documentation"
                       className="c1link1"
                       target="_blank"
                     >
