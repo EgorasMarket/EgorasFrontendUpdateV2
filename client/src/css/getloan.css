@@ -1027,6 +1027,10 @@ iframe {
 .gtpartnerLogos {
   text-align: center;
   width: 200px;
+  filter: grayscale();
+}
+.gtpartnerLogos:hover {
+  filter: none;
 }
 
 /* .partnerLogos.nuls {
