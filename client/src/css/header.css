@@ -285,11 +285,14 @@ vl {
   display: none;
 }
 .makeStyles-drawerHeader-9 {
-    display: flex;
-    padding: 0px 8px;
-    min-height: 56px;
-    align-items: center;
-    justify-content: flex-end !important;
+  display: flex;
+  padding: 0px 8px;
+  min-height: 56px;
+  align-items: center;
+  justify-content: flex-end !important;
+}
+.makeStyles-drawerPaper-8 {
+  width: 100% !important;
 }
 /* .benefitsSection .container-md,
 .container-sm,
