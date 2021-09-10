@@ -107,7 +107,7 @@ const Footer = () => {
                   Explore loans
                 </a>
                 <a
-                  href="https://docs.egoras.com/"
+                  href="/documentation"
                   className="c1link1"
                   target="_blank"
                 >
