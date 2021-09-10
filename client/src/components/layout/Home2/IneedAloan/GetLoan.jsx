@@ -107,24 +107,24 @@ const GetLoan = () => {
 
             <div className="hero-images">
               <img
-                src="../img/phone-hero2.svg"
+                src="/img/phone-hero2.svg"
                 alt=""
                 className="gtheroPhone"
               />
               <img
-                src="../img/egrdebitCard.png"
+                src="/img/egrdebitCard.png"
                 alt=""
                 className="gtdebitCard"
               />
-              <img src="../img/shape-egg.svg" alt="" className="gteggShape" />
-              <img src="../img/dots.svg" alt="" className="gtdots" />
+              <img src="/img/shape-egg.svg" alt="" className="gteggShape" />
+              <img src="/img/dots.svg" alt="" className="gtdots" />
               <img
-                src="../img/greencircle.svg"
+                src="/img/greencircle.svg"
                 alt=""
                 className="gtgreenCircle"
               />
-              <img src="../img/x-shape.svg" alt="" className="gtx" />
-              <img src="../img/circle.svg" alt="" className="gtcircle" />
+              <img src="/img/x-shape.svg" alt="" className="gtx" />
+              <img src="/img/circle.svg" alt="" className="gtcircle" />
             </div>
           </div>
         </div>
@@ -140,14 +140,14 @@ const GetLoan = () => {
           <div className="collateral-area">
             <div className="collateralize-image">
               <img
-                src="../img/collat-vector.svg"
+                src="/img/collat-vector.svg"
                 alt=""
                 className="collat-vector"
                 data-aos="fade-up"
                 data-aos-duration="3000"
               />
               <img
-                src="../img/collat-circle.svg"
+                src="/img/collat-circle.svg"
                 alt=""
                 className="collat-circle"
                 data-aos="fade-up"
@@ -227,7 +227,7 @@ const GetLoan = () => {
                   <h1 className="gtstakeNumb">1.</h1>
 
                   <img
-                    src="../img/check-value-icon.svg"
+                    src="/img/check-value-icon.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -249,7 +249,7 @@ const GetLoan = () => {
                   <h1 className="gtstakeNumb">2.</h1>
 
                   <img
-                    src="../img/schedule-icon.svg"
+                    src="/img/schedule-icon.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -269,7 +269,7 @@ const GetLoan = () => {
                   <h1 className="gtstakeNumb">3.</h1>
 
                   <img
-                    src="../img/instant-loan-icon.svg"
+                    src="/img/instant-loan-icon.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -294,7 +294,7 @@ const GetLoan = () => {
                   <h1 className="gtstakeNumb">1.</h1>
 
                   <img
-                    src="../img/stake-loan.svg"
+                    src="/img/stake-loan.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -315,7 +315,7 @@ const GetLoan = () => {
                   <h1 className="gtstakeNumb">2.</h1>
 
                   <img
-                    src="../img/approve-loan.svg"
+                    src="/img/approve-loan.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -335,7 +335,7 @@ const GetLoan = () => {
                   <h1 className="gtstakeNumb">3.</h1>
 
                   <img
-                    src="../img/claim-interest.svg"
+                    src="/img/claim-interest.svg"
                     alt=""
                     className="gtstakeLoan"
                   />
@@ -363,8 +363,8 @@ const GetLoan = () => {
           </a>
         </div>
 
-        <img src="../img/left-back-drop.svg" alt="" className="gtleftBack" />
-        <img src="../img/second-dots.svg" alt="" className="gtsecondDots" />
+        <img src="/img/left-back-drop.svg" alt="" className="gtleftBack" />
+        <img src="/img/second-dots.svg" alt="" className="gtsecondDots" />
       </section>
       {/* How it Works Section End */}
       {/* =================================================================================================================================================================================================================================================================== */}
@@ -384,7 +384,7 @@ const GetLoan = () => {
           >
             <div className="gtbenefitCard1">
               <div className="gtbCardIcon">
-                <img src="../img/b-icon1.svg" alt="" className="gtbIcon" />
+                <img src="/img/b-icon1.svg" alt="" className="gtbIcon" />
               </div>
               <div className="gtbCardTexts">
                 <h1 className="gtbCardTitle">Your loans in 5mins</h1>
@@ -399,7 +399,7 @@ const GetLoan = () => {
 
             <div className="gtbenefitCard2">
               <div className="gtbCardIcon">
-                <img src="../img/b-icon2.svg" alt="" className="gtbIcon" />
+                <img src="/img/b-icon2.svg" alt="" className="gtbIcon" />
               </div>
               <div className="gtbCardTexts">
                 <h1 className="gtbCardTitle">Best Value For Your Assets</h1>
@@ -414,7 +414,7 @@ const GetLoan = () => {
 
             <div className="gtbenefitCard3">
               <div className="gtbCardIcon">
-                <img src="../img/b-icon3.svg" alt="" className="gtbIcon" />
+                <img src="/img/b-icon3.svg" alt="" className="gtbIcon" />
               </div>
               <div className="gtbCardTexts">
                 <h1 className="gtbCardTitle">No guarantor</h1>
@@ -428,7 +428,7 @@ const GetLoan = () => {
 
             <div className="gtbenefitCard4">
               <div className="gtbCardIcon">
-                <img src="../img/b-icon4.svg" alt="" className="gtbIcon" />
+                <img src="/img/b-icon4.svg" alt="" className="gtbIcon" />
               </div>
               <div className="gtbCardTexts">
                 <h1 className="gtbCardTitle">No Interest Rate</h1>
@@ -443,8 +443,8 @@ const GetLoan = () => {
           </div>
         </div>
 
-        <img src="../img/right-back-drop.svg" alt="" className="gtrightBack" />
-        <img src="../img/shape-egg2.svg" alt="" className="gteggShape2" />
+        <img src="/img/right-back-drop.svg" alt="" className="gtrightBack" />
+        <img src="/img/shape-egg2.svg" alt="" className="gteggShape2" />
       </section>
       {/* Benefits Section start */}
       {/* =================================================================================================================================================================================================================================================================== */}
@@ -480,7 +480,7 @@ const GetLoan = () => {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <img src="../img/block-chain.svg" alt="" className="blockChain" />
+              <img src="/img/block-chain.svg" alt="" className="blockChain" />
             </div>
           </div>
         </div>
@@ -499,17 +499,17 @@ const GetLoan = () => {
               data-aos-duration="3000"
             >
               <img
-                src="../img/discount-vector.svg"
+                src="/img/discount-vector.svg"
                 alt=""
                 className="discountVector"
               />{" "}
               <img
-                src="../img/discount-circle.svg"
+                src="/img/discount-circle.svg"
                 alt=""
                 className="discountCircle"
               />
               <img
-                src="../img/discount-card.svg"
+                src="/img/discount-card.svg"
                 alt=""
                 className="discountCard"
               />
@@ -572,7 +572,7 @@ const GetLoan = () => {
               data-aos-duration="3000"
             >
               <img
-                src="../img/atm-cards.png"
+                src="/img/atm-cards.png"
                 alt=""
                 className="atmcard-Image"
               />
@@ -593,17 +593,17 @@ const GetLoan = () => {
               data-aos-duration="3000"
             >
               <img
-                src="../img/savingsCircle.svg"
+                src="/img/savingsCircle.svg"
                 alt=""
                 className="savingsCircle"
               />
               <img
-                src="../img/savingsVector.svg"
+                src="/img/savingsVector.svg"
                 alt=""
                 className="savingsVector"
               />
               <img
-                src="../img/savingsMoney.svg"
+                src="/img/savingsMoney.svg"
                 alt=""
                 className="savingsMoney"
               />
@@ -898,7 +898,7 @@ const GetLoan = () => {
           </div>
         </div>
 
-        <img src="../img/video-dots.svg" alt="" className="gtvidDots" />
+        <img src="/img/video-dots.svg" alt="" className="gtvidDots" />
       </section>
       {/* Stories Section End  */}
       {/* =================================================================================================================================================================================================================================================================== */}
@@ -925,7 +925,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://paidnetwork.com/" target="blank">
                 <img
-                  src="../img/partners/PAIDNETWORK.svg"
+                  src="/img/partners/PAIDNETWORK.svg"
                   alt=""
                   className="gtpartnerLogos   paid"
                 />
@@ -934,7 +934,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://yellowroad.app/" target="blank">
                 <img
-                  src="../img/partners/yellow-road-white.svg"
+                  src="/img/partners/yellow-road-white.svg"
                   alt=""
                   className="gtpartnerLogos yellow"
                 />
@@ -943,7 +943,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://www.threem.capital/" target="blank">
                 <img
-                  src="../img/partners/threecapital-black.svg"
+                  src="/img/partners/threecapital-black.svg"
                   alt=""
                   className="gtpartnerLogos three"
                 />
@@ -952,7 +952,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://buidlhodl.capital/" target="blank">
                 <img
-                  src="../img/partners/build-logo-white.svg"
+                  src="/img/partners/build-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos build"
                 />
@@ -961,7 +961,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://exnetwork.community/" target="blank">
                 <img
-                  src="../img/partners/ex-capital-white.svg"
+                  src="/img/partners/ex-capital-white.svg"
                   alt=""
                   className="gtpartnerLogos ex"
                 />
@@ -970,7 +970,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://ferrum.network/" target="blank">
                 <img
-                  src="../img/partners/ferrum-network-white.svg"
+                  src="/img/partners/ferrum-network-white.svg"
                   alt=""
                   className="gtpartnerLogos ferrum"
                 />
@@ -979,7 +979,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://titans.ventures/" target="blank">
                 <img
-                  src="../img/partners/TITANS2.svg"
+                  src="/img/partners/TITANS2.svg"
                   alt=""
                   className="gtpartnerLogos titans"
                 />
@@ -988,7 +988,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://www.juncapital.io/" target="blank">
                 <img
-                  src="../img/partners/jun-logo-white.svg"
+                  src="/img/partners/jun-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos jun"
                 />
@@ -997,7 +997,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://nuls.medium.com/" target="blank">
                 <img
-                  src="../img/partners/NULS.svg"
+                  src="/img/partners/NULS.svg"
                   alt=""
                   className="gtpartnerLogos nuls"
                 />
@@ -1006,7 +1006,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://launchpool.xyz/" target="blank">
                 <img
-                  src="../img/partners/launchpooldark-image.svg"
+                  src="/img/partners/launchpooldark-image.svg"
                   alt=""
                   className="gtpartnerLogos launch"
                 />
@@ -1015,7 +1015,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="https://www.mantradao.com/" target="blank">
                 <img
-                  src="../img/partners/mantra-logo-white.svg"
+                  src="/img/partners/mantra-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1024,7 +1024,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/resurgence-logo-white.svg"
+                  src="/img/partners/resurgence-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1033,7 +1033,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/QUIVERX.svg"
+                  src="/img/partners/QUIVERX.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1042,7 +1042,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/propel-logo-white.svg"
+                  src="/img/partners/propel-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1051,7 +1051,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/blackdragon-dark.svg"
+                  src="/img/partners/blackdragon-dark.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1060,7 +1060,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/n3rd-logo-white.svg"
+                  src="/img/partners/n3rd-logo-white.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1069,7 +1069,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/MUTUALBENEFITS.svg"
+                  src="/img/partners/MUTUALBENEFITS.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1078,7 +1078,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/skyfast-dark.svg"
+                  src="/img/partners/skyfast-dark.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1087,7 +1087,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/chaos-black.svg"
+                  src="/img/partners/chaos-black.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1096,7 +1096,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/aussie-black.svg"
+                  src="/img/partners/aussie-black.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1105,7 +1105,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/ventures-black.svg"
+                  src="/img/partners/ventures-black.svg"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1114,7 +1114,7 @@ const GetLoan = () => {
             <div className="gtpatLogo">
               <a href="#" target="blank">
                 <img
-                  src="../img/partners/everse-logo-1.png"
+                  src="/img/partners/everse-logo-1.png"
                   alt=""
                   className="gtpartnerLogos  mantra"
                 />
@@ -1124,7 +1124,7 @@ const GetLoan = () => {
         </div>
 
         <img
-          src="../img/partner-circle.svg"
+          src="/img/partner-circle.svg"
           alt=""
           className="gtpartnersCircle"
         />
@@ -1161,7 +1161,7 @@ const GetLoan = () => {
                 <div className="content-img">
                   {" "}
                   <img
-                    src="../img/egoras-logo.svg"
+                    src="/img/egoras-logo.svg"
                     alt=""
                     className="Content"
                   />
@@ -1271,7 +1271,7 @@ const GetLoan = () => {
           </div>
         </div>
 
-        <img src="../img/token-dots.svg" alt="" className="gtcompareDots" />
+        <img src="/img/token-dots.svg" alt="" className="gtcompareDots" />
       </section>
       {/* gtcompare Section End */}
       {/* =================================================================================================================================================================================================================================================================== */}
@@ -1302,12 +1302,12 @@ const GetLoan = () => {
             </div>
 
             <img
-              src="../img/explore-dots.svg"
+              src="/img/explore-dots.svg"
               alt=""
               className="gtexploreDots"
             />
             <img
-              src="../img/explore-shape.svg"
+              src="/img/explore-shape.svg"
               alt=""
               className="gtexploreShape"
             />
