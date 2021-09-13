@@ -14,3 +14,11 @@ li {
 button:focus {
   outline: unset !important;
 }
+
+.jss9 {
+  justify-content: flex-end !important;
+}
+
+.jss8 {
+  width: 100% !important;
+}

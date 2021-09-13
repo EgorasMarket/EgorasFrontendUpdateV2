@@ -294,6 +294,15 @@ vl {
 .makeStyles-drawerPaper-8 {
   width: 100% !important;
 }
+
+.jss9 {
+  justify-content: flex-end !important;
+}
+
+.jss8 {
+  width: 100% !important;
+}
+
 /* .benefitsSection .container-md,
 .container-sm,
 .container {
