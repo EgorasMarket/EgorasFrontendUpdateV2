@@ -3,16 +3,18 @@
 @media screen and (max-width: 1245px) {
   /* hero  Section Start */
   .gtheroSection {
-    padding: 6em 6em;
+    padding: 12em 4em;
+    padding-bottom: 3em;
   }
   .gtheroTitleloan {
     font-size: 45px;
   }
   .gtheroCaption {
-    font-size: 12px;
+    font-size: 16px;
   }
   .gtheroPara {
-    font-size: 11px;
+    font-size: 14px;
+    font-weight: 700;
   }
   .getLoan {
     font-size: 13px;
@@ -30,7 +32,7 @@
   }
   .gtdebitCard {
     width: 200px;
-    right: -80px;
+    right: -104px;
   }
   .gtcard-amount {
     width: 60%;
@@ -56,6 +58,7 @@
 
   .collateralize {
     padding: 2em 4em;
+    padding-top: 1em;
   }
   .collateral-txt {
     font-size: 40px;
@@ -87,7 +90,7 @@
     font-size: 12px;
   }
   .gthowItWorksBtns {
-    width: 35%;
+    width: 25%;
   }
 
   .gtgetStartedButton {
@@ -152,22 +155,30 @@
   .savingsSection {
     padding: 4em 6em;
   }
+  .savingsSection2 {
+    padding: 4em 6em;
+  }
   .savingsArea {
+    margin: 0;
+  }
+  .savingsArea2 {
     margin: 0;
   }
 
   /* savings section */
 
   /* stories section */
-
+  .gtstoriesSection {
+    padding: 2em 2em;
+  }
   .gtseemoreStoriesbtn {
     font-size: 14px;
   }
   /* stories section */
 
-  .gthowItWorksTitle {
+  /* .gthowItWorksTitle {
     margin-bottom: 100px;
-  }
+  } */
   /* partners section end */
 
   /* compare section start */
@@ -181,10 +192,71 @@
   .content-img {
     margin-left: 20px;
   }
+  .gtcompareSection {
+    padding: 4em 2em;
+  }
+  .gtexploreSection {
+    padding: 4em 2em;
+  }
   /* compare section end */
 }
 
 @media screen and (max-width: 1088px) {
+  /* compare section */
+  .compareCardContent1 {
+    padding-left: 18em;
+  }
+  .cardContentTitles {
+    margin-right: 0;
+  }
+  /* compare section */
+}
+@media screen and (max-width: 1059px) {
+  /* hero section  */
+
+  .gtheroSection {
+    padding: 12em 2em;
+    padding-bottom: 3em;
+  }
+
+  /* hero section  */
+
+  /* colateral section */
+  .collateralize {
+    padding: 2em 2em;
+  }
+  .collateral-txt {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+  }
+  .collat {
+    color: #229e54;
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  /* colateral section */
+
+  .gtleftBack {
+    width: 400px;
+  }
+  .gthowItWorksBtns {
+    width: 30%;
+  }
+
+  .discountSection {
+    padding: 4em 4em;
+  }
+  .atmCards {
+    padding: 4em 4em;
+  }
+  .savingsSection {
+    padding: 4em 4em;
+  }
+  .savingsSection2 {
+    padding: 4em 2em;
+  }
   /* compare section */
   .compareCardContent1 {
     padding-left: 18em;
@@ -202,9 +274,13 @@
   }
   /* hero section end */
 
+  .container {
+    max-width: 942px !important;
+  }
+
   /* how it works section start */
   .gthowItWorksBtns {
-    width: 40%;
+    width: 30%;
   }
   /* how it works section end */
 
@@ -255,28 +331,33 @@
   }
 
   /* compare section end */
+  .gtexploreSection {
+    padding: 4em 4em;
+  }
 }
 
 @media screen and (max-width: 950px) {
   /* hero section start */
-  .gtheroSection {
+  /* .gtheroSection {
     padding: 4em 4em;
-  }
+  } */
   .gtheroPhone {
     width: 180px;
   }
   .gtdebitCard {
     width: 180px;
-    right: -70px;
+    right: -87px;
   }
-
+  .gtcircle {
+    top: -68px;
+  }
   .gtbottomCards {
     width: 85%;
   }
 
   .gteggShape {
     width: 410px;
-    right: -90px;
+    right: -107px;
   }
 
   .gtcard-amount {
@@ -292,9 +373,10 @@
   /* hero section end */
   /* getloan section start */
 
-  .collateralize {
+  /* .collateralize {
     padding: 2em 4em;
-  }
+  } */
+
   .collateral-txt {
     font-size: 32px;
   }
@@ -312,7 +394,7 @@
   /* getloan section end */
   /* how it works section start */
   .gthowItWorksBtns {
-    width: 50%;
+    width: 35%;
   }
 
   /* how it works section end */
@@ -328,6 +410,10 @@
   /* benefits section start */
 
   /* discount section */
+  .discountSection {
+    padding: 2em 2em;
+    padding-left: 4em;
+  }
 
   .discountTxt {
     font-size: 32px;
@@ -335,26 +421,33 @@
   }
   .discountCircle {
     right: -30px;
-    width: 360px;
+    width: 310px;
     bottom: 1px;
   }
   .discountVector {
-    width: 300px;
+    width: 250px;
     position: relative;
     z-index: 3;
   }
   .discountCard {
     position: absolute;
-    width: 200px;
+    width: 150px;
     right: 53px;
     z-index: 2;
     top: -89px;
     box-shadow: 0px 0px 10px #e2e2e2;
   }
 
+  .blockChain {
+    width: 350px;
+  }
   /* discount section */
 
   /* atm cards section */
+
+  .atmCards {
+    padding: 2em 2em;
+  }
   .atmcard-Image {
     width: 350px;
   }
@@ -366,6 +459,10 @@
   /* atm cards section */
 
   /* savings section */
+
+  .savingsSection {
+    padding: 2em 2em;
+  }
   .savingsCircle {
     width: 300px;
   }
@@ -402,50 +499,103 @@
     padding-left: 14em;
     padding-right: 3em;
   }
+  .gtcompareSection {
+    padding: 4em 2em;
+  }
   /* compare section */
+  .gtexploreSection {
+    padding: 4em 2em;
+  }
 }
 
-@media screen and (max-width: 869px) {
+@media screen and (max-width: 890px) {
   /* hero section start */
   .gtheroArea {
-    display: grid;
+    display: flex;
     position: relative;
     /* flex-flow: column; */
+    align-items: center;
     justify-items: center;
-    justify-content: center;
-    margin-bottom: 100px;
+    justify-content: space-between;
+    margin-bottom: 0;
     grid-row-gap: 100px;
   }
-
-  .gtbottomCards {
-    width: 85%;
+  .gtheroTitleloan {
+    font-size: 38px;
+    /* width: 80%; */
   }
-.joinCommunitybtnsLinks{
-
-  display: grid;
-  grid-row-gap: 20px;
-}
-
+  /* .gtheroPara {
+    width: 80%;
+  } */
+  .interestFree2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #000;
+  }
+  .gtheroPhone {
+    width: 150px;
+  }
+  .gteggShape {
+    width: 380px;
+  }
+  .gtdebitCard {
+    top: 0px;
+    width: 160px;
+    right: -87px;
+  }
+  .gtdots {
+    width: 150px;
+  }
+  .gtx {
+    left: -124px;
+    bottom: 247px;
+  }
+  .gtcircle {
+    top: -90px;
+    left: -111px;
+  }
+  /* .gtbottomCards {
+    width: 85%;
+  } */
   /* hero section end */
 
   /* how it works section start */
+  .gthowItWorks {
+    padding-top: 6em;
+  }
   .gthowItWorksArea {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-row-gap: 50px;
+    /* justify-content: space-around; */
+    align-items: center;
   }
   .gttitle {
-    font-size: 24px;
+    font-size: 48px;
     font-weight: 800;
   }
   .gtgetStartedButton {
     width: 25%;
   }
   .gthowItWorksArea2 {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-row-gap: 50px;
+    /* justify-content: space-around; */
+    align-items: center;
   }
   .gtgetStartedButton {
     width: 25%;
+  }
+  .gthowCard1Texts,
+  .gthowCard2Texts,
+  .gthowCard3Texts {
+    text-align: center;
+  }
+  .gthowCard1Title,
+  .gthowCard2Title,
+  .gthowCard3Title {
+    justify-content: center;
   }
   /* how it works section end */
   /* getloan section start */
@@ -454,13 +604,19 @@
     padding: 2em 4em;
   }
   .collateral-area {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     position: relative;
     justify-items: center;
     justify-content: center;
-    grid-row-gap: 100px;
+    grid-row-gap: 50px;
+    flex-direction: column-reverse;
   }
   .collateral-txt {
+    font-size: 40px;
+    text-align: center;
+  }
+  .collat {
     font-size: 40px;
   }
 
@@ -478,12 +634,16 @@
   /* benefits sectio  start */
 
   .gtbenefitsArea {
-    display: grid;
-    justify-content: center;
+    display: flex;
+    /* justify-content: center; */
     grid-row-gap: 50px;
+    flex-direction: column;
+    align-items: center;
   }
   .gtbCardPara {
     font-size: 14px;
+    margin-top: 20px;
+    font-weight: 600;
   }
 
   .gtbenefitCard2,
@@ -491,56 +651,126 @@
   .gtbenefitCard3,
   .gtbenefitCard4 {
     width: 50%;
-    padding: 3em;
-    height: 100%;
+    padding: 3em 2em;
+    height: 500px;
     margin-bottom: 20px;
     margin: auto;
+    text-align: center;
   }
 
   .gtbCardTitle {
-    font-size: 20px;
+    font-size: 30px;
   }
   /* benefits sectio  end */
 
   /* discount section */
 
   .discountArea {
-    display: grid;
-    position: relative;
-    justify-items: center;
-    justify-content: center;
-    grid-row-gap: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    grid-row-gap: 150px;
+    /* justify-content: space-around; */
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
   }
   .discountSection {
-    padding: 6em 4em;
+    padding: 4em 4em;
   }
 
+  .discount-para {
+    /* font-size: 14px; */
+    font-size: 14px;
+    line-height: 25px;
+  }
   /* discount section */
 
   /* atm cards section */
   .atmCardsArea {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    justify-items: center;
-    justify-content: center;
-    grid-row-gap: 100px;
+    /* justify-items: center; */
+    /* justify-content: center; */
+    grid-row-gap: 50px;
+    text-align: center;
   }
 
   .atmCards {
     padding: 6em 4em;
   }
-
+  .atmCards-para {
+    font-size: 14px;
+    line-height: 25px;
+  }
   /* atm cards section */
-
-  /* savings section */
-  .savingsArea {
-    display: grid;
+  .discountCircle {
+    right: -30px;
+    width: 360px;
+    bottom: 1px;
+  }
+  .discountVector {
+    width: 300px;
     position: relative;
-    justify-items: center;
-    justify-content: center;
+    z-index: 3;
+  }
+  .discountCard {
+    position: absolute;
+    width: 200px;
+    right: 53px;
+    z-index: 2;
+    top: -89px;
+    box-shadow: 0px 0px 10px #e2e2e2;
+  }
+  .blockChain {
+    width: 400px;
+  }
+  .atmcard-Image {
+    width: 400px;
+  }
+  .savingsCircle {
+    width: 350px;
+  }
+  .savingsVector {
+    width: 340px;
+  }
+  .savingsMoney {
+    width: 200px;
+    right: 113px;
+  }
+  /* savings section */
+  .atmCardsArea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* justify-items: center; */
+    /* justify-content: center; */
     grid-row-gap: 100px;
+    align-items: center;
+    text-align: center;
+  }
+  .savingsArea2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    grid-row-gap: 50px;
+    text-align: center;
+  }
+  .savingsArea {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    align-items: center;
+    grid-row-gap: 50px;
+    text-align: center;
   }
 
+  .savings-para {
+    font-size: 14px;
+    line-height: 25px;
+    /* font-size: 16px; */
+  }
   .savingsSection {
     padding: 6em 4em;
   }
@@ -558,7 +788,7 @@
 
   /* explore section start */
   .gtexploreShape {
-    width: 60%;
+    width: 45%;
   }
   .gtexploreArea {
     padding: 2em;
@@ -576,6 +806,47 @@
 }
 
 @media screen and (max-width: 780px) {
+  .gtheroTitleloan {
+    font-size: 34px;
+    width: 100%;
+  }
+  .interestFree2 {
+    font-size: 34px;
+  }
+  .joinCommunitybtnsTitle {
+    font-size: 26px;
+  }
+  .gtheroPara {
+    width: 100%;
+    font-size: 12px;
+  }
+  .gtheroPhone {
+    width: 120px;
+    top: -4px;
+    right: -23px;
+  }
+  .gteggShape {
+    width: 300px;
+    right: -92px;
+    bottom: 9px;
+  }
+  .gtdebitCard {
+    top: 0px;
+    width: 130px;
+    right: -72px;
+  }
+  .gtdots {
+    width: 150px;
+    left: -59px;
+  }
+  .gtx {
+    left: -85px;
+    bottom: 210px;
+  }
+  .gtcircle {
+    top: -90px;
+    left: -51px;
+  }
   .compareCardContent1 {
     padding-left: 14em;
   }
@@ -584,17 +855,71 @@
   }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 767px) {
   /* hero section start */
-  .gtbottomCards {
+  .gtheroArea {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    /* flex-flow: column; */
+    align-items: center;
+    /* justify-items: center; */
+    /* justify-content: space-between; */
+    margin-bottom: 0;
+    grid-row-gap: 50px;
+    text-align: center;
+  }
+  .gtheroSection {
+    padding: 8em 2em;
+    padding-bottom: 4em;
+  }
+  .gtherobuttons {
+    justify-content: center;
+    /* font-size: 16px; */
+  }
+  .gtheroTitleloan {
+    font-size: 48px;
     width: 100%;
+  }
+  .interestFree2 {
+    font-size: 48px;
+  }
+  .joinCommunitybtnsTitle {
+    font-size: 28px;
+  }
+  .gtheroPara {
+    width: 100%;
+    font-size: 16px;
+  }
+  .gtconnect {
+    padding: 1.15em 3em;
+    font-size: 16px;
+  }
+  .gtheroCaption {
+    font-size: 18px;
+  }
+  .gtheroPhone {
+    width: 200px;
+  }
+  .gteggShape {
+    width: 460px;
+    bottom: 10px;
+    right: -151px;
+  }
+  .gtdebitCard {
+    width: 200px;
+    right: -135px;
+    top: 16px;
+  }
+  .gtdots {
+    width: 200px;
   }
 
   /* hero section end */
 
   /* how it works section start */
   .gthowItWorksBtns {
-    width: 70%;
+    width: 35%;
   }
   .gtbtn1,
   .gtbtn2 {
@@ -602,6 +927,13 @@
   }
   .gtbtn1.active {
     font-size: 10px;
+  }
+
+  .gtbenefitCard2,
+  .gtbenefitCard1,
+  .gtbenefitCard3,
+  .gtbenefitCard4 {
+    width: 70%;
   }
   /* how it works section end */
 
@@ -619,12 +951,18 @@
   .teamCaro {
     align-items: center;
   }
+  .gtstoriesSection {
+    padding: 2em 0em;
+  }
 
+  .gtbCardPara {
+    font-size: 16px;
+  }
   /* partners area end */
 
   /* compare section */
   .gtcompareSection {
-    padding: 4em 4em;
+    padding: 4em 2em;
   }
   .cardContentTitles {
     font-size: 18px;
@@ -636,115 +974,151 @@
   /* compare section */
 }
 @media screen and (max-width: 645px) {
-  /* hero section start */
-
-  .gtheroTitleloan {
-    font-size: 34px;
-  }
-
-  .gtcard1,
-  .gtcard2 {
-    padding: 4em 1em 2em 1em;
-  }
   .gteggShape {
-    width: 350px;
-    right: -55px;
+    width: 460px;
+    bottom: 10px;
+    right: -113px;
+  }
+  .gtheroTxts {
+    width: 100%;
+  }
+  .gtheroPhone {
+    right: 17px;
+  }
+  .gtdebitCard {
+    right: -97px;
+  }
+  .interestFree2 {
+    font-size: 52px;
+  }
+  .gtheroTitleloan {
+    font-size: 52px;
+    width: 100%;
+  }
+  .gtx {
+    left: -117px;
   }
 
-  .gthero-images {
-    position: relative;
-    margin-right: 0;
+  .gtheroSection {
+    padding: 10em 0em;
+    padding-bottom: 6em;
   }
-
-  /* hero section end */
-
-  /* getloan section start */
-
-  .collat-vector {
-    width: 400px;
-  }
-
-  .collat-circle {
-    width: 300px;
-    position: absolute;
-    left: 49px;
-    z-index: -1;
-    bottom: 14px;
-  }
-  /* getloan section end */
-
-  .gthowItWorksBtns {
-    padding: 0.5em 0.25em;
-  }
-
-  .gtgetStartedButton {
-    width: 40%;
-  }
-  .gtrightBack {
-    width: 60%;
-  }
-
-  .gtleftBack {
-    width: 50%;
-  }
-  .gtprojectsLink {
-    font-size: 12px;
-  }
-
-  /* benefit section */
+  /* hero section start */
   .gtbenefitCard2,
   .gtbenefitCard1,
   .gtbenefitCard3,
   .gtbenefitCard4 {
     width: 70%;
   }
-  /* benefit section */
-
-  /* stories section */
-  .storiesCard {
-    margin-top: 50px;
+  .gthowItWorksBtns {
+    width: 40%;
   }
-  .gtseemoreStoriesbtn {
-    font-size: 12px;
-  }
-  /* stories section */
-  .gtgood {
-    font-size: 30px;
+  .gthowCard1Texts,
+  .gthowCard2Texts,
+  .gthowCard3Texts {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
   }
 
-  .gtexploreLink {
-    margin-top: 25%;
+  .gthowCard1TextsP,
+  .gthowCard2TextsP,
+  .gthowCard3TextsP,
+  .howCard1TextsP,
+  .howCard2TextsP,
+  .howCard3TextsP {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
   }
-
-  .gtexploreLoansbtn {
-    font-size: 12px;
+  .gteggShape2 {
+    top: -115px;
   }
-
-  .footerSection {
-    padding: 3em;
-  }
-
   /* compare section */
   .compareCardContent1 {
     padding-left: 9em;
   }
+  .collateralize {
+    padding: 2em 0em;
+  }
+  .collateral-txt {
+    font-size: 48px;
+    text-align: center;
+    line-height: 60px;
+  }
+  .collat-para {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .collat {
+    font-size: 48px;
+  }
+  .savingsSection2 {
+    padding: 4em 0em;
+  }
+  .savings-para {
+    font-size: 18px;
+    line-height: 28px;
+    /* font-size: 16px; */
+  }
+  .savingsText {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .savingsSection {
+    padding: 4em 0em;
+  }
+
+  .discountSection {
+    padding: 4em 0em;
+  }
+  .discountTxt {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .discount-para {
+    /* font-size: 14px; */
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .atmCards {
+    padding: 4em 0em;
+  }
+  .egr {
+    font-size: 48px;
+  }
+  .atmCardsTxt {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .atmCards-para {
+    font-size: 18px;
+    line-height: 28px;
+  }
   /* compare section */
 }
 @media screen and (max-width: 565px) {
-  .gtheroSection {
+  /* .gtheroSection {
     padding: 4em 2em;
-  }
+  } */
   .gtsupport {
     font-size: 16px;
     margin-right: 10px;
   }
-  .gtdebitCard {
+  .gtheroSection {
+    padding: 10em 0em;
+    padding-bottom: 4em;
+  }
+  /* .gtdebitCard {
     width: 165px;
     right: -49px;
-  }
-  .gtheroPhone {
+  } */
+  /* .gtheroPhone {
     width: 165px;
-  }
+  } */
   /* .heroPhone {
     width: 300px;
     margin-right: 0px;
@@ -770,15 +1144,48 @@
     padding: 4em 1em;
   }
 
+  .collat-para {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .savings-para {
+    font-size: 16px;
+    line-height: 28px;
+    /* font-size: 16px; */
+  }
+  .discount-para {
+    /* font-size: 14px; */
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .atmCards-para {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .gtbenefitCard2,
+  .gtbenefitCard1,
+  .gtbenefitCard3,
+  .gtbenefitCard4 {
+    width: 90%;
+  }
+  .gthowItWorksBtns {
+    width: 60%;
+  }
+
+  .gtexploreSection {
+    padding: 2em 0em;
+  }
   /* compare section */
 }
 
 /* 2nd break point ========================================= */
 @media screen and (max-width: 463px) {
   .gtheroTitleloan {
-    font-size: 30px;
+    font-size: 38px;
   }
-
+  .interestFree2 {
+    font-size: 38px;
+  }
   .gtbottomCards {
     display: none;
   }
@@ -791,40 +1198,254 @@
   .gtheroCard {
     display: flex;
   }
-
-  .joinCommunitybtnsLinks{
-
-    display: grid;
-    grid-row-gap: 20px;
+  .gtbenefitsSection {
+    padding: 4em 0em;
   }
-
   /* compare section */
   .cardContentTitles {
     font-size: 14px;
   }
-  /* compare section */
+
+  .gteggShape {
+    width: 410px;
+    bottom: 10px;
+    right: -109px;
+  }
+  .gtheroPhone {
+    width: 150px;
+  }
+  .gtdebitCard {
+    right: -78px;
+    top: -1px;
+    width: 160px;
+  }
+  .gtheroPara {
+    width: 100%;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0em 2em;
+  }
+
+  .collateral-txt {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .collat {
+    font-size: 36px;
+  }
+
+  .egr {
+    font-size: 36px;
+  }
+  .savingsText {
+    font-size: 36px;
+  }
+  .savings-para {
+    padding: 0em 1em;
+  }
+  .discountTxt {
+    font-size: 36px;
+  }
+  .atmCardsTxt {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .gtcompareSection {
+    padding: 4em 0em;
+  }
+  .gttitle {
+    font-size: 36px;
+  }
+  .collat-para {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0em 1em;
+  }
+  .gtcompareDots {
+    top: -139px;
+    width: 100px;
+  }
+  .gtexploreLink {
+    margin-top: 50px;
+    transition: 0.5s ease-in-out;
+  }
+  .gtgood {
+    font-size: 40px;
+    font-weight: 500;
+  }
 }
+/* compare section */
 
 @media screen and (max-width: 432px) {
   .gtheroTitle {
     font-size: 32px;
   }
+  .gtheroSection {
+    padding: 7em 0em;
+    padding-bottom: 2em;
+  }
+  .gtheroPara {
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0em 3em;
+  }
+  .gtconnect {
+    padding: 0.5em 2em;
+    font-size: 16px;
+  }
+  .gtcircle {
+    width: 40px;
+    top: -57px;
+    left: -51px;
+  }
+  .gtgreenCircle {
+    position: absolute;
+    bottom: 15%;
+    right: -41px;
+  }
+  .gtx {
+    left: -73px;
+  }
 
+  .gtdebitCard {
+    right: -42px;
+    top: 5px;
+    width: 134px;
+  }
+  .gtheroPhone {
+    width: 128px;
+  }
+  .gteggShape {
+    width: 314px;
+    bottom: 8px;
+    right: -60px;
+  }
+  .collat-circle {
+    width: 236px;
+    left: 52px;
+    bottom: 10px;
+  }
+  .collat-vector {
+    width: 350px;
+  }
+  .collat-para {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0;
+  }
   .gthowItWorksTitle {
     margin-bottom: 0px;
   }
-  .gthowItWorksBtns {
-    width: 80%;
+  .gthowCard1TextsP,
+  .gthowCard2TextsP,
+  .gthowCard3TextsP,
+  .howCard1TextsP,
+  .howCard2TextsP,
+  .howCard3TextsP {
     margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #7e7e7e;
+  }
+  .gthowCard1Texts,
+  .gthowCard2Texts,
+  .gthowCard3Texts {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .gthowItWorksBtns {
+    width: 65%;
+  }
+  .gtbCardPara {
+    font-size: 14px;
   }
 
+  .gtbCardTitle {
+    font-size: 26px;
+  }
+
+  .savingsText {
+    font-size: 36px;
+  }
+  .discount-para {
+    font-size: 14px;
+    /* font-size: 16px; */
+    line-height: 25px;
+  }
+  .egr {
+    font-size: 36px;
+  }
+  .gtgetStartedButton {
+    width: 40%;
+  }
+  .savings-para {
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 0;
+    /* font-size: 16px; */
+  }
+
+  .blockChain {
+    width: 300px;
+  }
+  .discountTxt {
+    font-size: 36px;
+  }
+  .discountCard {
+    width: 130px;
+  }
+  .discountCircle {
+    width: 290px;
+  }
+  .discountVector {
+    width: 230px;
+  }
+  .atmCardsTxt {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .atmCards-para {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .atmCards {
+    padding: 4em 0em;
+  }
+  .savingsSection {
+    padding: 4em 0em;
+  }
+  .atmcard-Image {
+    width: 300px;
+  }
+  .savingsCircle {
+    width: 290px;
+  }
+
+  .savingsVector {
+    width: 280px;
+  }
+
+  .savingsMoney {
+    width: 140px;
+    right: 113px;
+  }
+  /* .gthowItWorksBtns {
+    width: 80%;
+    margin-top: 20px;
+  } */
+
   /* benefits section */
-  .gtbenefitCard2,
+  /* .gtbenefitCard2,
   .gtbenefitCard1,
   .gtbenefitCard3,
   .gtbenefitCard4 {
     padding: 1em;
-  }
+  } */
   /* benefits section */
 
   /* stories section */
@@ -835,236 +1456,48 @@
   /* stories section */
 
   .gtpartnersSection {
-    padding: 3em;
+    padding: 2em 0em;
     position: relative;
   }
 
-  .gtexploreSection {
-    padding: 3em;
-  }
   .gteggShape2 {
     width: 30%;
   }
-}
 
+  .gtbenefitCard2,
+  .gtbenefitCard1,
+  .gtbenefitCard3,
+  .gtbenefitCard4 {
+    width: 95%;
+  }
+  .gtbenefitCard2,
+  .gtbenefitCard1,
+  .gtbenefitCard3,
+  .gtbenefitCard4 {
+    height: 100%;
+  }
+  .gtleftBack {
+    width: 250px;
+  }
+}
 /* 3rd break point ========================================= */
 @media screen and (max-width: 390px) {
-  .gtheroPhone {
-    width: 150px;
+  .gtheroPara {
+    padding: 0em 0em;
   }
 
-  .gteggShape {
-    width: 250px;
-    right: -72px;
-  }
-
-  .gtdots {
-    width: 150px;
-    left: -30px;
-  }
-  .gtcard1,
-  .gtcard2 {
-    padding: 2em 1em 2em 1em;
-  }
-  .gteggShape {
-    right: -22px;
-  }
-  .gthowItWorksBtns {
-    width: 60%;
-  }
-
-  .gtbtn1,
-  .gtbtn2 {
-    padding: 0.5em 1em;
-  }
-  .gtbtn1.active {
-    padding: 0.5em 1em;
-  }
-  .gteggShape {
-    width: 270px;
-  }
-
-  .joinCommunitybtnsLinks{
-
-    display: grid;
-    grid-row-gap: 20px;
-  }
-
-  .gtheroPhone {
-    width: 130px;
-    bottom: 0px;
-  }
-
-  .gtdebitCard {
-    width: 130px;
-    right: -21px;
-    bottom: 48px;
-  }
-  .gtbCardPara {
-    font-size: 12px;
-  }
-
-  .gtheroArea {
-    grid-row-gap: 50px;
-  }
-  /* collateral section  */
-  .collateral-txt {
-    font-size: 28px;
-    line-height: 30px;
-  }
-  .collat-para {
-    font-size: 10px;
-  }
-  .collat-btn {
-    font-size: 12px;
-  }
-  .collateralize {
-    padding: 2em 2em;
-  }
   .collat-circle {
     width: 180px;
-    position: absolute;
-    left: 49px;
-    z-index: -1;
-    bottom: 6px;
-  }
-
-  .collateral-area {
-    grid-row-gap: 50px;
+    left: 46px;
+    bottom: 7px;
   }
   .collat-vector {
     width: 280px;
   }
-  /* collateral section  */
 
-  .gtgetStartedButton {
-    font-size: 10px;
-    width: 50%;
+  .gthowItWorksBtns {
+    width: 90%;
   }
-
-  .gtexploreLoansbtn {
-    font-size: 12px;
-    padding: 0.5em 1em;
-  }
-
-  /* stories section */
-
-  .gtseemoreStoriesbtn {
-    font-size: 8px;
-  }
-  .gtstoriesSection {
-    padding: 1em 1em;
-  }
-  .carouselLinkbtn {
-    font-size: 12px;
-  }
-
-  /* stories section */
-  /* benefits section */
-  .gtbCardPara {
-    font-size: 12px;
-  }
-
-  .gtbCardTitle {
-    font-size: 16px;
-  }
-  /* benefits section */
-
-  /* discount section */
-
-  .discountSection {
-    padding: 4em 2em;
-  }
-  .discountTxt {
-    font-size: 28px;
-    line-height: 35px;
-  }
-  .discount-para {
-    font-size: 12px;
-  }
-
-  .discountArea {
-    margin: 0;
-    /* margin-top: 100px; */
-  }
-  .discount-btn {
-    font-size: 14px;
-  }
-
-  .discountCard {
-    position: absolute;
-    width: 150px;
-    right: 55px;
-    z-index: 2;
-    top: -65px;
-    box-shadow: 0px 0px 10px #e2e2e2;
-  }
-  .discountVector {
-    width: 250px;
-    position: relative;
-    z-index: 3;
-  }
-  .discountCircle {
-    right: -23px;
-    width: 296px;
-    bottom: -1px;
-  }
-  /* discount section */
-
-  /* atm section */
-
-  .atmCards {
-    padding: 4em 2em;
-  }
-
-  .atmcard-Image {
-    width: 250px;
-  }
-
-  .atmCardsTxt {
-    font-size: 28px;
-    line-height: 40px;
-  }
-
-  .egr {
-    color: #229e54;
-    font-size: 28px;
-    font-weight: 800;
-  }
-  .atmCards-para {
-    font-size: 12px;
-  }
-  /* atm section */
-
-  /* savings section */
-
-  .savingsSection {
-    padding: 4em 2em;
-  }
-
-  .savingsText {
-    font-size: 28px;
-    line-height: 40px;
-  }
-
-  .savings-para {
-    font-size: 12px;
-  }
-
-  .savingsVector {
-    width: 240px;
-  }
-
-  .savingsCircle {
-    width: 250px;
-  }
-
-  .savingsMoney {
-    width: 100px;
-    right: 101px;
-  }
-  /* savings section */
-
   /* compare section */
   .compareCardContent1 {
     padding-left: 6em;

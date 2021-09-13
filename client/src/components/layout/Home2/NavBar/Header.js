@@ -13,14 +13,13 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-
-import Button from '@material-ui/core/Button';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-import Grow from '@material-ui/core/Grow';
-import Paper from '@material-ui/core/Paper';
-import Popper from '@material-ui/core/Popper';
-import MenuItem from '@material-ui/core/MenuItem';
-import MenuList from '@material-ui/core/MenuList';
+import Button from "@material-ui/core/Button";
+import ClickAwayListener from "@material-ui/core/ClickAwayListener";
+import Grow from "@material-ui/core/Grow";
+import Paper from "@material-ui/core/Paper";
+import Popper from "@material-ui/core/Popper";
+import MenuItem from "@material-ui/core/MenuItem";
+import MenuList from "@material-ui/core/MenuList";
 
 // =======================
 import List from "@material-ui/core/List";
@@ -111,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
 
 const useStyles2 = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    display: "flex",
   },
   paper: {
     marginRight: theme.spacing(2),
@@ -227,8 +226,6 @@ const Header = () => {
     setAnchorEl1(null);
   };
 
-
-
   const [open12, setOpen12] = React.useState(false);
   const anchorRef12 = React.useRef(null);
 
@@ -245,7 +242,7 @@ const Header = () => {
   };
 
   function handleListKeyDown(event) {
-    if (event.key === 'Tab') {
+    if (event.key === "Tab") {
       event.preventDefault();
       setOpen12(false);
     }
@@ -260,8 +257,6 @@ const Header = () => {
 
     prevOpen12.current = open12;
   }, [open12]);
-
-
 
   const [open13, setOpen13] = React.useState(false);
   const anchorRef13 = React.useRef(null);
@@ -279,7 +274,7 @@ const Header = () => {
   };
 
   function handleListKeyDown(event) {
-    if (event.key === 'Tab') {
+    if (event.key === "Tab") {
       event.preventDefault();
       setOpen13(false);
     }
@@ -294,14 +289,20 @@ const Header = () => {
 
     prevOpen13.current = open13;
   }, [open13]);
-  
 
   return (
     <div id="Header">
       <section className="headerSection">
         <div className="container-fluid header">
           <div className="header-area">
-            <img src="/img/egoras-logo.svg" alt="..." className="egr-logo2" />
+            <a href="/" className="egrLogo2Cont">
+              <img
+                src="/img/egoras-logo.svg"
+                alt="..."
+                className="egr-logo2"
+              />
+            </a>
+
             <ul className="headerLinks">
               <a href="/">
                 {" "}
@@ -342,89 +343,129 @@ const Header = () => {
           </ul> */}
 
             <ul className="headerButtons">
-            {/* <div className="product">
+              {/* <div className="product">
                   Products
                   <ArrowDropDownIcon />
                 </div> */}
 
-              
-                <Button
-                  ref={anchorRef12}
-                  aria-controls={open12 ? 'menu-list-grow' : undefined}
-                  aria-haspopup="true"
-                  onClick={handleToggle12}
-                >
-                  Products
-                  <ArrowDropDownIcon />
-                </Button>
-                <Popper style={{width: '40%'}} open={open12} anchorEl={anchorRef12.current} role={undefined} transition disablePortal>
-                  {({ TransitionProps, placement }) => (
-                    <Grow
-                      {...TransitionProps}
-                      style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-                    >
-                      <Paper>
-                        <ClickAwayListener onClickAway={handleClose12}>
-                          <MenuList autoFocusItem={open12} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                            <MenuItem>Borrower</MenuItem>
-                            <hr class='my-1' />
-                            <MenuItem onClick={handleClose12}>
-                              <a href='https://egoras.ng/appointment' className='borrower'>Get Loan</a>
-                            </MenuItem>
-                            <MenuItem>Validator</MenuItem>
-                            <hr class='my-1' />
-                            <MenuItem onClick={handleClose12}>
-                              <a href='/explore' className='borrower'>Explore loans</a>
-                            </MenuItem>
-                          </MenuList>
-                        </ClickAwayListener>
-                      </Paper>
-                    </Grow>
-                  )}
-                </Popper>
-
+              <Button
+                ref={anchorRef12}
+                aria-controls={open12 ? "menu-list-grow" : undefined}
+                aria-haspopup="true"
+                onClick={handleToggle12}
+              >
+                Products
+                <ArrowDropDownIcon />
+              </Button>
+              <Popper
+                style={{ width: "40%" }}
+                open={open12}
+                anchorEl={anchorRef12.current}
+                role={undefined}
+                transition
+                disablePortal
+              >
+                {({ TransitionProps, placement }) => (
+                  <Grow
+                    {...TransitionProps}
+                    style={{
+                      transformOrigin:
+                        placement === "bottom" ? "center top" : "center bottom",
+                    }}
+                  >
+                    <Paper>
+                      <ClickAwayListener onClickAway={handleClose12}>
+                        <MenuList
+                          autoFocusItem={open12}
+                          id="menu-list-grow"
+                          onKeyDown={handleListKeyDown}
+                        >
+                          <MenuItem className="BorrowClass">Borrower</MenuItem>
+                          <hr class="my-1" />
+                          <MenuItem onClick={handleClose12}>
+                            <a
+                              href="https://egoras.ng/appointment"
+                              className="borrower"
+                            >
+                              Get Loan
+                            </a>
+                          </MenuItem>
+                          <MenuItem className="validatorClass">
+                            Validator
+                          </MenuItem>
+                          <hr class="my-1" />
+                          <MenuItem onClick={handleClose12}>
+                            <a href="/explore" className="borrower">
+                              Explore loans
+                            </a>
+                          </MenuItem>
+                        </MenuList>
+                      </ClickAwayListener>
+                    </Paper>
+                  </Grow>
+                )}
+              </Popper>
 
               {/* <div className="product">
-                  Company
-                  <ArrowDropDownIcon />
-                </div> */}
+                                                                                                                        Company
+                                                                                                                        <ArrowDropDownIcon />
+                                                                                                                      </div> */}
 
-                <Button
-                  ref={anchorRef13}
-                  aria-controls={open13 ? 'menu-list-grow' : undefined}
-                  aria-haspopup="true"
-                  onClick={handleToggle13}
-                >
-                  Company
-                  <ArrowDropDownIcon />
-                </Button>
-                <Popper style={{width: '40%'}} open={open13} anchorEl={anchorRef13.current} role={undefined} transition disablePortal>
-                  {({ TransitionProps, placement }) => (
-                    <Grow
-                      {...TransitionProps}
-                      style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-                    >
-                      <Paper>
-                        <ClickAwayListener onClickAway={handleClose13}>
-                          <MenuList autoFocusItem={open13} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                            <MenuItem onClick={handleClose13}>
-                              <a href='/about' className='borrower'>About Us</a>
-                            </MenuItem>
-                            <hr className='my-1' />
-                            <MenuItem onClick={handleClose13}>
-                              <a href='https://t.me/egorasmarket' className='borrower'>Blog</a>
-                            </MenuItem>
-                            
-                          </MenuList>
-                        </ClickAwayListener>
-                      </Paper>
-                    </Grow>
-                  )}
-                </Popper>
+              <Button
+                ref={anchorRef13}
+                aria-controls={open13 ? "menu-list-grow" : undefined}
+                aria-haspopup="true"
+                onClick={handleToggle13}
+              >
+                Company
+                <ArrowDropDownIcon />
+              </Button>
+              <Popper
+                style={{ width: "40%" }}
+                open={open13}
+                anchorEl={anchorRef13.current}
+                role={undefined}
+                transition
+                disablePortal
+              >
+                {({ TransitionProps, placement }) => (
+                  <Grow
+                    {...TransitionProps}
+                    style={{
+                      transformOrigin:
+                        placement === "bottom" ? "center top" : "center bottom",
+                    }}
+                  >
+                    <Paper>
+                      <ClickAwayListener onClickAway={handleClose13}>
+                        <MenuList
+                          autoFocusItem={open13}
+                          id="menu-list-grow"
+                          onKeyDown={handleListKeyDown}
+                        >
+                          <MenuItem onClick={handleClose13}>
+                            <a href="/about" className="borrower">
+                              About Us
+                            </a>
+                          </MenuItem>
+                          <hr className="my-1" />
+                          <MenuItem onClick={handleClose13}>
+                            <a
+                              href="https://t.me/egorasmarket"
+                              className="borrower"
+                            >
+                              Blog
+                            </a>
+                          </MenuItem>
+                        </MenuList>
+                      </ClickAwayListener>
+                    </Paper>
+                  </Grow>
+                )}
+              </Popper>
               {/* ===================================================
               ===========================
               ========================================== */}
-
 
               <vl></vl>
               <a href="https://t.me/egorasmarket" className="about">
@@ -445,7 +486,7 @@ const Header = () => {
               </a>
             </ul>
             {/* <img
-              src="../img/hamburger-open.svg"
+              src="/img/hamburger-open.svg"
               alt=""
               className="hamburgerOpen"
             /> */}
@@ -493,9 +534,9 @@ const Header = () => {
                 <List>
                   <ListItem>
                     <a
-                      href="/home-page2"
+                      href="/validator"
                       className={
-                        page1 === "/home-page2" ? "docs activeLink" : "about"
+                        page1 === "/validator" ? "docs activeLink" : "about"
                       }
                       // onClick={clickMe2}
                     >
@@ -521,7 +562,10 @@ const Header = () => {
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="footerLinks">
-                          <a href="/" className="c1link1 a">
+                          <a
+                            href="https://egoras.ng/appointment"
+                            className="c1link1 a"
+                          >
                             Get loan
                           </a>
                           <a
@@ -554,11 +598,11 @@ const Header = () => {
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="footerLinks">
-                          <a href="/" className="c1link1 a">
+                          <a href="/about" className="c1link1 a">
                             About Us
                           </a>
                           <a
-                            href="/explore"
+                            href="https://egoras.medium.com/"
                             className="c1link1"
                             target="_blank"
                           >
@@ -575,7 +619,7 @@ const Header = () => {
                 <Divider />
                 <List>
                   <ListItem>
-                    <a href="about" className="about">
+                    <a href="https://t.me/egorasmarket" className="about">
                       Support
                     </a>
                   </ListItem>
@@ -583,7 +627,7 @@ const Header = () => {
                 <Divider />
                 <List>
                   <ListItem>
-                    <a href="/login" className="getLoan">
+                    <a href="https://egoras.ng/appointment" className="getLoan">
                       {" "}
                       Get the loan
                     </a>

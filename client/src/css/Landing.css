@@ -1,7 +1,8 @@
 /* hero section start */
 
 .heroSection {
-  padding: 8em 0em;
+  padding: 13em 0em;
+  padding-bottom: 3em;
   position: relative;
 }
 .heroArea {
@@ -12,33 +13,35 @@
 }
 .heroTxts {
   margin-bottom: 50px;
+  position: relative;
 }
 
 .heroTitle {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 48px;
-  color: #373737;
+  color: #000;
 }
 .heroCaption {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 30px;
+  margin-bottom: 10px;
   /* color: #e4a788; */
   color: #e4a788;
 }
 .heroPara {
   font-weight: 600;
   font-size: 14px;
-  margin-top: 20px;
+  margin-top: 0px;
   color: #373737;
-  line-height: 26px;
+  line-height: 20px;
 }
 
 .heroButton {
   margin-top: 50px;
 }
 .heroBtn {
-  padding: 1em 4em;
+  padding: 1.15em 6em;
   background: #229e54;
   color: #fff;
   border-radius: 10px;
@@ -61,13 +64,14 @@
 }
 
 .heroPhone {
-  width: 300px;
+  width: 245px;
   margin-right: 50px;
+  position: relative;
 }
 
 .eggShape {
   position: absolute;
-  right: -80px;
+  right: -103px;
   bottom: 2px;
   z-index: -2;
   width: 500px;
@@ -77,7 +81,7 @@
   position: absolute;
   left: -100px;
   top: -50px;
-  width: 300px;
+  width: 250px;
   z-index: -2;
   border-radius: 100px;
 }
@@ -192,7 +196,7 @@
 /* how it works section start */
 
 .howItWorks {
-  padding: 6em 0em;
+  padding: 2em 0em;
   position: relative;
 }
 
@@ -207,6 +211,7 @@
 .howItWorksTitle {
   text-align: center;
   margin-top: 2%;
+  margin-bottom: 0;
 }
 
 .title {
@@ -224,8 +229,8 @@
   width: 25%;
   margin: auto;
   margin-top: 50px;
-  padding: 1em 0.5em;
-  border-width: 2px;
+  padding: 0.5em 0.5em;
+  border-width: 0.5px;
 }
 
 .btn1.active {
@@ -235,6 +240,7 @@
   border-radius: 5px;
   font-size: 12px;
   font-weight: 500;
+  border: none;
 }
 .btn2 {
   font-size: 12px;
@@ -243,9 +249,15 @@
   padding: 1em 3em;
   color: #229e54;
   border-radius: 5px;
+  border: none;
+  transition: 0.3s ease-in-out;
 }
 .btn2:hover {
-  color: #000000;
+  background: #e4a788;
+  color: #fff;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px #d5d5d5;
 }
 
 .howItWorksArea {
@@ -353,7 +365,7 @@
 
 /* projects Section start */
 .projectsSection {
-  padding: 3em 0em;
+  padding: 2em 0em;
   position: relative;
   background: #ffff;
 }
@@ -439,7 +451,6 @@
 .cardJ {
   width: 80%;
   margin: auto;
-  margin-bottom: 100px;
   cursor: pointer;
 
   display: grid;
@@ -515,6 +526,7 @@
 
 .bCardTexts {
   margin-top: 30px;
+  width: 100%;
 }
 
 .bCardTitle {

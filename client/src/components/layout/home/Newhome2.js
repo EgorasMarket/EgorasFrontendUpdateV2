@@ -33,7 +33,7 @@ const responsive = {
   },
 };
 
-const Newhome2 = () => {
+const GetLoan = () => {
   const [page, setPage] = useState("change");
 
   const clickMe1 = () => {
@@ -90,7 +90,7 @@ const Newhome2 = () => {
                     className="communitybtn1"
                     target="_blank"
                   >
-                    <TelegramIcon className='mr-1' />
+                    <TelegramIcon />
                     Telegram
                   </a>
                   <a
@@ -98,7 +98,7 @@ const Newhome2 = () => {
                     className="communitybtn1"
                     target="_blank"
                   >
-                    <TwitterIcon className='mr-1' />
+                    <TwitterIcon />
                     Twitter
                   </a>
                 </div>
@@ -121,7 +121,7 @@ const Newhome2 = () => {
               <img
                 src="/img/greencircle.svg"
                 alt=""
-                className="greenCircle"
+                className="gtgreenCircle"
               />
               <img src="/img/x-shape.svg" alt="" className="gtx" />
               <img src="/img/circle.svg" alt="" className="gtcircle" />
@@ -138,7 +138,27 @@ const Newhome2 = () => {
       <section className="collateralize">
         <div className="container">
           <div className="collateral-area">
-            <div className="collateral-txt">
+            <div className="collateralize-image">
+              <img
+                src="/img/collat-vector.svg"
+                alt=""
+                className="collat-vector"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              />
+              <img
+                src="/img/collat-circle.svg"
+                alt=""
+                className="collat-circle"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              />
+            </div>
+            <div
+              className="collateral-txt"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               What would you like
               <br /> <span className="collat"> to collateralize.</span>
               <div className="collat-para">
@@ -160,18 +180,6 @@ const Newhome2 = () => {
                 <ArrowRightIcon />
               </a>
             </div>
-            <div className="collateralize-image">
-              <img
-                src="/img/collat-vector.svg"
-                alt=""
-                className="collat-vector"
-              />
-              <img
-                src="/img/collat-circle.svg"
-                alt=""
-                className="collat-circle"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -185,7 +193,11 @@ const Newhome2 = () => {
           <div className="gthowItWorksTitle">
             <h1 className="gttitle">How it works</h1>
           </div>
-          <div className="gthowItWorksBtns">
+          <div
+            className="gthowItWorksBtns"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="gtbutton1">
               <button
                 className={page === "change" ? "gtbtn1 active" : "gtbtn2"}
@@ -205,7 +217,11 @@ const Newhome2 = () => {
           </div>
 
           {page === "change" ? (
-            <div className="gthowItWorksArea">
+            <div
+              className="gthowItWorksArea"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div className="gthowCard1">
                 <div className="gthowCard1Title">
                   <h1 className="gtstakeNumb">1.</h1>
@@ -354,14 +370,18 @@ const Newhome2 = () => {
       {/* =================================================================================================================================================================================================================================================================== */}
 
       {/* Benefits Section start */}
-      <section className="gtbenefitsSection">
+      <section className="gtbenefitsSection"  id="benefits">
         <div className="container">
           <div className="gttitleLine"></div>
           <div className="gthowItWorksTitle">
             <h1 className="gttitle">Why Choose Us</h1>
           </div>
 
-          <div className="gtbenefitsArea">
+          <div
+            className="gtbenefitsArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="gtbenefitCard1">
               <div className="gtbCardIcon">
                 <img src="/img/b-icon1.svg" alt="" className="gtbIcon" />
@@ -385,9 +405,9 @@ const Newhome2 = () => {
                 <h1 className="gtbCardTitle">Best Value For Your Assets</h1>
                 <p className="gtbCardPara">
                   Unlike other lenders that charge exorbitant interest rate
-                  (over 30% monthly). Egoras offers the Market leading interest
-                  rates(1% monthly) which makes the repayment stressfree with
-                  zero hassle.
+                  (over 30% monthly). Egoras offers the Market leading zero
+                  interest rate which makes the repayment stressfree with zero
+                  hassle.
                 </p>
               </div>
             </div>
@@ -414,9 +434,9 @@ const Newhome2 = () => {
                 <h1 className="gtbCardTitle">No Interest Rate</h1>
                 <p className="gtbCardPara">
                   Unlike other lenders that charge exorbitant interest rate
-                  (over 30% monthly). Egoras offers the Market leading interest
-                  rates(1% monthly) which makes the repayment stressfree with
-                  zero hassle.
+                  (over 30% monthly). Egoras offers the Market leading zero
+                  interest rates which makes the repayment stressfree with zero
+                  hassle.
                 </p>
               </div>
             </div>
@@ -431,10 +451,14 @@ const Newhome2 = () => {
 
       {/* savings    section start */}
 
-      <section className="savingsSection">
+      <section className="savingsSection2">
         <div className="container">
-          <div className="savingsArea">
-            <div className="savingsText">
+          <div className="savingsArea2">
+            <div
+              className="savingsText"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
               Your collaterals are
               <br /> represented as <span className="egr"> NFTs,</span>
               <br />
@@ -451,8 +475,12 @@ const Newhome2 = () => {
                 <br /> (Thus every transaction is public and immutable).
               </p>
             </div>
-            <div className="savingsImages">
-              <img src="/img/block-chain.svg" alt="" className="blockChain img-fluid" />
+            <div
+              className="savingsImages"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <img src="/img/block-chain.svg" alt="" className="blockChain" />
             </div>
           </div>
         </div>
@@ -465,7 +493,11 @@ const Newhome2 = () => {
       <section className="discountSection">
         <div className="container">
           <div className="discountArea">
-            <div className="discountImages">
+            <div
+              className="discountImages"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <img
                 src="/img/discount-vector.svg"
                 alt=""
@@ -482,7 +514,11 @@ const Newhome2 = () => {
                 className="discountCard"
               />
             </div>
-            <div className="discountTxt">
+            <div
+              className="discountTxt"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
               Get 50% discount
               <br /> when you pay fees
               <br />
@@ -510,7 +546,11 @@ const Newhome2 = () => {
       <section className="atmCards">
         <div className="container">
           <div className="atmCardsArea">
-            <div className="atmCardsTxt">
+            <div
+              className="atmCardsTxt"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
               3% Cashback on All
               <br />
               <span className="egr"> Transactions</span>
@@ -526,7 +566,11 @@ const Newhome2 = () => {
                 <ArrowRightIcon />
               </a> */}
             </div>
-            <div className="atmCardsImage">
+            <div
+              className="atmCardsImage"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <img
                 src="/img/atm-cards.png"
                 alt=""
@@ -543,7 +587,33 @@ const Newhome2 = () => {
       <section className="savingsSection">
         <div className="container">
           <div className="savingsArea">
-            <div className="savingsText">
+            <div
+              className="savingsImages"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <img
+                src="/img/savingsCircle.svg"
+                alt=""
+                className="savingsCircle"
+              />
+              <img
+                src="/img/savingsVector.svg"
+                alt=""
+                className="savingsVector"
+              />
+              <img
+                src="/img/savingsMoney.svg"
+                alt=""
+                className="savingsMoney"
+              />
+              {/* <img src="/img/savingsLens.svg" alt="" className="savingsLens" /> */}
+            </div>
+            <div
+              className="savingsText"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
               Save money as you
               <br />
               repay your
@@ -564,24 +634,6 @@ const Newhome2 = () => {
                 <ArrowRightIcon />
               </a> */}
             </div>
-            <div className="savingsImages">
-              <img
-                src="/img/savingsCircle.svg"
-                alt=""
-                className="savingsCircle"
-              />
-              <img
-                src="/img/savingsVector.svg"
-                alt=""
-                className="savingsVector"
-              />
-              <img
-                src="/img/savingsMoney.svg"
-                alt=""
-                className="savingsMoney"
-              />
-              {/* <img src="../img/savingsLens.svg" alt="" className="savingsLens" /> */}
-            </div>
           </div>
         </div>
       </section>
@@ -592,11 +644,25 @@ const Newhome2 = () => {
       {/* Stories Section Start  */}
       <section className="gtstoriesSection">
         <div className="container">
-          <div className="gttitleLine"></div>
-          <div className="gthowItWorksTitle">
-            <h1 className="gttitle">Popular Stories</h1>
+          <div
+            className="gttitleLine"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          ></div>
+          <div
+            className="gthowItWorksTitle"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <h1 className="gttitle" data-aos="fade-up" data-aos-duration="3000">
+              Popular Stories
+            </h1>
           </div>
-          <div className="gtstoriesArea">
+          <div
+            className="gtstoriesArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             {/* Carousel start==============================
 ==============================================
 ============================= */}
@@ -839,11 +905,23 @@ const Newhome2 = () => {
       {/* Partners Section start  */}
       <section className="gtpartnersSection">
         <div className="container">
-          <div className="gttitleLine"></div>
-          <div className="gthowItWorksTitle">
+          <div
+            className="gttitleLine"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          ></div>
+          <div
+            className="gthowItWorksTitle"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
             <h1 className="gttitle">Our Partners</h1>
           </div>
-          <div className="gtPartnersArea">
+          <div
+            className="gtPartnersArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="gtpatLogo">
               <a href="https://paidnetwork.com/" target="blank">
                 <img
@@ -1056,15 +1134,27 @@ const Newhome2 = () => {
       {/* gtcompare Section Start */}
       <section className="gtcompareSection">
         <div className="container">
-          <div className="gttitleLine"></div>
-          <div className="gthowItWorksTitle">
+          <div
+            className="gttitleLine"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          ></div>
+          <div
+            className="gthowItWorksTitle"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
             <h1 className="gttitle">
               Choose the freedom
               <br />
               you need.
             </h1>
           </div>
-          <div className="gtcompareArea">
+          <div
+            className="gtcompareArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="compareCard">
               <div className="compareCardContent1">
                 <h4 className="cardContentTitles">Other Lenders</h4>
@@ -1129,7 +1219,7 @@ const Newhome2 = () => {
               </div>
               <hr />
               <div className="compareCardContent2">
-                <h6 className="cardContentTxt">Approval Speed</h6>
+                <h6 className="cardContentTxt">Approval Spped</h6>
                 <h6 className="cardContentTxt">
                   <RemoveCircleIcon className="removeCircle" />7 days
                 </h6>
@@ -1188,9 +1278,19 @@ const Newhome2 = () => {
       {/* explore section  start */}
       <section className="gtexploreSection">
         <div className="container">
-          <div className="gtexploreArea">
+          <div
+            className="gtexploreArea"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="gtexploretxts">
-              <h1 className="gtgood">Sounds good?</h1>
+              <h1
+                className="gtgood"
+                data-aos="fade-down"
+                data-aos-duration="3000"
+              >
+                Sounds good?
+              </h1>
               <div className="gtexploreLink">
                 <a
                   href="https://egoras.ng/appointment"
@@ -1220,4 +1320,4 @@ const Newhome2 = () => {
   );
 };
 
-export default Newhome2;
+export default GetLoan;

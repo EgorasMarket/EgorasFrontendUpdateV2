@@ -1,6 +1,6 @@
 .heroSection3 {
-  padding: 6em 6em;
-  padding-bottom: 2em;
+  padding: 12em 0em;
+  padding-bottom: 3em;
   position: relative;
 }
 .heroArea3 {
@@ -16,9 +16,9 @@
 }
 
 .heroTitle3 {
-  font-size: 58px;
   font-weight: 800;
-  color: #229e54;
+  font-size: 60px;
+  color: #000;
 }
 
 .hero3para {
@@ -82,4 +82,9 @@
 }
 .footerCard3 {
   display: none;
+}
+
+.partnerCards .react-multi-carousel-item {
+  align-items: center !important;
+  text-align: center !important;
 }

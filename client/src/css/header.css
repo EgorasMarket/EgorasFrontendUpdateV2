@@ -1,11 +1,13 @@
 .headerSection {
-  padding: 1em 2em;
   background-color: #fff;
-  position: sticky;
   top: 0;
   z-index: 100;
   font-family: Roboto;
   box-shadow: 0px 0px 15px #efefef;
+  padding: 0.5em 2em;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
 }
 .header-area {
   display: flex;
@@ -14,7 +16,7 @@
 }
 
 .egr-logo {
-  width: 180px;
+  width: 150px;
   margin-right: 50px;
 }
 .egr-logo2 {
@@ -78,8 +80,8 @@
 .docs,
 .about {
   margin-right: 30px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
   position: relative;
   color: #383838;
@@ -87,9 +89,8 @@
 }
 
 .product {
-  margin-right: 20px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
   position: relative;
   color: #383838;
@@ -97,15 +98,12 @@
 }
 .company {
   margin-right: 10px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
   position: relative;
   color: #383838;
   position: relative;
-}
-.about {
-  margin-right: 30px;
 }
 
 .docs:hover,
@@ -118,8 +116,8 @@
 }
 .activeLink {
   color: #229e54;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   position: relative;
 }
 .activeLink:hover {
@@ -145,22 +143,22 @@ vl {
   display: flex;
   align-items: center;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   margin-bottom: 0;
   padding: 0;
 }
 .getLoan {
   margin-right: 15px;
-  padding: 1.15em 3.5em;
+  padding: 1em 2em;
   border: solid;
   border-color: #229e54;
   color: #229e54;
-  border-width: 2px;
+  border-width: 0.5px;
   border-radius: 10px;
   cursor: pointer;
   position: relative;
-  font-size: 12px;
+  font-size: 13px;
   transition: 0.3s ease-in-out;
 }
 
@@ -186,15 +184,17 @@ vl {
 }
 
 .getLoan:hover {
-  border: solid #e4a788;
-  background: #e4a788;
+  border: solid;
+  border-color: #e4a788;
+  background-color: #e4a788;
+  border-width: 0.5px;
   color: #fff;
   transform: translate3d(0, -5px, 0);
   transition: 0.3s ease-in-out;
   box-shadow: 0px 4px 10px #d5d5d5;
 }
 .connect {
-  padding: 1.15em 3em;
+  padding: 1em 2em;
   background: #229e54;
   color: #ffff;
   border-radius: 10px;
@@ -256,22 +256,43 @@ vl {
   min-height: 48px;
 }
 
-.MuiButton-label{
+.MuiButton-label {
   text-transform: none !important;
+  font-size: 13px !important;
 }
-.borrower, .validator{
+.borrower,
+.validator {
   background: #ffff !important;
   /* box-shadow: 0px 6px 3px #f1f1f1; */
   color: #229e54 !important;
   text-decoration: unset !important;
 }
-.DropLink{
+.DropLink {
   color: #424242 !important;
   font-size: 14px !important;
   margin-left: 10px !important;
 }
-.DropLink:hover{
+.DropLink:hover {
   color: #229e54 !important;
+}
+
+.BorrowClass,
+.validatorClass {
+  font-family: "Mulish" !important;
+  cursor: default !important;
+}
+.egrLogo2Cont {
+  display: none;
+}
+.makeStyles-drawerHeader-9 {
+  display: flex;
+  padding: 0px 8px;
+  min-height: 56px;
+  align-items: center;
+  justify-content: flex-end !important;
+}
+.makeStyles-drawerPaper-8 {
+  width: 100% !important;
 }
 /* .benefitsSection .container-md,
 .container-sm,

@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Mulish", sans-serif !important;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none !important;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 li {
   list-style: none;
