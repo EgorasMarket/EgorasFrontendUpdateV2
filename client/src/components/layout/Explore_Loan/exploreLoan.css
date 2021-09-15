@@ -125,12 +125,15 @@
 .retailButton{
     position:absolute;
     border:none;
-    border:1px solid #fff;
+    /* border:1px solid #fff; */
+     /* border:1px solid #229e54;  */
     top:10px;
     right:10px;
     padding:8px 10px;
     border-radius: 5px;
-    color:#fff;
+     color:#229e54; 
+    
+    background-color: #fff;
     font-size: 12px;
 }
 
@@ -139,11 +142,13 @@
     left:20px;
     bottom:70px;
     
-    border:1px solid #fff;
+    
+    border:1px solid #229e54;;
     padding:8px 10px;
     border-radius: 5px;
     background-color: #fff;
-    color:#edb18e;
+    /* color:#edb18e; */
+    color:#229e54;
     font-size: 13px;
 
 }
@@ -375,7 +380,7 @@ margin-right: 20px;
 }
 
 .pTag{
-    bottom:90px;
+    bottom:80px;
 }
 }
 @media (min-width:1250px){
