@@ -115,7 +115,13 @@
     height:100%;
     object-fit:cover;
 }
-
+.DivIMG{
+    width: 100%;
+    height:210px;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    border-radius: 8px;
+}
 .section2DivHolder_img{
    padding:0px 25px 20px; 
 }
