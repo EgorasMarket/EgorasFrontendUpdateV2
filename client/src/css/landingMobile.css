@@ -274,10 +274,15 @@
   /* token secion  start */
 
   .tokenArea {
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     grid-row-gap: 20px;
+  }
+  .tokenCard1 {
+    padding: 0;
+    transition: 0.01s linear;
   }
   /* token secion  end */
 
@@ -293,10 +298,30 @@
   /* explore section end */
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 767px) {
   /* hero section start */
-  .bottomCards {
-    width: 100%;
+
+  .loanDetailsLine {
+    margin: auto;
+  }
+  .loanDetailsSection {
+    text-align: center;
+  }
+  .heroPhone {
+    width: 200px;
+    margin-right: 0;
+  }
+
+  .hero-images {
+    margin-right: 0;
+  }
+
+  .eggShape {
+    width: 460px;
+    right: -149px;
+  }
+  .dots {
+    width: 200px;
   }
 
   /* hero section end */
@@ -350,8 +375,9 @@
     padding: 4em 1em 2em 1em;
   }
   .eggShape {
-    width: 350px;
-    right: -55px;
+    width: 460px;
+    bottom: -1px;
+    right: -136px;
   }
 
   .hero-images {
@@ -403,6 +429,18 @@
   .footerSection {
     padding: 3em 0em;
   }
+  .projectsTitleContents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 2em;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .projectsLine {
+    margin: auto;
+  }
 }
 @media screen and (max-width: 565px) {
   .heroSection {
@@ -429,13 +467,23 @@
   .projectsSection {
     padding: 0em;
   }
-}
-.egg {
-  right: -80px;
+  .egg {
+    right: -80px;
+  }
 }
 
 /* 2nd break point ========================================= */
 @media screen and (max-width: 463px) {
+  .heroPhone {
+    width: 150px;
+    margin-right: 0;
+  }
+  .eggShape {
+    width: 375px;
+    bottom: -1px;
+    right: -120px;
+  }
+
   .bottomCards {
     display: none;
   }
@@ -454,7 +502,19 @@
   .heroTitle {
     font-size: 32px;
   }
-
+  .heroPhone {
+    width: 150px;
+    margin-right: 0;
+  }
+  .eggShape {
+    width: 314px;
+    bottom: -1px;
+    right: -93px;
+  }
+  .card-amount {
+    width: 80%;
+    left: 0;
+  }
   .howItWorksTitle {
     margin-bottom: 50px;
   }
@@ -496,26 +556,26 @@
 
 /* 3rd break point ========================================= */
 @media screen and (max-width: 390px) {
-  .heroPhone {
+  /* .heroPhone {
     width: 150px;
   }
 
   .eggShape {
     width: 250px;
     right: -72px;
-  }
+  } */
 
-  .dots {
+  /* .dots {
     width: 150px;
     left: -30px;
-  }
+  } */
   .card1,
   .card2 {
     padding: 2em 1em 2em 1em;
   }
-  .eggShape {
+  /* .eggShape {
     right: -22px;
-  }
+  } */
   .howItWorksBtns {
     width: 100%;
   }

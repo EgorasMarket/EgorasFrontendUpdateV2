@@ -1,7 +1,7 @@
 /* hero section start */
 
 .gtheroSection {
-  padding: 8em 0em;
+  padding: 13em 0em;
   padding-bottom: 3em;
   position: relative;
 }
@@ -17,7 +17,7 @@
 }
 
 .gtheroTitleloan {
-  font-weight: 600;
+  font-weight: 800;
   font-size: 48px;
   color: #000;
 }
@@ -30,7 +30,7 @@
 } */
 .interestFree2 {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 800;
   color: #000;
 }
 .gtheroCaption {
@@ -46,7 +46,7 @@
   font-size: 14px;
   margin-top: 0px;
   color: #373737;
-  line-height: 26px;
+  line-height: 20px;
 }
 .gtherobuttons {
   display: flex;
@@ -111,8 +111,8 @@
 .joinCommunitybtnsTitle {
   margin-bottom: 20px;
   margin-top: 10px;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: 800;
+  font-size: 28px;
 }
 .communitybtn1 {
   color: #000000;
@@ -122,7 +122,7 @@
   border-radius: 50px;
   border-width: 1px;
   border-color: #55bc7e;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   transition: 0.3s ease-in-out;
 }
@@ -134,6 +134,7 @@
   transition: 0.3s ease-in-out;
   box-shadow: 0px 4px 10px #d5d5d5;
   border: solid #e4a788;
+  border-width: 1px;
 }
 
 .gthero-images {
@@ -149,7 +150,7 @@
 }
 .gtdebitCard {
   position: absolute;
-  right: -87px;
+  right: -109px;
   bottom: 55px;
   z-index: 1;
   width: 250px;
@@ -161,7 +162,7 @@
 }
 .gteggShape {
   position: absolute;
-  right: -108px;
+  right: -131px;
   bottom: 2px;
   z-index: -2;
   width: 500px;
@@ -190,13 +191,6 @@
   z-index: -2;
   border-radius: 100px;
 }
-
-
-.joinCommunitybtns{
-  display: flex;
-
-}
-
 
 .gtblurDrop {
   position: absolute;
@@ -330,6 +324,7 @@
 
 .collateralize {
   padding: 4em 6em;
+  padding-top: 1em;
   position: relative;
 }
 
@@ -341,7 +336,7 @@
 
 .collateral-txt {
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 50px;
 }
 .collat {
@@ -371,15 +366,15 @@
 }
 
 .collat-vector {
-  width: 500px;
+  width: 450px;
 }
 
 .collat-circle {
-  width: 350px;
+  width: 300px;
   position: absolute;
   left: 70px;
   z-index: -1;
-  bottom: 15px;
+  bottom: 12px;
 }
 
 /* collateralize section end */
@@ -404,7 +399,7 @@
 .gthowItWorksTitle {
   text-align: center;
   margin-top: 2%;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .gttitle {
@@ -419,7 +414,7 @@
   border-radius: 10px;
   align-items: center;
   justify-content: space-between;
-    width: 25%;
+  width: 25%;
   margin: auto;
   margin-top: 50px;
   padding: 0.5em 0.5em;
@@ -509,7 +504,7 @@
   border-radius: 10px;
   margin: auto;
   margin-top: 3%;
-  border-width: 2px;
+  border-width: 0.5px;
   position: relative;
   transition: 0.3s ease-in-out;
 }
@@ -528,6 +523,7 @@
   left: 0;
   top: 0;
   z-index: -1;
+  width: 500px;
 }
 .gtsecondDots {
   position: absolute;
@@ -621,7 +617,7 @@
   padding: 4em 8em;
   position: relative;
   /* color: aliceblue; */
-  background: #f8fffb;
+  background: #ffffff;
 }
 .discountArea {
   display: flex;
@@ -702,6 +698,7 @@
 .atmCards {
   padding: 4em 8em;
   position: relative;
+  background: #f8fffb;
 }
 .atmCardsArea {
   display: flex;
@@ -751,9 +748,23 @@
   padding: 4em 8em;
   position: relative;
   /* color: aliceblue; */
+  background: #ffffff;
+}
+.savingsSection2 {
+  padding: 4em 8em;
+  position: relative;
+  /* color: aliceblue; */
   background: #f8fffb;
 }
 .savingsArea {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin: 0em 3em;
+  position: relative;
+}
+.savingsArea2 {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -975,6 +986,8 @@ iframe {
   -webkit-animation: nonStop 120s linear 0s infinite normal none running;
   display: flex;
   margin-top: 55px;
+  position: relative;
+  z-index: 5;
 }
 @keyframes nonStop {
   100% {
@@ -1014,6 +1027,10 @@ iframe {
 .gtpartnerLogos {
   text-align: center;
   width: 200px;
+  filter: grayscale();
+}
+.gtpartnerLogos:hover {
+  filter: none;
 }
 
 /* .partnerLogos.nuls {

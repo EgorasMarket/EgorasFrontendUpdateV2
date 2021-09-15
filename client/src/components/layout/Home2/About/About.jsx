@@ -29,25 +29,31 @@ const About = () => {
   return (
     <div>
       {/* hero section start */}
-      <section className="heroSection3">
-        <div className="heroArea3">
-          <div
-            className="heroTxts3"
-            data-aos="fade-up"
-            // data-aos="fade-up"
-            // data-aos-easing="linear"
-            // data-aos-once="false"
-          >
-            <h1 className="heroTitle3">Our Mission</h1>
-            <p className="hero3para">
-              Egoras mission is to provide zero interest
-              <br />
-              credit for all humanity.
-            </p>
-          </div>
+      <section className="gtheroSection">
+        <div className="container">
+          <div className="gtheroArea">
+            <div
+              className="gtheroTxts"
+              data-aos="fade-up"
+              // data-aos="fade-up"
+              // data-aos-easing="linear"
+              // data-aos-once="false"
+            >
+              <h1 className="heroTitle3">Our Mission</h1>
+              <p className="gtheroCaption" style={{ color: "#000" }}>
+                Egoras mission is to provide zero interest
+                <br />
+                credit for all humanity.
+              </p>
+            </div>
 
-          <div className="hero-images3" data-aos="fade-up">
-            <img src="/img/aboutPhone.svg" alt="" className="aboutPhone" />
+            <div
+              className="hero-images"
+              style={{ margin: 0 }}
+              data-aos="fade-up"
+            >
+              <img src="/img/aboutPhone.svg" alt="" className="aboutPhone" />
+            </div>
           </div>
         </div>
       </section>
@@ -61,7 +67,7 @@ const About = () => {
             <div className="aboutTxts">
               <div className="AboutLine"></div>
               <div className="loanDetailsTitle">
-                <h1 className="ATitle">About Us</h1>
+                <h1 className="gttitle">About Us</h1>
               </div>
               <p className="AboutUsPara">
                 A few years ago, a small team of people determined to distrupt
@@ -98,29 +104,29 @@ const About = () => {
       {/* Benefits Section start */}
       <section className="benefitsSection">
         <div className="container">
-          <div className="titleLine"></div>
-          <div className="howItWorksTitle">
-            <h1 className="title">Our Values</h1>
+          <div className="gttitleLine"></div>
+          <div className="gthowItWorksTitle">
+            <h1 className="gttitle">Our Values</h1>
           </div>
 
-          <div className="benefitsArea">
+          <div className="gtbenefitsArea">
             <div
-              className="benefitCard1"
+              className="gtbenefitCard1"
               data-aos="fade-up"
               data-aos-duration="2s"
               data-aos-easing="linear"
               data-aos-once="false"
             >
-              <div className="bCardIcon">
+              <div className="gtbCardIcon">
                 <img src="/img/b-icon1a.svg" alt="" className="bIcon" />
               </div>
-              <div className="bCardTexts">
-                <h1 className="bCardTitle">
+              <div className="gtbCardTexts">
+                <h1 className="gtbCardTitle">
                   Achieve more with
                   <br />
                   less.
                 </h1>
-                <p className="bCardPara">
+                <p className="gtbCardPara">
                   We look for less expensive ways
                   <br />
                   to achieve our goals. We think <br />
@@ -131,18 +137,18 @@ const About = () => {
             </div>
 
             <div
-              className="benefitCard2"
+              className="gtbenefitCard2"
               data-aos="fade-up"
               data-aos-duration="1s"
               data-aos-easing="linear"
               data-aos-once="false"
             >
-              <div className="bCardIcon">
+              <div className="gtbCardIcon">
                 <img src="/img/b-icon2a.svg" alt="" className="bIcon" />
               </div>
-              <div className="bCardTexts">
-                <h1 className="bCardTitle">Stay excited and hungry.</h1>
-                <p className="bCardPara">
+              <div className="gtbCardTexts">
+                <h1 className="gtbCardTitle">Stay excited and hungry.</h1>
+                <p className="gtbCardPara">
                   We are always eagger to to achieve
                   <br />
                   more and we are never comfortable <br />
@@ -156,21 +162,21 @@ const About = () => {
             </div>
 
             <div
-              className="benefitCard3"
+              className="gtbenefitCard3"
               data-aos="fade-up"
               data-aos-duration="1s"
               data-aos-easing="linear"
               data-aos-once="false"
             >
-              <div className="bCardIcon">
+              <div className="gtbCardIcon">
                 <img src="/img/b-icon3a.svg" alt="" className="bIcon" />
               </div>
-              <div className="bCardTexts">
-                <h1 className="bCardTitle">
+              <div className="gtbCardTexts">
+                <h1 className="gtbCardTitle">
                   Overwhelm users with
                   <br /> amazing service.
                 </h1>
-                <p className="bCardPara">
+                <p className="gtbCardPara">
                   We strive to look for ways to provide
                   <br />
                   access to funding to our users at zero
@@ -182,18 +188,18 @@ const About = () => {
             </div>
 
             <div
-              className="benefitCard4"
+              className="gtbenefitCard4"
               data-aos="fade-up"
               data-aos-duration="1s"
               data-aos-easing="linear"
               data-aos-once="false"
             >
-              <div className="bCardIcon">
+              <div className="gtbCardIcon">
                 <img src="/img/b-icon4a.svg" alt="" className="bIcon" />
               </div>
-              <div className="bCardTexts">
-                <h1 className="bCardTitle">We are family</h1>
-                <p className="bCardPara">
+              <div className="gtbCardTexts">
+                <h1 className="gtbCardTitle">We are family</h1>
+                <p className="gtbCardPara">
                   We are one family united by one <br />
                   one mission and love. We sincerely
                   <br />
@@ -207,8 +213,8 @@ const About = () => {
           </div>
         </div>
 
-        <img src="/img/right-back-drop.svg" alt="" className="rightBack" />
-        <img src="/img/shape-egg2.svg" alt="" className="eggShape2" />
+        <img src="/img/right-back-drop.svg" alt="" className="gtrightBack" />
+        <img src="/img/shape-egg2.svg" alt="" className="gteggShape2" />
       </section>
       {/* Benefits Section start */}
       {/* =================================================================================================================================================================================================================================================================== */}

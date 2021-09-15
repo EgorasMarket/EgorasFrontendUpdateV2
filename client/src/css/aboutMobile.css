@@ -4,7 +4,7 @@
     padding: 6em 6em;
   }
   .heroTitle3 {
-    font-size: 45px;
+    font-size: 60px;
   }
   .hero3para {
     font-size: 14px;
@@ -24,46 +24,75 @@
 
 @media screen and (max-width: 1024px) {
   /* hero section start */
-  .heroSection3 {
-    padding: 6em 3em;
+  .aboutPhone {
+    width: 400px;
   }
   /* hero section end */
 }
 
 @media screen and (max-width: 869px) {
   /* hero section start */
-  .heroArea3 {
-    display: grid;
-    grid-template-columns: auto;
-    position: relative;
-    justify-content: center;
-    margin-bottom: 100px;
-    grid-row-gap: 100px;
+  .aboutPhone {
+    width: 350px;
   }
-  .heroTxts3 {
-    margin-bottom: 0;
-    margin-top: 0;
+  .heroTitle3 {
+    font-size: 48px;
   }
+  /* hero section end */
+}
 
+@media screen and (max-width: 794px) {
+  /* hero section start */
+  .aboutPhone {
+    width: 300px;
+  }
+  .heroTitle3 {
+    font-size: 40px;
+  }
+  /* hero section end */
+}
+@media screen and (max-width: 767px) {
+  /* hero section start */
+  .aboutPhone {
+    width: 450px;
+  }
+  .heroTitle3 {
+    font-size: 60px;
+  }
   /* hero section end */
 }
 
 @media screen and (max-width: 565px) {
   .partnerlog {
-    width: 200px;
+    width: 150px;
   }
   .aboutPhone {
-    width: 300px;
+    width: 400px;
   }
   .heroSection3 {
     padding: 4em 2em;
   }
   .heroTitle3 {
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 7008;
   }
   .iFrame2 {
     width: 100%;
     height: 100%;
+  }
+}
+@media screen and (max-width: 485px) {
+  .aboutPhone {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .aboutPhone {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .aboutPhone {
+    width: 250px;
   }
 }

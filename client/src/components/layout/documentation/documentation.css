@@ -1,0 +1,321 @@
+.documentationSection {
+  display: flex;
+  align-items: center;
+  padding: 10em 2em 10em 3em;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+  .documentationSection {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .documentationSection2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .subSectionAH1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .subSectionB {
+    display: none;
+  }
+  .aboutEgoras_card {
+    display: flex;
+    flex-direction: column;
+  }
+  .subSectionC {
+    margin-left: 2px;
+  }
+}
+
+.subSectionA {
+  flex: 1;
+}
+.subSectionA_Img {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .subSectionA_Img {
+    margin-top: 30px;
+  }
+}
+.subSectionAH1 {
+  font-weight: 800;
+}
+@media (min-width: 321px) and (max-width: 426px) {
+  .subSectionC_Card {
+    width: 90%;
+  }
+}
+@media (min-width: 427px) and (max-width: 768px) {
+  .subSectionC_Card {
+    width: 60%;
+  }
+}
+
+@media (min-width: 769px) {
+  .subSectionAH1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1020px) {
+  .subSectionAH1 {
+    font-size: 60px;
+  }
+}
+
+.subSectionA_P {
+  margin-top: 20px;
+  color: #e7a98a;
+  font-weight: 500;
+}
+.documentationSection2 {
+  display: flex;
+  padding: 2em 2em 2em 3em;
+}
+
+.subSectionB {
+  flex: 2;
+}
+.subSectionC {
+  flex: 4;
+}
+
+@media (min-width: 992px) {
+  .subSectionC {
+    margin-left: 30px;
+  }
+}
+.subSectionB_Sidebar_Link {
+  list-style: none;
+  border-radius: 8px;
+  padding: 13px 15px;
+  width: 80%;
+  margin: 7px 0px;
+}
+.subSectionB_SidebarA {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .positionImg1,
+  .positionImg {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .documentationSection2 {
+    padding: 2em 1em;
+  }
+  .aboutEgoras_P {
+    width: 100%;
+  }
+}
+/* .subSectionB_SidebarA:hover{
+background-color: cyan;
+} */
+.subSectionB_Sidebar_Link:hover {
+  background-color: #eef8f2;
+}
+.subSectionB_Sidebar_Link a:hover {
+  color: #55bc7e;
+}
+.formSearch {
+  outline: none;
+  border: 1px solid #55bc7e;
+  border-radius: 8px;
+  color: gray;
+  padding-left: 20px;
+
+  height: 48px;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+}
+
+.subSectionSearchDiv {
+  position: relative;
+  width: 73%;
+}
+.btnSearch {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  color: gray;
+}
+.subSectionB_Sidebar_Line {
+  width: 73%;
+  border: 1px solid rgb(180, 179, 179);
+  margin: 55px 0px;
+}
+.subSectionB_Sidebar_Link {
+  font-weight: 600;
+}
+.subSectionB_Sidebar_Link.add {
+  font-size: 11px !important;
+  color: #e7a98a;
+}
+.subSectionB_SidebarA {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+}
+.subSectionC_Line {
+  width: 8%;
+  height: 4px;
+  background-color: #e7a98a;
+  margin-bottom: 40px;
+}
+.subSectionC_H2 {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+.subSectionC_Card {
+  height: 130px;
+  padding: 30px 15px 30px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #f1f1f1;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .subSectionC_Card {
+    width: 60%;
+  }
+}
+@media (min-width: 1025px) {
+  .subSectionC_Card {
+    width: 40%;
+  }
+}
+.subSectionC_Card:hover {
+  border-top: 2px solid #55bc7e;
+}
+
+.subSectionC_Next {
+  font-size: 14px;
+  color: gray;
+}
+.SubForwardIcon {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #e0f3e8;
+  color: #55bc7e;
+  font-size: 8px;
+}
+.cardText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+.SubForwardIcon:hover {
+  background-color: #55bc7e;
+  color: white;
+}
+.positionImg {
+  position: absolute;
+  z-index: -1;
+  left: -20px;
+}
+.positionImg1 {
+  position: absolute;
+  z-index: -2;
+  left: -20px;
+}
+.positionImg2 {
+  position: absolute;
+  z-index: -2;
+  right: 0px;
+  margin-top: 60%;
+}
+
+.aboutEgoras_H {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .aboutEgoras_H {
+    font-size: 30px;
+  }
+}
+.aboutEgoras_P {
+  margin-bottom: 30px;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+}
+@media (min-width: 769px) {
+  .aboutEgoras_P {
+    width: 75%;
+  }
+}
+@media (max-width: 320px) {
+  .subSectionC_Card {
+    width: 100%;
+  }
+  .Card12 {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .subSectionC_Card {
+    margin: 5px auto 25px auto;
+  }
+  .subSectionC_Line {
+    margin: 4px auto 40px auto;
+  }
+}
+
+.aboutEgorasImg {
+  margin-bottom: 40px;
+}
+.aboutEgoras_card {
+  display: flex;
+}
+@media (min-width: 992px) {
+  .Card12 {
+    margin-left: 15px;
+  }
+}
+
+.subSectionC_Next.add {
+  text-align: right;
+}
+@media (max-width: 678px) {
+  .EGOimg {
+    width: 100%;
+  }
+}
+
+.subSectionA_Img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .containerDiv {
+    margin: 20px 25px 0px 25px;
+  }
+}
+@media (max-width: 768px) {
+  .aboutEgoras_H {
+    text-align: center;
+  }
+}
