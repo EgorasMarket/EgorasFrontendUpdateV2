@@ -11,7 +11,9 @@ const ExploreLoanSection2 = () => {
             <div className="section2DivHolder_img">
                   { Roll.map((bag) =>(
                 <div className="exploreLoanSection2">
+                    
                     <img src={bag.img}  alt=""  className="farmyardImg"/>
+                    
                     <p className="retailButton">{bag.tag}</p>
                     <div className="pTag">{bag.price}</div>
                     <div className="forIdentity">{bag.header}</div>

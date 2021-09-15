@@ -111,9 +111,11 @@
 .farmyardImg{
     width:100%;
     border-radius: 8px;
-    height: 200px;
-    object-fit: cover;
+     /* height: 200px;  */
+    height:100%;
+    object-fit:cover;
 }
+
 .section2DivHolder_img{
    padding:0px 25px 20px; 
 }
@@ -396,16 +398,19 @@ margin-right: 20px;
 
 @media (min-width:321px){
     .farmyardImg{
-        height:210px;
+        /* height:210px; */
+        height:100%;
     }
 }
 @media (min-width:992px){
       .farmyardImg{
         height:220px;
+        
     } 
 }
 @media (min-width:1025px){
       .farmyardImg{
         height:225px;
+        
     } 
 }
