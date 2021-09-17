@@ -144,6 +144,14 @@
     background-color: #fff;
     font-size: 12px;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
 
 .pTag{
     position:absolute;
@@ -259,6 +267,7 @@ margin-right: 20px;
 }
 
 .footerDivImgVideo{
+
     margin-bottom: 60px;
 }
 
@@ -347,10 +356,10 @@ margin-right: 20px;
    .section2DivHolder_img{
        margin-top: 25px;
    }
-   .carWidth{
+   /* .carWidth{
     
     margin-bottom: 30px;
-}
+} */
 }
 
 @media (min-width:992px){
@@ -372,11 +381,11 @@ margin-right: 20px;
     width:200px;
 }
 .section2DivHolder_img{
-       margin-top: 45px;
+       margin-top: 70px;
    }
 
 .exploreLoanSection2{
-    margin-bottom: 55px;
+    margin-bottom: 65px;
 }
 .forIdentity{
     font-size: 23px;
