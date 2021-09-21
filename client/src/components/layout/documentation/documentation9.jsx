@@ -192,7 +192,7 @@ const Documentation9 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/validate-governance-request "
+                    to="/validate-governance-request"
                     className="subSectionB_SidebarA"
                   >
                     {" "}
@@ -296,7 +296,7 @@ const Documentation9 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to=" " className="subSectionB_SidebarA">
+                  <Link to="/summary" className="subSectionB_SidebarA">
                     {" "}
                     Summary
                   </Link>
@@ -316,7 +316,7 @@ const Documentation9 = () => {
                 <div className="subSectionC_Next add">Precious</div>
                 <div className="cardText">
                   {" "}
-                  <Link to="/approved-company">
+                  <Link to="/approve-company">
                     {" "}
                     <ArrowBack className="SubForwardIcon" />
                   </Link>{" "}

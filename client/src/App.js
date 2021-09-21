@@ -111,6 +111,14 @@ import Documentation18 from "./components/layout/documentation/documentation18";
 import Documentation19 from "./components/layout/documentation/documentation19";
 import Documentation1 from "./components/layout/documentation/documentationSideTabs";
 
+import Explore_Loans from "./components/layout/Explore_Loan/explore_loans";
+import Explore_Loans_Page from "./components/layout/Explore_Loan/exploreLoanSection5";
+import Explore_Loans_Page1 from "./components/layout/Explore_Loan/exploreLoanSection7";
+import Explore_Loans_Page2 from "./components/layout/Explore_Loan/exploreLoanSection9";
+import Explore_Loans_Page3 from "./components/layout/Explore_Loan/exploreLoanSection10";
+import Explore_Loans_Page4 from "./components/layout/Explore_Loan/exploreLoanSection11";
+import Explore_Loans_Page5 from "./components/layout/Explore_Loan/exploreLoanSection12";
+
 const App = () => {
   useEffect(() => {
     Aos.init({});
@@ -237,6 +245,42 @@ const App = () => {
                     exact
                     path="/loan-approval-governance"
                     component={Documentation4}
+                  />
+
+                  <Route
+                    path="/explore_loans"
+                    exact
+                    component={Explore_Loans}
+                  />
+                  <Route
+                    path="/explore_loans_page"
+                    exact
+                    component={Explore_Loans_Page}
+                  />
+                  <Route
+                    path="/explore_loans_page1"
+                    exact
+                    component={Explore_Loans_Page1}
+                  />
+                  <Route
+                    path="/explore_loans_page2"
+                    exact
+                    component={Explore_Loans_Page2}
+                  />
+                  <Route
+                    path="/explore_loans_page3"
+                    exact
+                    component={Explore_Loans_Page3}
+                  />
+                  <Route
+                    path="/explore_loans_page4"
+                    exact
+                    component={Explore_Loans_Page4}
+                  />
+                  <Route
+                    path="/explore_loans_page5"
+                    exact
+                    component={Explore_Loans_Page5}
                   />
                   <Route
                     exact

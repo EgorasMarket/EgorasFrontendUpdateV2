@@ -315,7 +315,7 @@ const Documentation12 = () => {
               <div className="subSectionC_Card">
                 <div className="subSectionC_Next add">Precious</div>
                 <div className="cardText">
-                  <Link to="/distribute=interest-to-Egr-holders">
+                  <Link to="/distribute-interest-to-egr-holders">
                     <ArrowBack className="SubForwardIcon" />
                   </Link>{" "}
                   <div style={{ textAlign: "right" }}>
@@ -330,7 +330,7 @@ const Documentation12 = () => {
                     Validate Governance
                     <br /> Request{" "}
                   </div>
-                  <ArrowForward className="SubForwardIcon" />
+                 <Link to="/validate-governance-request"> <ArrowForward className="SubForwardIcon" /></Link>
                 </div>
               </div>
             </div>

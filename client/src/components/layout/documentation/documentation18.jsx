@@ -320,7 +320,7 @@ const Documentation18 = () => {
                 <div className="subSectionC_Next add">Precious</div>
                 <div className="cardText">
                   {" "}
-                  <ArrowBack className="SubForwardIcon" />{" "}
+                 <Link to="/introduction" ><ArrowBack className="SubForwardIcon" /></Link>{" "}
                   <div style={{ textAlign: "right" }}>Introduction</div>{" "}
                 </div>
               </div>
@@ -331,7 +331,7 @@ const Documentation18 = () => {
                     {" "}
                     Egoras Governance <br /> Token(EGR)
                   </div>
-                  <ArrowForward className="SubForwardIcon" />
+                 <Link to="/egoras-governance-token"><ArrowForward className="SubForwardIcon" /></Link>
                 </div>
               </div>
             </div>

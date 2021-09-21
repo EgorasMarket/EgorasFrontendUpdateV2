@@ -30,7 +30,7 @@ const Documentation5 = () => {
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/documentation" className="subSectionB_SidebarA"> Introduction</Link></li>
                             <li className="subSectionB_Sidebar_Link add" data-aos="fade-right" data-aos-duration="3000">GETTING STARTED</li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/documentation1" className="subSectionB_SidebarA">What problem is Egoras trying to solve </Link></li>
-                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/egoras-decentralized-autonomous-organization " className="subSectionB_SidebarA">Egoras Decentralized Autonomous <br/> Organization </Link></li>
+                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/egoras-decentralized-autonomous-organization" className="subSectionB_SidebarA">Egoras Decentralized Autonomous <br/> Organization </Link></li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/lending-partner-governance" className="subSectionB_SidebarA">Lending Partner Governance </Link></li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/loan-approval-governance" className="subSectionB_SidebarA"> Loan Aprroval Governance</Link></li> 
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/interest-rate-governance" className="subSectionB_SidebarA">Interest Rate Governance</Link></li>
@@ -72,7 +72,7 @@ const Documentation5 = () => {
                    </div>
                      <div className="subSectionC_Card Card12">
                        <div className="subSectionC_Next">Next</div>
-                       <div className="cardText"><div >Interest Sharing<br/>Formula </div><Link to="/interest-sharing-formula"><ArrowForward className="SubForwardIcon"/></Link></div>
+                       <div className="cardText"><div >Interest Sharing<br/>Formula </div><Link to="/interest-sharing-formular"><ArrowForward className="SubForwardIcon"/></Link></div>
                    </div>
                    </div>
 

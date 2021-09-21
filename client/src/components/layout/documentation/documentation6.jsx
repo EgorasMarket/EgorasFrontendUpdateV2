@@ -48,7 +48,7 @@ const Documentation6 = () => {
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/block-rewards" className="subSectionB_SidebarA"> Block Rewards</Link></li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/how-is-the-treasury-capitalized" className="subSectionB_SidebarA">How is the Treasury capitalized?</Link></li> 
                             <li className="subSectionB_Sidebar_Link add" data-aos="fade-right" data-aos-duration="3000">EGORAS TOKEN ECONOMY</li>
-                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/introduction " className="subSectionB_SidebarA"> Introduction</Link></li> 
+                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/introduction" className="subSectionB_SidebarA"> Introduction</Link></li> 
                                                      <div className=""><img src="img.svg" alt="" className="positionImg" /></div>
                                                       <div className=""><img src="img2.svg" alt="" className="positionImg1" /></div>
                                                    

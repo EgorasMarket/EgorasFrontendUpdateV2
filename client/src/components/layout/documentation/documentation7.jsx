@@ -68,11 +68,11 @@ const Documentation7 = () => {
                    <div className="aboutEgoras_card">
                    <div className="subSectionC_Card">
                        <div className="subSectionC_Next add">Precious</div>
-                       <div className="cardText"><Link to="/interest-sharing-formula"> <ArrowBack className="SubForwardIcon"/></Link><div style={{textAlign:'right'}}>Interest Sharing Formula</div> </div>
+                       <div className="cardText"><Link to="/interest-sharing-formular"> <ArrowBack className="SubForwardIcon"/></Link><div style={{textAlign:'right'}}>Interest Sharing Formula</div> </div>
                    </div>
                      <div className="subSectionC_Card Card12">
                        <div className="subSectionC_Next">Next</div>
-                       <div className="cardText"><div> Approved Company </div><Link to="/approved-company"><ArrowForward className="SubForwardIcon"/></Link></div>
+                       <div className="cardText"><div> Approved Company </div><Link to="/approve-company"><ArrowForward className="SubForwardIcon"/></Link></div>
                    </div>
                    </div>
 

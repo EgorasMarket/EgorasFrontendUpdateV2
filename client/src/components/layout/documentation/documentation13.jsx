@@ -63,7 +63,7 @@ const Documentation13 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/egoras-decentralized-autonomous-organization "
+                    to="/egoras-decentralized-autonomous-organization"
                     className="subSectionB_SidebarA"
                   >
                     Egoras Decentralized Autonomous <br /> Organization{" "}
@@ -75,7 +75,7 @@ const Documentation13 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/lending-partner-governance "
+                    to="/lending-partner-governance"
                     className="subSectionB_SidebarA"
                   >
                     Lending Partner Governance{" "}
@@ -87,7 +87,7 @@ const Documentation13 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/loan-approval-governance "
+                    to="/loan-approval-governance"
                     className="subSectionB_SidebarA"
                   >
                     {" "}
@@ -100,7 +100,7 @@ const Documentation13 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/interest-rate-governance "
+                    to="/interest-rate-governance"
                     className="subSectionB_SidebarA"
                   >
                     Interest Rate Governance
@@ -112,7 +112,7 @@ const Documentation13 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/interest-sharing-formular "
+                    to="/interest-sharing-formular"
                     className="subSectionB_SidebarA"
                   >
                     Interest sharing Formula
@@ -131,7 +131,7 @@ const Documentation13 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/loan-application "
+                    to="/loan-application"
                     className="subSectionB_SidebarA"
                   >
                     {" "}
@@ -152,7 +152,7 @@ const Documentation13 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to="/repay-loan " className="subSectionB_SidebarA">
+                  <Link to="/repay-loan" className="subSectionB_SidebarA">
                     Repay Loan{" "}
                   </Link>
                 </li>
@@ -161,7 +161,7 @@ const Documentation13 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to="/reward-voter " className="subSectionB_SidebarA">
+                  <Link to="/reward-voter" className="subSectionB_SidebarA">
                     {" "}
                     Reward Voters
                   </Link>
@@ -172,7 +172,7 @@ const Documentation13 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/distribute-interest-to-egr-holders "
+                    to="/distribute-interest-to-egr-holders"
                     className="subSectionB_SidebarA"
                   >
                     {" "}
@@ -184,7 +184,7 @@ const Documentation13 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to="/governance-vote " className="subSectionB_SidebarA">
+                  <Link to="/governance-vote" className="subSectionB_SidebarA">
                     {" "}
                     Governance Vote
                   </Link>
@@ -196,7 +196,7 @@ const Documentation13 = () => {
                 >
                   <Link
                     Link
-                    to="/validate-governance-request "
+                    to="/validate-governance-request"
                     className="subSectionB_SidebarA"
                   >
                     {" "}
@@ -228,7 +228,7 @@ const Documentation13 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to="/block-rewards " className="subSectionB_SidebarA">
+                  <Link to="/block-rewards" className="subSectionB_SidebarA">
                     {" "}
                     Block Rewards
                   </Link>
@@ -239,7 +239,7 @@ const Documentation13 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/how-is-the-treasury-capitalized "
+                    to="/how-is-the-treasury-capitalized"
                     className="subSectionB_SidebarA"
                   >
                     How is the Treasury capitalized?
@@ -257,7 +257,7 @@ const Documentation13 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to="/introduction " className="subSectionB_SidebarA">
+                  <Link to="/introduction" className="subSectionB_SidebarA">
                     {" "}
                     Introduction
                   </Link>
@@ -275,7 +275,7 @@ const Documentation13 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/the-egoras-dollar "
+                    to="/the-egoras-dollar"
                     className="subSectionB_SidebarA"
                   >
                     The Egoras Dollar(EUSD)
@@ -300,7 +300,7 @@ const Documentation13 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to=" " className="subSectionB_SidebarA">
+                  <Link to="/summary" className="subSectionB_SidebarA">
                     {" "}
                     Summary
                   </Link>

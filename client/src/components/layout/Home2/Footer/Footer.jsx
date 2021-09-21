@@ -103,7 +103,7 @@ const Footer = () => {
                 <a href="/" className="c1link1 a">
                   Home
                 </a>
-                <a href="/explore" className="c1link1" target="_blank">
+                <a href="/explore_loans" className="c1link1" target="_blank">
                   Explore loans
                 </a>
                 <a href="/documentation" className="c1link1" target="_blank">
@@ -177,7 +177,7 @@ const Footer = () => {
                     <a href="/" className="c1link1 a">
                       Home
                     </a>
-                    <a href="/explore" className="c1link1" target="_blank">
+                    <a href="/explore_loans" className="c1link1" target="_blank">
                       Explore loans
                     </a>
                     <a
