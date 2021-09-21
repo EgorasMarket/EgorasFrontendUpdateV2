@@ -26,6 +26,7 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "node-cron": "^2.0.3",
+    "react-swipeable-views": "^0.14.0",
     "request": "^2.88.2",
     "sequelize": "^6.3.3",
     "styled-components": "^5.3.1",
