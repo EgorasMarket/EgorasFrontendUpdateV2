@@ -34,6 +34,7 @@ import ListItem from "@material-ui/core/ListItem";
 // styles
 import "../../../../css/header.css";
 import "../../../../css/headerMobile.css";
+import { Authenticate } from "../../../auth/Authenticate";
 
 const drawerWidth = 240;
 
@@ -480,8 +481,8 @@ const Header = () => {
                 Get the loan
               </a>
 
-              <a href="/signup" className="connect">
-                Connect wallet
+              <a href="#" className="connect">
+                <Authenticate />
                 <div className="connectHover"></div>
               </a>
             </ul>

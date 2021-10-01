@@ -47,7 +47,7 @@ const Companyreg = props => {
     setBtnDirectorText("Add Director");
     setIsAddingDirector(false);
     if (res) {
-    
+    console.log(res);
       let data = board_of_directors;
       let d = {
         position_of_director,
@@ -57,11 +57,11 @@ const Companyreg = props => {
       data.push(d);
     
       setFormData({...formData, ["board_of_directors"]: data});
-      setDirectors({
-        position_of_director: "",
-      name_of_director: "",
-      picture_of_director: "",
-    })
+    //   setDirectors({
+    //     position_of_director: "",
+    //   name_of_director: "",
+    //   picture_of_director: "",
+    // })
     document.getElementById('director_output').removeAttribute('src');
     }else{
 
@@ -89,7 +89,11 @@ const Companyreg = props => {
     share_capital: "",
     location: "",
     company_offset_loan: "0",
-    board_of_directors: [],
+    board_of_directors: [{
+      position_of_director: "Thief",
+      name_of_director: "Goodness Ebri",
+      picture_of_director: "https://i.imgur.com/Ew8vr4R.jpg"
+    }],
     company_logo: "",
     company_description: ""
   });
@@ -239,14 +243,14 @@ const backStage = (e) => {
   return false;
 };
 const isStageTwoIsValid = board_of_directors.length > 0;
-const isStageOneIsValid = 
-    name_of_company.length > 0 &&
-    cac.length > 0 &&
-    location.length > 0 &&
-    share_capital.length > 0 &&
-    context.account.length > 0 &&
-    company_offset_loan !== "0" &&
-    company_description.length > 9; 
+const isStageOneIsValid =  true;
+    // name_of_company.length > 0 &&
+    // cac.length > 0 &&
+    // location.length > 0 &&
+    // share_capital.length > 0 &&
+    // context.account.length > 0 &&
+    // company_offset_loan !== "0" &&
+    // company_description.length > 9; 
 
 
 

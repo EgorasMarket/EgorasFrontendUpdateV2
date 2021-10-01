@@ -205,7 +205,7 @@ const App = () => {
                   <Route exact path="/confirmation" component={Opd} />
                   {/* <Route exact path='/about' component={About} /> */}
                   <Route exact path="/about" component={About} />
-                  <PrivateRoute
+                  <Route
                     exact
                     path="/createloan"
                     component={Createloan}
@@ -216,7 +216,7 @@ const App = () => {
                     component={AddUploader}
                   />
                   <PrivateRoute exact path="/governance" component={Request} />
-                  <PrivateRoute
+                  <Route
                     exact
                     path="/companyreg"
                     component={Companyreg}
