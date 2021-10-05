@@ -14,12 +14,14 @@
 .gtheroTxts {
   margin-bottom: 50px;
   position: relative;
+  width: 50%;
 }
 
 .gtheroTitleloan {
   font-weight: 800;
   font-size: 48px;
   color: #000;
+  width: 70%;
 }
 
 /* 
@@ -47,6 +49,14 @@
   margin-top: 0px;
   color: #373737;
   line-height: 20px;
+}
+.gtheroParaB {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 0px;
+  color: #373737;
+  line-height: 20px;
+  width: 65%;
 }
 .gtherobuttons {
   display: flex;
@@ -315,6 +325,20 @@
   transition: 0.3s ease-in-out;
 }
 
+.collateral-categories-section {
+  padding: 4em 0em;
+  padding-bottom: 3em;
+  position: relative;
+  text-align: center;
+}
+
+.collateral-categories-heading {
+}
+
+.collateral-cat-header {
+  font-weight: 800;
+  font-size: 32px;
+}
 /* hero section end */
 /* ============================================ */
 /* ============================================ */

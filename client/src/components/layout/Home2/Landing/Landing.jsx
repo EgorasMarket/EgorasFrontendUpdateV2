@@ -52,6 +52,25 @@ const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
+    items: 6,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+const responsive2 = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
   desktop: {
@@ -283,21 +302,15 @@ const Landing = ({
         <div className="container">
           <div className="gtheroArea">
             <div className="heroTxts">
-              <h1 className="gtheroTitleloan">
-                Uncollateralised
-                <br /> micro-credits.
-              </h1>
-              <p className="gtheroCaption">FOR SMALL ENTREPRENEURS</p>
-              <p className="gtheroPara">
-                Egoras microfinance protocol provides uncollateralised
-                <br />
-                micro-credit to small entrepreneurs and enterprises <br />
-                who cannot take shelter of banks
-                <br /> for banking and other services.
+              <h1 className="gtheroTitleloan">We’re bringing NFTs and DeFi.</h1>
+              <p className="gtheroCaption">TO THE MASSES</p>
+              <p className="gtheroParaB">
+                With Egoras Protocol, you earn more when you support real people
+                to access interest free loans instantly with their used item(s).
               </p>
               <div className="heroButton">
                 <a href="/explore" className="heroBtn">
-                  See Loans
+                  See Collaterals
                 </a>
               </div>
             </div>
@@ -535,16 +548,14 @@ const Landing = ({
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            <div className="projectsLine"></div>
-            <div className="projectsTitleContents">
+            <div className="projectsLinea"></div>
+            <div className="projectsTitleContentsa">
               <div className="projectTitle">
-                <h1 className="gttitle">Recent projects</h1>
-
-                <p className="projectsPara">All Categories</p>
+                <h1 className="gttitle">Recent collaterals</h1>
               </div>
 
               <a href="#" className="projectsLink">
-                Explore loans
+                Explore collaterals
                 <div className="projectsLinkHover"></div>
               </a>
             </div>
@@ -582,6 +593,7 @@ const Landing = ({
                     }
                   }
                 }
+                // console.log(loan);
 
                 return (
                   // <Link to="/loan-details">{"/loan/details/" + loan.id}
@@ -596,7 +608,9 @@ const Landing = ({
                           width: "100%",
                           backgroundRepeat: "no-repeat",
                           backgroundSize: "cover",
-                          borderRadius: "15px",
+                          borderRadius: "8px",
+                          borderBottomLeftRadius: "0px",
+                          borderBottomRightRadius: "0px",
                         }}
                       >
                         <div className="img-amount">
@@ -609,8 +623,22 @@ const Landing = ({
                         </div>
                       </div>
                       <div className="cardDetails">
-                        <h1 className="cardHeader">{loan.loan_tile}</h1>
-                        <p className="cardPara">Interest: 24% APY</p>
+                        <h1 className="cardHeader">{loan.title}</h1>
+                        <h1 className="collat-category">Electronics</h1>
+                        <div className="heroSlider2">
+                          <div className="slider-txts1">
+                            <div className="h-texts">
+                              <h3 className="htxt1a">15,768 egr</h3>
+                              <h3 className="htxt2a">80%</h3>
+                            </div>
+                          </div>
+                          <div className="slider-a"></div>
+                          <div className="slider-txts2">
+                            <div className="p-texts2a">
+                              <p className="ptxt2a">Remaining EGR: 0 EGR</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </a>
@@ -624,6 +652,24 @@ const Landing = ({
         </div>
       </section>
       {/*  Projects Section end*/}
+      {/* =================================================================================================================================================================================================================================================================== */}
+
+      {/* categories section start */}
+      <section className="collateral-categories-section">
+        <div className="container">
+          <div className="collateral-categories-heading">
+            <h3 className="collateral-cat-header">
+              {" "}
+              Which categories interest you?{" "}
+            </h3>
+            <p className="collateral-cat-paragraph">
+              Discover projects just for you and get great recommendations when
+              you select your interests.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* categories section end */}
       {/* =================================================================================================================================================================================================================================================================== */}
       {/* Benefits Section start */}
       <section className="gtbenefitsSection" id="benefits">
@@ -736,6 +782,7 @@ const Landing = ({
       </section>
       {/* Benefits Section start */}
       {/* =================================================================================================================================================================================================================================================================== */}
+
       {/* Stories Section Start  */}
       <section className="gtstoriesSection">
         <div className="container">
@@ -762,7 +809,7 @@ const Landing = ({
 ==============================================
 ============================= */}
             <Carousel
-              responsive={responsive}
+              responsive={responsive2}
               className="storiesCard"
               showDots={false}
               infinite={true}
