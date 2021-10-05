@@ -8,9 +8,9 @@ const ExploreLoanSection2 = () => {
 
     return (
         <div>
-            <div className="section2DivHolder_img">
+            <div className="section2DivHolder_img" >
                   { Roll.map((bag) =>(
-                <div className="exploreLoanSection2">
+                <div className="exploreLoanSection2"  >
                      <div className="DivIMG"  style={{ backgroundImage: `url(${bag.img})` }}></div>
                     {/* <img src={bag.img}  alt=""  className="farmyardImg"/> */}
                     <p className="retailButton">{bag.tag}</p>

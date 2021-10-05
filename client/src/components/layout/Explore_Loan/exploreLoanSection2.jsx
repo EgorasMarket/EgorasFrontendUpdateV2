@@ -9,9 +9,11 @@ const ExploreLoanSection2 = () => {
 
     return (
         <div>
-            <div className="section2DivHolder_img">
+            <div className="section2DivHolder_img" >
+                
                   { Roll.map((bag) =>(
-                <div className="exploreLoanSection2" key={bag.id}>
+                      <div style={{width:'100%'}}>
+                <div className="exploreLoanSection2" key={bag.id} >
                     <div className="DivIMG"  style={{ backgroundImage: `url(${bag.img})` }}></div>
                     {/* <img src={bag.img}  alt=""  className="farmyardImg"/> */}
                     <p className="retailButton">{bag.tag}</p>
@@ -19,7 +21,9 @@ const ExploreLoanSection2 = () => {
                     <div className="forIdentity">{bag.header}</div>
                     <div><span className="interestSpan">{bag.interest}</span> <span  className="percentageSpan">{bag.interest2}</span></div>
                 </div>
+                </div>
                 )) }
+                
             </div>
             
         </div>

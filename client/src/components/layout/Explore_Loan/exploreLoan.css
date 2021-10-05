@@ -124,10 +124,12 @@
 }
 .section2DivHolder_img{
    padding:0px 25px 20px; 
+
 }
 .exploreLoanSection2{
     position:relative;
     margin-bottom: 25px;
+    
 
 }
 .retailButton{
@@ -172,6 +174,9 @@ input[type=number] {
     margin-top: 12px;
     font-size: 15px;
     font-weight: 500;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .calButtonLink:active{
     background-color: #55bc7e;
