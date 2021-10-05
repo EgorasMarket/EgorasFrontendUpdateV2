@@ -169,7 +169,7 @@ const Documentation10 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/distribute-interest-to-egr-holders "
+                    to="/distribute-interest-to-egr-holders"
                     className="subSectionB_SidebarA"
                   >
                     {" "}
@@ -316,7 +316,7 @@ const Documentation10 = () => {
                 <div className="subSectionC_Next add">Precious</div>
                 <div className="cardText">
                   {" "}
-                  <ArrowBack className="SubForwardIcon" />{" "}
+                 <Link to="/repay-loan"> <ArrowBack className="SubForwardIcon" /></Link>{" "}
                   <div style={{ textAlign: "right" }}>Repay Loan</div>{" "}
                 </div>
               </div>
@@ -328,7 +328,7 @@ const Documentation10 = () => {
                     <br />
                     To Egr Holder{" "}
                   </div>
-                  <ArrowForward className="SubForwardIcon" />
+                 <Link to="/distribute-interest-to-egr-holders"> <ArrowForward className="SubForwardIcon" /></Link>
                 </div>
               </div>
             </div>

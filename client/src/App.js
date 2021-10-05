@@ -1,8 +1,8 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import Select from 'react-select';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/layout/home/Home';
-import Opd from './components/layout/home/Opd';
+import React, { Fragment, useEffect, useState } from "react";
+import Select from "react-select";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./components/layout/home/Home";
+import Opd from "./components/layout/home/Opd";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -13,20 +13,20 @@ import "aos/dist/aos.css";
 import {
   Web3ReactProvider,
   useWeb3React,
-  UnsupportedChainIdError
-} from '@web3-react/core';
+  UnsupportedChainIdError,
+} from "@web3-react/core";
 import {
   NoEthereumProviderError,
-  UserRejectedRequestError as UserRejectedRequestErrorInjected
-} from '@web3-react/injected-connector';
+  UserRejectedRequestError as UserRejectedRequestErrorInjected,
+} from "@web3-react/injected-connector";
 //import { UserRejectedRequestError as UserRejectedRequestErrorWalletConnect } from '@web3-react/walletconnect-connector';
 //import { UserRejectedRequestError as UserRejectedRequestErrorFrame } from '@web3-react/frame-connector';
-import { Web3Provider } from '@ethersproject/providers';
-import { formatEther } from '@ethersproject/units';
+import { Web3Provider } from "@ethersproject/providers";
+import { formatEther } from "@ethersproject/units";
 
-import { useEagerConnect, useInactiveListener } from './hooks';
+import { useEagerConnect, useInactiveListener } from "./hooks";
 import {
-  injected
+  injected,
   // network,
   // walletconnect,
   // walletlink,
@@ -38,7 +38,7 @@ import {
   // portis,
   // squarelink,
   // torus
-} from './connectors';
+} from "./connectors";
 
 // let ConnectorNames {
 //   //Injected: 'Injected',
@@ -56,69 +56,73 @@ import {
 // }
 
 // Redux
-import { Provider } from 'react-redux';
-import store from './store';
+import { Provider } from "react-redux";
+import store from "./store";
 
-import './css/App.css';
-import './css/Dark.css';
-import './css/apexcharts.css';
+import "./css/App.css";
+import "./css/Dark.css";
+import "./css/apexcharts.css";
 
-import Header from './components/layout/Home2/NavBar/Header.js'; 
-import Footer from './components/layout/Home2/Footer/Footer';
+import Header from "./components/layout/Home2/NavBar/Header.js";
+import Footer from "./components/layout/Home2/Footer/Footer";
 // import { Header } from './components/layout/parts/Header';
 
-import Loan from './components/layout/home/Loan';
-import Terms from './components/layout/home/Terms';
-import Privacy from './components/layout/Home2/PrivacyPolicy/Privacy';
-import Createloan from './components/layout/uploads/Createloan';
-import Companyreg from './components/layout/uploads/Companyreg';
+import Loan from "./components/layout/home/Loan";
+import Terms from "./components/layout/home/Terms";
+import Privacy from "./components/layout/Home2/PrivacyPolicy/Privacy";
+import Createloan from "./components/layout/uploads/Createloan";
+// import Createloan2 from "./components/layout/uploads/Createloan2.js";
+import Createloan2 from "./components/layout/uploads/Createloan2.js";
+import Companyreg from "./components/layout/uploads/Companyreg";
 
-import PrivateRoute from './components/routing/PrivateRoute';
-import Companies from './components/layout/companies/Companies';
-import Details from './components/layout/companies/Details';
-import Request  from './components/layout/requests/Request';
-import Login from './components/auth/Login';
-import Categories from './components/layout/categories/Categories';
-import Status from './components/layout/status/Status';
-import NewHome from './components/layout/home/NewHome';  
+import PrivateRoute from "./components/routing/PrivateRoute";
+import Companies from "./components/layout/companies/Companies";
+import Details from "./components/layout/companies/Details";
+import Request from "./components/layout/requests/Request";
+import Login from "./components/auth/Login";
+import Categories from "./components/layout/categories/Categories";
+import Status from "./components/layout/status/Status";
+import NewHome from "./components/layout/home/NewHome";
 // import About from './components/layout/home/About';
-import TokenMetrics from './components/layout/home/TokenMetrics';
-import AddUploader from './components/layout/uploads/addUploader';
-import Newhome2 from './components/layout/home/Newhome2';
-import Landing from './components/layout/Home2/Landing/Landing';
-import LoanDetails from './components/layout/LoanDetails/LoanDetails';
-import About from './components/layout/Home2/About/About';
+import TokenMetrics from "./components/layout/home/TokenMetrics";
+import AddUploader from "./components/layout/uploads/addUploader";
+import Newhome2 from "./components/layout/home/Newhome2";
+import Landing from "./components/layout/Home2/Landing/Landing";
+import LoanDetails from "./components/layout/LoanDetails/LoanDetails";
+import About from "./components/layout/Home2/About/About";
 import Documentation from "./components/layout/documentation/documentation";
-import Documentation2  from "./components/layout/documentation/documentation2";
-import Documentation3  from "./components/layout/documentation/documentation3";
-import Documentation4  from "./components/layout/documentation/documentation4";
-import Documentation5  from "./components/layout/documentation/documentation5";
-import Documentation6  from "./components/layout/documentation/documentation6";
-import Documentation7  from "./components/layout/documentation/documentation7";
-import Documentation8  from "./components/layout/documentation/documentation8";
-import Documentation9  from "./components/layout/documentation/documentation9";
-import Documentation10  from "./components/layout/documentation/documentation10";
-import Documentation11  from "./components/layout/documentation/documentation11";
-import Documentation12  from "./components/layout/documentation/documentation12";
-import Documentation13  from "./components/layout/documentation/documentation13";
-import Documentation14  from "./components/layout/documentation/documentation14";
-import Documentation15  from "./components/layout/documentation/documentation15";
-import Documentation16  from "./components/layout/documentation/documentation16";
-import Documentation17  from "./components/layout/documentation/documentation17";
-import Documentation18  from "./components/layout/documentation/documentation18";
-import Documentation19  from "./components/layout/documentation/documentation19";
-import Documentation1  from "./components/layout/documentation/documentationSideTabs";
+import Documentation2 from "./components/layout/documentation/documentation2";
+import Documentation3 from "./components/layout/documentation/documentation3";
+import Documentation4 from "./components/layout/documentation/documentation4";
+import Documentation5 from "./components/layout/documentation/documentation5";
+import Documentation6 from "./components/layout/documentation/documentation6";
+import Documentation7 from "./components/layout/documentation/documentation7";
+import Documentation8 from "./components/layout/documentation/documentation8";
+import Documentation9 from "./components/layout/documentation/documentation9";
+import Documentation10 from "./components/layout/documentation/documentation10";
+import Documentation11 from "./components/layout/documentation/documentation11";
+import Documentation12 from "./components/layout/documentation/documentation12";
+import Documentation13 from "./components/layout/documentation/documentation13";
+import Documentation14 from "./components/layout/documentation/documentation14";
+import Documentation15 from "./components/layout/documentation/documentation15";
+import Documentation16 from "./components/layout/documentation/documentation16";
+import Documentation17 from "./components/layout/documentation/documentation17";
+import Documentation18 from "./components/layout/documentation/documentation18";
+import Documentation19 from "./components/layout/documentation/documentation19";
+import Documentation1 from "./components/layout/documentation/documentationSideTabs";
 
-
-
+import Explore_Loans from "./components/layout/Explore_Loan/explore_loans";
+import Explore_Loans_Page from "./components/layout/Explore_Loan/exploreLoanSection5";
+import Explore_Loans_Page1 from "./components/layout/Explore_Loan/exploreLoanSection7";
+import Explore_Loans_Page2 from "./components/layout/Explore_Loan/exploreLoanSection9";
+import Explore_Loans_Page3 from "./components/layout/Explore_Loan/exploreLoanSection10";
+import Explore_Loans_Page4 from "./components/layout/Explore_Loan/exploreLoanSection11";
+import Explore_Loans_Page5 from "./components/layout/Explore_Loan/exploreLoanSection12";
 
 const App = () => {
-
-
   useEffect(() => {
     Aos.init({});
   }, []);
-
 
   function getLibrary(provider) {
     const library = new Web3Provider(provider);
@@ -132,42 +136,36 @@ const App = () => {
 
   const [intitiated, SetIntitiated] = useState(false);
   const [isTokenMetrics, SetIsTokenMetrics] = useState(false);
-  
-  const handleChange = (e) =>{
+
+  const handleChange = (e) => {
     e.preventDefault();
     console.log(intitiated);
-    localStorage.setItem('toogle', !intitiated);
-    SetIntitiated((intitiated) =>!intitiated);
-  }
-
-  
+    localStorage.setItem("toogle", !intitiated);
+    SetIntitiated((intitiated) => !intitiated);
+  };
 
   useEffect(() => {
     let toggleState;
-    if(localStorage.getItem('toogle')){
-      if(localStorage.getItem('toogle') == "true"){
+    if (localStorage.getItem("toogle")) {
+      if (localStorage.getItem("toogle") == "true") {
         toggleState = true;
-      }else{
+      } else {
         toggleState = false;
       }
-    }else{
+    } else {
       toggleState = false;
     }
-    SetIntitiated((intitiated) =>  toggleState );
-    
-  },[]);
+    SetIntitiated((intitiated) => toggleState);
+  }, []);
   const currentPage = window.location.pathname;
   // console.log(currentPage);
   useEffect(() => {
-    if (currentPage == '/token-metrics') {
+    if (currentPage == "/token-metrics") {
       SetIsTokenMetrics(true);
-      console.log('/token-metrics');
-      
+      console.log("/token-metrics");
     }
-    
-  },[]);
-  
-  
+  }, []);
+
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
       <Provider store={store}>
@@ -205,11 +203,8 @@ const App = () => {
                   <Route exact path="/confirmation" component={Opd} />
                   {/* <Route exact path='/about' component={About} /> */}
                   <Route exact path="/about" component={About} />
-                  <Route
-                    exact
-                    path="/createloan"
-                    component={Createloan}
-                  />
+                  <Route exact path="/createloan2" component={Createloan} />
+                  <Route exact path="/createloan" component={Createloan2} />
                   <Route
                     exact
                     path="/create-uploader"
@@ -250,6 +245,42 @@ const App = () => {
                     exact
                     path="/loan-approval-governance"
                     component={Documentation4}
+                  />
+
+                  <Route
+                    path="/explore_loans"
+                    exact
+                    component={Explore_Loans}
+                  />
+                  <Route
+                    path="/explore_loans_page"
+                    exact
+                    component={Explore_Loans_Page}
+                  />
+                  <Route
+                    path="/explore_loans_page1"
+                    exact
+                    component={Explore_Loans_Page1}
+                  />
+                  <Route
+                    path="/explore_loans_page2"
+                    exact
+                    component={Explore_Loans_Page2}
+                  />
+                  <Route
+                    path="/explore_loans_page3"
+                    exact
+                    component={Explore_Loans_Page3}
+                  />
+                  <Route
+                    path="/explore_loans_page4"
+                    exact
+                    component={Explore_Loans_Page4}
+                  />
+                  <Route
+                    path="/explore_loans_page5"
+                    exact
+                    component={Explore_Loans_Page5}
                   />
                   <Route
                     exact

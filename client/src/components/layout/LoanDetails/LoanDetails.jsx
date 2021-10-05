@@ -81,7 +81,7 @@ const LoanDetails = ({ match, loans, messenger }) => {
   const onEntered = () =>
     setStatus(<img className="upimg" src="/up.png" alt="" />);
   const [isLoading, setIsLoading] = useState(false);
-  const [btnText, setBtnText] = useState("Vote");
+  const [btnText, setBtnText] = useState("Back it");
   const [stage, setStage] = useState(0);
   const onExited = () => setStatus(<img src="/down.png" alt="" />);
   const [text, setText] = useState("");
@@ -102,6 +102,7 @@ const LoanDetails = ({ match, loans, messenger }) => {
     id: null,
   });
   const [directors, setDirectors] = useState([]);
+  const [percentage, setPercentage] = useState(0);
   const [isFetching, setIsFetching] = useState(true);
   const [loanCompany, setLoanCompany] = useState({
     name_of_company: "",
@@ -116,9 +117,11 @@ const LoanDetails = ({ match, loans, messenger }) => {
   });
   ///Start of Controlling Modal
   const [stageOne, setStageOne] = useState(0);
+  const [coin, setCoin] = useState("");
   const [stageTwo, setStageTwo] = useState(0);
   const [hash, setHash] = useState("");
   const [unlocking, setUnlocking] = useState(false);
+  const [modal, setModal] = useState(false);
   ///End of Controlling Modal
   const context = useWeb3React();
   const { library, account } = context;
@@ -127,7 +130,9 @@ const LoanDetails = ({ match, loans, messenger }) => {
     votePower: 0,
     repayAmount: "",
   });
-  const [modal, setModal] = useState(false);
+  const triggerModal = () => setModal(!modal);
+  const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
+
 
   const { vote, votePower, repayAmount } = formData;
   const config = {
@@ -135,59 +140,139 @@ const LoanDetails = ({ match, loans, messenger }) => {
       "Content-Type": "application/json",
     },
   };
+  const doUnluck = async (e) => {
+    setStageTwo(1);
+    setBtnText("Unlocking...");
+    setText("Transacting with blockchain, please wait...");
+    setIsLoading(true);
+    let ret = await unluckToken(parseEther(votePower.toString(), "wei").toString(), library.getSigner(), coin);
+    if (ret.status == true) {
+      localStorage.setItem('unlocking', true);
+      localStorage.setItem('unlockingHash', ret.message)
+      setText("Unlocking please wait aleast 1/2 minutes");
 
+    } else {
+      setStageTwo(0);
+      setBtnText("Unlock");
+      setIsLoading(false);
+      messenger("Did not complete successfully", "danger");
+    }
+
+  }
+
+  const openRepayLoan = async (e) => {
+    setStage(0);
+    setStageOne(3);
+    setCoin("eusd");
+    setModal(!modal);
+  }
+
+  const Continue = async (e) => {
+    setStage(0);
+    setText("");
+    setModal(!modal);
+  }
+
+  const repayLoan = async (e) => {
+    setCoin("eusd");
+    setUnlocking(false);
+    setStageOne(1);
+    setIsLoading(true);
+    setUnlockWhat("EUSD")
+    let ckeck = await checkAllowance(account, parseEther(votePower.toString(), "wei").toString(), library.getSigner(), coin);
+    if (ckeck.status == true) {
+
+
+
+      let ret = await payLoan(loanData.loanID, parseEther(votePower.toString(), "wei").toString(), library.getSigner());
+
+      console.log(ret);
+
+      if (ret.status == true) {
+
+        setIsLoading(false);
+        setStageOne(2);
+        setHash(ret.message);
+
+      } else if (ret.status == false) {
+
+        setIsLoading(false);
+        setStageOne(0);
+        messenger(ret.message, "danger");
+
+      }
+
+
+
+    } else {
+      setStage(1);
+      setStageTwo(0);
+      setBtnText("Unlock");
+      setIsLoading(false);
+    }
+  }
+
+  const doVote = async (e) => {
+    
+    setCoin("egr")
+    setBtnText("Backing...");
+    setUnlocking(false);
+    setStageOne(1);
+    setIsLoading(true);
+    let check = await checkAllowance(account, parseEther(votePower.toString(), "wei").toString(), library.getSigner(), 'egr');
+
+    if (check.status == true) {
+
+      let type = false;
+      if (vote == "yes") {
+        type = true;
+
+      }
+
+      let ret = await acceptLoan(loanData.loanID, type, parseEther(votePower.toString(), "wei").toString(), library.getSigner());
+
+      console.log(ret);
+
+      if (ret.status == true) {
+
+        setIsLoading(false);
+        setStageOne(2);
+        setHash(ret.message);
+
+      } else if (ret.status == false) {
+        setBtnText("back it")
+        setIsLoading(false);
+        setStageOne(0);
+        messenger(ret.message, "danger");
+
+      }
+
+
+
+    } else {
+      setStage(1);
+      setStageTwo(0);
+      setBtnText("Unlock");
+      setIsLoading(false);
+    }
+
+
+  }
   useEffect(() => {
     axios
       .get(api_url + "/api/loans/get/by/id/" + match.params.id, null, config)
       .then(function (response) {
-        axios
-          .get(
-            api_url + "/api/loans/system/info/" + response.data.data[0].loanID,
-            null,
-            config
-          )
-          .then((data) => {
-            let d = data.data.data;
-            let theCountDown = new Date(
-              response.data.data[0].countDown
-            ).getTime();
-            let now = new Date(data.data.newdate).getTime();
-
-            console.log(data.data);
-            setLoanDetailData({
-              ...loanDetailData,
-              ["validated"]: d._validate,
-              ["isActiveVotingPeriod"]: theCountDown >= now,
-              ["is_approved"]: d._state,
-              ["payable"]: d._finalLoanAmount,
-            });
-
-            let accepted = parseInt(response.data.data[0].accepted);
-            let declined = parseInt(response.data.data[0].declined);
-
-            if (declined == 0 && accepted > 0) {
-              setUp(100);
-            } else if (accepted == 0 && declined > 0) {
-              setDown(100);
-            }
-            if (accepted == 0 && declined == 0) {
-            } else {
-              let wholeNumber = declined + accepted;
-              let percent = (accepted / wholeNumber) * 100;
-
-              if (percent !== Infinity) {
-                setUp(percent);
-                setDown(100 - percent);
-              }
-            }
-
-            // console.log(response.data.data[0]);
-
-            setLoanData(response.data.data[0]);
-
-            setIsFetching(false);
-          });
-        console.log(response.data.data[0].loanID);
+        setLoanData(response.data.data[0]);
+        let backed  = response.data.data[0].backed;
+        let votingThreshold = response.data.data[0].votingThreshold;
+        if(response.data.data[0].is_approved){
+            setFormData({...formData, ['votePower']: parseFloat(response.data.data[0].loan_amount)})
+        }
+        let per = (parseFloat(backed) / parseFloat(votingThreshold)) * 100;
+        
+        setPercentage(Math.round(per));
+        
+      
       });
 
     localStorage.setItem("unlocking", false);
@@ -204,9 +289,53 @@ const LoanDetails = ({ match, loans, messenger }) => {
         setIsLoading(false);
       });
   }, []);
+  const validate = async (e) => {
 
-  console.log(allLoansData);
+    setStage(0);
+    setStageOne(1);
+    setModal(!modal);
+    let approve = await activateLoan(loanData.loanID, library.getSigner());
 
+    if (approve.status == true) {
+      setStageOne(2);
+      setHash(approve.message);
+
+    } else if (approve.status == false) {
+      
+      messenger(approve.message, "danger");
+    }
+
+
+  }
+
+  setInterval(() => {
+
+    if (localStorage.getItem('unlocking') == "true") {
+      console.log("running Interval");
+      transactReceipt(localStorage.getItem('unlockingHash'), library)
+        .then(function (env) {
+          // console.log("running Interval", env);
+          if (env.status == true && env.message !== null) {
+            if (env.message.confirmations > 0) {
+              setIsLoading(false);
+              localStorage.setItem('unlocking', false);
+              if(!loanData.is_approved){
+                setStage(0);
+                setStageOne(0);
+                setBtnText("Back it")
+              }else if(loanData.is_approved){
+                setStage(0);
+    setStageOne(3);
+
+              }
+              
+            }
+
+          }
+        });
+
+    }
+  }, 7000);
   return (
     <div>
       {/* hero section start */}
@@ -215,37 +344,84 @@ const LoanDetails = ({ match, loans, messenger }) => {
           <div className="heroArea2">
             <div className="gtheroTxts" data-aos="fade-up">
               <h1 className="gtheroTitleloan">
-                For Mrs. Eno Friday <br />
+                {/* For Mrs. Eno Friday <br />
                 Okon to improve her
                 <br />
                 <span className="restaurant">restaurant </span>
-                business.
+                business. */}
+                {loanData.title}
               </h1>
               <div className="heroSlider">
                 <div className="slider-txts1">
                   <div className="p-texts">
-                    <p className="ptxt1">Yes</p>
-                    <p className="ptxt2">No</p>
+                    {/* <p className="ptxt1">Yes</p>
+                    <p className="ptxt2">No</p> */}
                   </div>
                   <div className="h-texts">
-                    <h3 className="htxt1">82%</h3>
-                    <h3 className="htxt2">18%</h3>
+                    <h3 className="htxt1">{percentage}%</h3>
+                    {/* <h3 className="htxt2">100%</h3> */}
                   </div>
                 </div>
-                <div className="slider"></div>
+                <div className="slider">
+                  <div className="sliderafter" style={{width: `${percentage}%`}}></div>
+                </div>
                 <div className="slider-txts2">
                   <div className="p-texts2">
-                    <p className="ptxt1">Yes Powered by 54000 EGR</p>
-                    <p className="ptxt2">No Powered by 655 EGR</p>
+                    <p className="ptxt1">Backed by {parseFloat(loanData.backed)} EGR</p>
+                    <p className="ptxt2">Threshold: {parseFloat(loanData.votingThreshold)} EGR</p>
                   </div>
                 </div>
               </div>
-              <div className="heroButton">
-                <a href="#" className="heroBtn">
+             {
+               !loanData.is_approved && parseFloat(loanData.backed) < parseFloat(loanData.votingThreshold) ? (
+                <div className="heroButton">
+                <a href="#"
+                  style={{ borderRadius: '8px' }}
+                  disabled={vote == "0"}
+                  className='heroBtn'
+                  onClick={triggerModal}
+                >
+                  Back this loan
+        </a>
+       </div> 
+               ) : null
+             }
+ 
+             {
+              !loanData.is_approved && parseFloat(loanData.backed) >= parseFloat(loanData.votingThreshold) ? (
+              
+                <div className="heroButton">
+                <a href="#"
+                  style={{ borderRadius: '8px' }}
+                 
+                  className='heroBtn'
+                  onClick={e => validate(e)}
+                >
+                  Disburse
+        </a>
+       </div> 
+              )
+              : null
+            }
+
+{
+              loanData.is_approved && loanData.creator == account && loanData.isLoan ? (
+              
+                <div className="heroButton">
+                <a href="#"
+                  style={{ borderRadius: '8px' }}
+                 
+                  className='heroBtn'
+                  onClick={e => openRepayLoan(e)}
+                >
                   Repay Loan
-                  {/* <div className="learnHover"></div> */}
-                </a>
-              </div>
+        </a>
+       </div> 
+              )
+              : null
+            }
+
+                 
             </div>
 
             <div className="hero-images" data-aos="zoom-in">
@@ -337,7 +513,7 @@ const LoanDetails = ({ match, loans, messenger }) => {
             <div className="ldCardTexts5" data-aos="fade-up">
               {" "}
               Facilitated by Field Partner:{" "}
-              <span className="payment"> Storaji LTD.</span>
+              <span className="payment">{loanData.branch_name}.</span>
             </div>
             <div className="ldCardTexts6" data-aos="fade-up">
               {" "}
@@ -472,6 +648,189 @@ const LoanDetails = ({ match, loans, messenger }) => {
           {/* Carousel end==============================
 ==============================================
 ============================= */}
+ <Modal isOpen={modal} toggle={triggerModal}>
+                    <ModalHeader toggle={triggerModal}> {stage == 0 ? "Confirmation" : "Unlock wallet"}</ModalHeader>
+                    {stage == 0 ? (
+                      <div>
+                        <ModalBody>
+                          <Alert />
+                          {stageOne == 3 ? (
+                            <div style={{textAlign: "center"}}>
+
+
+                              <small>
+                                You are owing <br></br><strong><NumberFormat
+  value={parseFloat(loanData.loan_amount)}
+  className="own"
+  displayType={'text'}
+  thousandSeparator={true}
+  
+  
+/>EUSD</strong>
+                              </small>
+                              <br />
+                              <button className='heroBtn' disabled={parseFloat(repayAmount) == 0 || parseFloat(repayAmount) < 0} onClick={e => repayLoan(e)}>
+                                          {isLoading ? <FontAwesomeIcon icon={faCircleNotch} spin /> : null}{" "}
+                                          Repay Now
+                    </button>
+                              <br />
+                            </div>
+                          ) : null}
+
+                          {stageOne == 0 ? (
+                            <div>
+
+
+                              <small>
+                                You will get back the amount to your wallet address when the loan is validated.
+      </small>
+                              <div className=''>
+                                <div className='transact-stat'>
+                                  <div className='w-100 p-2'>
+                                    <Label className='vote-label' for='exampleEmail'>
+                                      Enter backing amount
+              </Label>
+                                    <div className="row">
+
+                                      <div className="col-md-8">
+                                        <FormGroup>
+
+                                          <Input
+                                            type='text'
+                                            name=''
+                                            id="votePower" name="votePower" value={votePower} onChange={e => onChange(e)}
+                                            placeholder='0.0 EGR'
+                                          />
+                                        </FormGroup>
+                                      </div>
+
+                                      <div className="col-md-4">
+                                        <button className='btn btn-success btn-block ' disabled={votePower == 0 || votePower < 0} onClick={e => doVote(e)}>
+                                          {isLoading ? <FontAwesomeIcon icon={faCircleNotch} spin /> : null}{" "}
+                                          {btnText}
+                                        </button>
+                                      </div>
+                                    </div>
+
+
+                                  </div>
+
+
+                                </div>
+                              </div>
+                              <br />
+                            </div>
+                          ) : null}
+                          {stageOne == 1 ? (
+                            <div>
+                              <p className="text-center loadingContainer">
+                                <FontAwesomeIcon icon={faCircleNotch} spin />
+
+                              </p>
+                              <p className="text-center">Transacting with blockchain, please wait...</p>
+
+                            </div>
+                          ) : null}
+
+                          {stageOne == 2 ? (
+                            <div>
+                              <div className="col-md-12 mt-4">
+                                <h1 className="text-center text-success">
+                                  <FontAwesomeIcon icon={faCheckCircle} /> <br />
+                                  Success
+                </h1>
+                                <p className="text-center">Transaction was successful.
+                <br />
+                                  <a
+                                    className="btn btn-link text-success"
+                                    href={"https://bscscan.com/tx/" + hash}
+                                    target="_blank"
+                                  >
+                                    View on bscscan.com
+            </a>
+
+                                  <br />
+                                  <button className="heroBtn" onClick={e => Continue(e)}>Continue</button>
+                                </p>
+
+                              </div>
+                            </div>
+                          ) : null}
+
+                        </ModalBody>
+
+                      </div>
+                    ) : [(stage == 1 ? (
+
+                      <div>
+                        <ModalBody>
+                          <Alert />
+                          {stageTwo == 0 ? (
+                            <div>
+
+
+                              <small>
+                                Approve <b>Egoras</b> to spend  {unlockWhat} on your behalf.
+      </small>
+                              <div className=''>
+                                <div className='transact-stat'>
+                                  <div className='w-100 p-2'>
+                                    <Label className='vote-label' for='exampleEmail'>
+                                      Amount
+              </Label>
+                                    <div className="row">
+
+                                      <div className="col-md-8">
+                                        <FormGroup>
+
+                                          <Input
+                                            type='text'
+                                            name=''
+                                            id="votePower" name="votePower" value={votePower} onChange={e => onChange(e)}
+                                            placeholder='0.0 EGR'
+                                          />
+                                        </FormGroup>
+                                      </div>
+
+                                      <div className="col-md-4">
+                                        <button className='heroBtn' style={{padding: "0.9em 4.5em"}} disabled={votePower == 0 || votePower < 0} onClick={e => doUnluck(e)}>
+                                          {isLoading ? <FontAwesomeIcon icon={faCircleNotch} spin /> : null}{" "}
+                                          {btnText}
+                                        </button>
+                                      </div>
+                                    </div>
+
+
+                                  </div>
+
+
+                                </div>
+                              </div>
+                              <br />
+                            </div>
+                          ) : null}
+                          {stageTwo == 1 ? (
+                            <div>
+                              <p className="text-center loadingContainer">
+                                <FontAwesomeIcon icon={faCircleNotch} spin />
+
+                              </p>
+                              <p className="text-center">{text}</p>
+
+                            </div>
+                          ) : null}
+
+
+                        </ModalBody>
+
+                      </div>
+
+
+
+                    ) :
+                      null
+                    )]}
+                  </Modal>
         </div>
       </section>
       {/*  Projects Section end*/}

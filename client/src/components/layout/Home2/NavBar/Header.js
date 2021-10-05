@@ -36,6 +36,7 @@ import "../../../../css/header.css";
 import "../../../../css/headerMobile.css";
 import { Authenticate } from "../../../auth/Authenticate";
 
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -396,7 +397,7 @@ const Header = () => {
                           </MenuItem>
                           <hr class="my-1" />
                           <MenuItem onClick={handleClose12}>
-                            <a href="/explore" className="borrower">
+                            <a href="/explore_loans" className="borrower">
                               Explore loans
                             </a>
                           </MenuItem>

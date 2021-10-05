@@ -223,7 +223,7 @@ const Documentation17 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to="/block-rewards " className="subSectionB_SidebarA">
+                  <Link to="/block-rewards" className="subSectionB_SidebarA">
                     {" "}
                     Block Rewards
                   </Link>
@@ -234,7 +234,7 @@ const Documentation17 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/how-is-the-treasury-capitalized "
+                    to="/how-is-the-treasury-capitalized"
                     className="subSectionB_SidebarA"
                   >
                     How is the Treasury capitalized?
@@ -295,7 +295,7 @@ const Documentation17 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to=" " className="subSectionB_SidebarA">
+                  <Link to="/summary" className="subSectionB_SidebarA">
                     {" "}
                     Summary
                   </Link>

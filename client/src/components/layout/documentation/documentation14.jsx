@@ -170,7 +170,7 @@ const Documentation14 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/distribute-interest-to-egr-holders "
+                    to="/distribute-interest-to-egr-holders"
                     className="subSectionB_SidebarA"
                   >
                     {" "}
@@ -193,7 +193,7 @@ const Documentation14 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/validate-governance-request "
+                    to="/validate-governance-request"
                     className="subSectionB_SidebarA"
                   >
                     {" "}
@@ -236,7 +236,7 @@ const Documentation14 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/how-is-the-treasury-capitalized "
+                    to="/how-is-the-treasury-capitalized"
                     className="subSectionB_SidebarA"
                   >
                     How is the Treasury capitalized?
@@ -254,7 +254,7 @@ const Documentation14 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to="/introduction " className="subSectionB_SidebarA">
+                  <Link to="/introduction" className="subSectionB_SidebarA">
                     {" "}
                     Introduction
                   </Link>
@@ -321,7 +321,7 @@ const Documentation14 = () => {
                 <div className="subSectionC_Next add">Precious</div>
                 <div className="cardText">
                   {" "}
-                  <Link to="/validate-governance">
+                  <Link to="/validate-governance-request">
                     <ArrowBack className="SubForwardIcon" />
                   </Link>{" "}
                   <div style={{ textAlign: "right" }}>

@@ -1,7 +1,7 @@
 .documentationSection {
   display: flex;
   align-items: center;
-  padding: 10em 2em;
+  padding: 10em 2em 10em 3em;
   padding-bottom: 2em;
 }
 
@@ -77,7 +77,7 @@
 }
 .documentationSection2 {
   display: flex;
-  padding: 2em;
+  padding: 2em 2em 2em 3em;
 }
 
 .subSectionB {

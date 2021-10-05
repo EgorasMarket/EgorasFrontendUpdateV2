@@ -41,12 +41,12 @@ const Documentation = () => {
                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link  to ="/repay-loan" className="subSectionB_SidebarA">Repay Loan  </Link></li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/reward-voter" className="subSectionB_SidebarA"> Reward Voters</Link></li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/distribute-interest-to-egr-holders" className="subSectionB_SidebarA"> Distribute Interest To Egr Holders</Link></li>
-                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link  to="/governance-vote " className="subSectionB_SidebarA"> Governance Vote</Link></li>
+                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link  to="/governance-vote" className="subSectionB_SidebarA"> Governance Vote</Link></li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/validate-governance-request " className="subSectionB_SidebarA"> Validate Governance Request</Link></li>
                             <li className="subSectionB_Sidebar_Link add" data-aos="fade-right" data-aos-duration="3000">EGORAS TREASURY SYSTEM</li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/how-egoras-treasury-work" className="subSectionB_SidebarA"> How Egoras Treasury Work</Link></li> 
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/block-rewards" className="subSectionB_SidebarA"> Block Rewards</Link></li>
-                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/how-is-the-treasury-capitalized " className="subSectionB_SidebarA">How is the Treasury capitalized?</Link></li> 
+                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/how-is-the-treasury-capitalized" className="subSectionB_SidebarA">How is the Treasury capitalized?</Link></li> 
                             <li className="subSectionB_Sidebar_Link add" data-aos="fade-right" data-aos-duration="3000">EGORAS TOKEN ECONOMY</li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/introduction" className="subSectionB_SidebarA"> Introduction</Link></li> 
                                                      <div className=""><img src="img.svg" alt="" className="positionImg" /></div>

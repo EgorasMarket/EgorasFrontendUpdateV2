@@ -293,7 +293,7 @@ const Documentation15 = () => {
                   data-aos="fade-right"
                   data-aos-duration="3000"
                 >
-                  <Link to=" " className="subSectionB_SidebarA">
+                  <Link to="/summary" className="subSectionB_SidebarA">
                     {" "}
                     Summary
                   </Link>

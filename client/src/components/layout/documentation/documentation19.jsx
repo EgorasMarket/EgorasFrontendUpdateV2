@@ -172,7 +172,7 @@ const Documentation19 = () => {
                   data-aos-duration="3000"
                 >
                   <Link
-                    to="/distribute-interest-to-egr-holder "
+                    to="/distribute-interest-to-egr-holders"
                     className="subSectionB_SidebarA"
                   >
                     {" "}

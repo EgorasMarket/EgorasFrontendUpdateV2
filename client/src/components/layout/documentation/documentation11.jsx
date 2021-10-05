@@ -317,7 +317,7 @@ const Documentation11 = () => {
                 <div className="subSectionC_Next add">Precious</div>
                 <div className="cardText">
                   {" "}
-                  <Link to="/reward-voters">
+                  <Link to="/reward-voter">
                     <ArrowBack className="SubForwardIcon" />
                   </Link>
                   <div style={{ textAlign: "right" }}>Reward Voters</div>{" "}
