@@ -124,6 +124,12 @@
   font-weight: 800;
   font-size: 28px;
 }
+.joinCommunitybtnsLinks {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .communitybtn1 {
   color: #000000;
   margin-right: 20px;

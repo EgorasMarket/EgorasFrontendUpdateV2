@@ -28,9 +28,6 @@
   .dots {
     width: 200px;
   }
-  .joinCommunitybtnsLinks {
-    width: 70%;
-  }
 
   .card1,
   .card2 {
@@ -157,6 +154,7 @@
   .bottomCards {
     width: 70%;
   }
+
   /* hero section end */
 
   .benefitsSection .container-md,
@@ -240,7 +238,6 @@
     margin-bottom: 100px;
     grid-row-gap: 100px;
   }
-
   .bottomCards {
     width: 85%;
   }
@@ -308,7 +305,7 @@
   }
 
   .hero-images {
-    margin-right: 0;
+    margin-left: 0;
   }
 
   .eggShape {

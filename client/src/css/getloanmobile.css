@@ -19,6 +19,9 @@
   .getLoan {
     font-size: 13px;
   }
+  .joinCommunitybtnsLinks {
+    width: 70%;
+  }
 
   .connect {
     font-size: 13px;
@@ -272,6 +275,9 @@
   .gtbottomCards {
     width: 70%;
   }
+  .joinCommunitybtnsLinks {
+    width: 80%;
+  }
   /* hero section end */
 
   .container {
@@ -359,7 +365,9 @@
     width: 410px;
     right: -107px;
   }
-
+  .joinCommunitybtnsLinks {
+    width: 90%;
+  }
   .gtcard-amount {
     width: 60%;
     left: 0;
@@ -519,6 +527,9 @@
     justify-content: space-between;
     margin-bottom: 0;
     grid-row-gap: 100px;
+  }
+  .joinCommunitybtnsLinks {
+    width: 100%;
   }
   .gtheroTitleloan {
     font-size: 38px;
@@ -872,6 +883,10 @@
   .gtheroSection {
     padding: 8em 2em;
     padding-bottom: 4em;
+  }
+  .joinCommunitybtnsLinks {
+    justify-content: center;
+    width: 100%;
   }
   .gtherobuttons {
     justify-content: center;

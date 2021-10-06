@@ -57,7 +57,7 @@ const GetLoan = () => {
       <section className="gtheroSection">
         <div className="container">
           <div className="gtheroArea">
-            <div className="gtheroTxts">
+            <div className="heroTxts">
               <h1 className="gtheroTitleloan">
                 {" "}
                 Instant
@@ -106,17 +106,7 @@ const GetLoan = () => {
             </div>
 
             <div className="hero-images">
-              <img src="/img/phone-hero2.svg" alt="" className="gtheroPhone" />
-              <img src="/img/egrdebitCard.png" alt="" className="gtdebitCard" />
-              <img src="/img/shape-egg.svg" alt="" className="gteggShape" />
-              <img src="/img/dots.svg" alt="" className="gtdots" />
-              <img
-                src="/img/greencircle.svg"
-                alt=""
-                className="gtgreenCircle"
-              />
-              <img src="/img/x-shape.svg" alt="" className="gtx" />
-              <img src="/img/circle.svg" alt="" className="gtcircle" />
+              <img src="/img/phone-hero3.png" alt="" className="heroPhone" />
             </div>
           </div>
         </div>
