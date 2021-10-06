@@ -120,8 +120,9 @@
     
      width:290px;
     height: auto;
-      box-shadow: 1px 2px 2px 2px #e6e6e76e;  
+        /* box-shadow: 1px 2px 2px 2px #e6e6e76e;     */
     /* padding: 2px 10px 30px 10px; */
+      box-shadow: 9px 6px 22px 0 rgb(0 0 0 / 8%);  
     border-radius: 7px;
     padding-bottom: 25px;
 
@@ -131,6 +132,7 @@
 
 .exploreLoanSection2:hover{
 transform:scale(1.1);
+/* box-shadow: 1px 2px 2px 2px #e6e6e76e;  */
 }
 .diff{
     width:90%;
