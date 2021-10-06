@@ -110,8 +110,6 @@
   width: 550px;
 }
 
-
-
 .card-amount {
   display: flex;
   justify-content: space-evenly;
@@ -191,10 +189,13 @@
   padding: 0.2em;
   border-radius: 50px;
 }
+
 /* hero section start */
 /* ============================================ */
 /* ============================================ */
 /* ============================================ */
+
+
 /* how it works section start */
 .collateral-links {
   display: flex;
@@ -959,6 +960,9 @@ iframe {
 /* first break point ========================================= */
 @media screen and (max-width: 1177px) {
 }
+
+
+
 
 @media screen and (max-width: 548px) {
 }

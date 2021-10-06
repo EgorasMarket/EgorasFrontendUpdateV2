@@ -9,6 +9,13 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import SearchIcon from "@mui/icons-material/Search";
+import LiveTvIcon from "@mui/icons-material/LiveTv";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import TabletMacIcon from "@mui/icons-material/TabletMac";
+import LaptopMacIcon from "@mui/icons-material/LaptopMac";
+import DesktopMacIcon from "@mui/icons-material/DesktopMac";
+import PrintIcon from "@mui/icons-material/Print";
 
 import "../../../css/getloan.css";
 import "../../../css/getloanmobile.css";
@@ -35,6 +42,16 @@ const responsive = {
 
 const GetLoan = () => {
   const [page, setPage] = useState("change");
+  const [categoryBtn, setCategoryBtn] = useState("Popular");
+
+  // change  category buttons
+  const triggerPopular = () => {
+    setCategoryBtn("Popular");
+  };
+  // change  category buttons
+  const triggerAll = () => {
+    setCategoryBtn("All");
+  };
 
   const clickMe1 = () => {
     if (page === "change") {
@@ -61,13 +78,11 @@ const GetLoan = () => {
               <h1 className="gtheroTitleloan">
                 {" "}
                 Instant
-                <br />
                 <span className="interestFree2"> Interest-Free Loans</span>
               </h1>
               <p className="gtheroCaption"> FOR EVERYONE.</p>
               <p className="gtheroPara">
                 We are here to help you get access to loans at zero interest.
-                <br />
                 Put your personal properties up as collateral for a loan.
               </p>
               <ul className="gtherobuttons">
@@ -167,6 +182,237 @@ const GetLoan = () => {
       </section>
       {/* collateralize secion end */}
 
+      {/* =================================================================================================================================================================================================================================================================== */}
+
+      <section className="collateral-assets-section">
+        <div className="container">
+          <div className="assets-container">
+            <div className="assets-cont-head-area">
+              <div className="assets-cont-header-arae-btns">
+                <button
+                  className={
+                    categoryBtn === "Popular"
+                      ? "assets-header1"
+                      : "assets-header2"
+                  }
+                  onClick={triggerPopular}
+                >
+                  Popular Collaterals
+                </button>
+                <button
+                  className={
+                    categoryBtn === "All" ? "assets-header1" : "assets-header2"
+                  }
+                  onClick={triggerAll}
+                >
+                  All Collaterals
+                </button>
+              </div>
+
+              <div className="search-input">
+                {" "}
+                <input
+                  type="search"
+                  name="search"
+                  id="searchCollaterals"
+                  className="assets-header3"
+                  placeholder="Search..."
+                ></input>{" "}
+                <SearchIcon className="search-icon" />
+              </div>
+            </div>
+            <table className="assets-table">
+              <thead className="assets-category-titles">
+                <tr className="assets">
+                  <th className="assets-category-titles-heading1">
+                    Collateral
+                  </th>
+                  <th className="assets-category-titles-heading1">Category</th>
+                  <th className="assets-category-titles-heading1">
+                    Inventory <span className="per-day">/ per-day</span>{" "}
+                  </th>
+                  <th className="assets-category-titles-heading1"></th>
+                </tr>
+              </thead>
+
+              {/* <div className="table-body-content">
+
+
+
+                
+              </div> */}
+              <tbody className="assets-table-body">
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <LiveTvIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Television</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data-name">Electrical Appliances</div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data-name">₦200</div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a href="#" className="assets-collateralize-button">
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PhoneAndroidIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Mobile Phone</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                       Phones & Accessories
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦150</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+             
+                      <div className="assets-data-name-last">
+                        <a href="#" className="assets-collateralize-button">
+                          Collateralize
+                        </a>
+                      </div>
+           
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <TabletMacIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Tablet</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                       Phones & Accessories
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦150</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+        
+                      <div className="assets-data-name-last">
+                        <a href="#" className="assets-collateralize-button">
+                          Collateralize
+                        </a>
+                      </div>
+         
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <LaptopMacIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Laptop</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                        Laptop & Computers
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+              
+                      <div className="assets-data-name-last">
+                        <a href="#" className="assets-collateralize-button">
+                          Collateralize
+                        </a>
+                      </div>
+                 
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <DesktopMacIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Desktop</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                        Laptop & Computers
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                   
+                      <div className="assets-data-name-last">
+                        <a href="#" className="assets-collateralize-button">
+                          Collateralize
+                        </a>
+                      </div>
+                  
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Printer</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                        Electrical Appliances
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+              
+                      <div className="assets-data-name-last">
+                        <a href="#" className="assets-collateralize-button">
+                          Collateralize
+                        </a>
+                      </div>
+          
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
       {/* =================================================================================================================================================================================================================================================================== */}
       {/* How it Works Section Start */}
       <section className="gthowItWorks">

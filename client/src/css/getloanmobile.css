@@ -864,6 +864,89 @@
   .cardContentTitles {
     font-size: 18px;
   }
+  /* ====================== */
+  /* ====================== */
+  /* ====================== */
+  /* ====================== */
+
+  /* collateral assets section start */
+  .assets-cont-head-area {
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+    grid-row-gap: 20px;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .assets-cont-header-arae-btns {
+    width: 100%;
+    display: flex;
+  }
+
+  .assets-header1 {
+    width: 50%;
+  }
+  .assets-header2 {
+    width: 50%;
+  }
+  .assets-category-data {
+    display: flex;
+    font-size: 14px;
+  }
+
+  td.assets-category-data::before {
+    font-family: Inter, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+    color: var(--theme-ui-colors-text-muted, #708390);
+    content: "Collateral";
+    display: block;
+  }
+
+  .assets-collateralize-button {
+    width: 100%;
+  }
+  .assets-category-titles {
+    display: none;
+  }
+  .assets-category-row {
+    width: 100%;
+    display: flex;
+  }
+  .assets-category-data1 {
+    display: flex;
+    font-size: 14px;
+  }
+  .assets-category-data1::before {
+    font-family: Inter, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+    color: var(--theme-ui-colors-text-muted, #708390);
+    content: "Category";
+    display: block;
+  }
+  .assets-category-data1b {
+    display: flex;
+    font-size: 14px;
+  }
+
+  .assets-category-data1b::before {
+    font-family: Inter, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+    color: var(--theme-ui-colors-text-muted, #708390);
+    content: "Inventory fee";
+    display: block;
+  }
+  /* collateral assets section end */
+  /* ====================== */
+  /* ====================== */
+  /* ====================== */
+  /* ====================== */
 }
 
 @media screen and (max-width: 767px) {
@@ -1143,7 +1226,7 @@
     padding: 2em 1em 1em 1em;
   }
   .gthowItWorks {
-    padding: 5em 1em;
+    padding: 3em 1em;
   }
   .gtsecondDots {
     width: 20%;
@@ -1288,6 +1371,18 @@
     font-size: 40px;
     font-weight: 500;
   }
+  /* collateral assets section start */
+  .assets-header1 {
+    width: 50%;
+    font-size: 14px;
+    padding: 0.5em 0.5em;
+  }
+  .assets-header2 {
+    width: 50%;
+    font-size: 14px;
+    padding: 0.5em 0.5em;
+  }
+  /* collateral assets section end */
 }
 /* compare section */
 
