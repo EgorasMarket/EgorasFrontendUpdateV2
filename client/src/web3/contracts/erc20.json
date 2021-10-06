@@ -1,7 +1,7 @@
 {
-    "egc": "0x194f11209acdd5003f0ab88814e2d43b1f079122",
-    "eusd": "0x4a7db1b7116e47f555a2a66cc744f3849d2bf942",
-    "egr": "0x605a231eca24d92046f8b39f75eb02c5d1209a97",
+    "egc": "0xd68e5c52f7563486cc1a15d00efa12c8644a907e",
+    "eusd": "0x09FC8C5996B30F6f7de74A300946d2bB312e5796",
+    "egr": "0x8e9a916b6920136110a77e9acaf878862358a467",
     "abi": [
         {
             "constant": false,
