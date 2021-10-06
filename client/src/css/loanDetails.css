@@ -21,6 +21,11 @@
   font-weight: 700;
 }
 
+.own{
+  color: #e4a788;
+  font-size: 46px;
+  font-weight: 700;
+}
 .heroTitle2 {
   font-size: 46px;
   font-weight: 600;
@@ -68,7 +73,7 @@
   position: relative;
   margin-top: 10px;
 }
-.slider::after {
+.sliderafter {
   content: "";
   position: absolute;
   width: 82%;

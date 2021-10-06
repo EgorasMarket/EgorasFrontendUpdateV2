@@ -13,8 +13,8 @@ import { InjectedConnector } from "@web3-react/injected-connector";
 
 const POLLING_INTERVAL = 12000;
 const RPC_URLS = {
-  1: "https://mainnet.infura.io/v3/9d829b0bd9654959af7001c81f6da717",
-  4: "https://rinkeby.infura.io/v3/9d829b0bd9654959af7001c81f6da717"
+  1: "https://bsc-dataseed.binance.org/",
+  97: "https://data-seed-prebsc-2-s1.binance.org:8545"
 };
 
 export const injected = new InjectedConnector({
@@ -28,7 +28,7 @@ export const injected = new InjectedConnector({
 // });
 
 export const walletconnect = new WalletConnectConnector({
-  rpc: { 1: RPC_URLS[1] },
+  rpc: { 56: RPC_URLS[1], 97: RPC_URLS[2] },
   bridge: "https://bridge.walletconnect.org",
   qrcode: true,
   pollingInterval: POLLING_INTERVAL
@@ -40,13 +40,13 @@ export const walletconnect = new WalletConnectConnector({
 // });
 
 export const ledger = new LedgerConnector({
-  chainId: 1,
+  chainId: 56,
   url: RPC_URLS[1],
   pollingInterval: POLLING_INTERVAL
 });
 
 export const trezor = new TrezorConnector({
-  chainId: 1,
+  chainId: 56,
   url: RPC_URLS[1],
   pollingInterval: POLLING_INTERVAL,
   manifestEmail: "dummy@abc.xyz",

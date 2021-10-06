@@ -47,7 +47,6 @@ const Companyreg = props => {
     setBtnDirectorText("Add Director");
     setIsAddingDirector(false);
     if (res) {
-
       let data = board_of_directors;
       let d = {
         position_of_director,
@@ -89,7 +88,11 @@ const Companyreg = props => {
     share_capital: "",
     location: "",
     company_offset_loan: "0",
-    board_of_directors: [],
+    board_of_directors: [{
+      position_of_director: "Thief",
+      name_of_director: "Goodness Ebri",
+      picture_of_director: "https://i.imgur.com/Ew8vr4R.jpg"
+    }],
     company_logo: "",
     company_description: ""
   });

@@ -99,17 +99,7 @@ const {
  library,
  account
 } = context;
-useEffect(() => {
-  if (account) {
-    getSystemConfig(library.getSigner()).then((data) =>{
-      if(data.status){
-        // setNextClaimDate(parseInt(data.nextClaimDate.toString()));
-      }
-      
-    });
-  }
 
-}, [account]);
 
 useEffect(() => {
  
@@ -189,7 +179,11 @@ useEffect(() => {
     
     {/* <div className='mt-5'> */}
     <div className=''>
-
+<br />
+<br />
+<br />
+<br />
+<br />
       {/* <section className='mt-4 home-body'> */}
       <section className=' home-body'>
        
@@ -304,7 +298,7 @@ useEffect(() => {
        
         
       </section>
-      <Footer />
+      
     </div>
     </Fragment>
   );

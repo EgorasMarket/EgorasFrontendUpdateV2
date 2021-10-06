@@ -176,13 +176,13 @@ const Landing = ({
         // "&channelId=UCHfi5EwXig46xp5Dx8hVBHQ&part=snippet,id&order=date"+
         // "&maxResults=6",
         "https://www.googleapis.com/youtube/v3/search?key=AIzaSyAaI0wsj9AhlVkLGdSggQjEvav0HtcyvZI" +
-          "&channelId=UCHfi5EwXig46xp5Dx8hVBHQ&part=snippet,id&order=date" +
-          "&maxResults=20",
+        "&channelId=UCHfi5EwXig46xp5Dx8hVBHQ&part=snippet,id&order=date" +
+        "&maxResults=20",
         null,
         config
       )
       .then((response) => {
-        console.log(response.data.items);
+        // console.log(response.data.items);
         setVideos(response.data.items);
       })
       .catch((err) => {
@@ -472,82 +472,82 @@ const Landing = ({
               </div>
             </div>
           ) : (
-            <div className="gthowItWorksArea2">
-              <div
-                className="gthowCard1"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                <div className="gthowCard1Title">
-                  <h1 className="gtstakeNumb">1.</h1>
+              <div className="gthowItWorksArea2">
+                <div
+                  className="gthowCard1"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  <div className="gthowCard1Title">
+                    <h1 className="gtstakeNumb">1.</h1>
 
-                  <img
-                    src="/img/stake-loan.svg"
-                    alt=""
-                    className="gtstakeLoan"
-                  />
-                </div>
-                <div className="gthowCard1Texts">
-                  Stake your token
+                    <img
+                      src="/img/stake-loan.svg"
+                      alt=""
+                      className="gtstakeLoan"
+                    />
+                  </div>
+                  <div className="gthowCard1Texts">
+                    Stake your token
                   <br />
-                  <p className="howCard1TextsP">
-                    Browse by category and stake <br />
-                    your EGR token to support an
+                    <p className="howCard1TextsP">
+                      Browse by category and stake <br />
+                      your EGR token to support an
                     <br />
-                    entrepreneur.
+                      entrepreneur.
                   </p>
+                  </div>
+                </div>
+                <div
+                  className="gthowCard2"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  <div className="gthowCard2Title">
+                    <h1 className="gtstakeNumb">2.</h1>
+
+                    <img
+                      src="/img/approve-loan.svg"
+                      alt=""
+                      className="gtstakeLoan"
+                    />
+                  </div>
+                  <div className="gthowCard2Texts">
+                    Approve Collaterals
+                  <br />
+                    <p className="howCard2TextsP">
+                      Fund collaterals without risking your
+                    <br />
+                      EGR token.
+                  </p>
+                  </div>
+                </div>
+                <div
+                  className="gthowCard3"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  <div className="gthowCard3Title">
+                    <h1 className="gtstakeNumb">3.</h1>
+
+                    <img
+                      src="/img/claim-interest.svg"
+                      alt=""
+                      className="gtstakeLoan"
+                    />
+                  </div>
+                  <div className="gthowCard3Texts">
+                    Claim Interest weekly
+                  <br />
+                    <p className="howCard3TextsP">
+                      Earn over 20% APR for
+                    <br />
+                      approving/declining collaterals.
+                  </p>
+                  </div>
                 </div>
               </div>
-              <div
-                className="gthowCard2"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                <div className="gthowCard2Title">
-                  <h1 className="gtstakeNumb">2.</h1>
-
-                  <img
-                    src="/img/approve-loan.svg"
-                    alt=""
-                    className="gtstakeLoan"
-                  />
-                </div>
-                <div className="gthowCard2Texts">
-                  Approve Collaterals
-                  <br />
-                  <p className="howCard2TextsP">
-                    Fund collaterals without risking your
-                    <br />
-                    EGR token.
-                  </p>
-                </div>
-              </div>
-              <div
-                className="gthowCard3"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                <div className="gthowCard3Title">
-                  <h1 className="gtstakeNumb">3.</h1>
-
-                  <img
-                    src="/img/claim-interest.svg"
-                    alt=""
-                    className="gtstakeLoan"
-                  />
-                </div>
-                <div className="gthowCard3Texts">
-                  Claim Interest weekly
-                  <br />
-                  <p className="howCard3TextsP">
-                    Earn over 20% APR for
-                    <br />
-                    approving/declining collaterals.
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
+            )}
 
           <a href="/signup" className="gtgetStartedButton">
             Get Started
@@ -590,30 +590,46 @@ const Landing = ({
               showDots={false}
             >
               {loanData.map((loan, i) => {
-                if (loan.loan_category === getCategory) {
-                  console.log(loan.loan_category);
-                  let percent = 0;
-                  let up = 0;
-                  let down = 0;
-                  let accepted = parseInt(loan.accepted);
-                  let declined = parseInt(loan.declined);
+                // if (loan.loan_category === getCategory) {
+                // console.log(loan);
 
-                  if (declined == 0 && accepted > 0) {
-                    up = 100;
-                  } else if (accepted == 0 && declined > 0) {
-                    down = 100;
-                  }
-                  if (accepted == 0 && declined == 0) {
-                  } else {
-                    let wholeNumber = declined + accepted;
-                    let percent = (accepted / wholeNumber) * 100;
+                // console.log(loan.loan_category);
+                let percent = 0;
+                let up = 0;
+                let down = 0;
+                let accepted = parseInt(loan.accepted);
+                let declined = parseInt(loan.declined);
 
-                    if (percent !== Infinity) {
-                      up = percent;
-                      down = 100 - percent;
-                    }
+
+                let backed = loan.backed;
+                let votingThreshold = loan.votingThreshold;
+                // if (loan.is_approved) {
+                //   setFormData({ ...formData, ['votePower']: parseFloat(loan.loan_amount) })
+                // }
+                let per = (parseFloat(backed) / parseFloat(votingThreshold)) * 100;
+
+
+                // console.log(per);
+
+
+                // setPercentage(Math.round(per));
+
+                if (declined == 0 && accepted > 0) {
+                  up = 100;
+                } else if (accepted == 0 && declined > 0) {
+                  down = 100;
+                }
+                if (accepted == 0 && declined == 0) {
+                } else {
+                  let wholeNumber = declined + accepted;
+                  let percent = (accepted / wholeNumber) * 100;
+
+                  if (percent !== Infinity) {
+                    up = percent;
+                    down = 100 - percent;
                   }
                 }
+                // }
                 // console.log(loan);
 
                 return (
@@ -649,14 +665,17 @@ const Landing = ({
                         <div className="heroSlider2">
                           <div className="slider-txts1">
                             <div className="h-texts">
-                              <h3 className="htxt1a">15,768 egr</h3>
-                              <h3 className="htxt2a">80%</h3>
+                              <h3 className="htxt1a">{parseFloat(backed)} egr</h3>
+                              <h3 className="htxt2a">{Math.round(per)}%</h3>
                             </div>
                           </div>
-                          <div className="slider-a"></div>
+                          {/* <div className="slider-a"></div> */}
+                          <div className="slider" style={{ height: '7px' }}>
+                            <div className="sliderafter" style={{ width: `${Math.round(per)}%`, height: '7px' }}></div>
+                          </div>
                           <div className="slider-txts2">
                             <div className="p-texts2a">
-                              <p className="ptxt2a">Remaining EGR: 0 EGR</p>
+                              <p className="ptxt2a">Remaining EGR: {parseFloat(votingThreshold) - parseFloat(backed)} EGR</p>
                             </div>
                           </div>
                         </div>
