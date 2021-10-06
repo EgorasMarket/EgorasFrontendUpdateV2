@@ -20,7 +20,7 @@ import Select from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import "../../../css/createloan.css";
 import { FormGroup } from "@mui/material";
-import { creatLoan}  from "../../../web3/index"
+import { creatLoan } from "../../../web3/index"
 import { parseEther } from "@ethersproject/units";
 import { image, add } from "../../../actions/loans";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -99,7 +99,7 @@ const Createloan2 = props => {
   const [isUploading, setIsUploading] = useState(false);
   const [btnText, setBtnText] = useState("Save & deploy");
   const [btnTextUpload, setBtnTextUpload] = useState("Upload");
-  
+
   const [isSuccess, setIsSuccess] = useState(false);
   const [hash, setHash] = useState("");
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
@@ -150,7 +150,7 @@ const Createloan2 = props => {
     SetLoan_category(event.target.value);
   };
   const handleChange1 = (event, newValue) => {
-   
+
 
     setValue(newValue);
   };
@@ -259,32 +259,32 @@ const Createloan2 = props => {
 
     const body = JSON.stringify({ loan_category, branch_name, loan_duration, story, arrayImg: imgObj.join(), inventory_fee })
 
-   
+
     let lDuration = parseInt(loan_duration);
     let date = new Date();
-    var newDate = date.setMonth(date.getMonth()+lDuration);
+    var newDate = date.setMonth(date.getMonth() + lDuration);
 
-    let ret = await creatLoan( 
-      loan_title, 
-    parseEther(loan_amount.toString(), "wei").toString(),  
-    Math.round(newDate / 1000), 
-    parseEther(inventory_fee.toString(), "wei").toString(),
-    imgObj[0],
-    formData.isLoan,
-    body,
-    library.getSigner());
-       if(ret.status == true){
-         setIsLoading(false);
-         
-         setHash(ret.message);
-         setBtnText("Save & Deploy");
-         setIsSuccess(true);
-         setIsLoading(false);
-       }else{
-         setIsLoading(false);
-         setBtnText("Save & Deploy");
-         props.messenger("Did not complete successfully", "danger");
-       }
+    let ret = await creatLoan(
+      loan_title,
+      parseEther(loan_amount.toString(), "wei").toString(),
+      Math.round(newDate / 1000),
+      parseEther(inventory_fee.toString(), "wei").toString(),
+      imgObj[0],
+      formData.isLoan,
+      body,
+      library.getSigner());
+    if (ret.status == true) {
+      setIsLoading(false);
+
+      setHash(ret.message);
+      setBtnText("Save & Deploy");
+      setIsSuccess(true);
+      setIsLoading(false);
+    } else {
+      setIsLoading(false);
+      setBtnText("Save & Deploy");
+      props.messenger("Did not complete successfully", "danger");
+    }
 
   }
 
@@ -294,44 +294,44 @@ const Createloan2 = props => {
 
   const { imgObj } = arrayImg;
 
-  
+
   const onDelete = e => {
     let data = imgObj;
 
     const index = e.currentTarget.id;
 
     data.splice(index, data.length);
-    setArrayImg({...arrayImg, ['imgObj']: data})
+    setArrayImg({ ...arrayImg, ['imgObj']: data })
 
   }
 
   const uploadImg = async (imgId) => {
     setBtnTextUpload("Saving...")
     setIsUploading(true);
-   
+
     let data = imgObj;
-    
-      let res = await props.image(asset_img);
-      setBtnTextUpload("Upload")
-      setIsUploading(false);
-      if(typeof res.data.image !== undefined){
-        let imgData = res.data.image;
 
-        SetCover_image(imgData)
-  
-        let d = {
-          imgData
-        }
-  
-        data.push(imgData);
-        
-        setArrayImg({...arrayImg, ['imgObj']: data})
+    let res = await props.image(asset_img);
+    setBtnTextUpload("Upload")
+    setIsUploading(false);
+    if (typeof res.data.image !== undefined) {
+      let imgData = res.data.image;
+
+      SetCover_image(imgData)
+
+      let d = {
+        imgData
       }
-      
 
-      
-    
-   
+      data.push(imgData);
+
+      setArrayImg({ ...arrayImg, ['imgObj']: data })
+    }
+
+
+
+
+
 
   }
 
@@ -342,222 +342,222 @@ const Createloan2 = props => {
 
   return (
     <Fragment>
-       {!isSuccess ? (
+      {!isSuccess ? (
 
-<section className="createLoanSection" style={{ padding: "12em 4em" }}>
-<Tabs
-  value={value}
-  // onChange={handleChange1}
-  aria-label="basic tabs example"
->
-  <Tab label="Step 1" {...a11yProps(0)} />
-  <Tab label="Step 2" {...a11yProps(1)} />
-</Tabs>
-<TabPanel value={value} index={0} className="col-md-9">
-  <div className="formBody row">
-    <div className="col-md-12 margin">
-      <h2>Upload Photo</h2>
-      <p className="upload-para">
-        Upload a square image that represents your
+        <section className="createLoanSection" style={{ padding: "12em 4em" }}>
+          <Tabs
+            value={value}
+            // onChange={handleChange1}
+            aria-label="basic tabs example"
+          >
+            <Tab label="Step 1" {...a11yProps(0)} />
+            <Tab label="Step 2" {...a11yProps(1)} />
+          </Tabs>
+          <TabPanel value={value} index={0} className="col-md-9">
+            <div className="formBody row">
+              <div className="col-md-12 margin">
+                <h2>Upload Photo</h2>
+                <p className="upload-para">
+                  Upload a square image that represents your
         <br /> campaign, 640 x 640 recommended resolution
       </p>
-      <div className='row'>
-        <div className='col-md-6'>
-          <input
-            type="file"
-            name='asset_img'
-            id='asset_img'
-            onChange={e => onFileChange(e)}
-            className="btn btn-sm uploadButton"
+                <div className='row'>
+                  <div className='col-md-6'>
+                    <input
+                      type="file"
+                      name='asset_img'
+                      id='asset_img'
+                      onChange={e => onFileChange(e)}
+                      className="btn btn-sm uploadButton"
 
-          />
-          <Button variant="contained"
-            onClick={e => uploadImg(1)}
-            className="submit-button mt-3 getLoan">
-           
-            {isUploading ? <FontAwesomeIcon icon={faCircleNotch} spin /> : null}{" "}
-                          {btnTextUpload}
-          </Button>
+                    />
+                    <Button variant="contained"
+                      onClick={e => uploadImg(1)}
+                      className="submit-button mt-3 getLoan">
 
-        </div>
-     
-     
-       
-      </div>
-<div className="row">
-{
-imgObj.map((image, i) => (
-  
-  <div className="image-wrapper">
-    <div className="image" style={{backgroundImage: `url(${image})` }}>
+                      {isUploading ? <FontAwesomeIcon icon={faCircleNotch} spin /> : null}{" "}
+                      {btnTextUpload}
+                    </Button>
 
-    </div>
-    <button id={i} onClick={e => onDelete(e)}>X</button>
-  </div>
-  
+                  </div>
 
-))
-}
-</div>
-    </div>
-    <br />
-    <div className="col-md-12 margin">
-      <h5>Loan Title</h5>
-      <TextField
-        id="outlined-basic"
-        label="Loan title"
-        variant="outlined"
-        name="loan_title" value={loan_title} onChange={e => onChange(e)}
-      />
-    </div>
-    <br />
-    <div className="col-md-12 margin">
-      <h5>Loan Amount</h5>
-      <TextField
-        id="outlined-basic"
-        label="Loan amount"
-        variant="outlined"
-        type='number'
-        name="loan_amount" value={loan_amount} onChange={e => onChange(e)}
-      />
-    </div>
-    <br />
-    <div className="col-md-12 margin">
-      <h5>Inventory Fee</h5>
-      <TextField
-        id="outlined-basic"
-        label="Inventory Fee"
-        variant="outlined"
-        type='number'
-        name="inventory_fee" value={inventory_fee} onChange={e => onChange(e)}
-      />
-    </div>
-    <br />
-    <div className="col-md-12 margin">
-      <h5>Branch Name</h5>
-      <TextField
-        id="outlined-basic"
-        label="Branch name"
-        variant="outlined"
-        name="branch_name" value={branch_name} onChange={e => onChange(e)}
-      />
-    </div>
-    <br />
-    {/* =================================== */}
-    {/* =================================== */}
-    {/* =================================== */}
-    {/* =================================== */}
-    <div className="col-md-12 margin">
-      {/* text title */}
-      <h5>Loan Category</h5>
-      {/* <InputLabel id="demo-simple-select-label">loan category</InputLabel> */}
-      <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Select Category</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={loan_category}
-          label="Select Category"
-          onChange={handleChange}
-        >
-          {AssetCategories.map((option) => (
 
-            <MenuItem key={option.value} value={option.value}>
-              {option.value}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-    </div>
 
-    {/* =================================== */}
-    {/* =================================== */}
-    {/* =================================== */}
-    {/* =================================== */}
-    <br />
-    <div className="col-md-12 margin">
-      <h5>Loan Duration</h5>
-      <TextField
-        // id="outlined-basic"
-        label="Loan duration"
-        variant="outlined"
-        id="loan_duration"
-        type='number'
-        name="loan_duration" value={loan_duration} onChange={e => onChange(e)}
-      />
-    </div>
-    <br />
-    <div className="col-md-12 margin">
-      <Button variant="contained"
-        disabled={!isStageOneIsValid}
-        onClick={e => setValue(1)}
-        className="submit-button">
-        Save & Continue
+                </div>
+                <div className="row">
+                  {
+                    imgObj.map((image, i) => (
+
+                      <div className="image-wrapper">
+                        <div className="image" style={{ backgroundImage: `url(${image})` }}>
+
+                        </div>
+                        <button id={i} onClick={e => onDelete(e)}>X</button>
+                      </div>
+
+
+                    ))
+                  }
+                </div>
+              </div>
+              <br />
+              <div className="col-md-12 margin">
+                <h5>Loan Title</h5>
+                <TextField
+                  id="outlined-basic"
+                  label="Loan title"
+                  variant="outlined"
+                  name="loan_title" value={loan_title} onChange={e => onChange(e)}
+                />
+              </div>
+              <br />
+              <div className="col-md-12 margin">
+                <h5>Loan Amount</h5>
+                <TextField
+                  id="outlined-basic"
+                  label="Loan amount"
+                  variant="outlined"
+                  type='number'
+                  name="loan_amount" value={loan_amount} onChange={e => onChange(e)}
+                />
+              </div>
+              <br />
+              <div className="col-md-12 margin">
+                <h5>Inventory Fee</h5>
+                <TextField
+                  id="outlined-basic"
+                  label="Inventory Fee"
+                  variant="outlined"
+                  type='number'
+                  name="inventory_fee" value={inventory_fee} onChange={e => onChange(e)}
+                />
+              </div>
+              <br />
+              <div className="col-md-12 margin">
+                <h5>Branch Name</h5>
+                <TextField
+                  id="outlined-basic"
+                  label="Branch name"
+                  variant="outlined"
+                  name="branch_name" value={branch_name} onChange={e => onChange(e)}
+                />
+              </div>
+              <br />
+              {/* =================================== */}
+              {/* =================================== */}
+              {/* =================================== */}
+              {/* =================================== */}
+              <div className="col-md-12 margin">
+                {/* text title */}
+                <h5>Loan Category</h5>
+                {/* <InputLabel id="demo-simple-select-label">loan category</InputLabel> */}
+                <FormControl fullWidth>
+                  <InputLabel id="demo-simple-select-label">Select Category</InputLabel>
+                  <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={loan_category}
+                    label="Select Category"
+                    onChange={handleChange}
+                  >
+                    {AssetCategories.map((option) => (
+
+                      <MenuItem key={option.value} value={option.value}>
+                        {option.value}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+              </div>
+
+              {/* =================================== */}
+              {/* =================================== */}
+              {/* =================================== */}
+              {/* =================================== */}
+              <br />
+              <div className="col-md-12 margin">
+                <h5>Loan Duration</h5>
+                <TextField
+                  // id="outlined-basic"
+                  label="Loan duration"
+                  variant="outlined"
+                  id="loan_duration"
+                  type='number'
+                  name="loan_duration" value={loan_duration} onChange={e => onChange(e)}
+                />
+              </div>
+              <br />
+              <div className="col-md-12 margin">
+                <Button variant="contained"
+                  disabled={!isStageOneIsValid}
+                  onClick={e => setValue(1)}
+                  className="submit-button">
+                  Save & Continue
       </Button>
-    </div>
-  </div>
-</TabPanel>
-{/* ======================== */}
-{/* ======================== */}
-{/* ======================== */}
-<TabPanel value={value} index={1} className="col-md-8">
-  <div className="formBody row">
-    <div className="col-md-12 margin">
-      <h2>Collateral details</h2>
-      <p></p>
-      <Editor
-        editorState={editorState}
-        wrapperClassName="demo-wrapper"
-        editorClassName="demo-editor"
-        onEditorStateChange={onEditorStateChange}
-      />
-    </div>
-    <div className="col-md-12 margin">
-      <Button onClick={e => setValue(0)} variant="contained" className="submit-button">
-        Go back
+              </div>
+            </div>
+          </TabPanel>
+          {/* ======================== */}
+          {/* ======================== */}
+          {/* ======================== */}
+          <TabPanel value={value} index={1} className="col-md-8">
+            <div className="formBody row">
+              <div className="col-md-12 margin">
+                <h2>Collateral details</h2>
+                <p></p>
+                <Editor
+                  editorState={editorState}
+                  wrapperClassName="demo-wrapper"
+                  editorClassName="demo-editor"
+                  onEditorStateChange={onEditorStateChange}
+                />
+              </div>
+              <div className="col-md-12 margin">
+                <Button onClick={e => setValue(0)} variant="contained" className="submit-button">
+                  Go back
       </Button>
-      <Button variant="contained" onClick={submitLoan} className="submit-button">
-        
-        {isLoading ? <FontAwesomeIcon icon={faCircleNotch} spin /> : null}{" "}
-                          {btnText}
-      </Button>
-    </div>
-    {/* <Alert /> */}
-  </div>
-</TabPanel>
-<img src="/img/blur-drop.png" alt="..." className="blur-background" />
-</section>
-       ) : (
-          <div className="col-md-12 mt-4" style={{marginTop: "150px"}}>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-          <h1 className="text-center">
-            <FontAwesomeIcon icon={faCheckCircle} /> <br />
-            Success
+                <Button variant="contained" onClick={submitLoan} className="submit-button">
+
+                  {isLoading ? <FontAwesomeIcon icon={faCircleNotch} spin /> : null}{" "}
+                  {btnText}
+                </Button>
+              </div>
+              {/* <Alert /> */}
+            </div>
+          </TabPanel>
+          <img src="/img/blur-drop.png" alt="..." className="blur-background" />
+        </section>
+      ) : (
+          <div className="col-md-12 mt-4" style={{ marginTop: "150px" }}>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1 className="text-center">
+              <FontAwesomeIcon icon={faCheckCircle} /> <br />
+              Success
             </h1>
             <p className="text-center">Transaction was successful.
             <br />
-         
-      <a
-      className="btn btn-link text-success"
-    href={"https://bscscan.com/tx/" + hash}
-    target="_blank"
-  >
-    View on bscscan
+
+              <a
+                className="btn btn-link text-success"
+                href={"https://bscscan.com/tx/" + hash}
+                target="_blank"
+              >
+                View on bscscan
   </a>
-  <br></br>
-  <br></br>
-            <a href="/createloan"  className="btn btn-success">Continue</a>
+              <br></br>
+              <br></br>
+              <a href="/createloan" className="btn btn-success">Continue</a>
             </p>
-            
-        </div>
-       )}
+
+          </div>
+        )}
     </Fragment>
-   
+
   );
 }
 
