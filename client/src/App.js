@@ -203,7 +203,7 @@ const App = () => {
                   <Route exact path="/confirmation" component={Opd} />
                   {/* <Route exact path='/about' component={About} /> */}
                   <Route exact path="/about" component={About} />
-                  {/* <Route exact path="/createloan" component={Createloan} /> */}
+                  <Route exact path="/createloan2" component={Createloan} />
                   <Route exact path="/createloan" component={Createloan2} />
                   <Route
                     exact
@@ -211,7 +211,7 @@ const App = () => {
                     component={AddUploader}
                   />
                   <PrivateRoute exact path="/governance" component={Request} />
-                  <PrivateRoute
+                  <Route
                     exact
                     path="/companyreg"
                     component={Companyreg}

@@ -34,6 +34,7 @@ import ListItem from "@material-ui/core/ListItem";
 // styles
 import "../../../../css/header.css";
 import "../../../../css/headerMobile.css";
+import { Authenticate } from "../../../auth/Authenticate";
 
 
 const drawerWidth = 240;
@@ -316,7 +317,7 @@ const Header = () => {
               <a
                 href="/"
                 className={page1 === "/" ? "docs activeLink" : "about"}
-                // onClick={clickMe1}
+              // onClick={clickMe1}
               >
                 Borrower
                 {page1 === "/" ? <span className="Line"></span> : null}
@@ -325,7 +326,7 @@ const Header = () => {
               <a
                 href="/validator"
                 className={page1 === "/validator" ? "docs activeLink" : "about"}
-                // onClick={clickMe2}
+              // onClick={clickMe2}
               >
                 Validator
                 {page1 === "/validator" ? <span className="Line"></span> : null}
@@ -481,8 +482,8 @@ const Header = () => {
                 Get the loan
               </a>
 
-              <a href="/signup" className="connect">
-                Connect wallet
+              <a href="#" className="connect">
+                <Authenticate />
                 <div className="connectHover"></div>
               </a>
             </ul>
@@ -524,7 +525,7 @@ const Header = () => {
                     <a
                       href="/"
                       className={page1 === "/" ? "docs activeLink" : "about"}
-                      // onClick={clickMe1}
+                    // onClick={clickMe1}
                     >
                       Borrower
                       {page1 === "/" ? <span className="Line"></span> : null}
@@ -539,7 +540,7 @@ const Header = () => {
                       className={
                         page1 === "/validator" ? "docs activeLink" : "about"
                       }
-                      // onClick={clickMe2}
+                    // onClick={clickMe2}
                     >
                       Validator
                       {page1 === "/validator" ? (
@@ -570,7 +571,7 @@ const Header = () => {
                             Get loan
                           </a>
                           <a
-                            href="/explore"
+                            href="/explore_loans"
                             className="c1link1"
                             target="_blank"
                           >
@@ -637,8 +638,8 @@ const Header = () => {
                 <Divider />
                 <List>
                   <ListItem>
-                    <a href="/signup" className="connect">
-                      Connect wallet
+                    <a href="#" className="connect">
+                      <Authenticate />
                       <div className="connectHover"></div>
                     </a>
                   </ListItem>
