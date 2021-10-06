@@ -3,6 +3,7 @@ import NumberFormat from 'react-number-format';
 import { connect } from "react-redux";
 import { Link } from 'react-router-dom';
 import { fetch} from "../../../actions/loans";
+import './exploreLoan.css';
 const ExploreLoanSection2 = ({loans, fetch}) => {
     const [loanData, setLoanData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -48,7 +49,7 @@ const ExploreLoanSection2 = ({loans, fetch}) => {
                     <div className="DivIMG"  style={{ backgroundImage: `url(${loan.cover_image})` }}></div>
                    
                     <p className="retailButton">{loan.category}</p>
-                    <div className="pTag">
+                    <div className="pTag">$
                     <NumberFormat thousandSeparator={true} thousandsGroupStyle="usd" displayType={'text'} value={ parseFloat(loan.loan_amount)} />
                        
                     </div>
