@@ -12,8 +12,8 @@
   position: relative;
 }
 .heroTxts {
-  margin-bottom: 50px;
   position: relative;
+  width: 100%;
 }
 
 .heroTitle {
@@ -38,7 +38,7 @@
 }
 
 .heroButton {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .heroBtn {
   padding: 1.15em 6em;
@@ -59,13 +59,13 @@
 }
 
 .hero-images {
+  margin-left: 10%;
   position: relative;
-  margin-right: 100px;
+  width: 100%;
 }
 
 .heroPhone {
-  width: 245px;
-  margin-right: 50px;
+  width: 100%;
   position: relative;
 }
 
@@ -110,6 +110,8 @@
   width: 550px;
 }
 
+
+
 .card-amount {
   display: flex;
   justify-content: space-evenly;
@@ -118,7 +120,7 @@
   border-radius: 10px;
   align-items: center;
   position: absolute;
-  width: 50%;
+  width: 35%;
   bottom: 0;
   right: 50%;
   box-shadow: 0px 0px 15px #a2a2a2;
@@ -135,7 +137,7 @@
 .bottomCards {
   display: flex;
   justify-content: space-between;
-  width: 65%;
+  width: 45%;
   margin-top: 100px;
 }
 
@@ -167,9 +169,9 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.cardDetails {
+/* .cardDetails {
   margin-top: 30px;
-}
+} */
 .support {
   margin-right: 60px;
 }
@@ -194,12 +196,57 @@
 /* ============================================ */
 /* ============================================ */
 /* how it works section start */
-
+.collateral-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.collat-mobile-phones {
+  width: 85px;
+  transition: 0.3s linear;
+}
+.collat-mobile-phones1,
+.collat-mobile-phones2 {
+  width: 65px;
+  transition: 0.3s linear;
+}
+.collat-mobile-phones,
+.collat-mobile-phones1,
+.collat-mobile-phones2 {
+  filter: grayscale();
+}
 .howItWorks {
   padding: 2em 0em;
   position: relative;
 }
 
+p.collat-mobile-txt {
+  color: #000;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+a.collateral-link1 {
+  padding: 1em 1em;
+  height: 2opx;
+  /* width: 20%; */
+  height: 177px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  transition: 0.3s linear;
+}
+a.collateral-link1:hover {
+  background: #f9f9f9;
+  transition: 0.3s linear;
+}
+a.collateral-link1:hover .collat-mobile-phones,
+a.collateral-link1:hover .collat-mobile-phones1,
+a.collateral-link1:hover .collat-mobile-phones2 {
+  filter: none;
+  transition: 0.3s linear;
+}
 .titleLine {
   width: 5%;
   height: 5px;
@@ -367,14 +414,22 @@
 .projectsSection {
   padding: 2em 0em;
   position: relative;
-  background: #ffff;
+
+  background: #fbfbfb;
+}
+
+.gtstoriesSection .container {
+  max-width: 1274px;
+}
+.projectsSection .container {
+  max-width: 1274px;
 }
 .caroCard .react-multiple-carousel__arrow--left,
 .caroCard .react-multiple-carousel__arrow--right {
   background-color: #ffffff !important;
   box-shadow: 0px 0px 15px #b8d2c2;
   right: 10px;
-  top: 20%;
+  top: 45%;
 }
 .caroCard .react-multiple-carousel__arrow--left {
   left: 10px;
@@ -390,11 +445,22 @@
   background: #e4a788;
   margin-left: 2em;
 }
+.projectsLinea {
+  width: 5%;
+  height: 5px;
+  border-radius: 10px;
+  background: #e4a788;
+}
 .projectsTitleContents {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0em 2em;
+}
+.projectsTitleContentsa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .projectTitle {
   margin-top: 2%;
@@ -434,26 +500,29 @@
 }
 
 .caroCard {
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
+  background: #fff;
+  padding: 1em 0em;
   z-index: 3;
+  box-shadow: 0px 0px 10px #d9d9d9;
+  border-radius: 8px;
 }
 
-.cardA,
-.cardB,
-.cardC,
-.cardD,
-.cardE,
-.cardF,
-.cardG,
-.cardH,
-.cardI,
-.cardJ {
-  width: 80%;
+.cardA {
+  width: 90%;
   margin: auto;
   cursor: pointer;
-
   display: grid;
+  background: #fff;
+  /* padding: 0.5em; */
+  box-shadow: 0px 0px 5px #e1e1e1;
+  border-radius: 6px;
+  transition: 0.3s linear;
+}
+.cardA:hover {
+  transform: scale(1.08);
+  transition: 0.3s linear;
 }
 .img {
   position: relative;
@@ -472,15 +541,77 @@
 }
 
 .cardHeader {
-  font-weight: 600;
+  font-weight: 700;
+  margin: auto;
   margin-top: 20px;
   font-size: 16px;
+  color: #000000;
+  white-space: nowrap;
+  width: 200px;
+  /* border: 1px solid #000000; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+.htxt1a {
   color: #373737;
+  font-size: 14px;
+  margin: 0;
+}
+.htxt2a {
+  color: #373737;
+  font-size: 14px;
+  margin: 0;
+}
+.slider-a {
+  width: 100%;
+  height: 7px;
+  background: #efefef;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.slider-a::after {
+  content: "";
+  position: absolute;
+  width: 82%;
+  height: 100%;
+  background: #55bc7e;
+  border-radius: 50px;
+}
+
+.p-texts2a {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.ptxt1a {
+  color: grey;
+  font-size: 10px;
+}
+.ptxt2a {
+  color: grey;
+  font-size: 10px;
+}
+.heroSlider2 {
+  /* margin-top: 50px; */
+  width: 200px;
+  margin: auto;
 }
 .cardPara {
   font-weight: 400;
   font-size: 14px;
   color: #229e54;
+}
+.collat-category {
+  font-weight: 600;
+  margin: auto;
+  font-size: 14px;
+  color: #229e54;
+  width: 200px;
+  margin-bottom: 20px;
 }
 /* projects Section end */
 /* ============================================ */

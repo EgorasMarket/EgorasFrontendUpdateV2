@@ -4,7 +4,11 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { EditorState, convertToRaw } from "draft-js";
+<<<<<<< HEAD
 import draftToHtml from 'draftjs-to-html';
+=======
+import draftToHtml from "draftjs-to-html";
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
 import { Editor } from "react-draft-wysiwyg";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -87,6 +91,7 @@ const AssetCategories = [
 // =====================================================================
 // =====================================================================
 // =====================================================================
+<<<<<<< HEAD
 const Createloan2 = props => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
   const [cover_image, SetCover_image] = React.useState("");
@@ -99,11 +104,21 @@ const Createloan2 = props => {
     asset_img4: "",
     loan_duration: "",
     inventory_fee: "",
+=======
+const Createloan2 = (props) => {
+  const [editorState, setEditorState] = useState(EditorState.createEmpty());
+  const [formData, setFormData] = useState({
+    loan_title: "",
+    cover_image: [],
+    loan_duration: "",
+    // loan_category: "0",
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
     branch_name: "",
     loan_fees: "0",
 
     story: "",
     loan_amount: "",
+<<<<<<< HEAD
 
 
   });
@@ -117,11 +132,37 @@ const Createloan2 = props => {
 
   const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
   const { loan_title, asset_img, asset_img2, asset_img3, asset_img4, loan_duration, inventory_fee, branch_name, loan_fees, story, loan_amount } = formData;
+=======
+  });
+
+  const onEditorStateChange = (editorState) => {
+    let text = draftToHtml(convertToRaw(editorState.getCurrentContent()));
+
+    setFormData({ ...formData, story: text });
+    setEditorState(editorState);
+  };
+
+  const onChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const {
+    loan_title,
+    cover_image,
+    loan_duration,
+    branch_name,
+    loan_fees,
+    story,
+    loan_amount,
+  } = formData;
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
 
   const [value, setValue] = React.useState(0);
   const [loan_category, SetLoan_category] = React.useState("");
 
+<<<<<<< HEAD
   const handleChange = (event, ) => {
+=======
+  const handleChange = (event) => {
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
     SetLoan_category(event.target.value);
   };
   const handleChange1 = (event, newValue) => {
@@ -130,6 +171,7 @@ const Createloan2 = props => {
     setValue(newValue);
   };
 
+<<<<<<< HEAD
   const onFileChange = e => {
     var image;
     e.preventDefault();
@@ -226,10 +268,37 @@ const Createloan2 = props => {
 
 
   }
+=======
+  const onFileChange = (e) => {
+    var image;
+    e.preventDefault();
+    if (e.target.files.length == 0) {
+      setFormData({ ...formData, cover_image: "" });
+      // document.getElementById('output').removeAttribute('src');
+    } else {
+      // image = document.getElementById('output');
+      var objectUrl = URL.createObjectURL(e.target.files[0]);
+
+      // console.log(e.target.files);
+
+      // image.src = objectUrl;
+      var fileReader = new FileReader();
+      fileReader.onload = function (fileLoadedEvent) {
+        var srcData = fileLoadedEvent.target.result; // <--- data: base64
+        // console.log(fileLoadedEvent.target);
+        // console.log(srcData);
+
+        setFormData({ ...formData, cover_image: srcData });
+      };
+      fileReader.readAsDataURL(e.target.files[0]);
+    }
+  };
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
 
   const submitLoan = async (e) => {
     e.preventDefault();
 
+<<<<<<< HEAD
     // console.log(loan_title, asset_img, loan_duration, branch_name, loan_fees, story, loan_amount);
 
     const body = JSON.stringify({ loan_category, branch_name, story, arrayImg, inventory_fee })
@@ -310,6 +379,28 @@ const Createloan2 = props => {
   const isStageOneIsValid = loan_title.length > 0 && asset_img.length > 0 && branch_name.length > 0 && parseInt(loan_duration) > 0 && loan_category !== "";
 
 
+=======
+    // console.log(loan_title, cover_image, loan_duration, branch_name, loan_fees, story, loan_amount);
+
+    const body = JSON.stringify({ loan_category, branch_name, story });
+
+    console.log(loan_title, loan_amount, loan_duration, cover_image, body);
+  };
+
+  const uploadImg = async (e) => {
+    console.log(cover_image);
+    let res = await props.image(cover_image);
+
+    console.log(res, "get image link");
+  };
+
+  const isStageOneIsValid =
+    loan_title.length > 0 &&
+    cover_image.length > 0 &&
+    branch_name.length > 0 &&
+    parseInt(loan_duration) > 0 &&
+    loan_category !== "";
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
 
   return (
     <section className="createLoanSection" style={{ padding: "9em 4em" }}>
@@ -329,6 +420,7 @@ const Createloan2 = props => {
               Upload a square image that represents your
               <br /> campaign, 640 x 640 recommended resolution
             </p>
+<<<<<<< HEAD
             <div className='row'>
               <div className='col-md-6'>
                 <input
@@ -393,6 +485,53 @@ const Createloan2 = props => {
               </div>
             </div>
 
+=======
+            <div className="row">
+              <div className="col-md-6">
+                <input
+                  type="file"
+                  name="cover_image"
+                  id="cover_image"
+                  onChange={(e) => onFileChange(e)}
+                  className="btn btn-sm uploadButton"
+                />
+                <Button
+                  variant="contained"
+                  onClick={uploadImg}
+                  className="submit-button mt-3"
+                >
+                  Upload
+                </Button>
+              </div>
+              <div className=" col-md-6">
+                <input
+                  type="file"
+                  name="cover_image2"
+                  id="cover_image2"
+                  onChange={(e) => onFileChange(e)}
+                  className="btn btn-sm uploadButton"
+                />
+              </div>
+              <div className="col-md-6">
+                <input
+                  type="file"
+                  name="cover_image3"
+                  id="cover_image3"
+                  onChange={(e) => onFileChange(e)}
+                  className="btn btn-sm uploadButton"
+                />
+              </div>
+              <div className="col-md-6">
+                <input
+                  type="file"
+                  name="cover_image4"
+                  id="cover_image4"
+                  onChange={(e) => onFileChange(e)}
+                  className="btn btn-sm uploadButton"
+                />
+              </div>
+            </div>
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
           </div>
           <br />
           <div className="col-md-12 margin">
@@ -401,7 +540,13 @@ const Createloan2 = props => {
               id="outlined-basic"
               label="Loan title"
               variant="outlined"
+<<<<<<< HEAD
               name="loan_title" value={loan_title} onChange={e => onChange(e)}
+=======
+              name="loan_title"
+              value={loan_title}
+              onChange={(e) => onChange(e)}
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
             />
           </div>
           <br />
@@ -411,12 +556,20 @@ const Createloan2 = props => {
               id="outlined-basic"
               label="Loan amount"
               variant="outlined"
+<<<<<<< HEAD
               type='number'
               name="loan_amount" value={loan_amount} onChange={e => onChange(e)}
+=======
+              type="number"
+              name="loan_amount"
+              value={loan_amount}
+              onChange={(e) => onChange(e)}
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
             />
           </div>
           <br />
           <div className="col-md-12 margin">
+<<<<<<< HEAD
             <h5>Inventory Fee</h5>
             <TextField
               id="outlined-basic"
@@ -428,12 +581,20 @@ const Createloan2 = props => {
           </div>
           <br />
           <div className="col-md-12 margin">
+=======
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
             <h5>Branch Name</h5>
             <TextField
               id="outlined-basic"
               label="Branch name"
               variant="outlined"
+<<<<<<< HEAD
               name="branch_name" value={branch_name} onChange={e => onChange(e)}
+=======
+              name="branch_name"
+              value={branch_name}
+              onChange={(e) => onChange(e)}
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
             />
           </div>
           <br />
@@ -446,7 +607,13 @@ const Createloan2 = props => {
             <h5>Loan Category</h5>
             {/* <InputLabel id="demo-simple-select-label">loan category</InputLabel> */}
             <FormControl fullWidth>
+<<<<<<< HEAD
               <InputLabel id="demo-simple-select-label">Select Category</InputLabel>
+=======
+              <InputLabel id="demo-simple-select-label">
+                Select Category
+              </InputLabel>
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -454,12 +621,19 @@ const Createloan2 = props => {
                 label="Select Category"
                 onChange={handleChange}
               >
+<<<<<<< HEAD
                 {AssetCategories.map((option) => (
 
                   <MenuItem key={option.value} value={option.value}>
                     {option.value}
                   </MenuItem>
                 ))}
+=======
+                <MenuItem value="Agriculture">Agriculture</MenuItem>
+                <MenuItem value="Women">Women</MenuItem>
+                <MenuItem value="Retail">Retail</MenuItem>
+                <MenuItem value="Single Parent">Single Parent</MenuItem>
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
               </Select>
             </FormControl>
           </div>
@@ -476,16 +650,32 @@ const Createloan2 = props => {
               label="Loan duration"
               variant="outlined"
               id="loan_duration"
+<<<<<<< HEAD
               type='number'
               name="loan_duration" value={loan_duration} onChange={e => onChange(e)}
+=======
+              type="number"
+              name="loan_duration"
+              value={loan_duration}
+              onChange={(e) => onChange(e)}
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
             />
           </div>
           <br />
           <div className="col-md-12 margin">
+<<<<<<< HEAD
             <Button variant="contained"
               disabled={!isStageOneIsValid}
               onClick={e => setValue(1)}
               className="submit-button">
+=======
+            <Button
+              variant="contained"
+              disabled={!isStageOneIsValid}
+              onClick={(e) => setValue(1)}
+              className="submit-button"
+            >
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
               Save & Continue
             </Button>
           </div>
@@ -507,10 +697,25 @@ const Createloan2 = props => {
             />
           </div>
           <div className="col-md-12 margin">
+<<<<<<< HEAD
             <Button onClick={e => setValue(0)} variant="contained" className="submit-button">
               Go back
             </Button>
             <Button variant="contained" onClick={submitLoan} className="submit-button">
+=======
+            <Button
+              onClick={(e) => setValue(0)}
+              variant="contained"
+              className="submit-button"
+            >
+              Go back
+            </Button>
+            <Button
+              variant="contained"
+              onClick={submitLoan}
+              className="submit-button"
+            >
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
               Save & deploy
             </Button>
           </div>
@@ -520,8 +725,13 @@ const Createloan2 = props => {
       <img src="/img/blur-drop.png" alt="..." className="blur-background" />
     </section>
   );
-}
+};
 
 // export default Createloan2;
 
+<<<<<<< HEAD
+// export default Createloan2;
+
+=======
+>>>>>>> cd846b6600a09ce1477e1af43c487f44f1a9c5b0
 export default connect(null, { image })(Createloan2);
