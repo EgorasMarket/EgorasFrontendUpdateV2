@@ -312,7 +312,7 @@ const Createloan2 = props => {
 
 
   return (
-    <section className="createLoanSection" style={{ padding: "12em 4em" }}>
+    <section className="createLoanSection" style={{ padding: "9em 4em" }}>
       <Tabs
         value={value}
         // onChange={handleChange1}
