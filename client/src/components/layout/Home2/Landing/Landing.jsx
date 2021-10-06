@@ -345,11 +345,7 @@ const Landing = ({
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <img src="/img/phone-hero.png" alt="" className="heroPhone" />
-              <img src="/img/shape-egg.svg" alt="" className="eggShape" />
-              <img src="/img/dots.svg" alt="" className="gtdots" />
-              <img src="/img/x-shape.svg" alt="" className="gtx" />
-              <img src="/img/circle.svg" alt="" className="gtcircle" />
+              <img src="/img/hero-imgs.png" alt="" className="heroPhone" />
               <div className="card-amount">
                 <img src="/img/coin-icon.svg" alt="" className="coin" />
                 <p className="amount">₦800,000</p>

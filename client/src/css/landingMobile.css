@@ -17,18 +17,19 @@
   .heroBtn {
     font-size: 12px;
   }
-  .heroPhone {
-    width: 200px;
-  }
+
   .eggShape {
     width: 450px;
   }
-  .card-amount {
+  /* .card-amount {
     width: 60%;
     left: 0;
-  }
+  } */
   .dots {
     width: 200px;
+  }
+  .joinCommunitybtnsLinks {
+    width: 70%;
   }
 
   .card1,
@@ -185,16 +186,14 @@
   .heroSection {
     padding: 4em 0em;
   }
-  .heroPhone {
-    width: 180px;
-  }
+
   .eggShape {
     width: 400px;
   }
-  .card-amount {
+  /* .card-amount {
     width: 60%;
     left: 0;
-  }
+  } */
   .dots {
     width: 200px;
   }
@@ -306,10 +305,6 @@
   }
   .loanDetailsSection {
     text-align: center;
-  }
-  .heroPhone {
-    width: 200px;
-    margin-right: 0;
   }
 
   .hero-images {
@@ -474,10 +469,6 @@
 
 /* 2nd break point ========================================= */
 @media screen and (max-width: 463px) {
-  .heroPhone {
-    width: 150px;
-    margin-right: 0;
-  }
   .eggShape {
     width: 375px;
     bottom: -1px;
@@ -502,19 +493,16 @@
   .heroTitle {
     font-size: 32px;
   }
-  .heroPhone {
-    width: 150px;
-    margin-right: 0;
-  }
+
   .eggShape {
     width: 314px;
     bottom: -1px;
     right: -93px;
   }
-  .card-amount {
+  /* .card-amount {
     width: 80%;
     left: 0;
-  }
+  } */
   .howItWorksTitle {
     margin-bottom: 50px;
   }

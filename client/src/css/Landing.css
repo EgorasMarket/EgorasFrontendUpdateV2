@@ -12,8 +12,8 @@
   position: relative;
 }
 .heroTxts {
-  margin-bottom: 50px;
   position: relative;
+  width: 100%;
 }
 
 .heroTitle {
@@ -38,7 +38,7 @@
 }
 
 .heroButton {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .heroBtn {
   padding: 1.15em 6em;
@@ -59,13 +59,13 @@
 }
 
 .hero-images {
+  margin-left: 10%;
   position: relative;
-  margin-right: 100px;
+  width: 100%;
 }
 
 .heroPhone {
-  width: 245px;
-  margin-right: 50px;
+  width: 100%;
   position: relative;
 }
 
@@ -110,6 +110,13 @@
   width: 550px;
 }
 
+.joinCommunitybtnsLinks {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .card-amount {
   display: flex;
   justify-content: space-evenly;
@@ -118,7 +125,7 @@
   border-radius: 10px;
   align-items: center;
   position: absolute;
-  width: 50%;
+  width: 35%;
   bottom: 0;
   right: 50%;
   box-shadow: 0px 0px 15px #a2a2a2;
@@ -135,7 +142,7 @@
 .bottomCards {
   display: flex;
   justify-content: space-between;
-  width: 65%;
+  width: 45%;
   margin-top: 100px;
 }
 
