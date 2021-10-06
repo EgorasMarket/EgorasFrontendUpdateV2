@@ -106,16 +106,8 @@ const GetLoan = () => {
             </div>
 
             <div className="hero-images">
-              <img
-                src="/img/phone-hero2.svg"
-                alt=""
-                className="gtheroPhone"
-              />
-              <img
-                src="/img/egrdebitCard.png"
-                alt=""
-                className="gtdebitCard"
-              />
+              <img src="/img/phone-hero2.svg" alt="" className="gtheroPhone" />
+              <img src="/img/egrdebitCard.png" alt="" className="gtdebitCard" />
               <img src="/img/shape-egg.svg" alt="" className="gteggShape" />
               <img src="/img/dots.svg" alt="" className="gtdots" />
               <img
@@ -370,7 +362,7 @@ const GetLoan = () => {
       {/* =================================================================================================================================================================================================================================================================== */}
 
       {/* Benefits Section start */}
-      <section className="gtbenefitsSection"  id="benefits">
+      <section className="gtbenefitsSection" id="benefits">
         <div className="container">
           <div className="gttitleLine"></div>
           <div className="gthowItWorksTitle">
@@ -543,7 +535,7 @@ const GetLoan = () => {
       {/* =================================================================================================================================================================================================================================================================== */}
       {/* atm cards section start */}
 
-      <section className="atmCards">
+      {/* <section className="atmCards">
         <div className="container">
           <div className="atmCardsArea">
             <div
@@ -565,7 +557,7 @@ const GetLoan = () => {
                 Learn more
                 <ArrowRightIcon />
               </a> */}
-            </div>
+      {/* </div>
             <div
               className="atmCardsImage"
               data-aos="fade-up"
@@ -579,7 +571,7 @@ const GetLoan = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* atm cards section end */}
       {/* =================================================================================================================================================================================================================================================================== */}
@@ -587,28 +579,6 @@ const GetLoan = () => {
       <section className="savingsSection">
         <div className="container">
           <div className="savingsArea">
-            <div
-              className="savingsImages"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            >
-              <img
-                src="/img/savingsCircle.svg"
-                alt=""
-                className="savingsCircle"
-              />
-              <img
-                src="/img/savingsVector.svg"
-                alt=""
-                className="savingsVector"
-              />
-              <img
-                src="/img/savingsMoney.svg"
-                alt=""
-                className="savingsMoney"
-              />
-              {/* <img src="/img/savingsLens.svg" alt="" className="savingsLens" /> */}
-            </div>
             <div
               className="savingsText"
               data-aos="fade-up"
@@ -633,6 +603,28 @@ const GetLoan = () => {
                 Learn more
                 <ArrowRightIcon />
               </a> */}
+            </div>
+            <div
+              className="savingsImages"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <img
+                src="/img/savingsCircle.svg"
+                alt=""
+                className="savingsCircle"
+              />
+              <img
+                src="/img/savingsVector.svg"
+                alt=""
+                className="savingsVector"
+              />
+              <img
+                src="/img/savingsMoney.svg"
+                alt=""
+                className="savingsMoney"
+              />
+              {/* <img src="/img/savingsLens.svg" alt="" className="savingsLens" /> */}
             </div>
           </div>
         </div>
@@ -1160,11 +1152,7 @@ const GetLoan = () => {
                 <h4 className="cardContentTitles">Other Lenders</h4>
                 <div className="content-img">
                   {" "}
-                  <img
-                    src="/img/egoras-logo.svg"
-                    alt=""
-                    className="Content"
-                  />
+                  <img src="/img/egoras-logo.svg" alt="" className="Content" />
                 </div>
               </div>
               <hr />
@@ -1301,11 +1289,7 @@ const GetLoan = () => {
               </div>
             </div>
 
-            <img
-              src="/img/explore-dots.svg"
-              alt=""
-              className="gtexploreDots"
-            />
+            <img src="/img/explore-dots.svg" alt="" className="gtexploreDots" />
             <img
               src="/img/explore-shape.svg"
               alt=""

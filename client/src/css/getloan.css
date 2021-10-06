@@ -327,7 +327,7 @@
 
 .collateral-categories-section {
   padding: 4em 0em;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
   position: relative;
   text-align: center;
 }
@@ -772,7 +772,7 @@
   padding: 4em 8em;
   position: relative;
   /* color: aliceblue; */
-  background: #ffffff;
+  background: #f8fffb;
 }
 .savingsSection2 {
   padding: 4em 8em;

@@ -194,12 +194,57 @@
 /* ============================================ */
 /* ============================================ */
 /* how it works section start */
-
+.collateral-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.collat-mobile-phones {
+  width: 85px;
+  transition: 0.3s linear;
+}
+.collat-mobile-phones1,
+.collat-mobile-phones2 {
+  width: 65px;
+  transition: 0.3s linear;
+}
+.collat-mobile-phones,
+.collat-mobile-phones1,
+.collat-mobile-phones2 {
+  filter: grayscale();
+}
 .howItWorks {
   padding: 2em 0em;
   position: relative;
 }
 
+p.collat-mobile-txt {
+  color: #000;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+a.collateral-link1 {
+  padding: 1em 1em;
+  height: 2opx;
+  /* width: 20%; */
+  height: 177px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  transition: 0.3s linear;
+}
+a.collateral-link1:hover {
+  background: #f9f9f9;
+  transition: 0.3s linear;
+}
+a.collateral-link1:hover .collat-mobile-phones,
+a.collateral-link1:hover .collat-mobile-phones1,
+a.collateral-link1:hover .collat-mobile-phones2 {
+  filter: none;
+  transition: 0.3s linear;
+}
 .titleLine {
   width: 5%;
   height: 5px;

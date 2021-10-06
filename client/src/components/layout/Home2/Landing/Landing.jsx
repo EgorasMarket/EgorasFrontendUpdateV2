@@ -6,7 +6,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
-
+import TelegramIcon from "@material-ui/icons/Telegram";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import "../../../../css/Landing.css";
 import "../../../../css/landingMobile.css";
 
@@ -280,14 +281,14 @@ const Landing = ({
 
   const [page, setPage] = useState("change");
 
-  const clickMe1 = () => {
+  const clickMe2 = () => {
     if (page === "change") {
       setPage("change");
     } else {
       setPage("change");
     }
   };
-  const clickMe2 = () => {
+  const clickMe1 = () => {
     if (page === "notChange") {
       setPage("notChange");
     } else {
@@ -313,6 +314,30 @@ const Landing = ({
                   See Collaterals
                 </a>
               </div>
+              <ul className="joinCommunitybtns">
+                <h6 className="joinCommunitybtnsTitle">Join Our Community.</h6>
+                {/* <a href="/appointment" className="gtconnect">
+                  Apply for loan
+                </a> */}
+                <div className="joinCommunitybtnsLinks">
+                  <a
+                    href="https://t.me/egorasmarket"
+                    className="communitybtn1"
+                    target="_blank"
+                  >
+                    <TelegramIcon />
+                    Telegram
+                  </a>
+                  <a
+                    href="https://twitter.com/egorasmarket"
+                    className="communitybtn1"
+                    target="_blank"
+                  >
+                    <TwitterIcon />
+                    Twitter
+                  </a>
+                </div>
+              </ul>
             </div>
 
             <div
@@ -355,7 +380,7 @@ const Landing = ({
           <div className="gthowItWorksBtns">
             <div className="gtbutton1">
               <button
-                className={page === "change" ? "gtbtn1 active" : "gtbtn2"}
+                className={page === "notChange" ? "gtbtn1 active" : "gtbtn2"}
                 onClick={clickMe1}
               >
                 Borrower
@@ -363,7 +388,7 @@ const Landing = ({
             </div>
             <div className="gtbutton2">
               <button
-                className={page === "notChange" ? "gtbtn1 active" : "gtbtn2"}
+                className={page === "change" ? "gtbtn1 active" : "gtbtn2"}
                 onClick={clickMe2}
               >
                 Validator
@@ -371,7 +396,7 @@ const Landing = ({
             </div>
           </div>
 
-          {page === "change" ? (
+          {page === "notChange" ? (
             <div className="gthowItWorksArea">
               <div
                 className="gthowCard1"
@@ -492,10 +517,10 @@ const Landing = ({
                   />
                 </div>
                 <div className="gthowCard2Texts">
-                  Approve Loans
+                  Approve Collaterals
                   <br />
                   <p className="howCard2TextsP">
-                    Fund loans without risking your
+                    Fund collaterals without risking your
                     <br />
                     EGR token.
                   </p>
@@ -521,7 +546,7 @@ const Landing = ({
                   <p className="howCard3TextsP">
                     Earn over 20% APR for
                     <br />
-                    approving/declining loans.
+                    approving/declining collaterals.
                   </p>
                 </div>
               </div>
@@ -663,9 +688,59 @@ const Landing = ({
               Which categories interest you?{" "}
             </h3>
             <p className="collateral-cat-paragraph">
-              Discover projects just for you and get great recommendations when
-              you select your interests.
+              Discover collaterals and get great recommendations when you select
+              your interests.
             </p>
+            <div className="collateral-links row">
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/colat-mobile-phones.svg"
+                  alt=""
+                  className="collat-mobile-phones1"
+                />
+                <p className="collat-mobile-txt">Mobile phones & Tablets.</p>
+              </a>
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/colat-household-appliance.svg"
+                  alt=""
+                  className="collat-mobile-phones2"
+                />
+                <p className="collat-mobile-txt">House-Hold appliances</p>
+              </a>
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/colat-furnitures.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">Furnitures</p>
+              </a>
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/colat-computers.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">Laptops & Desktop Computers</p>
+              </a>
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/colat-electrical-appliance.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">Electrical Appliances</p>
+              </a>
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/all-colat-categories.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">All categories</p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
