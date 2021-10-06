@@ -3,6 +3,7 @@ import NumberFormat from 'react-number-format';
 import { connect } from "react-redux";
 import { Link } from 'react-router-dom';
 import { fetch} from "../../../actions/loans";
+import './exploreLoan.css';
 const ExploreLoanSection2 = ({loans, fetch}) => {
     const [loanData, setLoanData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +25,7 @@ const ExploreLoanSection2 = ({loans, fetch}) => {
       }, [loans]);
 
     return (
-        <div>
+        <div style={{margin:'auto'}} className="diff">
             <div className="section2DivHolder_img">
                   {/* { Roll.map((bag) =>(
                 <div className="exploreLoanSection2" key={bag.id}>
@@ -44,12 +45,12 @@ const ExploreLoanSection2 = ({loans, fetch}) => {
                                 return(
                             <Fragment>
                                <Link to={`loan-details/${loan.id}`} >
-                                 <div className="exploreLoanSection2" style={{flex:1}} key={i}>
+                                 <div className="exploreLoanSection2"  key={i}>
                     <div className="DivIMG"  style={{ backgroundImage: `url(${loan.cover_image})` }}></div>
                    
                     <p className="retailButton">{loan.category}</p>
-                    <div className="pTag">
-                    <NumberFormat thousandSeparator={true} thousandsGroupStyle="usd" displayType={'text'} value={parseFloat(loan.loan_amount)} />
+                    <div className="pTag">$
+                    <NumberFormat thousandSeparator={true} thousandsGroupStyle="usd" displayType={'text'} value={ parseFloat(loan.loan_amount)} />
                        
                     </div>
                     <div className="forIdentity">{loan.title}</div>
