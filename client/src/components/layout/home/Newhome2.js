@@ -121,7 +121,7 @@ const GetLoan = () => {
             </div>
             <div className="hero-images">
               <img
-                src="/img/egorasphone-last.png"
+                src="/img/phone-hero3.png"
                 alt=""
                 className="heroPhone"
               />
@@ -525,70 +525,70 @@ const GetLoan = () => {
               </div>
             </div>
           ) : (
-            <div className="gthowItWorksArea2">
-              <div className="gthowCard1">
-                <div className="gthowCard1Title">
-                  <h1 className="gtstakeNumb">1.</h1>
+              <div className="gthowItWorksArea2">
+                <div className="gthowCard1">
+                  <div className="gthowCard1Title">
+                    <h1 className="gtstakeNumb">1.</h1>
 
-                  <img
-                    src="/img/stake-loan.svg"
-                    alt=""
-                    className="gtstakeLoan"
-                  />
-                </div>
-                <div className="gthowCard1Texts">
-                  Stake your token
+                    <img
+                      src="/img/stake-loan.svg"
+                      alt=""
+                      className="gtstakeLoan"
+                    />
+                  </div>
+                  <div className="gthowCard1Texts">
+                    Stake your token
                   <br />
-                  <p className="howCard1TextsP">
-                    Browse by category and stake <br />
-                    your EGR token to support an
+                    <p className="howCard1TextsP">
+                      Browse by category and stake <br />
+                      your EGR token to support an
                     <br />
-                    entrepreneur.
+                      entrepreneur.
                   </p>
+                  </div>
+                </div>
+                <div className="gthowCard2">
+                  <div className="gthowCard2Title">
+                    <h1 className="gtstakeNumb">2.</h1>
+
+                    <img
+                      src="/img/approve-loan.svg"
+                      alt=""
+                      className="gtstakeLoan"
+                    />
+                  </div>
+                  <div className="gthowCard2Texts">
+                    Approve Collaterals
+                  <br />
+                    <p className="howCard2TextsP">
+                      Fund collaterals without risking your
+                    <br />
+                      EGR token.
+                  </p>
+                  </div>
+                </div>
+                <div className="gthowCard3">
+                  <div className="gthowCard3Title">
+                    <h1 className="gtstakeNumb">3.</h1>
+
+                    <img
+                      src="/img/claim-interest.svg"
+                      alt=""
+                      className="gtstakeLoan"
+                    />
+                  </div>
+                  <div className="gthowCard3Texts">
+                    Claim Interest weekly
+                  <br />
+                    <p className="howCard3TextsP">
+                      Earn over 20% APR for
+                    <br />
+                      approving/declining collaterals.
+                  </p>
+                  </div>
                 </div>
               </div>
-              <div className="gthowCard2">
-                <div className="gthowCard2Title">
-                  <h1 className="gtstakeNumb">2.</h1>
-
-                  <img
-                    src="/img/approve-loan.svg"
-                    alt=""
-                    className="gtstakeLoan"
-                  />
-                </div>
-                <div className="gthowCard2Texts">
-                  Approve Collaterals
-                  <br />
-                  <p className="howCard2TextsP">
-                    Fund collaterals without risking your
-                    <br />
-                    EGR token.
-                  </p>
-                </div>
-              </div>
-              <div className="gthowCard3">
-                <div className="gthowCard3Title">
-                  <h1 className="gtstakeNumb">3.</h1>
-
-                  <img
-                    src="/img/claim-interest.svg"
-                    alt=""
-                    className="gtstakeLoan"
-                  />
-                </div>
-                <div className="gthowCard3Texts">
-                  Claim Interest weekly
-                  <br />
-                  <p className="howCard3TextsP">
-                    Earn over 20% APR for
-                    <br />
-                    approving/declining collaterals.
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
+            )}
 
           <a
             href="https://egoras.ng/appointment"
