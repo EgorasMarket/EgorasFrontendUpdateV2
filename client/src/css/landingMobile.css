@@ -241,9 +241,7 @@
   .bottomCards {
     width: 85%;
   }
-  /* hero section end */
-
-  /* how it works section start */
+  /*  */
   .howItWorksArea {
     display: grid;
     grid-row-gap: 50px;

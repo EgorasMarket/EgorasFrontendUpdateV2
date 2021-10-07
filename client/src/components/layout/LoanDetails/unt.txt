@@ -1,0 +1,328 @@
+   <section className="projectsSection w-100">
+        <div className="projectsArea">
+          <div className="projectsLine"></div>
+          <div className="projectsTitleContents">
+            <div className="projectTitle">
+              <h1 className="pTitle">Recent projects</h1>
+
+              <p className="projectsPara">All Categories</p>
+            </div>
+
+            <a href="#" className="projectsLink">
+              Explore loans
+              <div className="projectsLinkHover"></div>
+            </a>
+          </div>
+ {/* Carousel start==============================
+==============================================
+============================= */}
+            <Carousel
+              responsive={responsive}
+              className="caroCard"
+              showDots={false}
+            >
+              {loanData.map((loan, i) => {
+                // if (loan.loan_category === getCategory) {
+                // console.log(loan);
+
+                // console.log(loan.loan_category);
+                let percent = 0;
+                let up = 0;
+                let down = 0;
+                let accepted = parseInt(loan.accepted);
+                let declined = parseInt(loan.declined);
+
+
+                let backed = loan.backed;
+                let votingThreshold = loan.votingThreshold;
+                // if (loan.is_approved) {
+                //   setFormData({ ...formData, ['votePower']: parseFloat(loan.loan_amount) })
+                // }
+                let per = (parseFloat(backed) / parseFloat(votingThreshold)) * 100;
+
+
+                // console.log(per);
+
+
+                // setPercentage(Math.round(per));
+
+                if (declined == 0 && accepted > 0) {
+                  up = 100;
+                } else if (accepted == 0 && declined > 0) {
+                  down = 100;
+                }
+                if (accepted == 0 && declined == 0) {
+                } else {
+                  let wholeNumber = declined + accepted;
+                  let percent = (accepted / wholeNumber) * 100;
+
+                  if (percent !== Infinity) {
+                    up = percent;
+                    down = 100 - percent;
+                  }
+                }
+                // }
+                // console.log(loan);
+
+                return (
+                  // <Link to="/loan-details">{"/loan/details/" + loan.id}
+                  // <Link to="/loan-details">
+                  <a href={"/loan-details/" + loan.id}>
+                    <div className="cardA">
+                      <div
+                        className="img"
+                        style={{
+                          backgroundImage: `url(${loan.cover_image})`,
+                          height: "200px",
+                          width: "100%",
+                          backgroundRepeat: "no-repeat",
+                          backgroundSize: "cover",
+                          borderRadius: "8px",
+                          borderBottomLeftRadius: "0px",
+                          borderBottomRightRadius: "0px",
+                        }}
+                      >
+                        <div className="img-amount">
+                          <NumberFormat
+                            value={parseFloat(loan.loan_amount)}
+                            displayType={"text"}
+                            thousandSeparator={true}
+                            prefix={"$"}
+                          />
+                        </div>
+                      </div>
+                      <div className="cardDetails">
+                        <h1 className="cardHeader">{loan.title}</h1>
+                        <h1 className="collat-category">Electronics</h1>
+                        <div className="heroSlider2">
+                          <div className="slider-txts1">
+                            <div className="h-texts">
+                              <h3 className="htxt1a">{parseFloat(backed)} egr</h3>
+                              <h3 className="htxt2a">{Math.round(per)}%</h3>
+                            </div>
+                          </div>
+                          {/* <div className="slider-a"></div> */}
+                          <div className="slider" style={{ height: '7px' }}>
+                            <div className="sliderafter" style={{ width: `${Math.round(per)}%`, height: '7px' }}></div>
+                          </div>
+                          <div className="slider-txts2">
+                            <div className="p-texts2a">
+                              <p className="ptxt2a">Remaining EGR: {parseFloat(votingThreshold) - parseFloat(backed)} EGR</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                );
+              })}
+            </Carousel>
+            {/* Carousel end==============================
+==============================================
+============================= */}
+          <Modal isOpen={modal} toggle={triggerModal}>
+            <ModalHeader toggle={triggerModal}>
+              {" "}
+              {stage == 0 ? "Confirmation" : "Unlock wallet"}
+            </ModalHeader>
+            {stage == 0 ? (
+              <div>
+                <ModalBody>
+                  <Alert />
+                  {stageOne == 3 ? (
+                    <div style={{ textAlign: "center" }}>
+                      <small>
+                        You are owing <br></br>
+                        <strong>
+                          <NumberFormat
+                            value={parseFloat(loanData.loan_amount)}
+                            className="own"
+                            displayType={"text"}
+                            thousandSeparator={true}
+                          />
+                          EUSD
+                        </strong>
+                      </small>
+                      <br />
+                      <button
+                        className="heroBtn"
+                        disabled={
+                          parseFloat(repayAmount) == 0 ||
+                          parseFloat(repayAmount) < 0
+                        }
+                        onClick={(e) => repayLoan(e)}
+                      >
+                        {isLoading ? (
+                          <FontAwesomeIcon icon={faCircleNotch} spin />
+                        ) : null}{" "}
+                        Repay Now
+                      </button>
+                      <br />
+                    </div>
+                  ) : null}
+
+                  {stageOne == 0 ? (
+                    <div>
+                      <small>
+                        You will get back the amount to your wallet address when
+                        the loan is validated.
+                      </small>
+                      <div className="">
+                        <div className="transact-stat">
+                          <div className="w-100 p-2">
+                            <Label className="vote-label" for="exampleEmail">
+                              Enter backing amount
+                            </Label>
+                            <div className="row">
+                              <div className="col-md-8">
+                                <FormGroup>
+                                  <Input
+                                    type="text"
+                                    name=""
+                                    id="votePower"
+                                    name="votePower"
+                                    value={votePower}
+                                    onChange={(e) => onChange(e)}
+                                    placeholder="0.0 EGR"
+                                  />
+                                </FormGroup>
+                              </div>
+
+                              <div className="col-md-4">
+                                <button
+                                  className="btn btn-success btn-block "
+                                  disabled={votePower == 0 || votePower < 0}
+                                  onClick={(e) => doVote(e)}
+                                >
+                                  {isLoading ? (
+                                    <FontAwesomeIcon
+                                      icon={faCircleNotch}
+                                      spin
+                                    />
+                                  ) : null}{" "}
+                                  {btnText}
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                    </div>
+                  ) : null}
+                  {stageOne == 1 ? (
+                    <div>
+                      <p className="text-center loadingContainer">
+                        <FontAwesomeIcon icon={faCircleNotch} spin />
+                      </p>
+                      <p className="text-center">
+                        Transacting with blockchain, please wait...
+                      </p>
+                    </div>
+                  ) : null}
+
+                  {stageOne == 2 ? (
+                    <div>
+                      <div className="col-md-12 mt-4">
+                        <h1 className="text-center text-success">
+                          <FontAwesomeIcon icon={faCheckCircle} /> <br />
+                          Success
+                        </h1>
+                        <p className="text-center">
+                          Transaction was successful.
+                          <br />
+                          <a
+                            className="btn btn-link text-success"
+                            href={"https://bscscan.com/tx/" + hash}
+                            target="_blank"
+                          >
+                            View on bscscan.com
+                          </a>
+                          <br />
+                          <button
+                            className="heroBtn"
+                            onClick={(e) => Continue(e)}
+                          >
+                            Continue
+                          </button>
+                        </p>
+                      </div>
+                    </div>
+                  ) : null}
+                </ModalBody>
+              </div>
+            ) : (
+              [
+                stage == 1 ? (
+                  <div>
+                    <ModalBody>
+                      <Alert />
+                      {stageTwo == 0 ? (
+                        <div>
+                          <small>
+                            Approve <b>Egoras</b> to spend {unlockWhat} on your
+                            behalf.
+                          </small>
+                          <div className="">
+                            <div className="transact-stat">
+                              <div className="w-100 p-2">
+                                <Label
+                                  className="vote-label"
+                                  for="exampleEmail"
+                                >
+                                  Amount
+                                </Label>
+                                <div className="row">
+                                  <div className="col-md-8">
+                                    <FormGroup>
+                                      <Input
+                                        type="text"
+                                        name=""
+                                        id="votePower"
+                                        name="votePower"
+                                        value={votePower}
+                                        onChange={(e) => onChange(e)}
+                                        placeholder="0.0 EGR"
+                                      />
+                                    </FormGroup>
+                                  </div>
+
+                                  <div className="col-md-4">
+                                    <button
+                                      className="heroBtn"
+                                      style={{ padding: "0.9em 4.5em" }}
+                                      disabled={votePower == 0 || votePower < 0}
+                                      onClick={(e) => doUnluck(e)}
+                                    >
+                                      {isLoading ? (
+                                        <FontAwesomeIcon
+                                          icon={faCircleNotch}
+                                          spin
+                                        />
+                                      ) : null}{" "}
+                                      {btnText}
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <br />
+                        </div>
+                      ) : null}
+                      {stageTwo == 1 ? (
+                        <div>
+                          <p className="text-center loadingContainer">
+                            <FontAwesomeIcon icon={faCircleNotch} spin />
+                          </p>
+                          <p className="text-center">{text}</p>
+                        </div>
+                      ) : null}
+                    </ModalBody>
+                  </div>
+                ) : null,
+              ]
+            )}
+          </Modal>
+        </div>
+      </section>

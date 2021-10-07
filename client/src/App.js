@@ -82,6 +82,7 @@ import Request from "./components/layout/requests/Request";
 import Login from "./components/auth/Login";
 import Categories from "./components/layout/categories/Categories";
 import Status from "./components/layout/status/Status";
+import TermsAndConditions from "./components/layout/Home2/Terms&Condition/TermsAndConditions";
 import NewHome from "./components/layout/home/NewHome";
 // import About from './components/layout/home/About';
 import TokenMetrics from "./components/layout/home/TokenMetrics";
@@ -211,14 +212,15 @@ const App = () => {
                     component={AddUploader}
                   />
                   <PrivateRoute exact path="/governance" component={Request} />
-                  <Route
-                    exact
-                    path="/companyreg"
-                    component={Companyreg}
-                  />
+                  <Route exact path="/companyreg" component={Companyreg} />
 
                   <Route exact path="/companies" component={Companies} />
                   <Route exact path="/privacy" component={Privacy} />
+                  <Route
+                    exact
+                    path="/terms-conditions"
+                    component={TermsAndConditions}
+                  />
                   <Route exact path="/terms" component={Terms} />
 
                   <Route

@@ -250,14 +250,19 @@ const GetLoan = () => {
                     </div>
                   </td>
                   <td className="assets-category-data1">
-                    <div className="assets-data-name">Electrical Appliances</div>
+                    <div className="assets-data-name">
+                      Electrical Appliances
+                    </div>
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data-name">₦200</div>
                   </td>
                   <td className="assets-category-data-last">
                     <div className="assets-data-name-last">
-                      <a href="#" className="assets-collateralize-button">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
                         Collateralize
                       </a>
                     </div>
@@ -273,7 +278,7 @@ const GetLoan = () => {
                   <td className="assets-category-data1">
                     <div className="assets-data">
                       <div className="assets-data-name">
-                       Phones & Accessories
+                        Phones & Accessories
                       </div>
                     </div>
                   </td>
@@ -283,13 +288,14 @@ const GetLoan = () => {
                     </div>
                   </td>
                   <td className="assets-category-data-last">
-             
-                      <div className="assets-data-name-last">
-                        <a href="#" className="assets-collateralize-button">
-                          Collateralize
-                        </a>
-                      </div>
-           
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
                   </td>
                 </tr>
                 <tr className="assets-category-row">
@@ -302,7 +308,7 @@ const GetLoan = () => {
                   <td className="assets-category-data1">
                     <div className="assets-data">
                       <div className="assets-data-name">
-                       Phones & Accessories
+                        Phones & Accessories
                       </div>
                     </div>
                   </td>
@@ -312,13 +318,14 @@ const GetLoan = () => {
                     </div>
                   </td>
                   <td className="assets-category-data-last">
-        
-                      <div className="assets-data-name-last">
-                        <a href="#" className="assets-collateralize-button">
-                          Collateralize
-                        </a>
-                      </div>
-         
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
                   </td>
                 </tr>
                 <tr className="assets-category-row">
@@ -330,9 +337,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1">
                     <div className="assets-data">
-                      <div className="assets-data-name">
-                        Laptop & Computers
-                      </div>
+                      <div className="assets-data-name">Laptop & Computers</div>
                     </div>
                   </td>
                   <td className="assets-category-data1b">
@@ -341,13 +346,14 @@ const GetLoan = () => {
                     </div>
                   </td>
                   <td className="assets-category-data-last">
-              
-                      <div className="assets-data-name-last">
-                        <a href="#" className="assets-collateralize-button">
-                          Collateralize
-                        </a>
-                      </div>
-                 
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
                   </td>
                 </tr>
                 <tr className="assets-category-row">
@@ -359,9 +365,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1">
                     <div className="assets-data">
-                      <div className="assets-data-name">
-                        Laptop & Computers
-                      </div>
+                      <div className="assets-data-name">Laptop & Computers</div>
                     </div>
                   </td>
                   <td className="assets-category-data1b">
@@ -370,13 +374,14 @@ const GetLoan = () => {
                     </div>
                   </td>
                   <td className="assets-category-data-last">
-                   
-                      <div className="assets-data-name-last">
-                        <a href="#" className="assets-collateralize-button">
-                          Collateralize
-                        </a>
-                      </div>
-                  
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
                   </td>
                 </tr>
                 <tr className="assets-category-row">
@@ -399,13 +404,14 @@ const GetLoan = () => {
                     </div>
                   </td>
                   <td className="assets-category-data-last">
-              
-                      <div className="assets-data-name-last">
-                        <a href="#" className="assets-collateralize-button">
-                          Collateralize
-                        </a>
-                      </div>
-          
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
                   </td>
                 </tr>
               </tbody>
@@ -549,10 +555,10 @@ const GetLoan = () => {
                   />
                 </div>
                 <div className="gthowCard2Texts">
-                  Approve Loans
+                  Approve Collaterals
                   <br />
                   <p className="howCard2TextsP">
-                    Fund loans without risking your
+                    Fund collaterals without risking your
                     <br />
                     EGR token.
                   </p>
@@ -574,7 +580,7 @@ const GetLoan = () => {
                   <p className="howCard3TextsP">
                     Earn over 20% APR for
                     <br />
-                    approving/declining loans.
+                    approving/declining collaterals.
                   </p>
                 </div>
               </div>
@@ -632,10 +638,10 @@ const GetLoan = () => {
               <div className="gtbCardTexts">
                 <h1 className="gtbCardTitle">Best Value For Your Assets</h1>
                 <p className="gtbCardPara">
-                  Unlike other lenders that charge exorbitant interest rate
-                  (over 30% monthly). Egoras offers the Market leading zero
-                  interest rate which makes the repayment stressfree with zero
-                  hassle.
+                  For every collateral, our advanced AI tech will make the
+                  perfect value for the item based on its condition and
+                  determine amazing price value[s] for the items. Our process is
+                  very seamless and fast.
                 </p>
               </div>
             </div>
@@ -663,7 +669,7 @@ const GetLoan = () => {
                 <p className="gtbCardPara">
                   Unlike other lenders that charge exorbitant interest rate
                   (over 30% monthly). Egoras offers the Market leading zero
-                  interest rates which makes the repayment stressfree with zero
+                  interest rates which makes the repayment stress-free with zero
                   hassle.
                 </p>
               </div>
@@ -1360,7 +1366,7 @@ const GetLoan = () => {
       {/* Partners Section end  */}
       {/* =================================================================================================================================================================================================================================================================== */}
       {/* gtcompare Section Start */}
-      <section className="gtcompareSection">
+      {/* <section className="gtcompareSection">
         <div className="container">
           <div
             className="gttitleLine"
@@ -1416,7 +1422,7 @@ const GetLoan = () => {
                 </h6>
               </div>
               {/* <hr /> */}
-              {/* <div className="compareCardContent2">
+      {/* <div className="compareCardContent2">
               <h6 className="cardContentTxt">Card Delivery</h6>
               <h6 className="cardContentTxt">
                 <RemoveCircleIcon className="removeCircle" />
@@ -1428,7 +1434,7 @@ const GetLoan = () => {
                 25 free transfers every month
               </h6>
             </div> */}
-              <hr />
+      {/* <hr />
               <div className="compareCardContent2">
                 <h6 className="cardContentTxt">Repayment</h6>
                 <h6 className="cardContentTxt">
@@ -1496,7 +1502,7 @@ const GetLoan = () => {
         </div>
 
         <img src="/img/token-dots.svg" alt="" className="gtcompareDots" />
-      </section>
+      </section> */}
       {/* gtcompare Section End */}
       {/* =================================================================================================================================================================================================================================================================== */}
       {/* explore section  start */}
