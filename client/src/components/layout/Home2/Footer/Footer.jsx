@@ -153,7 +153,7 @@ const Footer = () => {
                   Get in Touch Today
                 </a>
                 <a href="" className="c1link1">
-                  +234 8130 7325 65
+                  
                 </a>
                 <a href="/" className="c1linklast">
                   cs@egoras.com
@@ -254,7 +254,7 @@ const Footer = () => {
                       Get in Touch Today
                     </a>
                     <a href="" className="c1link1">
-                      +234 8130 7325 65
+                    
                     </a>
                     <a href="/" className="c1linklast">
                       cs@egoras.com
@@ -267,9 +267,7 @@ const Footer = () => {
           <hr></hr>
           <h5 className="footerBottomPara">
             ©️ 2021 Egoras Technologies LTD(RC - 1832671). All rights reserved .
-            Egoras Technologies ltd is a licensed pawnbroker and moneylender.
-            “Egoras” and “Egorasbank” are trademarks of Egoras Technologies Ltd.
-            282 Aba Road by Rumukrushi junction, port Harcourt, Rivers state.
+
           </h5>
         </div>
       </section>
