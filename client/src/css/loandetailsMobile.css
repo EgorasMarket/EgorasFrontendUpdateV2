@@ -26,10 +26,6 @@
   .LTitle {
     font-size: 32px;
   }
-
-  .loanDetailsCards {
-    width: 350px;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -37,7 +33,12 @@
   .heroSection2 {
     padding: 6em 3em;
   }
-
+  .gtheroTitleloan1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+    width: 100%;
+  }
   /* hero section end */
 
   .loanDetailsDays {
@@ -48,14 +49,17 @@
 @media screen and (max-width: 869px) {
   /* hero section start */
   .heroArea2 {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-    justify-content: center;
-    margin-bottom: 100px;
-    grid-row-gap: 100px;
+    font-size: 24px;
   }
-
+  .hero-images {
+    margin-left: 5%;
+    position: relative;
+    width: 100%;
+  }
   .hero-right {
     right: 0;
     width: 700px;
@@ -87,6 +91,16 @@
   .projectsSection2 {
     padding: 4em;
   }
+  .heroArea2 {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: auto; */
+    position: relative;
+    /* justify-content: center; */
+    margin-bottom: 100px;
+    grid-row-gap: 50px;
+  }
+
   /* hero section end */
 }
 @media screen and (max-width: 565px) {
@@ -121,7 +135,6 @@
     font-size: 24px;
   }
   .loanDetailsCards {
-    width: 300px;
     padding: 1em 1em;
   }
   .ldAmount1 {
@@ -133,11 +146,16 @@
   .ldTitle1 {
     font-size: 12px;
   }
+  .gtheroTitleloan1 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .loanDetailsCards {
-    width: 250px;
     padding: 1em 1em;
   }
 }

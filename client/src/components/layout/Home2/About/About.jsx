@@ -149,7 +149,7 @@ const About = () => {
               <div className="gtbCardTexts">
                 <h1 className="gtbCardTitle">Stay excited and hungry.</h1>
                 <p className="gtbCardPara">
-                  We are always eagger to to achieve
+                  We are always eager to to achieve
                   <br />
                   more and we are never comfortable <br />
                   with any level. We are not
