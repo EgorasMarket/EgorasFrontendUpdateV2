@@ -45,23 +45,29 @@ const TermsAndConditions = () => {
               </div>
               <p className="AboutUsPara" data-aos="fade-right">
                 <span className="PrivacyTitle"> 1. </span> Please read these
-                terms of use carefully before you start to use the Website, as
+                terms of use carefully before you start to use the Website,
                 these will apply to your use of the Website. We recommend that
                 you print a copy of the Terms for future reference.
               </p>
               <p className="AboutUsPara" data-aos="fade-right">
                 <span className="PrivacyTitle"> 2. </span>The website
-                <a href="https://egoras.com"> https://egoras.com</a> is operated
-                by Egoras Technologies Limited (“Egoras” “we” “our” or “us”) a
-                limited liability company incorporated under the Nigerian
-                Companies and Allied Matters Act with registration Number
-                1832671.
+                <a href="https://egoras.com" style={{ color: "#229e54" }}>
+                  {" "}
+                  https://egoras.com
+                </a>{" "}
+                is operated by Egoras Technologies Limited (“Egoras” “we” “our”
+                or “us”) a limited liability company incorporated under the
+                Nigerian Companies and Allied Matters Act with registration
+                Number 1832671.
               </p>
               <p className="AboutUsPara" data-aos="fade-right">
                 <span className="PrivacyTitle"> 3. </span>"you" and "your" means
                 a user of the website at{" "}
-                <a href="https://egoras.com"> https://egoras.com</a> (the
-                "Website").
+                <a href="https://egoras.com" style={{ color: "#229e54" }}>
+                  {" "}
+                  https://egoras.com
+                </a>{" "}
+                (the "Website").
               </p>
             </div>
 
@@ -81,7 +87,10 @@ const TermsAndConditions = () => {
                 to and are subject to the following terms and conditions, as
                 well as the Privacy Policy (collectively called
                 “Terms”/“Agreement”). The Privacy Policy is available at
-                <a href="https://egoras.com/privacy">
+                <a
+                  href="https://egoras.com/privacy"
+                  style={{ color: "#229e54" }}
+                >
                   {" "}
                   https://egoras.com/privacy
                 </a>
