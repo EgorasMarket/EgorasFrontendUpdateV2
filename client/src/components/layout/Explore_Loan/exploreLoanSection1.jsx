@@ -12,10 +12,12 @@ const ExploreLoanSection1 = () => {
                             <div>
                                 <select className="selectOption">
                                     <option>All Loans</option>
-                                    <option>Retail</option>
-                                    <option>Women</option>
-                                    <option>Single Parents</option>
-                                    <option>Agriculture</option>
+                                    <option>Mobile Phones $ Tablets</option>
+                                    <option>Laptop and Computers</option>
+                                    <option>TV and DVD Sets</option>
+                                    <option>Furniture</option>
+                                    <option>Kitchen Appliances</option>
+                                    <option>Home Accessories</option>
                                 </select>
                             </div>
                         </form>
