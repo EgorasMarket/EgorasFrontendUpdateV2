@@ -26,7 +26,7 @@ const ExploreLoanSection2 = ({loans, fetch}) => {
 
     return (
         <div style={{margin:'auto'}} className="diff">
-            <div className="section2DivHolder_img">
+            <div className="section2DivHolder_img"  data-aos="fade-up" data-aos-duration="3000" >
                   {/* { Roll.map((bag) =>(
                 <div className="exploreLoanSection2" key={bag.id}>
                     <div className="DivIMG"  style={{ backgroundImage: `url(${bag.img})` }}></div>
@@ -45,7 +45,7 @@ const ExploreLoanSection2 = ({loans, fetch}) => {
                                 return(
                             <Fragment>
                                <Link to={`loan-details/${loan.id}`} >
-                                 <div className="exploreLoanSection2"  key={i}>
+                                 <div className="exploreLoanSection2"  key={i} >
                     <div className="DivIMG"  style={{ backgroundImage: `url(${loan.cover_image})` }}></div>
                    
                     <p className="retailButton">{loan.category}</p>

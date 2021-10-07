@@ -64,6 +64,8 @@ const Documentation7 = () => {
                  < div  className="subSectionC">
                    <div className="subSectionC_Line"></div>
                    <div className="aboutEgoras_H" data-aos="fade-up">Loan Application</div>
+                    <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> The Loan application underlying function converts the loan application request into a unique identifier. The function consists of the amount of the borrower intends to borrow from the protocol, the title of the loans, the duration of the loan and the loan cover image URL. </div>
+                
 
                    <div className="aboutEgoras_card">
                    <div className="subSectionC_Card">

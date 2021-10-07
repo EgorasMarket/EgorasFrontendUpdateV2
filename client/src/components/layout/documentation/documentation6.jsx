@@ -64,6 +64,7 @@ const Documentation6 = () => {
                  < div  className="subSectionC">
                    <div className="subSectionC_Line"></div>
                    <div className="aboutEgoras_H" data-aos="fade-up">Interest Sharing Formula</div>
+                       <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">When a borrower pays back the loan to microfinance banks, NGOs or to any Egoras lending partner, the cash is converted to EUSD and used to buy back on Egoras microfinance protocol and the EUSD which is paid back will be destroyed and removed from circulation forever. The interest gotten from the loan will be deposited on the Egoras treasury and later distributed among Egoras holders. This is one of the ways the treasury is capitalized. </div>
 
                    <div className="aboutEgoras_card">
                    <div className="subSectionC_Card">

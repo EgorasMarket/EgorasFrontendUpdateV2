@@ -318,6 +318,7 @@ const Documentation13 = () => {
             >
               Validate Governance Request
             </div>
+           <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">ValidateRequest function sends an approval request into the protocol. </div>
 
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">

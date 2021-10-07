@@ -27,7 +27,7 @@ const Documentation = () => {
                     <div className="subSectionB_Sidebar_Line"></div>
                     <div className="subSectionB_Sidebar">
                         <ul className="subSectionB_Sidebar_Ul ">
-                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/documentaion" className="subSectionB_SidebarA"> Introduction</Link></li>
+                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/documentation" className="subSectionB_SidebarA"> Introduction</Link></li>
                             <li className="subSectionB_Sidebar_Link add" data-aos="fade-right" data-aos-duration="3000">GETTING STARTED</li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000" ><Link to ="/documentation1" className="subSectionB_SidebarA">What problem is Egoras trying to solve </Link></li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/egoras-decentralized-autonomous-organization" className="subSectionB_SidebarA">Egoras Decentralized Autonomous <br/> Organization </Link></li>
@@ -64,6 +64,11 @@ const Documentation = () => {
                  < div  className="subSectionC">
                    <div className="subSectionC_Line"></div>
                    <h2 className="subSectionC_H2" data-aos="fade-up" data-aos-duration="3000">Introduction</h2>
+                   <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> It is estimated that over two billion people around the globe are unbanked and without any access to financial services to meet their daily needs. Egoras protocol (“the protocol” or “the project”) attempts to be part of the solution to this problem by expanding financial access and inclusion to unserved or underserved communities. The protocol achieves its mission by on-chain Governance and a Self-Funding Treasury system. The protocol serves as a source of capital for the unserved or underserved communities. In addition, the project seeks to improve the quality of financial services as well as lower the cost of the services in these communities around the globe. This docs, therefore explores how Egoras protocol can solve real-life problems such as helping people start businesses, supporting small and medium-sized enterprises access funds for expansion; and enabling families to attend to the needs while maintaining good collateralization on-chain.</div>
+                      <div className = "aboutEgorasImg" data-aos="fade-up" data-aos-duration="3000"><img src="content.png" alt=" " className="EGOimg prince" /></div>
+                         <div className = "aboutEgorasImg" data-aos="fade-up" data-aos-duration="3000"><img src="content.png" alt=" " className="EGOimg" /></div>
+                          <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">These docs are a comprehensive guide to the Egoras Microfinance protocol, based on the Egoras Whitepaper. The protocol codebase is hosted on <a href="https://github.com/EgorasMarket" style={{color:'#229e54'}}>Github</a>. </div>
+                           <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">Please join the <a href="https://t.me/egorasmarket" style={{color:'#229e54'}}>Egoras telegram community</a>; our team, and members of the community, look forward to helping you build an application on Egoras microfinance protocol. Your questions help us improve, so please don't hesitate to ask if you can't find what you are looking for here. </div>
                    <div className="subSectionC_Card">
                        <div className="subSectionC_Next">Next</div>
                        <div className="cardText">what problem is Egoras<br/>trying to solve? <Link to="/documentation1"><ArrowForward className="SubForwardIcon"/></Link></div>

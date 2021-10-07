@@ -313,7 +313,7 @@ const Documentation17 = () => {
             >
               Introduction
             </div>
-
+          <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">The Egoras Protocol interacts with Four kinds of tokens: </div>
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">
                 <div className="subSectionC_Next add">Precious</div>

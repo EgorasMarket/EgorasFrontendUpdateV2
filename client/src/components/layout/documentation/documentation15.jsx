@@ -311,6 +311,9 @@ const Documentation15 = () => {
             >
               Block Rewards
             </div>
+              <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> 5 million Egoras Token (“EGR) will be released every month and will be divided between the Egoras Treasury and voters. The breakdown of the allocations can be viewed below: </div>
+              <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">  </div>
+              <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> The voters are the backbone of Egorasmicrofinance protocol, they approve/decline loan request from microfinance banks or NGOs and these activities attract 40% of the total block rewards weekly.</div>
 
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">

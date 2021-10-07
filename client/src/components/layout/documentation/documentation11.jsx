@@ -311,6 +311,7 @@ const Documentation11 = () => {
             <div className="aboutEgoras_H" data-aos="fade-up">
               Distribute Interest To Egr Holders
             </div>
+             <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> The distributeFee function transfers Ethereum into the EGR holders wallet according to their voting power.</div>
 
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">

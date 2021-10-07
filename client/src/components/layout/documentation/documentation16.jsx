@@ -310,7 +310,7 @@ const Documentation16 = () => {
             <div className="aboutEgoras_H" data-aos="fade-up">
               How Is The Treasury Capitalized
             </div>
-
+              <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> At the launch of the project, the 80 billion EGR tokens are sent to Egoras microfinance protocol and this may result in over-collateralization greater than 170%. Up to 60% of the weekly block reward created through the inflationary money are sent to the treasury to further increase the capitalisation of the treasury.</div>
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">
                 <div className="subSectionC_Next add">Precious</div>

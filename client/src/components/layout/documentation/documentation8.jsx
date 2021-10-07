@@ -314,7 +314,7 @@ const Documentation8 = () => {
             >
               Approved Company
             </div>
-
+              <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> The voteinCompany function consists of the company address, the votePower and the _accept(true/false). The functions also sends an approval /declinal request to the protocol.</div>
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">
                 <div className="subSectionC_Next add">Precious</div>

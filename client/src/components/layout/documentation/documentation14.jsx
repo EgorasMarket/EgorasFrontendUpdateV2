@@ -315,7 +315,9 @@ const Documentation14 = () => {
             >
               How Egoras Treasury Work
             </div>
-
+                <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> Egoras treasury is a pool of funds collected through interest and staking rewards. These funds are saved in the smart contract for marketing, development, reserve funds for the EUSD stable coin, payment of the team and others. Spending proposals could be made for a chance to withdraw some funds from the treasury and if the proposal is approved by the Egoras holders, the funds will automatically be withdrawn.</div>
+                <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">Egoras treasury funding allows for a viable long-term model that will grow the technology and the community. In combination with self- funding,  a strong governance model allows Egoras microfinance protocol to avoid the pitfalls and amplify the successes of its predecessors — making community-driven decisions that will maximize scalability and drive global adoption</div>
+              
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">
                 <div className="subSectionC_Next add">Precious</div>

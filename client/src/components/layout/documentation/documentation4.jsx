@@ -27,7 +27,7 @@ const Documentation4 = () => {
                     <div className="subSectionB_Sidebar_Line"></div>
                     <div className="subSectionB_Sidebar">
                         <ul className="subSectionB_Sidebar_Ul ">
-                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/documentaion" className="subSectionB_SidebarA"> Introduction</Link></li>
+                            <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to="/documentation" className="subSectionB_SidebarA"> Introduction</Link></li>
                             <li className="subSectionB_Sidebar_Link add" data-aos="fade-right" data-aos-duration="3000">GETTING STARTED</li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/documentation1" className="subSectionB_SidebarA">What problem is Egoras trying to solve </Link></li>
                             <li className="subSectionB_Sidebar_Link" data-aos="fade-right" data-aos-duration="3000"><Link to ="/egoras-decentralized-autonomous-organization" className="subSectionB_SidebarA">Egoras Decentralized Autonomous <br/> Organization </Link></li>
@@ -64,6 +64,10 @@ const Documentation4 = () => {
                  < div  className="subSectionC">
                    <div className="subSectionC_Line"></div>
                    <div className="aboutEgoras_H" data-aos="fade-up" data-aos-duration="3000">Loan Approval Governance </div>
+                    <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">It is to be noted that the current microfinance sector managed by NGOs and microfinance bank approve loans for borrowers after proper due diligence have been carried out, but the Egoras protocol uses a crowdsourced knowledge to approve or decline loans. The people vote if the loans should be approved or declined and the people also share in the risk of the loans. </div>
+                    <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">Egoras holders approve or decline any loan within 24hrs of such loan request. In other words, the governance process to approve or decline any loan takes up to 24hrs. All data are provided for Egorasholders to make the correct governance decisions and the votes are determined by the voting weight (vote weight is determined by the amount of Egorastoken locked in the microfinance smart-contract). </div>
+                    <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">Egoras holders share in the risk of the loans and they are rewarded for their participation in the governance process by receiving all interest accruing from the loans. </div>
+                    <div></div>
 
                    <div className="aboutEgoras_card">
                    <div className="subSectionC_Card">
