@@ -6,7 +6,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
-
+import TelegramIcon from "@material-ui/icons/Telegram";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import "../../../../css/Landing.css";
 import "../../../../css/landingMobile.css";
 
@@ -49,6 +50,25 @@ const config = {
 // styles
 
 const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 6,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+const responsive2 = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
@@ -162,7 +182,7 @@ const Landing = ({
         config
       )
       .then((response) => {
-        console.log(response.data.items);
+        // console.log(response.data.items);
         setVideos(response.data.items);
       })
       .catch((err) => {
@@ -261,14 +281,14 @@ const Landing = ({
 
   const [page, setPage] = useState("change");
 
-  const clickMe1 = () => {
+  const clickMe2 = () => {
     if (page === "change") {
       setPage("change");
     } else {
       setPage("change");
     }
   };
-  const clickMe2 = () => {
+  const clickMe1 = () => {
     if (page === "notChange") {
       setPage("notChange");
     } else {
@@ -283,23 +303,41 @@ const Landing = ({
         <div className="container">
           <div className="gtheroArea">
             <div className="heroTxts">
-              <h1 className="gtheroTitleloan">
-                Uncollateralised
-                <br /> micro-credits.
-              </h1>
-              <p className="gtheroCaption">FOR SMALL ENTREPRENEURS</p>
-              <p className="gtheroPara">
-                Egoras microfinance protocol provides uncollateralised
-                <br />
-                micro-credit to small entrepreneurs and enterprises <br />
-                who cannot take shelter of banks
-                <br /> for banking and other services.
+              <h1 className="gtheroTitleloan">We’re bringing NFTs and DeFi.</h1>
+              <p className="gtheroCaption">TO THE MASSES</p>
+              <p className="gtheroParaB">
+                With Egoras Protocol, you earn more when you support real people
+                to access interest free loans instantly with their used item(s).
               </p>
               <div className="heroButton">
                 <a href="/explore" className="heroBtn">
-                  See Loans
+                  See Collaterals
                 </a>
               </div>
+              <ul className="joinCommunitybtns">
+                <h6 className="joinCommunitybtnsTitle">Join Our Community.</h6>
+                {/* <a href="/appointment" className="gtconnect">
+                  Apply for loan
+                </a> */}
+                <div className="joinCommunitybtnsLinks">
+                  <a
+                    href="https://t.me/egorasmarket"
+                    className="communitybtn1"
+                    target="_blank"
+                  >
+                    <TelegramIcon />
+                    Telegram
+                  </a>
+                  <a
+                    href="https://twitter.com/egorasmarket"
+                    className="communitybtn1"
+                    target="_blank"
+                  >
+                    <TwitterIcon />
+                    Twitter
+                  </a>
+                </div>
+              </ul>
             </div>
 
             <div
@@ -307,11 +345,7 @@ const Landing = ({
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <img src="/img/phone-hero.png" alt="" className="heroPhone" />
-              <img src="/img/shape-egg.svg" alt="" className="eggShape" />
-              <img src="/img/dots.svg" alt="" className="gtdots" />
-              <img src="/img/x-shape.svg" alt="" className="gtx" />
-              <img src="/img/circle.svg" alt="" className="gtcircle" />
+              <img src="/img/hero-imgs.png" alt="" className="heroPhone" />
               <div className="card-amount">
                 <img src="/img/coin-icon.svg" alt="" className="coin" />
                 <p className="amount">₦800,000</p>
@@ -342,7 +376,7 @@ const Landing = ({
           <div className="gthowItWorksBtns">
             <div className="gtbutton1">
               <button
-                className={page === "change" ? "gtbtn1 active" : "gtbtn2"}
+                className={page === "notChange" ? "gtbtn1 active" : "gtbtn2"}
                 onClick={clickMe1}
               >
                 Borrower
@@ -350,7 +384,7 @@ const Landing = ({
             </div>
             <div className="gtbutton2">
               <button
-                className={page === "notChange" ? "gtbtn1 active" : "gtbtn2"}
+                className={page === "change" ? "gtbtn1 active" : "gtbtn2"}
                 onClick={clickMe2}
               >
                 Validator
@@ -358,7 +392,7 @@ const Landing = ({
             </div>
           </div>
 
-          {page === "change" ? (
+          {page === "notChange" ? (
             <div className="gthowItWorksArea">
               <div
                 className="gthowCard1"
@@ -479,10 +513,10 @@ const Landing = ({
                   />
                 </div>
                 <div className="gthowCard2Texts">
-                  Approve Loans
+                  Approve Collaterals
                   <br />
                   <p className="howCard2TextsP">
-                    Fund loans without risking your
+                    Fund collaterals without risking your
                     <br />
                     EGR token.
                   </p>
@@ -508,7 +542,7 @@ const Landing = ({
                   <p className="howCard3TextsP">
                     Earn over 20% APR for
                     <br />
-                    approving/declining loans.
+                    approving/declining collaterals.
                   </p>
                 </div>
               </div>
@@ -535,16 +569,14 @@ const Landing = ({
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            <div className="projectsLine"></div>
-            <div className="projectsTitleContents">
+            <div className="projectsLinea"></div>
+            <div className="projectsTitleContentsa">
               <div className="projectTitle">
-                <h1 className="gttitle">Recent projects</h1>
-
-                <p className="projectsPara">All Categories</p>
+                <h1 className="gttitle">Recent collaterals</h1>
               </div>
 
               <a href="#" className="projectsLink">
-                Explore loans
+                Explore collaterals
                 <div className="projectsLinkHover"></div>
               </a>
             </div>
@@ -558,30 +590,45 @@ const Landing = ({
               showDots={false}
             >
               {loanData.map((loan, i) => {
-                if (loan.loan_category === getCategory) {
-                  console.log(loan.loan_category);
-                  let percent = 0;
-                  let up = 0;
-                  let down = 0;
-                  let accepted = parseInt(loan.accepted);
-                  let declined = parseInt(loan.declined);
+                // if (loan.loan_category === getCategory) {
+                // console.log(loan);
 
-                  if (declined == 0 && accepted > 0) {
-                    up = 100;
-                  } else if (accepted == 0 && declined > 0) {
-                    down = 100;
-                  }
-                  if (accepted == 0 && declined == 0) {
-                  } else {
-                    let wholeNumber = declined + accepted;
-                    let percent = (accepted / wholeNumber) * 100;
+                // console.log(loan.loan_category);
+                let percent = 0;
+                let up = 0;
+                let down = 0;
+                let accepted = parseInt(loan.accepted);
+                let declined = parseInt(loan.declined);
 
-                    if (percent !== Infinity) {
-                      up = percent;
-                      down = 100 - percent;
-                    }
+                let backed = loan.backed;
+                let votingThreshold = loan.votingThreshold;
+                // if (loan.is_approved) {
+                //   setFormData({ ...formData, ['votePower']: parseFloat(loan.loan_amount) })
+                // }
+                let per =
+                  (parseFloat(backed) / parseFloat(votingThreshold)) * 100;
+
+                // console.log(per);
+
+                // setPercentage(Math.round(per));
+
+                if (declined == 0 && accepted > 0) {
+                  up = 100;
+                } else if (accepted == 0 && declined > 0) {
+                  down = 100;
+                }
+                if (accepted == 0 && declined == 0) {
+                } else {
+                  let wholeNumber = declined + accepted;
+                  let percent = (accepted / wholeNumber) * 100;
+
+                  if (percent !== Infinity) {
+                    up = percent;
+                    down = 100 - percent;
                   }
                 }
+                // }
+                // console.log(loan);
 
                 return (
                   // <Link to="/loan-details">{"/loan/details/" + loan.id}
@@ -596,7 +643,9 @@ const Landing = ({
                           width: "100%",
                           backgroundRepeat: "no-repeat",
                           backgroundSize: "cover",
-                          borderRadius: "15px",
+                          borderRadius: "8px",
+                          borderBottomLeftRadius: "0px",
+                          borderBottomRightRadius: "0px",
                         }}
                       >
                         <div className="img-amount">
@@ -609,8 +658,38 @@ const Landing = ({
                         </div>
                       </div>
                       <div className="cardDetails">
-                        <h1 className="cardHeader">{loan.loan_tile}</h1>
-                        <p className="cardPara">Interest: 24% APY</p>
+                        <h1 className="cardHeader">{loan.title}</h1>
+                        <h1 className="collat-category">Electronics</h1>
+                        <div className="heroSlider2">
+                          <div className="slider-txts1">
+                            <div className="h-texts">
+                              <h3 className="htxt1a">
+                                {parseFloat(backed)} egr
+                              </h3>
+                              <h3 className="htxt2a">{Math.round(per)}%</h3>
+                            </div>
+                          </div>
+                          {/* <div className="slider-a"></div> */}
+                          <div className="slider" style={{ height: "7px" }}>
+                            <div
+                              className="sliderafter"
+                              style={{
+                                width: `${Math.round(per)}%`,
+                                height: "7px",
+                              }}
+                            ></div>
+                          </div>
+                          <div className="slider-txts2">
+                            <div className="p-texts2a">
+                              <p className="ptxt2a">
+                                Remaining EGR:{" "}
+                                {parseFloat(votingThreshold) -
+                                  parseFloat(backed)}{" "}
+                                EGR
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </a>
@@ -625,8 +704,146 @@ const Landing = ({
       </section>
       {/*  Projects Section end*/}
       {/* =================================================================================================================================================================================================================================================================== */}
+
+      {/* categories section start */}
+      <section className="collateral-categories-section">
+        <div className="container">
+          <div className="collateral-categories-heading">
+            <h3 className="collateral-cat-header">
+              {" "}
+              Which categories interest you?{" "}
+            </h3>
+            <p className="collateral-cat-paragraph">
+              Discover collaterals and get great recommendations when you select
+              your interests.
+            </p>
+            <div className="collateral-links row">
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/colat-mobile-phones.svg"
+                  alt=""
+                  className="collat-mobile-phones1"
+                />
+                <p className="collat-mobile-txt">Mobile phones & Tablets.</p>
+              </a>
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/colat-household-appliance.svg"
+                  alt=""
+                  className="collat-mobile-phones2"
+                />
+                <p className="collat-mobile-txt">House-Hold appliances</p>
+              </a>
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/colat-furnitures.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">Furnitures</p>
+              </a>
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/colat-computers.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">Laptops & Desktop Computers</p>
+              </a>
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/colat-electrical-appliance.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">Electrical Appliances</p>
+              </a>
+              <a href="" className="collateral-link1 col-md-2">
+                <img
+                  src="/img/all-colat-categories.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">All categories</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* categories section end */}
+      {/* =================================================================================================================================================================================================================================================================== */}
+
+      <section className="savingsSection2">
+        <div className="container">
+          <div className="savingsArea2">
+            <div
+              className="savingsText2"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
+              <span className="egr">Money lending without risk of Capital</span>
+              <p className="savings-para">
+                There is no loss of capital when you participate in approving
+                collaterals on Egoras protocol. Your capital is released
+                immediately the collaterals are approved on the protocol, Unlike
+                traditional lending, were the lenders capital are at risked for
+                the duration of the loan and there is no guarantee if the
+                capital will be recovered by the lender. Egoras lending, no
+                capital is at risk because the capital is released as soon the
+                loans are approved.
+              </p>
+            </div>
+            <div
+              className="savingsImages2"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <img src="/img/money-lending.svg" alt="" className="blockChain2" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =================================================================================================================================================================================================================================================================== */}
+      <section className="discountSection">
+        <div className="container">
+          <div className="discountArea2">
+            <div
+              className="discountImages2"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <img
+                src="/img/nft-vector-img.png"
+                alt=""
+                className="discountVector2"
+              />
+            </div>
+            <div
+              className="discountTxt2"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
+              <span className="egr">eNFT Farming</span>
+              <p className="discount-para">
+                Egoras eNFT farming builds off the concept of token staking and
+                liquidity farming, with users staking native tokens to earn an
+                additional yield through an NFT-based reward. Unlike traditional
+                staking, which pays out the reward in the natively staked token,
+                through egoras NFT farming, users can obtain  NFTs assets
+                redeemable for offline goods. These earnable NFTs can vary
+                greatly depending on the token being staked.
+              </p>
+              {/* <a href="/collateral" className="discount-btn">
+                Learn more
+                <ArrowRightIcon />
+              </a> */}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =================================================================================================================================================================================================================================================================== */}
       {/* Benefits Section start */}
-      <section className="gtbenefitsSection" id="benefits">
+      {/* <section className="gtbenefitsSection" id="benefits">
         <div className="container">
           <div
             className="gttitleLine"
@@ -733,9 +950,10 @@ const Landing = ({
 
         <img src="/img/right-back-drop.svg" alt="" className="gtrightBack" />
         <img src="/img/shape-egg2.svg" alt="" className="gteggShape2" />
-      </section>
+      </section> */}
       {/* Benefits Section start */}
       {/* =================================================================================================================================================================================================================================================================== */}
+
       {/* Stories Section Start  */}
       <section className="gtstoriesSection">
         <div className="container">
@@ -762,7 +980,7 @@ const Landing = ({
 ==============================================
 ============================= */}
             <Carousel
-              responsive={responsive}
+              responsive={responsive2}
               className="storiesCard"
               showDots={false}
               infinite={true}

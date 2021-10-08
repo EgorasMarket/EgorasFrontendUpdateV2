@@ -1,8 +1,5 @@
 @media screen and (max-width: 1245px) {
   /* hero  Section Start */
-  .heroSection4 {
-    padding: 6em 6em;
-  }
   .heroTitle4 {
     font-size: 45px;
   }
@@ -24,17 +21,14 @@
 
 @media screen and (max-width: 1024px) {
   /* hero section start */
-  .heroSection4 {
-    padding: 6em 3em;
-  }
   /* hero section end */
 }
 
 @media screen and (max-width: 869px) {
   /* hero section start */
   .heroArea4 {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
     position: relative;
     justify-content: center;
     margin-bottom: 100px;
@@ -48,9 +42,6 @@
 }
 
 @media screen and (max-width: 565px) {
-  .heroSection4 {
-    padding: 4em 2em;
-  }
   .heroTitle4 {
     font-size: 38px;
   }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import {
     
@@ -6,10 +6,15 @@ import {
       } from "@web3-react/core";
 const PrivateRoute = ({ component: Component, ...rest }) => {
     const context = useWeb3React();
+    const [connected, setConnected] = useState(false);
     const { 
         active,
     } = context;
-     return(<Route {...rest} render={props => !active ? (<Redirect to="/" />) : (<Component {...props} />)} />)
+    
+    useEffect(() => {
+        setConnected(active);
+    }, [])
+     return(<Route {...rest} render={props => !connected ? (<Redirect to="/" />) : (<Component {...props} />)} />)
 }
 
 

@@ -9,7 +9,7 @@ const imgur = require("imgur");
 const Companies = require("../../models/Companies");
 const Directors = require("../../models/Directors");
 const Requests = require("../../models/Requests");
-const Loans = require("../../models/New_Loans");
+const Loans = require("../../models/V2");
 const Blocks = require("../../models/Blocks");
 const Stats = require("../../models/Stats");
 const Voters = require("../../models/Voters");
@@ -43,17 +43,7 @@ var task = cron.schedule("* * * * *",  () =>  {
     })
 
 //UPDATE `companies` SET `isActiveVotingPeriod`= 1 WHERE NOW() >= ``
-Companies.update({
-  isActiveVotingPeriod: true,                
-  }, {
-    where: {
-      countDown:{
-      [Op.lte]: new Date()
-    }
-    }
-  }).then((res) => {
-    console.log(res);
-  })
+
  Blocks.findOne({
     order: [
       ['id', 'DESC']
@@ -191,7 +181,7 @@ Companies.update({
               break;
           
             case "Confirmed":
-              New_Loans.findOne({
+              Loans.findOne({
                 where: {
                   loanID: event.returnValues._loanID
                 },
@@ -199,10 +189,10 @@ Companies.update({
                   ['id', 'DESC']
                 ]
               }).then((data) =>{
-                New_Loans.update({
-                  countDown: new Date(event.returnValues._countDown * 1000),
-                  loan_fee: event.returnValues._loanFee,
-                  is_display: true
+                Loans.update({
+                  votingThreshold: web3.utils.fromWei(event.returnValues._votingThreshold.toString()),
+                  is_display: true,
+                  isConfirmed: true
                 }, {
                   where: {
                     id: data.dataValues.id
@@ -220,32 +210,28 @@ Companies.update({
           
             case "LoanCreated":
             
+              let meta = JSON.parse(event.returnValues._metadata);
               
+              console.log(meta);
                Loans.create(
                  {
                   loanID: event.returnValues.newLoanID,
-                  transaction_hash: event.transactionHash,
-                  countDown: new Date(),
-                  loan_tile: event.returnValues._title,
-                  story: event.returnValues._story,
-                  branch_name: event.returnValues._branchName,
-                  loan_amount: web3.utils.fromWei(event.returnValues._amount.toString()),
-                  loan_duration: event.returnValues._length,
-                  weekly_payment: 0,
-                  loan_fee: 0,
+                  loan_duration: meta.loan_duration,
+                  category: meta.loan_category,
+                  branch_name: meta.branch_name,
+                  story: meta.story,
+                  title: event.returnValues._title,
+                  cover_image: event.returnValues._image_url,
+                  other_images: meta.arrayImg.toString(),
+                  due_date: new Date(event.returnValues._length * 1000),
+                  backed: 0,
+                  isLoan: event.returnValues._isLoan,
                   creator: event.returnValues._creator,
-                  is_display: 0,
-                  is_approved: 0,
-                  declined: 0,
-                  accepted: 0,
-                  isActiveVotingPeriod: 0,
-                  validated: 0,
-                  paid: 0,
-                  loan_category: event.returnValues._loan_category,
-                  cover_image: event.returnValues._image_url
-
-
-
+                  transaction_hash: event.transactionHash,
+                  is_approved: false,
+                  loan_amount: web3.utils.fromWei(event.returnValues._amount.toString()),
+                  inventry_fee: web3.utils.fromWei(event.returnValues._inventoryFee.toString()),
+                  isConfirmed: event.returnValues._isConfirmed
                  }
             
                 ).then((res) => {
@@ -258,8 +244,8 @@ Companies.update({
               case "Voted":
               console.log(event);
               Loans.update({
-                accepted: web3.utils.fromWei(event.returnValues._positiveVote.toString()),
-                declined: web3.utils.fromWei(event.returnValues._negativeVote.toString())
+                backed: web3.utils.fromWei(event.returnValues._totalBackedAmount.toString()),
+               
                  
                   
                 }, {
@@ -538,7 +524,7 @@ router.get("/get/by/id/:id", async (req, res) => {
 
   let id = req.params.id;
   try {
-    let loans = await New_Loans.findAll({
+    let loans = await Loans.findAll({
       where: {
         loanID: 
           {[Op.ne]: null},

@@ -104,6 +104,12 @@
     font-size: 13px;
     border-radius: 8px;
 }
+
+.addBackground{
+   background-color: #55bc7e; 
+   color:#fff;
+}
+
 .calButtonLink:hover{
    background-color: #55bc7e; 
    color:#fff;

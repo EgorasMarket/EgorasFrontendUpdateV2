@@ -1,0 +1,42 @@
+.formBody {
+  padding: 2em;
+  box-shadow: 0px 0px 20px #e2e2e2;
+  border-radius: 10px;
+  background: #ffff;
+}
+
+.upload-para {
+  font-size: 14px;
+  color: #989898;
+}
+.uploadButton {
+  margin-top: 20px;
+}
+
+.margin {
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #e4a788 !important;
+  color: #222 !important;
+  text-transform: none !important;
+  font-family: "Mulish" !important;
+  transition: 0.3s ease-in-out !important;
+  margin-right: 10px !important;
+}
+.submit-button:hover {
+  background-color: #e4a788 !important;
+  color: #fff;
+  text-transform: none !important;
+  font-family: "Mulish" !important;
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-in-out;
+}
+.blur-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  z-index: -1;
+}
