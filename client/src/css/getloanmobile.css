@@ -786,7 +786,7 @@
   }
   .savingsArea {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
     align-items: center;
     grid-row-gap: 50px;

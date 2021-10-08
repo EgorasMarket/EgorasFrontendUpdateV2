@@ -341,7 +341,6 @@
 .collateral-cat-header {
   font-weight: 800;
   font-size: 32px;
-
 }
 
 .hide-carousel {
@@ -422,7 +421,9 @@
   position: relative;
   background: #fbfbfb;
 }
-
+.all-categories {
+  display: none;
+}
 .assets-cont-head-area {
   display: flex;
   justify-content: space-between;

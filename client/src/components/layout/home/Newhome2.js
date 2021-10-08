@@ -16,6 +16,7 @@ import TabletMacIcon from "@mui/icons-material/TabletMac";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import DesktopMacIcon from "@mui/icons-material/DesktopMac";
 import PrintIcon from "@mui/icons-material/Print";
+import KitchenIcon from "@mui/icons-material/Kitchen";
 
 import "../../../css/getloan.css";
 import "../../../css/getloanmobile.css";
@@ -43,14 +44,24 @@ const responsive = {
 const GetLoan = () => {
   const [page, setPage] = useState("change");
   const [categoryBtn, setCategoryBtn] = useState("Popular");
+  // const [categoryList, setCategoryList] = useState("PopularCategories");
 
   // change  category buttons
   const triggerPopular = () => {
     setCategoryBtn("Popular");
+    let popularCat = document.getElementById("popular-categories");
+    let allCat = document.getElementById("all-categories");
+    popularCat.style.display = "table-row-group";
+    allCat.style.display = "none";
+ 
   };
   // change  category buttons
   const triggerAll = () => {
     setCategoryBtn("All");
+        let popularCat = document.getElementById("popular-categories");
+        let allCat = document.getElementById("all-categories");
+        popularCat.style.display = "none";
+        allCat.style.display = "table-row-group";
   };
 
   const clickMe1 = () => {
@@ -225,7 +236,7 @@ const GetLoan = () => {
               <thead className="assets-category-titles">
                 <tr className="assets">
                   <th className="assets-category-titles-heading1">
-                    Collateral
+                    Collateral Type
                   </th>
                   <th className="assets-category-titles-heading1">Category</th>
                   <th className="assets-category-titles-heading1">
@@ -241,81 +252,23 @@ const GetLoan = () => {
 
                 
               </div> */}
-              <tbody className="assets-table-body">
-                <tr className="assets-category-row">
-                  <td className="assets-category-data">
-                    <div className="assets-data">
-                      <LiveTvIcon className="assets-list-icon" />
-                      <div className="assets-data-name">Television</div>
-                    </div>
-                  </td>
-                  <td className="assets-category-data1">
-                    <div className="assets-data-name">
-                      Electrical Appliances
-                    </div>
-                  </td>
-                  <td className="assets-category-data1b">
-                    <div className="assets-data-name">₦200</div>
-                  </td>
-                  <td className="assets-category-data-last">
-                    <div className="assets-data-name-last">
-                      <a
-                        href="https://egoras.ng/appointment"
-                        className="assets-collateralize-button"
-                      >
-                        Collateralize
-                      </a>
-                    </div>
-                  </td>
-                </tr>
+              <tbody
+                className="assets-table-body popular-categories"
+                id="popular-categories"
+              >
+                {" "}
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
                       <PhoneAndroidIcon className="assets-list-icon" />
-                      <div className="assets-data-name">Mobile Phone</div>
+                      <div className="assets-data-name">Phones</div>
                     </div>
                   </td>
                   <td className="assets-category-data1">
-                    <div className="assets-data">
-                      <div className="assets-data-name">
-                        Phones & Accessories
-                      </div>
-                    </div>
+                    <div className="assets-data-name">Phones & Accessories</div>
                   </td>
                   <td className="assets-category-data1b">
-                    <div className="assets-data">
-                      <div className="assets-data-name">₦150</div>
-                    </div>
-                  </td>
-                  <td className="assets-category-data-last">
-                    <div className="assets-data-name-last">
-                      <a
-                        href="https://egoras.ng/appointment"
-                        className="assets-collateralize-button"
-                      >
-                        Collateralize
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="assets-category-row">
-                  <td className="assets-category-data">
-                    <div className="assets-data">
-                      <TabletMacIcon className="assets-list-icon" />
-                      <div className="assets-data-name">Tablet</div>
-                    </div>
-                  </td>
-                  <td className="assets-category-data1">
-                    <div className="assets-data">
-                      <div className="assets-data-name">
-                        Phones & Accessories
-                      </div>
-                    </div>
-                  </td>
-                  <td className="assets-category-data1b">
-                    <div className="assets-data">
-                      <div className="assets-data-name">₦150</div>
-                    </div>
+                    <div className="assets-data-name">₦150</div>
                   </td>
                   <td className="assets-category-data-last">
                     <div className="assets-data-name-last">
@@ -332,17 +285,20 @@ const GetLoan = () => {
                   <td className="assets-category-data">
                     <div className="assets-data">
                       <LaptopMacIcon className="assets-list-icon" />
-                      <div className="assets-data-name">Laptop</div>
+
+                      <div className="assets-data-name">Laptops</div>
                     </div>
                   </td>
                   <td className="assets-category-data1">
                     <div className="assets-data">
-                      <div className="assets-data-name">Laptop & Computers</div>
+                      <div className="assets-data-name">
+                        Laptops & Computers
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200</div>
+                      <div className="assets-data-name">₦150 - ₦200</div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -360,17 +316,256 @@ const GetLoan = () => {
                   <td className="assets-category-data">
                     <div className="assets-data">
                       <DesktopMacIcon className="assets-list-icon" />
-                      <div className="assets-data-name">Desktop</div>
+                      <div className="assets-data-name">Desktop Computers</div>
                     </div>
                   </td>
                   <td className="assets-category-data1">
                     <div className="assets-data">
-                      <div className="assets-data-name">Laptop & Computers</div>
+                      <div className="assets-data-name">
+                        Laptops & Computers
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200</div>
+                      <div className="assets-data-name">₦150 - ₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <LiveTvIcon className="assets-list-icon" />
+
+                      <div className="assets-data-name">Television</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                        TV & DVD Equipments
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦150 - ₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <DesktopMacIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Generators</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name"> Generators</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200 - ₦400</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <KitchenIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Refrigerators</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">Home Appliances</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200 - ₦400</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              {/* {{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}} */}
+              <tbody
+                className="assets-table-body all-categories "
+                id="all-categories"
+              >
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PhoneAndroidIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Phones</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data-name">Phones & Accessories</div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data-name">₦150</div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <LaptopMacIcon className="assets-list-icon" />
+
+                      <div className="assets-data-name">Laptops</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                        Laptops & Computers
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦150 - ₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <DesktopMacIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Desktop Computers</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                        Laptops & Computers
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦150 - ₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <LiveTvIcon className="assets-list-icon" />
+
+                      <div className="assets-data-name">Television</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                        TV & DVD Equipments
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦150 - ₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <DesktopMacIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Generators</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name"> Generators</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200 - ₦400</div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -388,19 +583,368 @@ const GetLoan = () => {
                   <td className="assets-category-data">
                     <div className="assets-data">
                       <PrintIcon className="assets-list-icon" />
-                      <div className="assets-data-name">Printer</div>
+                      <div className="assets-data-name">Refrigerators</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">Home Appliances</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200 - ₦400</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Washing Machines</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">Home Appliances</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200 - ₦400</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Printers</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">Office Equipments</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦150 - ₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Home Theatres</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">Home Audio</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦150 - ₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Gas Cookers</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">Kitchen Equipments</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200 - ₦300</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Digital Camera</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">Cameras & Photos</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200 - ₦300</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Office Shelf</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">Office Equipments</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200 - ₦400</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Micro Wave</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">Kitchen Equipments</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦150 - ₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Air Conditioner</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">Home Appliances</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200 - ₦400</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">
+                        Manual Sewing Machine
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data1">
                     <div className="assets-data">
                       <div className="assets-data-name">
-                        Electrical Appliances
+                        Industrial Appliances
                       </div>
                     </div>
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200</div>
+                      <div className="assets-data-name">₦150 - ₦200</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">
+                        Industrial Sewing Machine
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                        Industrial Appliances
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦200 - ₦400</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data-last">
+                    <div className="assets-data-name-last">
+                      <a
+                        href="https://egoras.ng/appointment"
+                        className="assets-collateralize-button"
+                      >
+                        Collateralize
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                {/* ======================================== */}
+                {/* ======================================== */}
+                {/* ======================================== */}
+                <tr className="assets-category-row">
+                  <td className="assets-category-data">
+                    <div className="assets-data">
+                      <PrintIcon className="assets-list-icon" />
+                      <div className="assets-data-name">Furnitures</div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1">
+                    <div className="assets-data">
+                      <div className="assets-data-name">
+                        Home & Office Furniture
+                      </div>
+                    </div>
+                  </td>
+                  <td className="assets-category-data1b">
+                    <div className="assets-data">
+                      <div className="assets-data-name">₦600 - ₦1500</div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -522,70 +1066,70 @@ const GetLoan = () => {
               </div>
             </div>
           ) : (
-              <div className="gthowItWorksArea2">
-                <div className="gthowCard1">
-                  <div className="gthowCard1Title">
-                    <h1 className="gtstakeNumb">1.</h1>
+            <div className="gthowItWorksArea2">
+              <div className="gthowCard1">
+                <div className="gthowCard1Title">
+                  <h1 className="gtstakeNumb">1.</h1>
 
-                    <img
-                      src="/img/stake-loan.svg"
-                      alt=""
-                      className="gtstakeLoan"
-                    />
-                  </div>
-                  <div className="gthowCard1Texts">
-                    Stake your token
-                  <br />
-                    <p className="howCard1TextsP">
-                      Browse by category and stake <br />
-                      your EGR token to support an
-                    <br />
-                      entrepreneur.
-                  </p>
-                  </div>
+                  <img
+                    src="/img/stake-loan.svg"
+                    alt=""
+                    className="gtstakeLoan"
+                  />
                 </div>
-                <div className="gthowCard2">
-                  <div className="gthowCard2Title">
-                    <h1 className="gtstakeNumb">2.</h1>
-
-                    <img
-                      src="/img/approve-loan.svg"
-                      alt=""
-                      className="gtstakeLoan"
-                    />
-                  </div>
-                  <div className="gthowCard2Texts">
-                    Approve Collaterals
+                <div className="gthowCard1Texts">
+                  Stake your token
                   <br />
-                    <p className="howCard2TextsP">
-                      Fund collaterals without risking your
+                  <p className="howCard1TextsP">
+                    Browse by category and stake <br />
+                    your EGR token to support an
                     <br />
-                      EGR token.
+                    entrepreneur.
                   </p>
-                  </div>
-                </div>
-                <div className="gthowCard3">
-                  <div className="gthowCard3Title">
-                    <h1 className="gtstakeNumb">3.</h1>
-
-                    <img
-                      src="/img/claim-interest.svg"
-                      alt=""
-                      className="gtstakeLoan"
-                    />
-                  </div>
-                  <div className="gthowCard3Texts">
-                    Claim Interest weekly
-                  <br />
-                    <p className="howCard3TextsP">
-                      Earn over 20% APR for
-                    <br />
-                      approving/declining collaterals.
-                  </p>
-                  </div>
                 </div>
               </div>
-            )}
+              <div className="gthowCard2">
+                <div className="gthowCard2Title">
+                  <h1 className="gtstakeNumb">2.</h1>
+
+                  <img
+                    src="/img/approve-loan.svg"
+                    alt=""
+                    className="gtstakeLoan"
+                  />
+                </div>
+                <div className="gthowCard2Texts">
+                  Approve Collaterals
+                  <br />
+                  <p className="howCard2TextsP">
+                    Fund collaterals without risking your
+                    <br />
+                    EGR token.
+                  </p>
+                </div>
+              </div>
+              <div className="gthowCard3">
+                <div className="gthowCard3Title">
+                  <h1 className="gtstakeNumb">3.</h1>
+
+                  <img
+                    src="/img/claim-interest.svg"
+                    alt=""
+                    className="gtstakeLoan"
+                  />
+                </div>
+                <div className="gthowCard3Texts">
+                  Claim Interest weekly
+                  <br />
+                  <p className="howCard3TextsP">
+                    Earn over 20% APR for
+                    <br />
+                    approving/declining collaterals.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
 
           <a
             href="https://egoras.ng/appointment"
