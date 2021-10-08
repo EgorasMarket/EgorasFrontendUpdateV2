@@ -19,6 +19,7 @@ export const fetch = (limit) => async (dispatch) => {
   const config = {
     headers: {
       "Content-Type": "application/json",
+      'Access- Control - Allow - Origin': '*'
     },
   };
   try {
