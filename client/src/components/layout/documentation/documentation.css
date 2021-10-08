@@ -1,7 +1,7 @@
 .documentationSection {
   display: flex;
   align-items: center;
-  padding: 10em 2em 10em 3em;
+  padding: 10em 5em 10em 6em;
   padding-bottom: 2em;
 }
 .lendingPartner{
@@ -52,7 +52,7 @@
 }
 .documentationSection2 {
   display: flex;
-  padding: 2em 2em 2em 3em;
+  padding: 2em 5em 2em 6em;
 }
 
 .subSectionB {
@@ -259,6 +259,50 @@ background-color: cyan;
   font-weight: 700;
   margin-bottom: 20px;
 }
+.uint{
+  padding:20px 30px;
+  background-color:#4ddb86 ;
+  color:#fff;
+  font-size:14px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  width:80%;
+  
+}
+.uint23{
+  padding-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 2px;
+}
+.uint26{
+  font-weight: bold;
+  color:#000;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.saf{
+  margin-bottom: 30px;
+}
+.uint27{
+ 
+  width:80%;
+  overflow-x: auto; 
+  margin-bottom: 30px;
+}
+.uint33{
+  color:#fff;
+  
+}
+.uint67{
+  background-color:#4ddb86 ;
+  padding:20px 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
 @media (max-width: 768px) {
   .subSectionC_Card {
     margin: 5px auto 25px auto;
@@ -352,7 +396,7 @@ background-color: cyan;
 }
 @media (min-width: 769px) {
   .aboutEgoras_P {
-    width: 75%;
+    width: 80%;
   }
   .aboutEgoras_P2 {
     width: 75%;
