@@ -120,7 +120,7 @@ const Explore_loans = ({ loans, fetch }) => {
                             <label className="statusLabel">STATUS:</label>
                             <div className="divButtonHolders">
                                 <button className={statusBtn === 'Approved' ? 'calButtonLink addBackground' : 'calButtonLink'} id='Approved' onClick={triggerStatus}>Approved</button>
-                                <button className={statusBtn === 'Ongoing' ? 'calButtonLink addBackground' : 'calButtonLink'} id='Ongoing' onClick={triggerStatus}>Ongoing</button>
+                                <button className={statusBtn === 'Ongoing' ? 'calButtonLink addBackground' : 'calButtonLink'} id='Ongoing' onClick={triggerStatus} style={{marginLeft:'10px'}}>Ongoing</button>
                                 {/* <Link to="/explore_loans_page3" className="calButtonLink">Ongoing</Link>
                                 <Link to="/explore_loans_page4" className="calButtonLink">Approved</Link>
                                 <Link to="/explore_loans_page5" className="calButtonLink">Declined</Link> */}

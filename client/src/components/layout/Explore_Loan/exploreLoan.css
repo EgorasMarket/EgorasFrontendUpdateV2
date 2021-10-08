@@ -33,12 +33,25 @@
     padding:13px 7px;
     width:170px;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 23px;
+    letter-spacing: 0.005em;
+    /* color:#a29a9a; */
+    color:#363434;
+     font-family:'Open Sans',sans-serif; 
 }
+
 .selectOption >option{
     padding-right: 20px;
+     font-family:'Open Sans',sans-serif; 
+    color:#363434; 
+    font-size: 13px;
 }
+
+/* .selectOption >option:hover{
+background-color: #229e54;
+color: #fff;
+} */
 
 .interestRange{
     font-size: 10px;
@@ -96,13 +109,14 @@
 .calButtonLink{
    
     border:0px;
-    padding:10px 5px;
+    padding:10px 22px;
     background-color: #fff;
     font-weight: 600;
     color:black;
     text-decoration: none;
     font-size: 13px;
-    border-radius: 8px;
+    border-radius: 5px;
+    
 }
 
 .addBackground{
@@ -111,7 +125,7 @@
 }
 
 .calButtonLink:hover{
-   background-color: #55bc7e; 
+   background-color: #e4a788;
    color:#fff;
 }
 .farmyardImg{
@@ -185,7 +199,7 @@ input[type=number] {
 
 .pTag{
     position:absolute;
-    left:20px;
+    left:15px;
     /* bottom:70px; */
     top:70%;
     
@@ -307,6 +321,7 @@ margin-right: 20px;
 
     margin-bottom: 60px;
 }
+
 @media (min-width:375Px){
    .exploreLoanSection2{
        width:338px;
@@ -372,6 +387,11 @@ margin-right: 20px;
        margin-top: 25px;
    }
  
+}
+@media (max-width:600px){
+    .selectOption{
+        width:100%;
+    }
 }
 
 @media (min-width:768px){
@@ -466,7 +486,7 @@ margin-right: 20px;
     /* padding:0px 60px; */
 }
 .selectOption{
-    width:200px;
+    width:240px;
 }
 .section2DivHolder_img{
        margin-top: 70px;
@@ -489,7 +509,7 @@ margin-right: 20px;
     margin-bottom: 50px;
 }
 .pTag{
-    top:65%;
+    top:68%;
 }
 
 }

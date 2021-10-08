@@ -68,11 +68,11 @@ const Documentation5 = () => {
                      <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">The microfinance banks or NGOs approved by Egoras holders borrow directly from the Egoras microfinance protocol to lend to their users at a lower interest rate (Central Bank Rate) and these will reduce the dependency of microfinance banks and NGOs on commercial banks and private institutions. </div>
 
                    <div className="aboutEgoras_card">
-                   <div className="subSectionC_Card">
+                   <div className="subSectionC_Card" data-aos="fade-right" data-aos-duration="3000">
                        <div className="subSectionC_Next add">Precious</div>
                        <div className="cardText"><Link to="/loan-approval-governance"> <ArrowBack className="SubForwardIcon"/></Link> <div style={{textAlign:'right'}}>Loan Approval<br/>Governance</div> </div>
                    </div>
-                     <div className="subSectionC_Card Card12">
+                     <div className="subSectionC_Card Card12" data-aos="fade-right" data-aos-duration="3000">
                        <div className="subSectionC_Next">Next</div>
                        <div className="cardText"><div >Interest Sharing<br/>Formula </div><Link to="/interest-sharing-formular"><ArrowForward className="SubForwardIcon"/></Link></div>
                    </div>
