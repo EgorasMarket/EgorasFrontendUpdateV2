@@ -120,14 +120,11 @@ const GetLoan = () => {
               </ul>
             </div>
             <div className="hero-images">
-              <img
-                src="/img/egorasphone-last.png"
-                alt=""
-                className="heroPhone"
-              />
+              <img src="/img/Phonelast.png" alt="" className="heroPhone" />
             </div>
           </div>
         </div>
+        <img src="/img/blur-drop.png" alt="" className="blurDrop" />
       </section>
       {/* hero section end */}
 

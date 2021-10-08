@@ -176,8 +176,8 @@ const Landing = ({
         // "&channelId=UCHfi5EwXig46xp5Dx8hVBHQ&part=snippet,id&order=date"+
         // "&maxResults=6",
         "https://www.googleapis.com/youtube/v3/search?key=AIzaSyAaI0wsj9AhlVkLGdSggQjEvav0HtcyvZI" +
-        "&channelId=UCHfi5EwXig46xp5Dx8hVBHQ&part=snippet,id&order=date" +
-        "&maxResults=20",
+          "&channelId=UCHfi5EwXig46xp5Dx8hVBHQ&part=snippet,id&order=date" +
+          "&maxResults=20",
         null,
         config
       )
@@ -472,82 +472,82 @@ const Landing = ({
               </div>
             </div>
           ) : (
-              <div className="gthowItWorksArea2">
-                <div
-                  className="gthowCard1"
-                  data-aos="fade-up"
-                  data-aos-duration="3000"
-                >
-                  <div className="gthowCard1Title">
-                    <h1 className="gtstakeNumb">1.</h1>
+            <div className="gthowItWorksArea2">
+              <div
+                className="gthowCard1"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <div className="gthowCard1Title">
+                  <h1 className="gtstakeNumb">1.</h1>
 
-                    <img
-                      src="/img/stake-loan.svg"
-                      alt=""
-                      className="gtstakeLoan"
-                    />
-                  </div>
-                  <div className="gthowCard1Texts">
-                    Stake your token
-                  <br />
-                    <p className="howCard1TextsP">
-                      Browse by category and stake <br />
-                      your EGR token to support an
-                    <br />
-                      entrepreneur.
-                  </p>
-                  </div>
+                  <img
+                    src="/img/stake-loan.svg"
+                    alt=""
+                    className="gtstakeLoan"
+                  />
                 </div>
-                <div
-                  className="gthowCard2"
-                  data-aos="fade-up"
-                  data-aos-duration="3000"
-                >
-                  <div className="gthowCard2Title">
-                    <h1 className="gtstakeNumb">2.</h1>
-
-                    <img
-                      src="/img/approve-loan.svg"
-                      alt=""
-                      className="gtstakeLoan"
-                    />
-                  </div>
-                  <div className="gthowCard2Texts">
-                    Approve Collaterals
+                <div className="gthowCard1Texts">
+                  Stake your token
                   <br />
-                    <p className="howCard2TextsP">
-                      Fund collaterals without risking your
+                  <p className="howCard1TextsP">
+                    Browse by category and stake <br />
+                    your EGR token to support an
                     <br />
-                      EGR token.
+                    entrepreneur.
                   </p>
-                  </div>
-                </div>
-                <div
-                  className="gthowCard3"
-                  data-aos="fade-up"
-                  data-aos-duration="3000"
-                >
-                  <div className="gthowCard3Title">
-                    <h1 className="gtstakeNumb">3.</h1>
-
-                    <img
-                      src="/img/claim-interest.svg"
-                      alt=""
-                      className="gtstakeLoan"
-                    />
-                  </div>
-                  <div className="gthowCard3Texts">
-                    Claim Interest weekly
-                  <br />
-                    <p className="howCard3TextsP">
-                      Earn over 20% APR for
-                    <br />
-                      approving/declining collaterals.
-                  </p>
-                  </div>
                 </div>
               </div>
-            )}
+              <div
+                className="gthowCard2"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <div className="gthowCard2Title">
+                  <h1 className="gtstakeNumb">2.</h1>
+
+                  <img
+                    src="/img/approve-loan.svg"
+                    alt=""
+                    className="gtstakeLoan"
+                  />
+                </div>
+                <div className="gthowCard2Texts">
+                  Approve Collaterals
+                  <br />
+                  <p className="howCard2TextsP">
+                    Fund collaterals without risking your
+                    <br />
+                    EGR token.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="gthowCard3"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <div className="gthowCard3Title">
+                  <h1 className="gtstakeNumb">3.</h1>
+
+                  <img
+                    src="/img/claim-interest.svg"
+                    alt=""
+                    className="gtstakeLoan"
+                  />
+                </div>
+                <div className="gthowCard3Texts">
+                  Claim Interest weekly
+                  <br />
+                  <p className="howCard3TextsP">
+                    Earn over 20% APR for
+                    <br />
+                    approving/declining collaterals.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
 
           <a href="/signup" className="gtgetStartedButton">
             Get Started
@@ -600,17 +600,15 @@ const Landing = ({
                 let accepted = parseInt(loan.accepted);
                 let declined = parseInt(loan.declined);
 
-
                 let backed = loan.backed;
                 let votingThreshold = loan.votingThreshold;
                 // if (loan.is_approved) {
                 //   setFormData({ ...formData, ['votePower']: parseFloat(loan.loan_amount) })
                 // }
-                let per = (parseFloat(backed) / parseFloat(votingThreshold)) * 100;
-
+                let per =
+                  (parseFloat(backed) / parseFloat(votingThreshold)) * 100;
 
                 // console.log(per);
-
 
                 // setPercentage(Math.round(per));
 
@@ -665,17 +663,30 @@ const Landing = ({
                         <div className="heroSlider2">
                           <div className="slider-txts1">
                             <div className="h-texts">
-                              <h3 className="htxt1a">{parseFloat(backed)} egr</h3>
+                              <h3 className="htxt1a">
+                                {parseFloat(backed)} egr
+                              </h3>
                               <h3 className="htxt2a">{Math.round(per)}%</h3>
                             </div>
                           </div>
                           {/* <div className="slider-a"></div> */}
-                          <div className="slider" style={{ height: '7px' }}>
-                            <div className="sliderafter" style={{ width: `${Math.round(per)}%`, height: '7px' }}></div>
+                          <div className="slider" style={{ height: "7px" }}>
+                            <div
+                              className="sliderafter"
+                              style={{
+                                width: `${Math.round(per)}%`,
+                                height: "7px",
+                              }}
+                            ></div>
                           </div>
                           <div className="slider-txts2">
                             <div className="p-texts2a">
-                              <p className="ptxt2a">Remaining EGR: {parseFloat(votingThreshold) - parseFloat(backed)} EGR</p>
+                              <p className="ptxt2a">
+                                Remaining EGR:{" "}
+                                {parseFloat(votingThreshold) -
+                                  parseFloat(backed)}{" "}
+                                EGR
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -761,8 +772,78 @@ const Landing = ({
       </section>
       {/* categories section end */}
       {/* =================================================================================================================================================================================================================================================================== */}
+
+      <section className="savingsSection2">
+        <div className="container">
+          <div className="savingsArea2">
+            <div
+              className="savingsText2"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
+              <span className="egr">Money lending without risk of Capital</span>
+              <p className="savings-para">
+                There is no loss of capital when you participate in approving
+                collaterals on Egoras protocol. Your capital is released
+                immediately the collaterals are approved on the protocol, Unlike
+                traditional lending, were the lenders capital are at risked for
+                the duration of the loan and there is no guarantee if the
+                capital will be recovered by the lender. Egoras lending, no
+                capital is at risk because the capital is released as soon the
+                loans are approved.
+              </p>
+            </div>
+            <div
+              className="savingsImages2"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <img src="/img/money-lending.svg" alt="" className="blockChain2" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =================================================================================================================================================================================================================================================================== */}
+      <section className="discountSection">
+        <div className="container">
+          <div className="discountArea2">
+            <div
+              className="discountImages2"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <img
+                src="/img/nft-vector-img.png"
+                alt=""
+                className="discountVector2"
+              />
+            </div>
+            <div
+              className="discountTxt2"
+              data-aos="fade-up"
+              data-aos-duration="5000"
+            >
+              <span className="egr">eNFT Farming</span>
+              <p className="discount-para">
+                Egoras eNFT farming builds off the concept of token staking and
+                liquidity farming, with users staking native tokens to earn an
+                additional yield through an NFT-based reward. Unlike traditional
+                staking, which pays out the reward in the natively staked token,
+                through egoras NFT farming, users can obtain  NFTs assets
+                redeemable for offline goods. These earnable NFTs can vary
+                greatly depending on the token being staked.
+              </p>
+              {/* <a href="/collateral" className="discount-btn">
+                Learn more
+                <ArrowRightIcon />
+              </a> */}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =================================================================================================================================================================================================================================================================== */}
       {/* Benefits Section start */}
-      <section className="gtbenefitsSection" id="benefits">
+      {/* <section className="gtbenefitsSection" id="benefits">
         <div className="container">
           <div
             className="gttitleLine"
@@ -869,7 +950,7 @@ const Landing = ({
 
         <img src="/img/right-back-drop.svg" alt="" className="gtrightBack" />
         <img src="/img/shape-egg2.svg" alt="" className="gteggShape2" />
-      </section>
+      </section> */}
       {/* Benefits Section start */}
       {/* =================================================================================================================================================================================================================================================================== */}
 
