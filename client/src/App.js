@@ -5,7 +5,7 @@ import Home from "./components/layout/home/Home";
 import Opd from "./components/layout/home/Opd";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import axios from "axios";
 // import Aos from "aos";
 // import "aos/dist/aos.css";
 
@@ -123,6 +123,25 @@ import Explore_Loans_Page5 from "./components/layout/Explore_Loan/exploreLoanSec
 const App = () => {
   useEffect(() => {
     Aos.init({});
+    const config = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    try{
+     axios.get(
+       "https://geolocation-db.com/json/",
+        null,
+        config
+      ).then((data) => {
+        console.log(data);
+      })
+
+      
+    }catch(err){
+
+    }
+    
   }, []);
 
   function getLibrary(provider) {
