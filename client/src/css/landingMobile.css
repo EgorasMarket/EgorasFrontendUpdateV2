@@ -149,6 +149,16 @@
   /* token section end */
 }
 
+@media screen and (max-width: 1220px) {
+  .img-sub {
+    height: 250px !important;
+    background-size: cover !important;
+  }
+  .img {
+    position: relative;
+    height: 100%;
+  }
+}
 @media screen and (max-width: 1024px) {
   /* hero section start */
   .bottomCards {
@@ -168,6 +178,14 @@
     width: 40%;
   }
   /* how it works section end */
+  .img-sub {
+    height: 250px !important;
+    background-size: cover !important;
+  }
+  .img {
+    position: relative;
+    height: 100%;
+  }
 
   /* benefit section start */
   .benefitCard2,
@@ -292,6 +310,16 @@
   /* explore section end */
 }
 
+@media screen and (max-width: 800px) {
+  .img-sub {
+    height: 330px !important;
+    background-size: cover !important;
+  }
+  .img {
+    position: relative;
+    height: 100%;
+  }
+}
 @media screen and (max-width: 767px) {
   /* hero section start */
 
@@ -328,7 +356,14 @@
     font-size: 10px;
   }
   /* how it works section end */
-
+  .img-sub {
+    height: 300px !important;
+    background-size: cover !important;
+  }
+  .img {
+    position: relative;
+    height: 100%;
+  }
   /* projects section start */
 
   .caroImg {
@@ -397,7 +432,14 @@
   .projectsLink {
     font-size: 12px;
   }
-
+  .img-sub {
+    height: 250px !important;
+    background-size: cover !important;
+  }
+  .img {
+    position: relative;
+    height: 100%;
+  }
   /* stories section */
 
   .seemoreStoriesbtn {
@@ -460,6 +502,17 @@
   .egg {
     right: -80px;
   }
+
+  .img-sub {
+    height: 220px !important;
+    background-size: cover !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .img-sub {
+    height: 385px !important;
+    background-size: cover !important;
+  }
 }
 
 /* 2nd break point ========================================= */
@@ -484,6 +537,12 @@
   }
 }
 
+@media screen and (max-width: 440px) {
+  .img-sub {
+    height: 350px !important;
+    background-size: cover !important;
+  }
+}
 @media screen and (max-width: 432px) {
   .heroTitle {
     font-size: 32px;
@@ -590,13 +649,23 @@
   .projectsLink {
     font-size: 8px;
   }
-
+  .img-sub {
+    height: 309px !important;
+    background-size: cover !important;
+  }
   /* stories section */
 
   .seemoreStoriesbtn {
     font-size: 8px;
   }
   /* stories section */
+}
+
+@media screen and (max-width: 350px) {
+  .img-sub {
+    height: 270px !important;
+    background-size: cover !important;
+  }
 }
 
 @media screen and (max-width: 320px) {

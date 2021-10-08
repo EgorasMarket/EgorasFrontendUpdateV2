@@ -19,7 +19,6 @@
   /* hero  Section end */
 
   .loanDetailsSection {
-    padding: 10em 3em;
     position: relative;
     background: #fafafa;
   }
@@ -46,6 +45,18 @@
   }
 }
 
+@media screen and (max-width: 950px) {
+  .loanDetailsCards {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 15px #d9f1dd;
+    border-radius: 10px;
+    padding: 1em 1em;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 869px) {
   /* hero section start */
   .heroArea2 {
@@ -76,6 +87,9 @@
     align-items: center;
     grid-row-gap: 150px;
   }
+  .loanDetailsCards {
+    padding: 1em 4em;
+  }
 }
 
 @media screen and (max-width: 765px) {
@@ -103,6 +117,11 @@
 
   /* hero section end */
 }
+@media screen and (max-width: 590px) {
+  .loanDetailsCards {
+    padding: 1em 0.5em;
+  }
+}
 @media screen and (max-width: 565px) {
   .heroSection2 {
     padding: 4em 2em;
@@ -120,7 +139,6 @@
   }
 
   .loanDetailsSection {
-    padding: 10em 2em;
   }
   .loanDetailsDays {
     margin-right: 0px;
@@ -134,8 +152,10 @@
   .heroTitle2 {
     font-size: 24px;
   }
+  .loanDetailsSection {
+  }
   .loanDetailsCards {
-    padding: 1em 1em;
+    padding: 1em 0.5em;
   }
   .ldAmount1 {
     font-size: 18px;

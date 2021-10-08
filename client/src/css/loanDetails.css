@@ -100,7 +100,7 @@
 
 /* loan details section start */
 .loanDetailsSection {
-  padding: 10em 6em;
+  padding: 6em 0em;
   position: relative;
   background: #fafafa;
 }
@@ -232,6 +232,7 @@
   position: absolute;
   right: 0;
   bottom: 20px;
+  width: 400px;
 }
 
 .loanDetailsStory {

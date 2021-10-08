@@ -56,15 +56,23 @@ const responsive = {
     items: 6,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1220 },
     items: 5,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1220, min: 1024 },
+    items: 4,
+  },
+  tabletMedium: {
+    breakpoint: { max: 1024, min: 800 },
     items: 3,
   },
+  tabletSmall: {
+    breakpoint: { max: 800, min: 500 },
+    items: 2,
+  },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 500, min: 0 },
     items: 1,
   },
 };
@@ -79,7 +87,11 @@ const responsive2 = {
     items: 3,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1024, min: 900 },
+    items: 2,
+  },
+  tabletMedium: {
+    breakpoint: { max: 900, min: 464 },
     items: 2,
   },
   mobile: {
@@ -635,28 +647,31 @@ const Landing = ({
                   // <Link to="/loan-details">
                   <a href={"/loan-details/" + loan.id}>
                     <div className="cardA">
-                      <div
-                        className="img"
-                        style={{
-                          backgroundImage: `url(${loan.cover_image})`,
-                          height: "200px",
-                          width: "100%",
-                          backgroundRepeat: "no-repeat",
-                          backgroundSize: "cover",
-                          borderRadius: "8px",
-                          borderBottomLeftRadius: "0px",
-                          borderBottomRightRadius: "0px",
-                        }}
-                      >
-                        <div className="img-amount">
-                          <NumberFormat
-                            value={parseFloat(loan.loan_amount)}
-                            displayType={"text"}
-                            thousandSeparator={true}
-                            prefix={"$"}
-                          />
+                      <div className="img">
+                        <div
+                          className="img-sub"
+                          style={{
+                            backgroundImage: `url(${loan.cover_image})`,
+                            height: "200px",
+                            width: "100%",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            borderRadius: "8px",
+                            borderBottomLeftRadius: "0px",
+                            borderBottomRightRadius: "0px",
+                          }}
+                        >
+                          <div className="img-amount">
+                            <NumberFormat
+                              value={parseFloat(loan.loan_amount)}
+                              displayType={"text"}
+                              thousandSeparator={true}
+                              prefix={"$"}
+                            />
+                          </div>
                         </div>
                       </div>
+
                       <div className="cardDetails">
                         <h1 className="cardHeader">{loan.title}</h1>
                         <h1 className="collat-category">Electronics</h1>
@@ -767,6 +782,64 @@ const Landing = ({
                 <p className="collat-mobile-txt">All categories</p>
               </a>
             </div>
+            <Carousel
+              responsive={responsive2}
+              className="storiesCard hide-carousel"
+              showDots={true}
+              infinite={true}
+              arrows={false}
+              swipeable={true}
+              draggable={true}
+            >
+              <a href="" className="collateral-link1">
+                <img
+                  src="/img/colat-mobile-phones.svg"
+                  alt=""
+                  className="collat-mobile-phones1"
+                />
+                <p className="collat-mobile-txt">Mobile phones & Tablets.</p>
+              </a>
+              <a href="" className="collateral-link1 ">
+                <img
+                  src="/img/colat-household-appliance.svg"
+                  alt=""
+                  className="collat-mobile-phones2"
+                />
+                <p className="collat-mobile-txt">House-Hold appliances</p>
+              </a>
+              <a href="" className="collateral-link1">
+                <img
+                  src="/img/colat-furnitures.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">Furnitures</p>
+              </a>
+              <a href="" className="collateral-link1 ">
+                <img
+                  src="/img/colat-computers.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">Laptops & Desktop Computers</p>
+              </a>
+              <a href="" className="collateral-link1 ">
+                <img
+                  src="/img/colat-electrical-appliance.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">Electrical Appliances</p>
+              </a>
+              <a href="" className="collateral-link1 ">
+                <img
+                  src="/img/all-colat-categories.svg"
+                  alt=""
+                  className="collat-mobile-phones"
+                />
+                <p className="collat-mobile-txt">All categories</p>
+              </a>
+            </Carousel>
           </div>
         </div>
       </section>
@@ -798,7 +871,11 @@ const Landing = ({
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <img src="/img/money-lending.svg" alt="" className="blockChain2" />
+              <img
+                src="/img/money-lending.svg"
+                alt=""
+                className="blockChain2"
+              />
             </div>
           </div>
         </div>

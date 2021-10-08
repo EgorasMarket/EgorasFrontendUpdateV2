@@ -753,7 +753,6 @@
     width: 400px;
   }
   .blockChain2 {
-    width: 100%;
     margin-left: 0;
   }
   .savingsCircle {
@@ -1087,6 +1086,27 @@
     width: 100px;
   }
   /* compare section */
+
+  .collateral-links {
+    display: none !important;
+  }
+
+  .hide-carousel {
+    display: flex;
+    margin-top: 10px;
+  }
+  .hide-carousel .react-multi-carousel-dot--active button {
+    background: #229e54;
+  }
+
+  .hide-carousel .react-multi-carousel-dot button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #229e54;
+  }
+  .collateral-link1 {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 645px) {
   .gteggShape {

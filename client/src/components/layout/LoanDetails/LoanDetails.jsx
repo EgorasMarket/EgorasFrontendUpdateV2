@@ -452,89 +452,90 @@ const LoanDetails = ({ match, loans, messenger }) => {
       {/* =================================================================================================================================================================================================================================================================== */}
       {/* loan details Section start*/}
       <section className="loanDetailsSection w-100">
-        <div className="loanDetailsLine" data-aos="fade-up"></div>
-        <div className="loanDetailsTitle">
-          <h1 className="LTitle" data-aos="fade-up">
-            Collateral Details
-          </h1>
-        </div>
-        <div className="loanDetailsArea">
-          <div className="loanDetailsDays">
-            <div className="loanDetailsCards" data-aos="fade-up">
-              <div className="detailsCard1">
-                <p className="ldTitle1">Market Value</p>
-                <h1 className="ldAmount1">
-                  $
-                  <NumberFormat
-                    thousandSeparator={true}
-                    thousandsGroupStyle="usd"
-                    displayType={"text"}
-                    value={parseFloat(loanData.loan_amount)}
-                  />
-                </h1>
-              </div>
+        <div className="container">
+          <div className="loanDetailsLine" data-aos="fade-up"></div>
+          <div className="loanDetailsTitle">
+            <h1 className="LTitle" data-aos="fade-up">
+              Collateral Details
+            </h1>
+          </div>
+          <div className="loanDetailsArea">
+            <div className="loanDetailsDays">
+              <div className="loanDetailsCards" data-aos="fade-up">
+                <div className="detailsCard1">
+                  <p className="ldTitle1">Market Value</p>
+                  <h1 className="ldAmount1">
+                    $
+                    <NumberFormat
+                      thousandSeparator={true}
+                      thousandsGroupStyle="usd"
+                      displayType={"text"}
+                      value={parseFloat(loanData.loan_amount)}
+                    />
+                  </h1>
+                </div>
 
-              <div className="vl"></div>
-              <div className="detailsCard1">
-                <p className="ldTitle1">Loan Amount</p>
-                <h1 className="ldAmount1">
-                  $
-                  <NumberFormat
-                    thousandSeparator={true}
-                    thousandsGroupStyle="usd"
-                    displayType={"text"}
-                    value={parseFloat(loanData.loan_amount)}
-                  />
-                </h1>
-              </div>
+                <div className="vl"></div>
+                <div className="detailsCard1">
+                  <p className="ldTitle1">Loan Amount</p>
+                  <h1 className="ldAmount1">
+                    $
+                    <NumberFormat
+                      thousandSeparator={true}
+                      thousandsGroupStyle="usd"
+                      displayType={"text"}
+                      value={parseFloat(loanData.loan_amount)}
+                    />
+                  </h1>
+                </div>
 
-              <div className="vl"></div>
+                <div className="vl"></div>
 
-              <div className="detailsCard2">
-                <p className="ldTitle1">Loan Length</p>
-                <h1 className="ldAmount2">{loanData.loan_duration} Months</h1>
+                <div className="detailsCard2">
+                  <p className="ldTitle1">Loan Length</p>
+                  <h1 className="ldAmount2">{loanData.loan_duration} Months</h1>
+                </div>
               </div>
-            </div>
-            <div className="ldCardTexts1" data-aos="fade-up">
-              Payment: <span className="payment"> At end of term</span>
-            </div>
-            <div className="ldCardTexts2" data-aos="fade-up">
-              Disbursed date:{" "}
-              <span className="payment">
+              <div className="ldCardTexts1" data-aos="fade-up">
+                Payment: <span className="payment"> At end of term</span>
+              </div>
+              <div className="ldCardTexts2" data-aos="fade-up">
+                Disbursed date:{" "}
+                <span className="payment">
+                  {" "}
+                  <Moment format="D MMM YYYY" withTitle>
+                    {loanData.updatedAt}
+                  </Moment>
+                </span>
+              </div>
+              <div className="ldCardTexts3" data-aos="fade-up">
                 {" "}
-                <Moment format="D MMM YYYY" withTitle>
-                  {loanData.updatedAt}
-                </Moment>
-              </span>
-            </div>
-            <div className="ldCardTexts3" data-aos="fade-up">
-              {" "}
-              Funding model:
-              <span className="payment"> Weekly</span>
-            </div>
+                Funding model:
+                <span className="payment"> Weekly</span>
+              </div>
 
-            {/* <div className="ldCardTexts4" data-aos="fade-up">
+              {/* <div className="ldCardTexts4" data-aos="fade-up">
               {" "}
               Partner covers currency loss?
               <span className="payment"> Yes</span>
             </div> */}
-            <div className="ldCardTexts5" data-aos="fade-up">
-              {" "}
-              Facilitated by Field Partner:{" "}
-              <span className="payment">{loanData.branch_name}.</span>
-            </div>
-            {/* <div className="ldCardTexts6" data-aos="fade-up">
+              <div className="ldCardTexts5" data-aos="fade-up">
+                {" "}
+                Facilitated by Field Partner:{" "}
+                <span className="payment">{loanData.branch_name}.</span>
+              </div>
+              {/* <div className="ldCardTexts6" data-aos="fade-up">
               {" "}
               Is borrower paying interest?
               <span className="payment"> Yes</span>
             </div> */}
-          </div>
-          <div className="loanDetailsStory">
-            <h4 className="storyTitle" data-aos="fade-up">
-              COLLATERAL FEATURES.
-            </h4>
-            <p className="storyTxts" data-aos="fade-up">
-              {/* Mrs Eno Friday Okon who resides at the apostolic road, Umuebele 4
+            </div>
+            <div className="loanDetailsStory">
+              <h4 className="storyTitle" data-aos="fade-up">
+                COLLATERAL FEATURES.
+              </h4>
+              <p className="storyTxts" data-aos="fade-up">
+                {/* Mrs Eno Friday Okon who resides at the apostolic road, Umuebele 4
               has a restaurant she
               <br /> has been running for over five (5) years. She sells
               varieties of food and drinks. Due to the
@@ -552,18 +553,19 @@ const LoanDetails = ({ match, loans, messenger }) => {
               <br /> back. She makes a profit of about ₦10,000 daily and has
               promised to pay back the
               <br /> borrowed funds. */}
-              <div
-                className="for-des"
-                dangerouslySetInnerHTML={{ __html: loanData.story }}
-              />
-            </p>
+                <div
+                  className="for-des"
+                  dangerouslySetInnerHTML={{ __html: loanData.story }}
+                />
+              </p>
+            </div>
           </div>
+          <img
+            src="/img/loandetails-bg.svg"
+            alt="loandetails-bg.svg"
+            className="loandetailsbg"
+          />
         </div>
-        <img
-          src="/img/loandetails-bg.svg"
-          alt="loandetails-bg.svg"
-          className="loandetailsbg"
-        />
       </section>
       {/*  loan details Section end*/}
       {/* =================================================================================================================================================================================================================================================================== */}
@@ -636,28 +638,31 @@ const LoanDetails = ({ match, loans, messenger }) => {
                   // <Link to="/loan-details">
                   <a href={"/loan-details/" + loan.id}>
                     <div className="cardA">
-                      <div
-                        className="img"
-                        style={{
-                          backgroundImage: `url(${loan.cover_image})`,
-                          height: "200px",
-                          width: "100%",
-                          backgroundRepeat: "no-repeat",
-                          backgroundSize: "cover",
-                          borderRadius: "8px",
-                          borderBottomLeftRadius: "0px",
-                          borderBottomRightRadius: "0px",
-                        }}
-                      >
-                        <div className="img-amount">
-                          <NumberFormat
-                            value={parseFloat(loan.loan_amount)}
-                            displayType={"text"}
-                            thousandSeparator={true}
-                            prefix={"$"}
-                          />
+                      <div className="img">
+                        <div
+                          className="img-sub"
+                          style={{
+                            backgroundImage: `url(${loan.cover_image})`,
+                            height: "200px",
+                            width: "100%",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            borderRadius: "8px",
+                            borderBottomLeftRadius: "0px",
+                            borderBottomRightRadius: "0px",
+                          }}
+                        >
+                          <div className="img-amount">
+                            <NumberFormat
+                              value={parseFloat(loan.loan_amount)}
+                              displayType={"text"}
+                              thousandSeparator={true}
+                              prefix={"$"}
+                            />
+                          </div>
                         </div>
                       </div>
+
                       <div className="cardDetails">
                         <h1 className="cardHeader">{loan.title}</h1>
                         <h1 className="collat-category">Electronics</h1>

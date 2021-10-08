@@ -338,10 +338,14 @@
   text-align: center;
 }
 
-
 .collateral-cat-header {
   font-weight: 800;
   font-size: 32px;
+
+}
+
+.hide-carousel {
+  display: none;
 }
 /* hero section end */
 /* ============================================ */
@@ -1100,7 +1104,7 @@
   position: relative;
 }
 .blockChain2 {
-  width: 100%;
+  width: 85%;
   margin-left: 10%;
 }
 .savingsImages2 {
