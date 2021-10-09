@@ -269,7 +269,7 @@ const Explore_loans = ({ loans, fetch }) => {
                   <img
                     src="/img/sorry-image.svg"
                     alt=""
-                    style={{ width: "100%" }}
+                    style={{ width: "50%" }}
                   />
                 </div>
                 <div

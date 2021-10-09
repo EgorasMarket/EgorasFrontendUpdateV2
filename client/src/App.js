@@ -83,6 +83,9 @@ import Login from "./components/auth/Login";
 import Categories from "./components/layout/categories/Categories";
 import Status from "./components/layout/status/Status";
 import TermsAndConditions from "./components/layout/Home2/Terms&Condition/TermsAndConditions";
+import TokenEGC from "./components/layout/Home2/tokens/TokenEGC";
+import TokenEGR from "./components/layout/Home2/tokens/TokenEGR";
+import TokenEUSD from "./components/layout/Home2/tokens/TokenEUSD";
 import NewHome from "./components/layout/home/NewHome";
 // import About from './components/layout/home/About';
 import TokenMetrics from "./components/layout/home/TokenMetrics";
@@ -128,20 +131,13 @@ const App = () => {
         "Content-Type": "application/json",
       },
     };
-    try{
-     axios.get(
-       "https://geolocation-db.com/json/",
-        null,
-        config
-      ).then((data) => {
-        console.log(data);
-      })
-
-      
-    }catch(err){
-
-    }
-    
+    try {
+      axios
+        .get("https://geolocation-db.com/json/", null, config)
+        .then((data) => {
+          console.log(data);
+        });
+    } catch (err) {}
   }, []);
 
   function getLibrary(provider) {
@@ -374,6 +370,9 @@ const App = () => {
                     path="/egoras-governance-token"
                     component={Documentation19}
                   />
+                  <Route exact path="/egr-token" component={TokenEGR} />
+                  <Route exact path="/egc-token" component={TokenEGC} />
+                  <Route exact path="/eusd-token" component={TokenEUSD} />
 
                   <Route exact path="/login" component={Login} />
                   {/* <Route exact path='/token-metrics' component={TokenMetrics} /> */}
