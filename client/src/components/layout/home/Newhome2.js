@@ -53,15 +53,14 @@ const GetLoan = () => {
     let allCat = document.getElementById("all-categories");
     popularCat.style.display = "table-row-group";
     allCat.style.display = "none";
- 
   };
   // change  category buttons
   const triggerAll = () => {
     setCategoryBtn("All");
-        let popularCat = document.getElementById("popular-categories");
-        let allCat = document.getElementById("all-categories");
-        popularCat.style.display = "none";
-        allCat.style.display = "table-row-group";
+    let popularCat = document.getElementById("popular-categories");
+    let allCat = document.getElementById("all-categories");
+    popularCat.style.display = "none";
+    allCat.style.display = "table-row-group";
   };
 
   const clickMe1 = () => {
@@ -376,7 +375,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <DesktopMacIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/generator-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">Generators</div>
                     </div>
                   </td>
@@ -554,7 +556,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <DesktopMacIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/generator-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">Generators</div>
                     </div>
                   </td>
@@ -582,7 +587,7 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <KitchenIcon className="assets-list-icon" />
                       <div className="assets-data-name">Refrigerators</div>
                     </div>
                   </td>
@@ -613,7 +618,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/washing-machine-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">Washing Machines</div>
                     </div>
                   </td>
@@ -675,7 +683,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/home-theaters-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">Home Theatres</div>
                     </div>
                   </td>
@@ -706,7 +717,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/gas-cooker-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">Gas Cookers</div>
                     </div>
                   </td>
@@ -737,7 +751,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/camera-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">Digital Camera</div>
                     </div>
                   </td>
@@ -768,7 +785,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/office-shelf-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">Office Shelf</div>
                     </div>
                   </td>
@@ -799,7 +819,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/micro-wave-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">Micro Wave</div>
                     </div>
                   </td>
@@ -830,7 +853,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/air-conditioner-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">Air Conditioner</div>
                     </div>
                   </td>
@@ -861,7 +887,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/manual-sewing-machine-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">
                         Manual Sewing Machine
                       </div>
@@ -896,7 +925,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/industrial-sewing-machine-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">
                         Industrial Sewing Machine
                       </div>
@@ -931,7 +963,10 @@ const GetLoan = () => {
                 <tr className="assets-category-row">
                   <td className="assets-category-data">
                     <div className="assets-data">
-                      <PrintIcon className="assets-list-icon" />
+                      <img
+                        src="/img/icons/furniture-chair-icon.svg"
+                        className="assets-list-icon"
+                      />
                       <div className="assets-data-name">Furnitures</div>
                     </div>
                   </td>
