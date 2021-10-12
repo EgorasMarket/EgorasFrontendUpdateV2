@@ -8,6 +8,7 @@
   background-color: #fff;
   position: fixed;
   width: 100%;
+  overflow: hidden;
 }
 .header-area {
   display: flex;

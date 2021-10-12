@@ -2,6 +2,7 @@
   padding: 12em 0em;
   padding-bottom: 3em;
   position: relative;
+    overflow: hidden;
 }
 .heroArea3 {
   display: flex;

@@ -235,9 +235,8 @@
   }
   /* benefits section start */
   /* token section start */
-  .tokenSection {
-    padding: 3em 0em;
-  }
+  /* .tokenSection {
+  } */
 
   .tokenDots {
     width: 120px;

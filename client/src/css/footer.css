@@ -2,6 +2,7 @@
   padding: 2em 0em;
   position: relative;
   background-color: #fbfffc;
+    overflow: hidden;
 }
 
 .footerArea {

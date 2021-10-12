@@ -4,6 +4,7 @@
   padding: 13em 0em;
   padding-bottom: 3em;
   position: relative;
+  overflow: hidden;
 }
 .heroArea {
   display: flex;
@@ -416,15 +417,18 @@ a.collateral-link1:hover .collat-mobile-phones2 {
 .projectsSection {
   padding: 2em 0em;
   position: relative;
+  overflow: hidden;
 
   background: #fbfbfb;
 }
 
 .gtstoriesSection .container {
   max-width: 1274px;
+  overflow: hidden;
 }
 .projectsSection .container {
   max-width: 1274px;
+  overflow: hidden;
 }
 .caroCard .react-multiple-carousel__arrow--left,
 .caroCard .react-multiple-carousel__arrow--right {
@@ -625,6 +629,7 @@ a.collateral-link1:hover .collat-mobile-phones2 {
   padding: 4em 0em;
   padding-bottom: 6em;
   position: relative;
+  overflow: hidden;
 }
 .benefitsSection .container {
   max-width: 1302px;
@@ -693,6 +698,7 @@ a.collateral-link1:hover .collat-mobile-phones2 {
 .landingstoriesSection {
   position: relative;
   padding: 2em 0em;
+  overflow: hidden;
 }
 iframe {
   border: 0;
@@ -767,6 +773,7 @@ iframe {
 .partnersSection {
   padding: 4em 0em;
   position: relative;
+  overflow: hidden;
 }
 
 .PartnersArea {
@@ -824,174 +831,7 @@ iframe {
 /* ============================================ */
 /* ============================================ */
 /* ============================================ */
-/* tokens section  start */
 
-.tokenSection {
-  padding: 10em 0em;
-  position: relative;
-}
-.tokenCardflex {
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-  /* justify-content: space-between; */
-}
-.tokenCardflex-txt {
-  width: 100%;
-  font-size: 36px;
-  font-weight: 700;
-}
-.mainTokenflex {
-  width: 8%;
-}
-.stats-widget {
-  margin: 0px 0px 0px 20px;
-  padding: 20px;
-  background: #f8fffb;
-  box-shadow: 0px 0px 15px #a2c5b075;
-  border-left: 1px solid #229e54;
-  border-radius: 10px;
-}
-.schedule-section {
-  background: #f8fffb;
-  padding: 4em 0;
-}
-
-.naira-icon {
-  object-fit: contain;
-  height: 24px;
-  width: 24px;
-  margin-bottom: 16px;
-}
-.desc {
-  font-size: 12px;
-  color: rgb(0, 0, 0);
-  margin-bottom: 17px;
-}
-
-.chartTitile {
-  font-size: 16px;
-  font-weight: 800;
-  color: #229e54;
-  margin-bottom: 8px;
-  text-align: left;
-}
-.stats-label {
-  font-size: 16px;
-  font-weight: 700;
-  color: #000;
-}
-.stats-value {
-  font-size: 24px;
-  font-weight: 700;
-  color: #229e54;
-  display: flex;
-  align-items: flex-end;
-}
-.egc-label {
-  font-size: 14px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
-.chart {
-  height: 300px;
-  width: 100%;
-  background: #fff;
-  padding-top: 2em;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px #93d7ae85;
-}
-tspan {
-  font-size: 12px;
-}
-
-.chart-review-section {
-  padding: 4em 0em;
-  position: relative;
-}
-.staked-title {
-  font-size: 16px;
-  font-weight: 800;
-  color: #229e54;
-  margin-bottom: 8px;
-  text-align: left;
-}
-
-.locked-token-widget {
-    margin-top: 28px;
-}
-
-.locked-token-widget .title {
-    font-size: 14px;
-    font-weight: 800;
-    color: #229e54;
-}
-.locked-token-widget .value {
-    font-size: 30px;
-    color: #229e54;
-    display: flex;
-    align-items: flex-end;
-    font-weight: 700;
-}
-.locked-token-widget .ogn-label {
-    font-size: 18px;
-    color:  grey;
-    margin-bottom: 5px;
-    margin-left: 5px;
-}
-.subtitle2 {
-    margin-bottom: 57px;
-    font-size: 14px;
-    font-weight: normal;
-    color:grey ;
-    margin-top: 30px;
-}
-/* .tokenArea {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  position: relative;
-  z-index: 20;
-}
-
-.mainToken {
-  border-radius: 100px;
-  width: 80%;
-}
-
-.tokenCard1texts {
-  margin-top: 20px;
-  width: 80%;
-}
-
-.tokenCard1 {
-  /* padding: 2em; */
-/* padding: 0;
-  width: 100%;
-  box-shadow: none;
-  transition: 0.01s linear;
-}
-
-.tokenCard1Heading {
-  font-weight: 600;
-}
-
-.tokenCard1Para {
-  line-height: 29px;
-  font-size: 14px;
-  margin-top: 30px;
-} */
-
-.tokenDots {
-  position: absolute;
-  right: 0;
-  top: -100px;
-  border-top-left-radius: 100%;
-  border-bottom-left-radius: 100%;
-}
-
-/* tokens section  end */
 /* ============================================ */
 /* ============================================ */
 /* ============================================ */
@@ -1000,6 +840,7 @@ tspan {
 
 .exploreSection {
   padding: 6em 0em;
+  overflow: hidden;
 }
 
 .exploreArea {

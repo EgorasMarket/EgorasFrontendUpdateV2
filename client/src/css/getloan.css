@@ -4,6 +4,7 @@
   padding: 13em 0em;
   padding-bottom: 3em;
   position: relative;
+  overflow: hidden;
 }
 .gtheroArea {
   display: flex;
@@ -336,6 +337,7 @@
   padding-bottom: 1em;
   position: relative;
   text-align: center;
+    overflow: hidden;
 }
 
 .collateral-cat-header {
@@ -420,6 +422,7 @@
   padding-bottom: 2em;
   position: relative;
   background: #fbfbfb;
+    overflow: hidden;
 }
 .all-categories {
   display: none;
@@ -805,6 +808,7 @@
   padding: 4em 0em;
   padding-bottom: 6em;
   position: relative;
+    overflow: hidden;
 }
 .gtbenefitsSection .container {
   max-width: 1302px;
@@ -876,6 +880,7 @@
 
 .discountSection {
   padding: 4em 8em;
+    overflow: hidden;
   position: relative;
   /* color: aliceblue; */
   background: #ffffff;
@@ -1034,12 +1039,14 @@
   position: relative;
   /* color: aliceblue; */
   background: #f8fffb;
+    overflow: hidden;
 }
 .savingsSection2 {
   padding: 4em 8em;
   position: relative;
   /* color: aliceblue; */
   background: #f8fffb;
+    overflow: hidden;
 }
 .savingsArea {
   display: flex;
@@ -1149,6 +1156,7 @@
 .gtstoriesSection {
   position: relative;
   padding: 2em 0em;
+    overflow: hidden;
 }
 iframe {
   border: 0;
@@ -1348,6 +1356,7 @@ iframe {
   padding: 4em 0em;
   position: relative;
   background: #ffffff;
+    overflow: hidden;
 }
 
 .gtcompareArea {
@@ -1429,6 +1438,7 @@ hr {
 
 .gtexploreSection {
   padding: 4em 0em;
+    overflow: hidden;
 }
 
 .gtexploreArea {
