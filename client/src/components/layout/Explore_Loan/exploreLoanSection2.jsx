@@ -25,7 +25,7 @@ const ExploreLoanSection2 = ({ loans, fetch }) => {
   return (
     <div style={{ margin: "auto" }} className="diff">
       <div className="section2DivHolder_img">
-        {loanData.map((loan, i) => {
+        {/* {loanData.map((loan, i) => {
           return (
             <Fragment>
               <Link to={`loan-details/${loan.id}`}>
@@ -33,8 +33,24 @@ const ExploreLoanSection2 = ({ loans, fetch }) => {
                   <div
                     className="DivIMG"
                     style={{ backgroundImage: `url(${loan.cover_image})` }}
-                  ></div>
+                  ></div> */}
 
+                       {
+                        loanData.map((loan, i) => {
+                                return(
+                            <Fragment>
+                               <Link to={`loan-details/${loan.id}`} >
+                                 <div className="exploreLoanSection2"  key={i} >
+                    <div className="DivIMG"  style={{ backgroundImage: `url(${loan.cover_image})` }}></div>
+                   
+                    <p className="retailButton">{loan.category}</p>
+                    <div className="pTag">$
+                    <NumberFormat thousandSeparator={true} thousandsGroupStyle="usd" displayType={'text'} value={ parseFloat(loan.loan_amount)} />
+                       
+                    </div>
+                    <div className="forIdentity">{loan.title}</div>
+                    <div><span className="interestSpan">{loan.interest}</span> <span  className="percentageSpan">{loan.interest2}</span></div>
+{/*                     
                   <p className="retailButton">{loan.category}</p>
                   <div className="pTag">
                     $
@@ -49,8 +65,8 @@ const ExploreLoanSection2 = ({ loans, fetch }) => {
                   <div>
                     <span className="interestSpan">{loan.interest}</span>{" "}
                     <span className="percentageSpan">{loan.interest2}</span>
-                  </div>
-                </div>
+                  </div>*/}
+                </div> 
               </Link>
             </Fragment>
           );

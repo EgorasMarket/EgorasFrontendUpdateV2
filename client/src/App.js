@@ -122,6 +122,8 @@ import Explore_Loans_Page2 from "./components/layout/Explore_Loan/exploreLoanSec
 import Explore_Loans_Page3 from "./components/layout/Explore_Loan/exploreLoanSection10";
 import Explore_Loans_Page4 from "./components/layout/Explore_Loan/exploreLoanSection11";
 import Explore_Loans_Page5 from "./components/layout/Explore_Loan/exploreLoanSection12";
+import EGC from "./components/layout/EGC/egc";
+
 
 const App = () => {
   useEffect(() => {
@@ -219,6 +221,7 @@ const App = () => {
                   <Route exact path="/confirmation" component={Opd} />
                   {/* <Route exact path='/about' component={About} /> */}
                   <Route exact path="/about" component={About} />
+                  <Route exact path="/egc" component={EGC} />
                   <Route exact path="/createloan2" component={Createloan} />
                   <Route exact path="/createloan" component={Createloan2} />
                   <Route

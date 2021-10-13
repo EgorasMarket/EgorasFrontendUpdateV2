@@ -314,7 +314,9 @@ const Documentation18 = () => {
             >
               The Egoras Dollar(EUSD)
             </div>
-
+            <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> The EUSD Stable coin is a decentralized, collateral-backed cryptocurrency pegged to United States Dollar. EUSD is built on Ethereum blockchain and can be held on any Ethereum wallet. It can be spent the way the U.S. Dollar is spent.</div>
+            <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">Microfinance banks and NGOs generate EUSD by posting a loan backed by collateral assets into the Egoras microfinance protocol and EGR holders approve or decline the loan request. The loan request approved creates EUSD which the microfinance banks sends directly to the borrowers. Users can also buy EUSD from exchanges, or simply receive it as a means of payment. </div>
+            <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">Every EUSD in circulation is over-collateralised, meaning that the value of the collateral is higher than the value of the EUSD debt, and all EUSD transactions are publicly viewable on the Ethereum blockchain. </div>
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">
                 <div className="subSectionC_Next add">Precious</div>

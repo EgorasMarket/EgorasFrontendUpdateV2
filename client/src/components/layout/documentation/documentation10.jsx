@@ -310,7 +310,7 @@ const Documentation10 = () => {
             <div className="aboutEgoras_H" data-aos="fade-up">
               Reward Voter
             </div>
-
+             <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> The rewardHolderByVotePower function transfers an asset into the EGR holders wallet according to their voting power.</div>
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">
                 <div className="subSectionC_Next add">Precious</div>

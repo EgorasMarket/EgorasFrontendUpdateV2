@@ -1,132 +1,150 @@
 /* .exploreLoanSection{
     padding:0px 20px;
 } */
-.exploreLoansHeader {
-  margin-top: 135px;
-  padding: 0px 25px 20px;
+.exploreLoansHeader{
+    margin-top:70px;
+    padding:0px 25px 20px;
 }
-.exploreLoansH1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 15px;
+.exploreLoansH1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
-.exploreLoansP {
-  font-size: 14px;
-  font-weight: 700;
-  color: #e7a98a;
+.exploreLoansP{
+    font-size: 14px;
+    font-weight: 700;
+    color:#e7a98a;
 }
-.exploreLoansInsideDiv2 {
-  margin-top: 30px;
+.exploreLoansInsideDiv2{
+    margin-top: 30px;
 }
-.imgSrc {
-  width: 100%;
+.imgSrc{
+    width:100%;
 }
-.section1Sec {
-  padding: 0px 25px 20px;
+.section1Sec{
+     padding:0px 25px 20px;
 }
-.selectOption {
-  outline: none;
-  border: 0;
-  border: 1px solid #c9c7c6;
-  padding: 13px 7px;
-  width: 170px;
-  border-radius: 8px;
-  font-size: 15px;
-  margin-bottom: 23px;
-}
-.selectOption > option {
-  padding-right: 20px;
-}
-
-.interestRange {
-  font-size: 10px;
-  color: #c9c7c6;
-  font-weight: 700;
-  margin-bottom: 7px;
-}
-.divHab {
-  display: flex;
-  align-items: center;
-  margin-bottom: 23px;
-}
-.calDiv {
-  display: flex;
-  align-items: center;
-  border: 1px solid #c9c7c6;
-  border-radius: 8px;
-  padding: 3px 5px;
-  margin-top: 9px;
-}
-.calNumber {
-  width: 110px;
-  text-align: center;
-  padding: 13px 5px;
-  outline: none;
-  border: 0px;
-  font-size: 10px;
-}
-.calInnerDiv {
-  width: 1px;
-  height: 25px;
-  background-color: #c9c7c6;
-}
-.labPer {
-  font-size: 10px;
-  color: #c9c7c6;
-  margin-left: 8px;
-  padding-top: 8px;
-}
-.statusLabel {
-  font-size: 10px;
-  color: #c9c7c6;
-  font-weight: 700;
-}
-.divButtonHolders {
-  display: flex;
-  justify-content: space-around;
-  padding: 5px;
-  border: 1px solid #bbe4cb;
-  background-color: #fff;
-  border-radius: 8px;
-  margin-top: 5px;
-}
-.calButtonLink {
-  border: 0px;
-  padding: 10px 5px;
-  background-color: #fff;
-  font-weight: 600;
-  color: black;
-  text-decoration: none;
-  font-size: 13px;
-  border-radius: 8px;
+.selectOption{
+    outline:none;
+    border:0;
+    border:1px solid #c9c7c6;
+    padding:13px 7px;
+    width:170px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 23px;
+    letter-spacing: 0.005em;
+    /* color:#a29a9a; */
+    color:#363434;
+     font-family:'Open Sans',sans-serif; 
 }
 
-.addBackground {
-  background-color: #55bc7e;
-  color: #fff;
+.selectOption >option{
+    padding-right: 20px;
+     font-family:'Open Sans',sans-serif; 
+    color:#363434; 
+    font-size: 13px;
 }
 
-.calButtonLink:hover {
-  background-color: #55bc7e;
-  color: #fff;
+/* .selectOption >option:hover{
+background-color: #229e54;
+color: #fff;
+} */
+
+.interestRange{
+    font-size: 10px;
+    color:#c9c7c6;
+    font-weight: 700;
+    margin-bottom: 7px;
 }
-.farmyardImg {
-  width: 100%;
-  border-radius: 8px;
-  /* height: 200px;  */
-  height: 100%;
-  object-fit: cover;
+.divHab{
+    display:flex;
+      align-items: center; 
+      margin-bottom: 23px;
+}
+.calDiv{
+    display:flex;
+    align-items: center;
+    border:1px solid #c9c7c6;
+    border-radius:8px;
+    padding:3px 5px;
+    margin-top:9px
+}
+.calNumber{
+    width:110px;
+    text-align: center;
+    padding:13px 5px;
+    outline: none;
+    border:0px;
+    font-size: 10px;
+}
+.calInnerDiv{
+    width:1px;
+    height:25px;
+    background-color:#c9c7c6;
+}
+.labPer{
+    font-size: 10px;
+    color:#c9c7c6;
+    margin-left: 8px;
+    padding-top: 8px;
+}
+.statusLabel{
+    font-size: 10px;
+    color:#c9c7c6;
+    font-weight: 700;
+    
+}
+.divButtonHolders{
+     display:flex;
+    justify-content: space-around;
+    padding:5px;
+    border:1px solid #bbe4cb;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.calButtonLink{
+   
+    border:0px;
+    padding:10px 22px;
+    background-color: #fff;
+    font-weight: 600;
+    color:black;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 5px;
+    
+}
+
+.addBackground{
+   background-color: #55bc7e; 
+   color:#fff;
 }
 .exploreLoanSection2 {
   position: relative;
-
-  width: 290px;
-  height: auto;
-  /* box-shadow: 1px 2px 2px 2px #e6e6e76e;     */
-  /* padding: 2px 10px 30px 10px; */
-  box-shadow: 9px 6px 22px 0 rgb(0 0 0 / 8%);
-  border-radius: 7px;
-  padding-bottom: 25px;
+}
+.calButtonLink:hover{
+   background-color: #e4a788;
+   color: #fff;
+}
+.farmyardImg{
+    width:100%;
+    border-radius: 8px;
+     /* height: 200px;  */
+    height:100%;
+    object-fit:cover;
+}
+.exploreLoanSection2{
+    position:relative;
+    
+     width:290px;
+    height: auto;
+        /* box-shadow: 1px 2px 2px 2px #e6e6e76e;     */
+    /* padding: 2px 10px 30px 10px; */
+      box-shadow: 9px 6px 22px 0 rgb(0 0 0 / 8%);  
+    border-radius: 7px;
+    padding-bottom: 25px;
 
   margin: 30px auto 45px auto;
 }
@@ -142,61 +160,63 @@
      box-shadow: 0px 2px 10px #e6e6e76e; 
 } */
 
-.DivIMG {
-  width: 250px;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 8px;
-  margin: 0px auto;
+.DivIMG{
+    width: 290px;
+    height:290px;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    border-radius: 8px;
+    margin:0px auto;
 }
 /* .section2DivHolder_img{
    padding:0px 25px 20px; 
 
 } */
 
-.retailButton {
-  position: absolute;
-  border: none;
-  /* border:1px solid #fff; */
-  /* border:1px solid #229e54;  */
-  top: -20px;
-  right: -8px;
-  padding: 8px 10px;
-  border-radius: 5px;
-  color: #229e54;
-  box-shadow: 0px 2px 10px #302c2c1f;
-  background-color: #fff;
-  font-size: 12px;
+.retailButton{
+    position:absolute;
+    border:none;
+    /* border:1px solid #fff; */
+     /* border:1px solid #229e54;  */
+    top:-20px;
+    right:-8px;
+    padding:8px 10px;
+    border-radius: 5px;
+     color:#229e54; 
+    box-shadow: 0px 2px 10px #302c2c1f;
+    background-color: #fff;
+    font-size: 12px;
 }
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
-input[type="number"] {
-  -moz-appearance: textfield;
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
-.pTag {
-  position: absolute;
-  left: 20px;
-  /* bottom:70px; */
-  top: 70%;
+.pTag{
+    position:absolute;
+    left:15px;
+    /* bottom:70px; */
+    top:70%;
+    
+    
+    border:1px solid #229e54;
+    padding:8px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    /* color:#edb18e; */
+    color:#229e54;
+    font-size: 13px;
 
-  border: 1px solid #229e54;
-  padding: 8px 10px;
-  border-radius: 5px;
-  background-color: #fff;
-  /* color:#edb18e; */
-  color: #229e54;
-  font-size: 13px;
 }
-.forIdentity {
-  margin-top: 12px;
-  font-size: 15px;
-  font-weight: 500;
-  white-space: nowrap;
+.forIdentity{
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0px 10px;
@@ -326,6 +346,69 @@ input[type="number"] {
   }
   .exploreLoansHeader {
     display: flex;
+    justify-content: center;
+     margin-bottom: 18px;
+}
+.footerP{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color:#494542;
+}
+.footerP1{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.footerEmail{
+    color:#55bc7e;
+    font-size: 13px;
+}
+.carWidth{
+    width:100%;
+    height:200px;
+    border-radius: 0px !important;
+}
+
+.footerDivImgVideo{
+
+    margin-bottom: 60px;
+}
+
+@media (min-width:375Px){
+   .exploreLoanSection2{
+       width:338px;
+   } 
+   .DivIMG{
+       width:338px;
+       height:338px;
+   }
+   .forIdentity{
+       font-size: 20px;
+   }
+}
+@media (min-width:425px){
+   .exploreLoanSection2{
+       width:376px;
+   }  
+   .DivIMG{
+       width:376px;
+       height:376px;
+   }
+   .forIdentity{
+       font-size: 22px;
+   }
+}
+
+
+@media (min-width:600px){
+    .exploreLoansHeader{
+        padding:0px 25px;
+    }
+ .exploreLoansHeader{
+     display:flex;
     align-items: center;
   }
   .exploreLoansInsideDiv1 {
@@ -342,11 +425,11 @@ input[type="number"] {
   }
   .exploreLoanSection2 {
     width: 266px;
-  }
-  .DivIMG {
-    width: 250px;
-    height: 250px;
-  }
+}
+.DivIMG{
+    width:266px;
+    height: 266px;
+}
 }
 
 @media (min-width: 600px) {
@@ -359,11 +442,21 @@ input[type="number"] {
     margin-top: 25px;
   }
 }
+@media (max-width:600px){
+    .selectOption{
+        width:100%;
+    }
+}
 
-@media (min-width: 768px) {
-  .exploreLoanSection2 {
-    width: 342px;
-  }
+@media (min-width:768px){
+    .exploreLoanSection2{
+       width:342px;
+   }
+   
+   .DivIMG{
+    width:342px;
+    height: 342px;
+}
 }
 
 @media (min-width: 801px) {
@@ -432,57 +525,62 @@ input[type="number"] {
     width: 288px;
   }
 }
-@media (min-width: 1024px) {
-  .section2DivHolder_img {
-    display: grid;
+ .DivIMG{
+    width:288px;
+    height: 288px;
+}
+}
+@media (min-width:1024px){
+    .section2DivHolder_img{
+    display:grid;
     grid-template-columns: auto auto auto auto;
     column-gap: 20px;
     /* padding:0px 60px; */
-  }
-  .selectOption {
-    width: 200px;
-  }
-  .section2DivHolder_img {
-    margin-top: 70px;
-  }
+}
+.selectOption{
+    width:240px;
+}
+.section2DivHolder_img{
+       margin-top: 70px;
+   }
 
-  .exploreLoanSection2 {
+.exploreLoanSection2{
     margin-bottom: 65px;
     width: 200px;
   }
   .forIdentity {
     font-size: 20px;
-  }
-  .DivIMG {
-    width: 190px;
-    height: 190px;
-  }
-
-  .carWidth {
-    height: 550px;
-    margin-bottom: 50px;
-  }
-  .pTag {
-    top: 65%;
-  }
 }
-@media (min-width: 1250px) {
-  .calButtonLink {
-    padding: 10px 24px;
-  }
-  .section2DivHolder_img {
-    display: grid;
+.DivIMG{
+       width:200px;
+       height:200px;
+   }
+
+.carWidth{
+    height:550px;
+    margin-bottom: 50px;
+}
+.pTag{
+    top:68%;
+}
+
+}
+@media (min-width:1250px){
+    .calButtonLink{
+    padding:10px 24px;
+}
+ .section2DivHolder_img{
+    display:grid;
     grid-template-columns: auto auto auto auto auto;
     column-gap: 20px;
     /* padding:0px 60px; */
   }
   .exploreLoanSection2 {
     width: 222px;
-  }
-  .DivIMG {
-    width: 200px;
-    height: 200px;
-  }
+}
+.DivIMG{
+    width:222px;
+    height: 222px;
 }
 
 @media (min-width: 321px) {
@@ -500,4 +598,5 @@ input[type="number"] {
   .farmyardImg {
     height: 225px;
   }
+}
 }

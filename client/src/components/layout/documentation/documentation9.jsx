@@ -310,6 +310,7 @@ const Documentation9 = () => {
             <div className="aboutEgoras_H" data-aos="fade-up">
               Repay Loan
             </div>
+               <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> The repay Loan function transfers an asset into the protocol, reducing the organisations borrow balance.</div>
 
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">

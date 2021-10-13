@@ -31,24 +31,24 @@ const allCategories = [
 const Explore_loans = ({ loans, fetch }) => {
   const [selectCategory, setCategory] = React.useState("");
   const [loanData, setLoanData] = useState([]);
-  const [generalData, setGeneralData] = useState([]);
   const [mainLoanData, setMainLoanData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [isEmpty, setIsEmpty] = useState(false);
   const [categoryChange, setCategoryChange] = useState(false);
   const [statusBtn, setStatus] = useState("");
+  const [generalData, setGeneralData] = useState([]);
+  const [isEmpty, setIsEmpty] = useState(false);
 
   const handleCategory = (event) => {
     setCategoryChange(true);
     setCategory(event.target.value);
     console.log(event.target.value);
 
-    const UniqueCat = loanData.filter((d) => d.category === event.target.value);
-    console.log("UniqueCat", UniqueCat);
-    setMainLoanData(UniqueCat);
-    setGeneralData(UniqueCat);
+    const arr1 = loanData.filter((d) => d.category === event.target.value);
+    console.log("arr1", arr1);
+    setMainLoanData(arr1);
+    setGeneralData(arr1);
 
-    if (UniqueCat.length === 0) {
+    if (arr1.length === 0) {
       setIsEmpty(true);
       console.log("empty");
     } else {
@@ -59,7 +59,9 @@ const Explore_loans = ({ loans, fetch }) => {
 
   const triggerStatus = (e) => {
     console.log(e.currentTarget.id);
+    // var element = document.getElementById(e.currentTarget.id);
     setStatus(e.currentTarget.id);
+    // element.classList.add("addBackground");
 
     if (categoryChange === true) {
       if (e.currentTarget.id === "Approved") {
@@ -106,6 +108,9 @@ const Explore_loans = ({ loans, fetch }) => {
       setLoanData(loans.data);
       setGeneralData(loans.data);
       console.log(loans.data);
+
+      // setData(arr1);
+      // setIsLoading(false);
     }
   }, [loans]);
 
@@ -168,6 +173,7 @@ const Explore_loans = ({ loans, fetch }) => {
                   }
                   id="Ongoing"
                   onClick={triggerStatus}
+                  style={{ marginLeft: "10px" }}
                 >
                   Ongoing
                 </button>
@@ -181,55 +187,12 @@ const Explore_loans = ({ loans, fetch }) => {
       </div>
 
       <div style={{ margin: "auto" }} className="diff">
-        <div className="row">
+        <div className="section2DivHolder_img">
           {!categoryChange ? (
             !isEmpty ? (
               generalData.map((loan, i) => {
                 return (
                   <Fragment>
-                    <div className="col-md-3">
-                      <Link to={`loan-details/${loan.id}`}>
-                        <div className="exploreLoanSection2" key={i}>
-                          <div
-                            className="DivIMG"
-                            style={{
-                              backgroundImage: `url(${loan.cover_image})`,
-                            }}
-                          ></div>
-
-                          <p className="retailButton">{loan.category}</p>
-                          <div className="pTag">
-                            $
-                            <NumberFormat
-                              thousandSeparator={true}
-                              thousandsGroupStyle="usd"
-                              displayType={"text"}
-                              value={parseFloat(loan.loan_amount)}
-                            />
-                          </div>
-                          <div className="forIdentity">{loan.title}</div>
-                          <div>
-                            <span className="interestSpan">
-                              {loan.interest}
-                            </span>{" "}
-                            <span className="percentageSpan">
-                              {loan.interest2}
-                            </span>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                  </Fragment>
-                );
-              })
-            ) : (
-              <div className="col-md-6 mx-auto text-center">Is Empty</div>
-            )
-          ) : !isEmpty ? (
-            mainLoanData.map((loan, i) => {
-              return (
-                <Fragment>
-                  <div className="col-md-3">
                     <Link to={`loan-details/${loan.id}`}>
                       <div className="exploreLoanSection2" key={i}>
                         <div
@@ -258,25 +221,66 @@ const Explore_loans = ({ loans, fetch }) => {
                         </div>
                       </div>
                     </Link>
-                  </div>
+                  </Fragment>
+                );
+              })
+            ) : (
+              <div style={{ textAlign: "center", margin: "0px auto" }}>
+                Is Empty
+              </div>
+            )
+          ) : !isEmpty ? (
+            mainLoanData.map((loan, i) => {
+              return (
+                <Fragment>
+                  <Link to={`loan-details/${loan.id}`}>
+                    <div className="exploreLoanSection2" key={i}>
+                      <div
+                        className="DivIMG"
+                        style={{ backgroundImage: `url(${loan.cover_image})` }}
+                      ></div>
+
+                      <p className="retailButton">{loan.category}</p>
+                      <div className="pTag">
+                        $
+                        <NumberFormat
+                          thousandSeparator={true}
+                          thousandsGroupStyle="usd"
+                          displayType={"text"}
+                          value={parseFloat(loan.loan_amount)}
+                        />
+                      </div>
+                      <div className="forIdentity">{loan.title}</div>
+                      <div>
+                        <span className="interestSpan">{loan.interest}</span>{" "}
+                        <span className="percentageSpan">{loan.interest2}</span>
+                      </div>
+                    </div>
+                  </Link>
                 </Fragment>
               );
             })
           ) : (
-            <div className="container">
-              <div className="col-md-6 mx-auto text-center">
-                <div className="col-md-12">
+            <div className=" " style={{ width: "100%", position: "relative" }}>
+              <div
+                className=""
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignContent: "center",
+                }}
+              >
+                <div style={{ width: "80%", margin: "0px auto" }}>
                   <img
                     src="/img/sorry-image.svg"
                     alt=""
                     style={{ width: "50%" }}
                   />
                 </div>
-                <div
-                  className="col-md-12"
-                  style={{ fontSize: "26px", fontWeight: "700", width: "100%" }}
-                >
-                  Oops No data found.
+                <div style={{ width: "80%", margin: "0px auto" }}>
+                  {" "}
+                  Oops No data found
                 </div>
               </div>
             </div>

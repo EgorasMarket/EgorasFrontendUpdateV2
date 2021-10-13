@@ -64,13 +64,14 @@ const Documentation2 = () => {
                  < div  className="subSectionC">
                    <div className="subSectionC_Line"></div>
                    <div className="aboutEgoras_H" data-aos="fade-up" data-aos-duration="3000">Egoras Decentralized Autonomous <br/>Organization </div>
-
-                   <div className="aboutEgoras_card">
-                   <div className="subSectionC_Card">
+                     <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000" style={{marginBottom:'40px'}}> As noted earlier, one of the biggest barriers in the microfinance sector is the high- interest rate which is very high when compared with mainstream banks. For any microfinance institution to achieve its purpose then the interest rate should be very low. The best way to achieve this is to give the power back to the people, whereby users can vote to increase or reduce the interest rate and they are also incentivized as they participate in these processes. In a decentralized autonomous organization, no company fixes outrageous interest or declines loan requests. The users vote the interest rate of their choice and the also vote in the approval and declining of loans. Whereas the current microfinance space is managed by NGOs, microfinance banks, or individuals and regulated by the government, the whole process on Egorasprotocol is governed by the people. No third party makes the decisions and all data are secured on Egoras smart contract which is built on the Ethereum blockchain. Egoras protocol is not owned by any foundation nor any firm. It is a decentralized organization governed by the people.</div>
+ 
+                   <div className="aboutEgoras_card" >
+                   <div className="subSectionC_Card" data-aos="fade-up" data-aos-duration="3000">
                        <div className="subSectionC_Next add">Precious</div>
                        <div className="cardText"><Link to="/documentation1"> <ArrowBack className="SubForwardIcon"/></Link><div style={{textAlign:'right'}}>what problem is Egoras<br/>trying to solve?</div></div>
                    </div>
-                     <div className="subSectionC_Card Card12">
+                     <div className="subSectionC_Card Card12" data-aos="fade-up" data-aos-duration="3000">
                        <div className="subSectionC_Next">Next</div>
                        <div className="cardText">Lending Partner<br/>Governance <Link to ="/lending-partner-governance"><ArrowForward className="SubForwardIcon"/></Link></div>
                    </div>
