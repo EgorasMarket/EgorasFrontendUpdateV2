@@ -171,21 +171,6 @@ const Header = () => {
   // class change on click functions
   const [page1, setPage1] = useState("/");
 
-  // const clickMe1 = () => {
-  //   if (page1 === "/") {
-  //     setPage1("/");
-  //   } else {
-  //     setPage1("/");
-  //   }
-  // };
-  // const clickMe2 = () => {
-  //   if (page1 === "/support") {
-  //     setPage1("/support");
-  //   } else {
-  //     setPage1("/support");
-  //   }
-  // };
-
   useEffect(() => {
     if (currentPage === "/") {
       setPage1("/");
@@ -370,121 +355,21 @@ const Header = () => {
                   <ArrowDropDownIcon />
                 </div> */}
 
-              <Button
-                ref={anchorRef12}
-                aria-controls={open12 ? "menu-list-grow" : undefined}
-                aria-haspopup="true"
-                onClick={handleToggle12}
+              <div
+                style={{ cursor: "pointer" }}
+                // onClick={handleToggle12}
               >
                 Products
                 <ArrowDropDownIcon />
-              </Button>
-              <Popper
-                style={{ width: "40%" }}
-                open={open12}
-                anchorEl={anchorRef12.current}
-                role={undefined}
-                transition
-                disablePortal
-              >
-                {({ TransitionProps, placement }) => (
-                  <Grow
-                    {...TransitionProps}
-                    style={{
-                      transformOrigin:
-                        placement === "bottom" ? "center top" : "center bottom",
-                    }}
-                  >
-                    <Paper>
-                      <ClickAwayListener onClickAway={handleClose12}>
-                        <MenuList
-                          autoFocusItem={open12}
-                          id="menu-list-grow"
-                          onKeyDown={handleListKeyDown}
-                        >
-                          <MenuItem className="BorrowClass">Borrower</MenuItem>
-                          <hr class="my-1" />
-                          <MenuItem onClick={handleClose12}>
-                            <a
-                              href="https://egoras.ng/appointment"
-                              className="borrower"
-                            >
-                              Get Loan
-                            </a>
-                          </MenuItem>
-                          <MenuItem className="validatorClass">
-                            Validator
-                          </MenuItem>
-                          <hr class="my-1" />
-                          <MenuItem onClick={handleClose12}>
-                            <a href="/explore_loans" className="borrower">
-                              Explore loans
-                            </a>
-                          </MenuItem>
-                        </MenuList>
-                      </ClickAwayListener>
-                    </Paper>
-                  </Grow>
-                )}
-              </Popper>
+              </div>
 
-              {/* <div className="product">
-                                                                                                                        Company
-                                                                                                                        <ArrowDropDownIcon />
-                                                                                                                      </div> */}
-
-              <Button
-                ref={anchorRef13}
-                aria-controls={open13 ? "menu-list-grow" : undefined}
-                aria-haspopup="true"
-                onClick={handleToggle13}
+              <div
+                style={{ cursor: "pointer" }}
+                // onClick={handleToggle13}
               >
                 Company
                 <ArrowDropDownIcon />
-              </Button>
-              <Popper
-                style={{ width: "40%" }}
-                open={open13}
-                anchorEl={anchorRef13.current}
-                role={undefined}
-                transition
-                disablePortal
-              >
-                {({ TransitionProps, placement }) => (
-                  <Grow
-                    {...TransitionProps}
-                    style={{
-                      transformOrigin:
-                        placement === "bottom" ? "center top" : "center bottom",
-                    }}
-                  >
-                    <Paper>
-                      <ClickAwayListener onClickAway={handleClose13}>
-                        <MenuList
-                          autoFocusItem={open13}
-                          id="menu-list-grow"
-                          onKeyDown={handleListKeyDown}
-                        >
-                          <MenuItem onClick={handleClose13}>
-                            <a href="/about" className="borrower">
-                              About Us
-                            </a>
-                          </MenuItem>
-                          <hr className="my-1" />
-                          <MenuItem onClick={handleClose13}>
-                            <a
-                              href="https://t.me/egorasmarket"
-                              className="borrower"
-                            >
-                              Blog
-                            </a>
-                          </MenuItem>
-                        </MenuList>
-                      </ClickAwayListener>
-                    </Paper>
-                  </Grow>
-                )}
-              </Popper>
+              </div>
               {/* ===================================================
               ===========================
               ========================================== */}
