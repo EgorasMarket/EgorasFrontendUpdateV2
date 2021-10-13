@@ -118,9 +118,9 @@ const Footer = () => {
                 <a href="#howitworks" className="c1link1 a">
                   How it works
                 </a>
-                <a href="#token" className="c1link1">
+                {/* <a href="#token" className="c1link1">
                   Tokens
-                </a>
+                </a> */}
                 <a
                   href="https://www.youtube.com/channel/UCHfi5EwXig46xp5Dx8hVBHQ/videos"
                   className="c1link1"
@@ -147,15 +147,15 @@ const Footer = () => {
             </div>
 
             <div className="footerCard2">
-              <div className="footerCardTitle">Tokens</div>
+              {/* <div className="footerCardTitle">Tokens</div> */}
               <div className="footerLinks">
-                <a href="/egr-token" className="c1link1" target="_blank">
+                {/* <a href="/egr-token" className="c1link1" target="_blank">
                   EGR
-                </a>
+                </a> */}
                 <a href="/eusd-token" className="c1link1" target="_blank">
                   EUSD
                 </a>
-                <a href="/egc-token" className="c1link1" target="_blank">
+                <a href="/egc" className="c1link1" target="_blank">
                   EGC
                 </a>
               </div>
@@ -266,9 +266,9 @@ const Footer = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <div className="footerLinks">
-                    <a href="/egr-token" className="c1link1 a" target="_blank">
+                    {/* <a href="/egr-token" className="c1link1 a" target="_blank">
                       EGR
-                    </a>
+                    </a> */}
                     <a
                       href="/eusd-token"
                       className="c1link1"
@@ -276,7 +276,7 @@ const Footer = () => {
                     >
                      EUSD
                     </a>
-                    <a href="/egc-token" className="c1link1" target="_blank">
+                    <a href="/egc" className="c1link1" target="_blank">
                   EGC
                     </a>
                   </div>

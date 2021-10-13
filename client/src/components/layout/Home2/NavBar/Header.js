@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 // import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import CloseIcon from "@material-ui/icons/Close";
 import clsx from "clsx";
 import Drawer from "@material-ui/core/Drawer";
@@ -13,22 +14,12 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-import Button from "@material-ui/core/Button";
-import ClickAwayListener from "@material-ui/core/ClickAwayListener";
-import Grow from "@material-ui/core/Grow";
-import Paper from "@material-ui/core/Paper";
-import Popper from "@material-ui/core/Popper";
-import MenuItem from "@material-ui/core/MenuItem";
-import MenuList from "@material-ui/core/MenuList";
-
 // =======================
 import List from "@material-ui/core/List";
 
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 
 // styles
@@ -276,6 +267,49 @@ const Header = () => {
     prevOpen13.current = open13;
   }, [open13]);
 
+  // open dropdown menu
+  const dropDownOpen1 = () => {
+    const dropUpIcon = document.getElementById("ArrowUpIcon");
+    const dropDownIcon = document.getElementById("ArrowDownIcon");
+    const dropMenu = document.getElementById("products-menu");
+
+    dropDownIcon.style.display = "none";
+    dropUpIcon.style.display = "inline-block";
+
+    dropMenu.style.display = "block";
+  };
+  const dropDownClose1 = () => {
+    const dropUpIcon = document.getElementById("ArrowUpIcon");
+    const dropDownIcon = document.getElementById("ArrowDownIcon");
+    const dropMenu = document.getElementById("products-menu");
+
+    dropDownIcon.style.display = "inline-block";
+    dropUpIcon.style.display = "none";
+
+    dropMenu.style.display = "none";
+  };
+  // open dropdown menu
+  const dropDownOpen2 = () => {
+    const dropUpIcon = document.getElementById("ArrowUpIcon2");
+    const dropDownIcon = document.getElementById("ArrowDownIcon2");
+    const dropMenu = document.getElementById("products-menu2");
+
+    dropDownIcon.style.display = "none";
+    dropUpIcon.style.display = "inline-block";
+
+    dropMenu.style.display = "block";
+  };
+  const dropDownClose2 = () => {
+    const dropUpIcon = document.getElementById("ArrowUpIcon2");
+    const dropDownIcon = document.getElementById("ArrowDownIcon2");
+    const dropMenu = document.getElementById("products-menu2");
+
+    dropDownIcon.style.display = "inline-block";
+    dropUpIcon.style.display = "none";
+
+    dropMenu.style.display = "none";
+  };
+
   return (
     <div id="Header">
       <section className="headerSection">
@@ -350,25 +384,60 @@ const Header = () => {
           </ul> */}
 
             <ul className="headerButtons">
-              {/* <div className="product">
-                  Products
-                  <ArrowDropDownIcon />
-                </div> */}
-
               <div
                 style={{ cursor: "pointer" }}
-                // onClick={handleToggle12}
+                onMouseOver={dropDownOpen1}
+                onMouseOut={dropDownClose1}
+                className="product"
+                id="product"
               >
                 Products
-                <ArrowDropDownIcon />
+                <ArrowDropDownIcon
+                  id="ArrowDownIcon"
+                  className="ArrowDownIcon"
+                />
+                <ArrowDropUpIcon id="ArrowUpIcon" className="ArrowUpIcon" />
+                <div className="products-menu " id="products-menu">
+                  <h6 className="drop-borrow">Borrower</h6>
+                  <a
+                    href="https://egoras.ng/appointment"
+                    className="drop-borrow-link"
+                  >
+                    Get loan
+                  </a>
+                  <hr />
+                  <h6 className="drop-borrow">Validator</h6>
+                  <a href="/explore_loans" className="drop-borrow-link">
+                    Explore loans
+                  </a>
+                </div>
               </div>
 
               <div
                 style={{ cursor: "pointer" }}
-                // onClick={handleToggle13}
+                className="company"
+                id="company"
+                onMouseOver={dropDownOpen2}
+                onMouseOut={dropDownClose2}
               >
                 Company
-                <ArrowDropDownIcon />
+                <ArrowDropDownIcon
+                  id="ArrowDownIcon2"
+                  className="ArrowDownIcon"
+                />
+                <ArrowDropUpIcon id="ArrowUpIcon2" className="ArrowUpIcon" />
+                <div className="products-menu menu2" id="products-menu2">
+                  <a href="/about" className="drop-borrow-link">
+                    About Us
+                  </a>
+                  <hr />
+                  <a
+                    href="https://t.me/egorasmarket"
+                    className="drop-borrow-link"
+                  >
+                    Blog
+                  </a>
+                </div>
               </div>
               {/* ===================================================
               ===========================

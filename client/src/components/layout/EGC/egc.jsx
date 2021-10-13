@@ -1,53 +1,99 @@
-import { textAlign } from '@mui/system';
-import React from 'react';
-import './egc.css';
+import { textAlign } from "@mui/system";
+import React from "react";
+import "./egc.css";
 
 const Egc = () => {
-    return (
-        <div style={{marginTop:'60px'}}>
-        <div className="sectionA1" >
-            <div style={{backgroundColor:'#e6f8ee'}} >
-               <div  className="addf">
-                  <div className=" text-center" >
-                    <div className="circlediv circle"></div>
-                    <div className="circlediv  circle circle1"></div>
-                    <div className="circlediv circle circle2"></div>
-                    <div className="circlediv circle circle3"></div>
-                    <img src="img/EGC-LOGO.svg " width='150' alt="" className="IMGS"/>
-                  </div>
-                  <div>
-                    <div className="EGCPIC32">EGORAS</div>
-                    <div className="EGCPIC">EGC</div>
-                    <div className="EGCfirst">EgorasCredit is  the ultility token of the Egoras protocol.This means that it is used to power all operations on the Egoras protocol.</div>
-                    <div className="getEGC">Get EGC</div> 
-                  </div>
+  return (
+    <div>
+      <section className="tokenSection2 text-black" id="token">
+        <div class="eusd-token-page container">
+          <div class="eusd-token-page hero text-center">
+            <div class="eusd-token-page circle"></div>
+            <div class="eusd-token-page circle circle2"></div>
+            <div class="eusd-token-page circle circle3"></div>
+            <div class="eusd-token-page circle circle4"></div>
+            <img
+              src="/img/token-hero-center-blur2.png"
+              alt="Waves"
+              class="eusd-token-page waves"
+            />
+            <img
+              src="/img/EGC-LOGO.svg"
+              alt="EGC coin"
+              class="eusd-token-page coin"
+            />
+            <div class="eusd-token-page d-flex flex-column align-items-center">
+              <div class="eusd-token-page ticker-symbol">
+                EgorasCredit (EGC)
               </div>
+              <h1 class="eusd-token-page">
+                EgorasCredit is the ultility token of the Egoras protocol.
+              </h1>
+              <button
+                style={{ marginTop: "50px" }}
+                class="jsx-4146495177 btn-hero d-flex align-items-center justify-content-center mx-auto  zIndex2"
+              >
+                Get EGC
+              </button>
+            </div>
           </div>
-               
-               <div className="houseDivCu">
-               <div className="secondCu filter2">
-                   <div  className="widthAjustBA"><img src="img/vector1.svg" alt="" width="400" className="REWIND"/></div>
-                   <div  className="widthAjustBA">
-                       <div className="earn1">Claim Excess eUSD</div>
-                       <p className="earn3">EGC is elementary in the stability of EUSD. It is held in a reserve smart-contract and exchanged for eUSD to balance demand excess or shortage.</p>
-                      
-                   </div>
-               </div>
-               </div>
-           </div>
-           {/* second div term #7bdba1*/}
-           <div style={{backgroundColor:'#e6f8ee'}}>
-           <div className="earning2">
-               <div className="earning3 filter3">
-                   <div  className="widthAjustB">
-                       <div  className="widthAjust1A">
-                       <div className="allNone">eNFT Farming</div>
-                       <div className="allNone1"> EGC holders can claims  collaterals of bad debt easily. Holders can send EGC to the Egoras smart contract to claim redeemable NFTs.</div>
-                       </div>
-                   </div>
-                   <div  className="widthAjust"><img src="img/EGORASICON.svg" alt="" width="400" className="REWIND"/></div>
-               </div>
-               {/* <div className="allNone2 filter2">
+
+          <div class="eusd-token-page circle1"></div>
+          <div class="eusd-token-page circle1 circle2"></div>
+          <div class="eusd-token-page circle1 circle3"></div>
+          <div class="eusd-token-page circle1 circle4"></div>
+          <div class="eusd-token-page circle2a"></div>
+          <div class="eusd-token-page circle2a circle2"></div>
+          <div class="eusd-token-page circle2a circle3"></div>
+          <div class="eusd-token-page circle2a circle4"></div>
+        </div>
+
+        <img src="/img/token-dots.svg" alt="" className="tokenDots" />
+      </section>
+
+      <div className="houseDivCu">
+        <div className="secondCu filter2">
+          <div className="widthAjustBA">
+            <img src="img/vector1.svg" alt="" width="400" className="REWIND" />
+          </div>
+          <div className="widthAjustBA">
+            <div className="earn1">Claim Excess eUSD</div>
+            <p className="earn3">
+              EGC is elementary in the stability of EUSD. It is held in a
+              reserve smart-contract and exchanged for eUSD to balance demand
+              excess or shortage.
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* second div term #7bdba1*/}
+      <div
+        className="egc-holders-section"
+        style={{ backgroundColor: "#f2fbf6" }}
+      >
+        <div className="earning2">
+          <div className="earning3 filter3">
+            <div className="widthAjustB">
+              <div className="widthAjust1A">
+                <div className="allNone">eNFT Farming</div>
+                <div className="allNone1">
+                  {" "}
+                  EGC holders can claims collaterals of bad debt easily. Holders
+                  can send EGC to the Egoras smart contract to claim redeemable
+                  NFTs.
+                </div>
+              </div>
+            </div>
+            <div className="widthAjust">
+              <img
+                src="img/EGORASICON.svg"
+                alt=""
+                width="400"
+                className="REWIND"
+              />
+            </div>
+          </div>
+          {/* <div className="allNone2 filter2">
                    <div style={{width:'45%',flex:'1'}}><img src="img/EGC3.svg" alt="" className="REWIND" /></div>
                    <div style={{width:'45%',flex:'1'}}>
                        <div style={{width:'80%',marginLeft:'auto' }}>
@@ -57,13 +103,51 @@ const Egc = () => {
                    </div>
                   
                </div> */}
-           </div>
-           </div>
+        </div>
+        <img src="/img/blur-drop.png" alt="" className="blurDrop-token" />
+        <img src="/img/shape-egg2.svg" alt="" class="gteggShape2a" />
+      </div>
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* third section start */}
+      <section className="second-eusd-token-section">
+        <div className="container">
+          <div className="nft-area2">
+            <div
+              className="nft-img-area2"
+              style={{ display: "inline-flex", width: "100%" }}
+            >
+              <img
+                src="/img/earn-egc.svg"
+                alt=""
+                style={{ width: "75%", margin: "auto" }}
+              />
+            </div>
+            <div className="nft-txt-area2 " style={{ width: "100%" }}>
+              <div className="span-txts">
+                <p className="span4a-txts">Pay Inventory Fees </p>
 
+                <p className="span4b-txts">
+                  Organizations  pays for inventory fees on Egoras protocol with
+                  Egoras Credit(EGC)and this means that as the demand for Egoras
+                  loans increases so as the demand for Egoras Credit(EGC).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="/img/blur-drop.png" alt="" className="blurDrop-token" />
+      </section>
+      {/* third section end */}
+      {/* ==================== */}
+      {/* ==================== */}
+      {/* ==================== */}
+      {/* ==================== */}
+      {/*third div*/}
 
-           {/*third div*/}
-
-           {/* <div className="allNone6">
+      {/* <div className="allNone6">
                <div className="allNone5 filter2">
                    <div style={{width:'45%',flex:'1'}}>
                        <div style={{width:'80%'}}>
@@ -123,8 +207,8 @@ const Egc = () => {
 
               </div>
               </div> */}
-           {/*fourt div*/}
-           {/* <div >
+      {/*fourt div*/}
+      {/* <div >
            <div className="BACKED">
                <div className="createdBYCR">Created by cryptocurrency and fintech veterans</div>
                <div className="OriDollar allNone1">
@@ -153,8 +237,8 @@ const Egc = () => {
                <div><form><div className="STAYFORM"><input type="email" placeholder="enter your email" className="REWardE"/><div className="subScribeBn">Subscribe</div></div></form></div>
            </div>
            </div> */}
-           {/* fifth div*/}
-           {/* <div className="STAY42">
+      {/* fifth div*/}
+      {/* <div className="STAY42">
                <div className="STABLECOIN">The perfect stablecoin for both spending and saving</div>
                <div className="WENT">
                    <div  style={{width:'35%'}}>
@@ -185,10 +269,9 @@ const Egc = () => {
                
            </div> */}
 
-
-             {/* <div style={{backgroundColor:'#e6f8ee',paddingBottom:'20px'}}>
+      {/* <div style={{backgroundColor:'#e6f8ee',paddingBottom:'20px'}}>
                  <div className="STAY42"> */}
-               {/* <div className="WENT">
+      {/* <div className="WENT">
                    <div style={{width:'35%'}}>
                       <div  className="ImG"> <img src="img/EGC_icon4.svg" alt=""/></div>
                        <div className="beatTrade">DeFi meets decentralized commerce</div>
@@ -200,8 +283,8 @@ const Egc = () => {
                        <div style={{textAlign:'center'}} className="allNone1">Easily track your DeFi earnings without complicated spreadsheets and custom dashboards.</div>
                    </div>
                </div> */}
-           {/*six div*/}
-           {/* <div>
+      {/*six div*/}
+      {/* <div>
                <div className="STAY3">Follow our development</div>
                <div >
                    <div  className="STAY60 filter2">
@@ -215,13 +298,11 @@ const Egc = () => {
 
                </div>
            </div> */}
-           {/* </div>
+      {/* </div>
 
            </div> */}
-
-
-        </div>
-    )
-}
+    </div>
+  );
+};
 
 export default Egc;

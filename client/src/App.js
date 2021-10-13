@@ -83,7 +83,6 @@ import Login from "./components/auth/Login";
 import Categories from "./components/layout/categories/Categories";
 import Status from "./components/layout/status/Status";
 import TermsAndConditions from "./components/layout/Home2/Terms&Condition/TermsAndConditions";
-import TokenEGC from "./components/layout/Home2/tokens/TokenEGC";
 import TokenEGR from "./components/layout/Home2/tokens/TokenEGR";
 import TokenEUSD from "./components/layout/Home2/tokens/TokenEUSD";
 import NewHome from "./components/layout/home/NewHome";
@@ -374,7 +373,6 @@ const App = () => {
                     component={Documentation19}
                   />
                   <Route exact path="/egr-token" component={TokenEGR} />
-                  <Route exact path="/egc-token" component={TokenEGC} />
                   <Route exact path="/eusd-token" component={TokenEUSD} />
 
                   <Route exact path="/login" component={Login} />
