@@ -12,15 +12,9 @@ import {
   Pie,
 } from "recharts";
 
-
-
-
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
-
 import "../../../../css/token.css";
-
-
 
 const data03 = [
   { name: " Private Sale", value: 10000, fill: "#5acd88" },
@@ -123,7 +117,7 @@ const TokenEGR = () => {
             <img src="/egoras-favicon.svg" alt="" className="mainTokenflex" />
             <div className="tokenCardflex-txt">EGR Token Analysis.</div>
           </div>
-          <div className="row">
+          <div className="row margin">
             <div class="col-md-3 mx-md-0 px-md-0">
               <div class="stats-widget">
                 <img src="/img/naira-icon.svg" className="naira-icon" />
@@ -159,7 +153,7 @@ const TokenEGR = () => {
               </div>
             </div>
           </div>
-          </div>
+        </div>
 
         <img src="/img/token-dots.svg" alt="" className="tokenDots" />
         <img src="/img/blur-drop.png" alt="" className="blurDrop" />

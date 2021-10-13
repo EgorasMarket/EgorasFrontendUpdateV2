@@ -69,7 +69,7 @@ const TokenEUSD = () => {
             </div>
             <div className="nft-txt-area" style={{ width: "100%" }}>
               <p className="span1-txts">NFT-based reward</p>
-              <p className="span2-txts"> Earn Redemmable NFT </p>
+              <p className="span2-txts"> Earn Redeemable NFT </p>
               <p className="span4-txts">
                 Convert your USDT, USDC, and Fiat to EUSD to start earning NFTs
                 immediately
