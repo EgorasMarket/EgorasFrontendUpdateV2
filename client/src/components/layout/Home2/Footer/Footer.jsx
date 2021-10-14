@@ -100,9 +100,9 @@ const Footer = () => {
             <div className="footerCard2">
               <div className="footerCardTitle">General</div>
               <div className="footerLinks">
-                <a href="/" className="c1link1 a">
+                {/* <a href="/" className="c1link1 a">
                   Home
-                </a>
+                </a> */}
                 <a href="/explore_loans" className="c1link1" target="_blank">
                   Explore Collaterals
                 </a>
@@ -140,14 +140,14 @@ const Footer = () => {
                 <a href="/terms-conditions" className="c1link1" target="_blank">
                   Terms & conditions
                 </a>
-                <a href="#partners" className="c1link1" target="_blank">
+                {/* <a href="#partners" className="c1link1" target="_blank">
                   Partners
-                </a>
+                </a> */}
               </div>
             </div>
 
             <div className="footerCard2">
-              {/* <div className="footerCardTitle">Tokens</div> */}
+              <div className="footerCardTitle">Tokens</div>
               <div className="footerLinks">
                 {/* <a href="/egr-token" className="c1link1" target="_blank">
                   EGR
@@ -187,9 +187,9 @@ const Footer = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <div className="footerLinks">
-                    <a href="/" className="c1link1 a">
+                    {/* <a href="/" className="c1link1 a">
                       Home
-                    </a>
+                    </a> */}
                     <a
                       href="/explore_loans"
                       className="c1link1"
@@ -250,9 +250,9 @@ const Footer = () => {
                     >
                       Terms & conditions
                     </a>
-                    <a href="#partners" className="c1link1" target="_blank">
+                    {/* <a href="#partners" className="c1link1" target="_blank">
                       Partners
-                    </a>
+                    </a> */}
                   </div>
                 </AccordionDetails>
               </Accordion>
@@ -269,15 +269,11 @@ const Footer = () => {
                     {/* <a href="/egr-token" className="c1link1 a" target="_blank">
                       EGR
                     </a> */}
-                    <a
-                      href="/eusd-token"
-                      className="c1link1"
-                      target="_blank"
-                    >
-                     EUSD
+                    <a href="/eusd-token" className="c1link1" target="_blank">
+                      EUSD
                     </a>
                     <a href="/egc" className="c1link1" target="_blank">
-                  EGC
+                      EGC
                     </a>
                   </div>
                 </AccordionDetails>
