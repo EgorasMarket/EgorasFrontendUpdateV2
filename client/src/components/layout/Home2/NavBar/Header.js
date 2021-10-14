@@ -36,7 +36,6 @@ import "../../../../css/header.css";
 import "../../../../css/headerMobile.css";
 import { Authenticate } from "../../../auth/Authenticate";
 
-
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -298,11 +297,32 @@ const Header = () => {
         <div className="container-fluid header">
           <div className="header-area">
             <a href="/" className="egrLogo2Cont">
-              <img
-                src="/img/egoras-logo.svg"
-                alt="..."
-                className="egr-logo2"
-              />
+              <img src="/img/egoras-logo.svg" alt="..." className="egr-logo2" />
+              <div className="on-mobile-navigators">
+                <ul className="headerLinks show-header-links">
+                  <a
+                    href="/"
+                    className={page1 === "/" ? "docs activeLink" : "about"}
+                    // onClick={clickMe1}
+                  >
+                    Borrower
+                    {page1 === "/" ? <span className="Line"></span> : null}
+                  </a>
+
+                  <a
+                    href="/validator"
+                    className={
+                      page1 === "/validator" ? "docs activeLink" : "about"
+                    }
+                    // onClick={clickMe2}
+                  >
+                    Validator
+                    {page1 === "/validator" ? (
+                      <span className="Line"></span>
+                    ) : null}
+                  </a>
+                </ul>
+              </div>
             </a>
 
             <ul className="headerLinks">
@@ -317,7 +337,7 @@ const Header = () => {
               <a
                 href="/"
                 className={page1 === "/" ? "docs activeLink" : "about"}
-              // onClick={clickMe1}
+                // onClick={clickMe1}
               >
                 Borrower
                 {page1 === "/" ? <span className="Line"></span> : null}
@@ -326,7 +346,7 @@ const Header = () => {
               <a
                 href="/validator"
                 className={page1 === "/validator" ? "docs activeLink" : "about"}
-              // onClick={clickMe2}
+                // onClick={clickMe2}
               >
                 Validator
                 {page1 === "/validator" ? <span className="Line"></span> : null}
@@ -522,36 +542,6 @@ const Header = () => {
                 <Divider />
                 <List>
                   <ListItem>
-                    <a
-                      href="/"
-                      className={page1 === "/" ? "docs activeLink" : "about"}
-                    // onClick={clickMe1}
-                    >
-                      Borrower
-                      {page1 === "/" ? <span className="Line"></span> : null}
-                    </a>
-                  </ListItem>
-                </List>
-                <Divider />
-                <List>
-                  <ListItem>
-                    <a
-                      href="/validator"
-                      className={
-                        page1 === "/validator" ? "docs activeLink" : "about"
-                      }
-                    // onClick={clickMe2}
-                    >
-                      Validator
-                      {page1 === "/validator" ? (
-                        <span className="Line"></span>
-                      ) : null}
-                    </a>
-                  </ListItem>
-                </List>
-                <Divider />
-                <List>
-                  <ListItem>
                     <Accordion>
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
@@ -575,7 +565,7 @@ const Header = () => {
                             className="c1link1"
                             target="_blank"
                           >
-                            Explore loans
+                            Explore Collaterals
                           </a>
                         </div>
                       </AccordionDetails>

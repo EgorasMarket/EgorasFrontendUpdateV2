@@ -65,7 +65,7 @@
 }
 
 .heroPhone {
-  width: 100%;
+  width: 105%;
   position: relative;
 }
 
@@ -108,9 +108,8 @@
   top: 150px;
   z-index: -2;
   width: 550px;
+  opacity: 0.5;
 }
-
-
 
 .card-amount {
   display: flex;
@@ -191,10 +190,12 @@
   padding: 0.2em;
   border-radius: 50px;
 }
+
 /* hero section start */
 /* ============================================ */
 /* ============================================ */
 /* ============================================ */
+
 /* how it works section start */
 .collateral-links {
   display: flex;
@@ -238,7 +239,8 @@ a.collateral-link1 {
   transition: 0.3s linear;
 }
 a.collateral-link1:hover {
-  background: #f9f9f9;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px #d9d9d9;
   transition: 0.3s linear;
 }
 a.collateral-link1:hover .collat-mobile-phones,
@@ -825,12 +827,126 @@ iframe {
 /* tokens section  start */
 
 .tokenSection {
-  padding: 4em 0em;
+  padding: 10em 0em;
   position: relative;
-  background: #fff9f4;
+}
+.tokenCardflex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  /* justify-content: space-between; */
+}
+.tokenCardflex-txt {
+  width: 100%;
+  font-size: 36px;
+  font-weight: 700;
+}
+.mainTokenflex {
+  width: 8%;
+}
+.stats-widget {
+  margin: 0px 0px 0px 20px;
+  padding: 20px;
+  background: #f8fffb;
+  box-shadow: 0px 0px 15px #a2c5b075;
+  border-left: 1px solid #229e54;
+  border-radius: 10px;
+}
+.schedule-section {
+  background: #f8fffb;
+  padding: 4em 0;
 }
 
-.tokenArea {
+.naira-icon {
+  object-fit: contain;
+  height: 24px;
+  width: 24px;
+  margin-bottom: 16px;
+}
+.desc {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 17px;
+}
+
+.chartTitile {
+  font-size: 16px;
+  font-weight: 800;
+  color: #229e54;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.stats-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.stats-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #229e54;
+  display: flex;
+  align-items: flex-end;
+}
+.egc-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.chart {
+  height: 300px;
+  width: 100%;
+  background: #fff;
+  padding-top: 2em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #93d7ae85;
+}
+tspan {
+  font-size: 12px;
+}
+
+.chart-review-section {
+  padding: 4em 0em;
+  position: relative;
+}
+.staked-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #229e54;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.locked-token-widget {
+    margin-top: 28px;
+}
+
+.locked-token-widget .title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #229e54;
+}
+.locked-token-widget .value {
+    font-size: 30px;
+    color: #229e54;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 700;
+}
+.locked-token-widget .ogn-label {
+    font-size: 18px;
+    color:  grey;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.subtitle2 {
+    margin-bottom: 57px;
+    font-size: 14px;
+    font-weight: normal;
+    color:grey ;
+    margin-top: 30px;
+}
+/* .tokenArea {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -840,25 +956,21 @@ iframe {
 }
 
 .mainToken {
-  box-shadow: 0px 0px 15px #ecc6a6;
   border-radius: 100px;
-  width: 100px;
-}
-
-.tokenLine {
-  width: 10%;
-  height: 5px;
-  border-radius: 10px;
-  background: #e4a788;
-  margin-top: 30px;
-}
-.tokenCard1 {
-  padding: 2em;
-  transition: 0.01s linear;
+  width: 80%;
 }
 
 .tokenCard1texts {
   margin-top: 20px;
+  width: 80%;
+}
+
+.tokenCard1 {
+  /* padding: 2em; */
+/* padding: 0;
+  width: 100%;
+  box-shadow: none;
+  transition: 0.01s linear;
 }
 
 .tokenCard1Heading {
@@ -869,7 +981,7 @@ iframe {
   line-height: 29px;
   font-size: 14px;
   margin-top: 30px;
-}
+} */
 
 .tokenDots {
   position: absolute;

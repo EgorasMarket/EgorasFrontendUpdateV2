@@ -104,7 +104,7 @@ const Footer = () => {
                   Home
                 </a>
                 <a href="/explore_loans" className="c1link1" target="_blank">
-                  Explore loans
+                  Explore Collaterals
                 </a>
                 <a href="/documentation" className="c1link1" target="_blank">
                   Documentation
@@ -137,7 +137,7 @@ const Footer = () => {
                 <a href="/privacy" className="c1link1 a" target="_blank">
                   Privacy policy
                 </a>
-                <a href="/privacy" className="c1link1" target="_blank">
+                <a href="/terms-conditions" className="c1link1" target="_blank">
                   Terms & conditions
                 </a>
                 <a href="#partners" className="c1link1" target="_blank">
@@ -152,9 +152,7 @@ const Footer = () => {
                 <a href="https://t.me/egorasmarket" className="c1link1 a">
                   Get in Touch Today
                 </a>
-                <a href="" className="c1link1">
-                  
-                </a>
+                <a href="" className="c1link1"></a>
                 <a href="/" className="c1linklast">
                   cs@egoras.com
                 </a>
@@ -177,8 +175,12 @@ const Footer = () => {
                     <a href="/" className="c1link1 a">
                       Home
                     </a>
-                    <a href="/explore_loans" className="c1link1" target="_blank">
-                      Explore loans
+                    <a
+                      href="/explore_loans"
+                      className="c1link1"
+                      target="_blank"
+                    >
+                      Explore Collaterals
                     </a>
                     <a
                       href="/documentation"
@@ -229,7 +231,11 @@ const Footer = () => {
                     <a href="/privacy" className="c1link1 a" target="_blank">
                       Privacy policy
                     </a>
-                    <a href="/privacy" className="c1link1" target="_blank">
+                    <a
+                      href="/terms-conditions"
+                      className="c1link1"
+                      target="_blank"
+                    >
                       Terms & conditions
                     </a>
                     <a href="#partners" className="c1link1" target="_blank">
@@ -253,9 +259,7 @@ const Footer = () => {
                     <a href="https://t.me/egorasmarket" className="c1link1 a">
                       Get in Touch Today
                     </a>
-                    <a href="" className="c1link1">
-                    
-                    </a>
+                    <a href="" className="c1link1"></a>
                     <a href="/" className="c1linklast">
                       cs@egoras.com
                     </a>
@@ -267,7 +271,6 @@ const Footer = () => {
           <hr></hr>
           <h5 className="footerBottomPara">
             ©️ 2021 Egoras Technologies LTD(RC - 1832671). All rights reserved .
-
           </h5>
         </div>
       </section>

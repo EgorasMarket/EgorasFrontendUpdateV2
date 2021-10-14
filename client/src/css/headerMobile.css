@@ -113,15 +113,28 @@
     display: none;
   }
 
-  .headerSection {
-    padding: 0em 1em;
-  }
+.headerSection {
+    padding: 1.5em 0em;
+    padding-top: .5em;
+}
+  .on-mobile-navigators {
+    display: flex;
+    margin-top: 10px;
+}
+
+.show-header-links{
+
+    display: flex;
+}
+
 }
 
 @media screen and (max-width: 645px) {
-  .headerSection {
-    padding: 0em 0em;
-  }
+.headerSection {
+    padding: 1.5em 0em;
+    padding-top: .5em;
+}
+
 }
 
 @media screen and (max-width: 463px) {

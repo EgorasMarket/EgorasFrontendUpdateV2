@@ -82,6 +82,10 @@ import Request from "./components/layout/requests/Request";
 import Login from "./components/auth/Login";
 import Categories from "./components/layout/categories/Categories";
 import Status from "./components/layout/status/Status";
+import TermsAndConditions from "./components/layout/Home2/Terms&Condition/TermsAndConditions";
+import TokenEGC from "./components/layout/Home2/tokens/TokenEGC";
+import TokenEGR from "./components/layout/Home2/tokens/TokenEGR";
+import TokenEUSD from "./components/layout/Home2/tokens/TokenEUSD";
 import NewHome from "./components/layout/home/NewHome";
 // import About from './components/layout/home/About';
 import TokenMetrics from "./components/layout/home/TokenMetrics";
@@ -121,26 +125,26 @@ import Explore_Loans_Page5 from "./components/layout/Explore_Loan/exploreLoanSec
 
 const App = () => {
   useEffect(() => {
+    localStorage.setItem("xrate", 410);
     Aos.init({});
     const config = {
       headers: {
         "Content-Type": "application/json",
       },
     };
-    try{
-     axios.get(
-       "https://geolocation-db.com/json/",
-        null,
-        config
-      ).then((data) => {
-        console.log(data);
-      })
-
+    try {
+        axios
+        .get("https://geolocation-db.com/json/", null, config)
+        .then((data) => {
+          console.log(data, "The Country");
+          localStorage.setItem("origin", data.data.country_name);
+          
+        });
+     
       
-    }catch(err){
-
+    } catch (err) {
+      console.log(err, "Call from exchange rate");
     }
-    
   }, []);
 
   function getLibrary(provider) {
@@ -230,14 +234,15 @@ const App = () => {
                     component={AddUploader}
                   />
                   <PrivateRoute exact path="/governance" component={Request} />
-                  <Route
-                    exact
-                    path="/companyreg"
-                    component={Companyreg}
-                  />
+                  <Route exact path="/companyreg" component={Companyreg} />
 
                   <Route exact path="/companies" component={Companies} />
                   <Route exact path="/privacy" component={Privacy} />
+                  <Route
+                    exact
+                    path="/terms-conditions"
+                    component={TermsAndConditions}
+                  />
                   <Route exact path="/terms" component={Terms} />
 
                   <Route
@@ -372,6 +377,9 @@ const App = () => {
                     path="/egoras-governance-token"
                     component={Documentation19}
                   />
+                  <Route exact path="/egr-token" component={TokenEGR} />
+                  <Route exact path="/egc-token" component={TokenEGC} />
+                  <Route exact path="/eusd-token" component={TokenEUSD} />
 
                   <Route exact path="/login" component={Login} />
                   {/* <Route exact path='/token-metrics' component={TokenMetrics} /> */}

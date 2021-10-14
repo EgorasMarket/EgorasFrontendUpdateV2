@@ -21,10 +21,16 @@
   font-weight: 700;
 }
 
-.own{
+.own {
   color: #e4a788;
   font-size: 46px;
   font-weight: 700;
+}
+.gtheroTitleloan1 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #000;
+  width: 100%;
 }
 .heroTitle2 {
   font-size: 46px;
@@ -36,6 +42,7 @@
   right: 0;
   z-index: -2;
   bottom: 50px;
+  opacity: 0.4;
 }
 
 .restaurantPic {
@@ -93,7 +100,7 @@
 
 /* loan details section start */
 .loanDetailsSection {
-  padding: 10em 6em;
+  padding: 6em 0em;
   position: relative;
   background: #fafafa;
 }
@@ -124,19 +131,20 @@
 .loanDetailsArea {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   z-index: 5;
 }
 .loanDetailsDays {
   margin-right: 100px;
+  width: 100%;
 }
 .loanDetailsCards {
   display: flex;
-  width: 400px;
+  width: 100%;
   box-shadow: 0px 0px 15px #d9f1dd;
   border-radius: 10px;
-  padding: 1em 3em;
+  padding: 1em 2em;
   background: #fff;
   align-items: center;
   justify-content: space-between;
@@ -224,6 +232,11 @@
   position: absolute;
   right: 0;
   bottom: 20px;
+  width: 400px;
+}
+
+.loanDetailsStory {
+  width: 100%;
 }
 /* loan details section end */
 
