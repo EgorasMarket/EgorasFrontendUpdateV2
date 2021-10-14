@@ -69,11 +69,11 @@ const Documentation1 = () => {
                     <div className = "aboutEgorasImg" data-aos="fade-up" data-aos-duration="3000"><img src="content.png" alt=" " className="EGOimg" /></div>
                     <div className="aboutEgoras_P">Egoras microfinance protocol seeks to address the challenges identified above. Addressing the challenges would mean that loans should be given at very low interest when compared to mainstream banks, and collaterals should be required to get the loans. This also means a microfinance institution, not dependent on mainstream banks. To solve the high-interest rate problem, Egoras protocol introduces on-chain governance where the interest rates are determined by the people, in which no central body or company determine the interest. In other words, the users determine the interest rate. To address the dependence issue, the Egoras protocol uses an on-chain treasury system to make sure that Egoras protocol doesn’t lack the funds or liquidity for the loans and these funds are governed by the people. Finally, the Egoras protocol introduces collateral lending to address over-indebtedness in the microfinance sector. In this regard, small businesses’ assets will be converted to non-fungible tokens and they represent the collateral. These assets will be sold off when the borrower defaults in repaying the loan.</div>
                    <div className="aboutEgoras_card">
-                   <div className="subSectionC_Card">
+                   <div className="subSectionC_Card" data-aos="fade-up" data-aos-duration="3000">
                        <div className="subSectionC_Next add">previous</div>
                        <div className="cardText"><Link to="/documentation"><ArrowBack className="SubForwardIcon"/></Link><div style={{textAlign:'right'}}>Introduction</div> </div>
                    </div>
-                     <div className="subSectionC_Card Card12">
+                     <div className="subSectionC_Card Card12" data-aos="fade-up" data-aos-duration="3000">
                        <div className="subSectionC_Next">Next</div>
                        <div className="cardText">Egoras Decentralized<br/>Autonomous Organization<Link to="/egoras-decentralized-autonomous-organization"> <ArrowForward className="SubForwardIcon"/></Link></div>
                    </div>

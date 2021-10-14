@@ -13,6 +13,9 @@ import {
 } from "recharts";
 
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+
+import "../../../../css/token.css";
+
 const data03 = [
   { name: " Private Sale", value: 10000, fill: "#5acd88" },
   { name: " Public Sale", value: 1567, fill: "#229e54" },
@@ -94,12 +97,9 @@ const data = [
 ];
 
 const data01 = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
-  { name: "Group E", value: 278 },
-  { name: "Group F", value: 189 },
+  { name: "Public Sale", value: 2000, fill: "#229e54" },
+  { name: "Private Sale", value: 100, fill: "#e4a788" },
+  { name: "Seed Sale", value: 600, fill: "#82ca9d" },
 ];
 
 const TokenEGR = () => {
@@ -117,7 +117,7 @@ const TokenEGR = () => {
             <img src="/egoras-favicon.svg" alt="" className="mainTokenflex" />
             <div className="tokenCardflex-txt">EGR Token Analysis.</div>
           </div>
-          <div className="row">
+          <div className="row margin">
             <div class="col-md-3 mx-md-0 px-md-0">
               <div class="stats-widget">
                 <img src="/img/naira-icon.svg" className="naira-icon" />
@@ -153,31 +153,6 @@ const TokenEGR = () => {
               </div>
             </div>
           </div>
-          {/* <div className="tokenArea">
-            <div className="tokenCard1texts">
-              <h1 className="tokenCard1Heading">
-                Egoras Right (EGR) <ArrowForwardIcon className="arrowIcon " />
-              </h1>
-              <p className="tokenCard1Para">
-                EGR is the fluctuating token of egoras protocol and it plays a
-                role in
-                <br /> stabilizing EGS and the governance of the loan protocol.
-                EGR is required
-                <br /> for paying the interest and this means that as the
-                adoption and demand
-                <br /> for the Egoras Credit system increases, there will be
-                additional demand
-                <br /> for EGR.
-              </p>
-            </div>
-            <div
-              className="tokenCard1"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            >
-              <img src="/img/token-right.svg" alt="" className="mainToken" />
-            </div>
-          </div> */}
         </div>
 
         <img src="/img/token-dots.svg" alt="" className="tokenDots" />
@@ -194,13 +169,13 @@ const TokenEGR = () => {
                 On January 4, 2020, we released our projected token release
                 schedule. This can also be found in{" "}
                 <a
-                  href="https://research.binance.com/projects/origin"
+                  href="https://research.binance.com/projects/Egoras"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
                   Binance's Research Report
                 </a>{" "}
-                on Origin. Note that actual circulating supply may differ from
+                on Egoras. Note that actual circulating supply may differ from
                 modeled circulating supply as time passes. It is our intention
                 to decrease actual circulating supply when compared to modeled
                 circulating supply whenever possible.
@@ -211,7 +186,7 @@ const TokenEGR = () => {
                 Modeled vs. actual token release schedule
               </h3>
               <div class="desc" id="supplyDataEl">
-                Currently, OGN's actual circulating supply is 356,077,948.
+                Currently, EGR's actual circulating supply is 356,077,948.
                 Modeled circulating supply was projected at 421,000,000. The
                 difference is 64,922,052 tokens (15%).
               </div>
@@ -227,9 +202,9 @@ const TokenEGR = () => {
                     height={300}
                     data={data}
                     margin={{
-                      top: 5,
-                      right: 30,
-                      left: 20,
+                      top: 0,
+                      right: 10,
+                      left: 0,
                       bottom: 5,
                     }}
                   >
@@ -265,9 +240,9 @@ const TokenEGR = () => {
                     height={300}
                     data={data}
                     margin={{
-                      top: 5,
-                      right: 30,
-                      left: 20,
+                      top: 0,
+                      right: 10,
+                      left: 0,
                       bottom: 5,
                     }}
                   >
@@ -306,38 +281,197 @@ const TokenEGR = () => {
             <div class="col-lg-6">
               <h3 className="staked-title">Staked amount by duration</h3>
               <div class="desc">
-                Staked OGN is included as part of the circulating supply. You
+                Staked EGR is included as part of the circulating supply. You
                 can <a href="https://www.egoras.com/stake">stake your EGR</a> on
                 egoras.com
               </div>
               <div class="row staked-chart">
-                <div className="col-md-3">
-                  <PieChart width={1000} height={200}>
+                <div className="col-md-6">
+                  <PieChart width={100} height={200}>
                     <Pie
                       dataKey="value"
                       data={data01}
-                      cx={75}
+                      cx={20}
                       cy={100}
                       innerRadius={60}
                       outerRadius={80}
-                      fill="#82ca9d"
                     />
                     <Tooltip />
+                    <Legend />
                   </PieChart>
                 </div>
 
-                <div class="col"> </div>
+                <div class="col">
+                  <h3 className="chartTitile">Token Unlock Schedule</h3>
+                  <div class="desc">
+                    On January 4, 2020, we released our projected token release
+                    schedule. This can also be found in{" "}
+                    <a
+                      href="https://research.binance.com/projects/Egoras"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      Binance's Research Report
+                    </a>{" "}
+                    on Egoras. Note that actual circulating supply may differ
+                    from modeled circulating supply as time passes. It is our
+                    intention to decrease actual circulating supply when
+                    compared to modeled circulating supply whenever possible.
+                  </div>
+                </div>
               </div>
               <div class="locked-token-widget">
                 <div class="title">Total number of staked tokens</div>
                 <div class="value">
                   88,341,092
-                  <div class="ogn-label">EGR</div>
+                  <div class="EGR-label">EGR</div>
                 </div>
               </div>
               <div class="subtitle2 mb-0">Last updated 16 minutes ago</div>
             </div>
-            <div class="col-lg-6 mt-5 mt-lg-0"></div>
+            <div class="col-lg-6 mt-5 mt-lg-0">
+              <h3 className="staked-title">
+                Wallets excluded from circulating supply
+              </h3>
+              <div class="desc">
+                Circulating supply is calculated as the total supply minus the
+                EGR balances of the following wallets:
+              </div>
+              <div class="reserved-wallets mb-0">
+                <div class="reserved-wallet">
+                  <div class="wallet-name">Foundation Reserves</div>
+                  <a
+                    class="wallet-link"
+                    href="https://etherscan.io/address/0xbe2ab3d3d8f6a32b96414ebbd865dbd276d3d899"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="wallet-address d-none">
+                      0xbe2ab3d3d8f6a32b96414ebbd865dbd276d3d899
+                    </div>
+                    <div class="wallet-address d-md-none">0xbe2a...d899</div>
+                    <div class="wallet-address d-none d-md-flex">
+                      0xbe2ab3d3d8f6a32b96414ebbd865dbd276d3d899
+                    </div>
+                  </a>
+                  <div class="wallet-balance">623,680,937 EGR</div>
+                </div>
+
+                <div class="reserved-wallet">
+                  <div class="wallet-name">Team Distribution</div>
+                  <a
+                    class="wallet-link"
+                    href="https://etherscan.io/address/0xcaa5ef7abc36d5e5a3e4d7930dcff3226617a167"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="wallet-address d-none">
+                      0xcaa5ef7abc36d5e5a3e4d7930dcff3226617a167
+                    </div>
+                    <div class="wallet-address d-md-none">0xcaa5...a167</div>
+                    <div class="wallet-address d-none d-md-flex">
+                      0xcaa5ef7abc36d5e5a3e4d7930dcff3226617a167
+                    </div>
+                  </a>
+                  <div class="wallet-balance">4,001,319 EGR</div>
+                </div>
+
+                <div class="reserved-wallet">
+                  <div class="wallet-name">Investor Distribution</div>
+                  <a
+                    class="wallet-link"
+                    href="https://etherscan.io/address/0x3da5045699802ea1fcc60130dedea67139c5b8c0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="wallet-address d-none">
+                      0x3da5045699802ea1fcc60130dedea67139c5b8c0
+                    </div>
+                    <div class="wallet-address d-md-none">0x3da5...b8c0</div>
+                    <div class="wallet-address d-none d-md-flex">
+                      0x3da5045699802ea1fcc60130dedea67139c5b8c0
+                    </div>
+                  </a>
+                  <div class="wallet-balance">4,506,951 EGR</div>
+                </div>
+
+                <div class="reserved-wallet">
+                  <div class="wallet-name">Distribution Staging</div>
+                  <a
+                    class="wallet-link"
+                    href="https://etherscan.io/address/0x12d7ef3c933d091210cd931224ead45d9cfddde0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="wallet-address d-none">
+                      0x12d7ef3c933d091210cd931224ead45d9cfddde0
+                    </div>
+                    <div class="wallet-address d-md-none">0x12d7...dde0</div>
+                    <div class="wallet-address d-none d-md-flex">
+                      0x12d7ef3c933d091210cd931224ead45d9cfddde0
+                    </div>
+                  </a>
+                  <div class="wallet-balance">9,900,000 EGR</div>
+                </div>
+
+                <div class="reserved-wallet">
+                  <div class="wallet-name">Partnerships</div>
+                  <a
+                    class="wallet-link"
+                    href="https://etherscan.io/address/0xbc0722eb6e8ba0217aeea5694fe4f214d2e53017"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="wallet-address d-none">
+                      0xbc0722eb6e8ba0217aeea5694fe4f214d2e53017
+                    </div>
+                    <div class="wallet-address d-md-none">0xbc07...3017</div>
+                    <div class="wallet-address d-none d-md-flex">
+                      0xbc0722eb6e8ba0217aeea5694fe4f214d2e53017
+                    </div>
+                  </a>
+                  <div class="wallet-balance">1,832,845 EGR</div>
+                </div>
+
+                <div class="reserved-wallet">
+                  <div class="wallet-name">Ecosystem Growth</div>
+                  <a
+                    class="wallet-link"
+                    href="https://etherscan.io/address/0x2d00c3c132a0567bbbb45ffcfd8c6543e08ff626"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="wallet-address d-none">
+                      0x2d00c3c132a0567bbbb45ffcfd8c6543e08ff626
+                    </div>
+                    <div class="wallet-address d-md-none">0x2d00...f626</div>
+                    <div class="wallet-address d-none d-md-flex">
+                      0x2d00c3c132a0567bbbb45ffcfd8c6543e08ff626
+                    </div>
+                  </a>
+                  <div class="wallet-balance">0 EGR</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="stake-banner-blue d-flex flex-column flex-lg-row justify-content-center align-items-center">
+            <div class="coins-icon">
+              <img class="EGR-coin" src="/egoras-favicon.svg" />
+              <img class="EGR-coin" src="/egoras-favicon.svg" />
+            </div>
+            <div class="stake-content d-flex flex-column">
+              <h1>Participate in governance</h1>
+              <p>Use your EGR to vote and issue proposals</p>
+            </div>
+            <button
+              class="btn-governance ml-lg-auto"
+              href="https://vote.Egorasprotocol.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Vote now
+            </button>
           </div>
         </div>
       </section>

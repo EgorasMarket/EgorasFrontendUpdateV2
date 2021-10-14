@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 // import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import CloseIcon from "@material-ui/icons/Close";
 import clsx from "clsx";
 import Drawer from "@material-ui/core/Drawer";
@@ -13,22 +14,12 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-import Button from "@material-ui/core/Button";
-import ClickAwayListener from "@material-ui/core/ClickAwayListener";
-import Grow from "@material-ui/core/Grow";
-import Paper from "@material-ui/core/Paper";
-import Popper from "@material-ui/core/Popper";
-import MenuItem from "@material-ui/core/MenuItem";
-import MenuList from "@material-ui/core/MenuList";
-
 // =======================
 import List from "@material-ui/core/List";
 
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 
 // styles
@@ -171,21 +162,6 @@ const Header = () => {
   // class change on click functions
   const [page1, setPage1] = useState("/");
 
-  // const clickMe1 = () => {
-  //   if (page1 === "/") {
-  //     setPage1("/");
-  //   } else {
-  //     setPage1("/");
-  //   }
-  // };
-  // const clickMe2 = () => {
-  //   if (page1 === "/support") {
-  //     setPage1("/support");
-  //   } else {
-  //     setPage1("/support");
-  //   }
-  // };
-
   useEffect(() => {
     if (currentPage === "/") {
       setPage1("/");
@@ -291,6 +267,49 @@ const Header = () => {
     prevOpen13.current = open13;
   }, [open13]);
 
+  // open dropdown menu
+  const dropDownOpen1 = () => {
+    const dropUpIcon = document.getElementById("ArrowUpIcon");
+    const dropDownIcon = document.getElementById("ArrowDownIcon");
+    const dropMenu = document.getElementById("products-menu");
+
+    dropDownIcon.style.display = "none";
+    dropUpIcon.style.display = "inline-block";
+
+    dropMenu.style.display = "block";
+  };
+  const dropDownClose1 = () => {
+    const dropUpIcon = document.getElementById("ArrowUpIcon");
+    const dropDownIcon = document.getElementById("ArrowDownIcon");
+    const dropMenu = document.getElementById("products-menu");
+
+    dropDownIcon.style.display = "inline-block";
+    dropUpIcon.style.display = "none";
+
+    dropMenu.style.display = "none";
+  };
+  // open dropdown menu
+  const dropDownOpen2 = () => {
+    const dropUpIcon = document.getElementById("ArrowUpIcon2");
+    const dropDownIcon = document.getElementById("ArrowDownIcon2");
+    const dropMenu = document.getElementById("products-menu2");
+
+    dropDownIcon.style.display = "none";
+    dropUpIcon.style.display = "inline-block";
+
+    dropMenu.style.display = "block";
+  };
+  const dropDownClose2 = () => {
+    const dropUpIcon = document.getElementById("ArrowUpIcon2");
+    const dropDownIcon = document.getElementById("ArrowDownIcon2");
+    const dropMenu = document.getElementById("products-menu2");
+
+    dropDownIcon.style.display = "inline-block";
+    dropUpIcon.style.display = "none";
+
+    dropMenu.style.display = "none";
+  };
+
   return (
     <div id="Header">
       <section className="headerSection">
@@ -365,126 +384,61 @@ const Header = () => {
           </ul> */}
 
             <ul className="headerButtons">
-              {/* <div className="product">
-                  Products
-                  <ArrowDropDownIcon />
-                </div> */}
-
-              <Button
-                ref={anchorRef12}
-                aria-controls={open12 ? "menu-list-grow" : undefined}
-                aria-haspopup="true"
-                onClick={handleToggle12}
+              <div
+                style={{ cursor: "pointer" }}
+                onMouseOver={dropDownOpen1}
+                onMouseOut={dropDownClose1}
+                className="product"
+                id="product"
               >
                 Products
-                <ArrowDropDownIcon />
-              </Button>
-              <Popper
-                style={{ width: "40%" }}
-                open={open12}
-                anchorEl={anchorRef12.current}
-                role={undefined}
-                transition
-                disablePortal
-              >
-                {({ TransitionProps, placement }) => (
-                  <Grow
-                    {...TransitionProps}
-                    style={{
-                      transformOrigin:
-                        placement === "bottom" ? "center top" : "center bottom",
-                    }}
+                <ArrowDropDownIcon
+                  id="ArrowDownIcon"
+                  className="ArrowDownIcon"
+                />
+                <ArrowDropUpIcon id="ArrowUpIcon" className="ArrowUpIcon" />
+                <div className="products-menu " id="products-menu">
+                  <h6 className="drop-borrow">Borrower</h6>
+                  <a
+                    href="https://egoras.ng/appointment"
+                    className="drop-borrow-link"
                   >
-                    <Paper>
-                      <ClickAwayListener onClickAway={handleClose12}>
-                        <MenuList
-                          autoFocusItem={open12}
-                          id="menu-list-grow"
-                          onKeyDown={handleListKeyDown}
-                        >
-                          <MenuItem className="BorrowClass">Borrower</MenuItem>
-                          <hr class="my-1" />
-                          <MenuItem onClick={handleClose12}>
-                            <a
-                              href="https://egoras.ng/appointment"
-                              className="borrower"
-                            >
-                              Get Loan
-                            </a>
-                          </MenuItem>
-                          <MenuItem className="validatorClass">
-                            Validator
-                          </MenuItem>
-                          <hr class="my-1" />
-                          <MenuItem onClick={handleClose12}>
-                            <a href="/explore_loans" className="borrower">
-                              Explore loans
-                            </a>
-                          </MenuItem>
-                        </MenuList>
-                      </ClickAwayListener>
-                    </Paper>
-                  </Grow>
-                )}
-              </Popper>
+                    Get loan
+                  </a>
+                  <hr />
+                  <h6 className="drop-borrow">Validator</h6>
+                  <a href="/explore_loans" className="drop-borrow-link">
+                    Explore loans
+                  </a>
+                </div>
+              </div>
 
-              {/* <div className="product">
-                                                                                                                        Company
-                                                                                                                        <ArrowDropDownIcon />
-                                                                                                                      </div> */}
-
-              <Button
-                ref={anchorRef13}
-                aria-controls={open13 ? "menu-list-grow" : undefined}
-                aria-haspopup="true"
-                onClick={handleToggle13}
+              <div
+                style={{ cursor: "pointer" }}
+                className="company"
+                id="company"
+                onMouseOver={dropDownOpen2}
+                onMouseOut={dropDownClose2}
               >
                 Company
-                <ArrowDropDownIcon />
-              </Button>
-              <Popper
-                style={{ width: "40%" }}
-                open={open13}
-                anchorEl={anchorRef13.current}
-                role={undefined}
-                transition
-                disablePortal
-              >
-                {({ TransitionProps, placement }) => (
-                  <Grow
-                    {...TransitionProps}
-                    style={{
-                      transformOrigin:
-                        placement === "bottom" ? "center top" : "center bottom",
-                    }}
+                <ArrowDropDownIcon
+                  id="ArrowDownIcon2"
+                  className="ArrowDownIcon"
+                />
+                <ArrowDropUpIcon id="ArrowUpIcon2" className="ArrowUpIcon" />
+                <div className="products-menu menu2" id="products-menu2">
+                  <a href="/about" className="drop-borrow-link">
+                    About Us
+                  </a>
+                  <hr />
+                  <a
+                    href="https://t.me/egorasmarket"
+                    className="drop-borrow-link"
                   >
-                    <Paper>
-                      <ClickAwayListener onClickAway={handleClose13}>
-                        <MenuList
-                          autoFocusItem={open13}
-                          id="menu-list-grow"
-                          onKeyDown={handleListKeyDown}
-                        >
-                          <MenuItem onClick={handleClose13}>
-                            <a href="/about" className="borrower">
-                              About Us
-                            </a>
-                          </MenuItem>
-                          <hr className="my-1" />
-                          <MenuItem onClick={handleClose13}>
-                            <a
-                              href="https://t.me/egorasmarket"
-                              className="borrower"
-                            >
-                              Blog
-                            </a>
-                          </MenuItem>
-                        </MenuList>
-                      </ClickAwayListener>
-                    </Paper>
-                  </Grow>
-                )}
-              </Popper>
+                    Blog
+                  </a>
+                </div>
+              </div>
               {/* ===================================================
               ===========================
               ========================================== */}

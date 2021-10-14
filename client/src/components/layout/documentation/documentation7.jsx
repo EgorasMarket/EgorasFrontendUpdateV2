@@ -64,7 +64,38 @@ const Documentation7 = () => {
                  < div  className="subSectionC">
                    <div className="subSectionC_Line"></div>
                    <div className="aboutEgoras_H" data-aos="fade-up">Loan Application</div>
-
+                    <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> The Loan application underlying function converts the loan application request into a unique identifier. The function consists of the amount of the borrower intends to borrow from the protocol, the title of the loans, the duration of the loan and the loan cover image URL. </div>
+                    <div >
+                     <div className="uint">
+                         <div><span style={{marginRight:'10px',fontSize:'10px',color:'gray'}}>1</span>  function applyForLoan(</div>
+                        <div><span style={{marginRight:'60px',fontSize:'10px',color:'gray'}}>2</span>      uint _amount,</div>
+                        <div><span style={{marginRight:'60px',fontSize:'10px',color:'gray'}}>3</span>  string calldata _title,</div>
+                        <div><span  style={{marginRight:'60px',fontSize:'10px',color:'gray'}}>4</span>  uint _length,</div>
+                        <div><span style={{marginRight:'60px',fontSize:'10px',color:'gray'}}>5</span>  string calldata _image_url</div>
+                        <div><span style={{marginRight:'60px',fontSize:'10px',color:'gray'}}>6</span>  ) external;</div>
+                    </div>
+                    </div>
+                    
+                    <div className="uint23" ><span style={{fontSize:'16px',fontWeight:'bold',color:'black'}}>_amount: </span> The funds the borrower intends to borrow through Egoras lending partners</div>
+                    <div className="uint23"><span style={{fontSize:'16px',fontWeight:'bold',color:'black'}}>_title: </span> A name that describes the loan.</div>
+                    <div className="uint23"><span style={{fontSize:'16px',fontWeight:'bold',color:'black'}}>_lenght: </span> The duration/ time frame of which the debt must be repaid.</div>
+                    <div className="uint23 saf"><span style={{fontSize:'16px',fontWeight:'bold',color:'black'}}>_image_url: </span> The imgur link of which the loans cover photo is hosted.</div>
+                    <div className="uint26">Solidity</div>
+                    <div className="uint27">
+                         <div className="uint67">
+                           <div className="uint33"><span style={{marginRight:'10px',fontSize:'10px',color:'gray',fontWeight:'300'}}>1</span> CEGORAS egoras = CEGORAS(0x7a24C....);</div>
+                           <div  className="uint33"><span style={{marginRight:'10px',fontSize:'10px',color:'gray'}}>2</span>require(egoras.applyForLoan(“700 in wei”,"Loan for a house", "180 days" , "https://i.imgur.com/zf1Udzm.jpg"), "unable to applyForLoan")</div>
+                        </div>
+                    </div>
+                    <div className="uint26">Web 3</div>
+                    <div>
+              
+                            <code>
+                           <div> const instance = await new web3.eth.Contract(abi, address)</div>
+                           <div>await instance.methods.applyForLoan(“700 in wei”,"Loan for a house", "180 days" , "https://i.imgur.com/zf1Udzm.jpg").send(from: 0xMyAccount);</div>
+                        </code>
+                      
+                    </div>
                    <div className="aboutEgoras_card">
                    <div className="subSectionC_Card">
                        <div className="subSectionC_Next add">Precious</div>

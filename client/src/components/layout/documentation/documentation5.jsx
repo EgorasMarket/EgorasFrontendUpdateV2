@@ -64,13 +64,15 @@ const Documentation5 = () => {
                  < div  className="subSectionC">
                    <div className="subSectionC_Line"></div>
                    <div className="aboutEgoras_H" data-aos="fade-up">Interest Rate Governance</div>
+                     <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000"> The interest rate is properly governed by people (Egoras holders) and no organization or bank determines the interest rate attached to any particular loan. The interest rate governance is also used in the stabilization of EUSD stable coin. When EUSD is going lower than the pegged price(1 EUSD= 1 USD), Egoras holders will vote on the increment of the interest rate. On the other hand, when the EUSD stable coin is going higher than the pegged price then Egoras holders will vote on the decrement of the interest rate.</div>
+                     <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">The microfinance banks or NGOs approved by Egoras holders borrow directly from the Egoras microfinance protocol to lend to their users at a lower interest rate (Central Bank Rate) and these will reduce the dependency of microfinance banks and NGOs on commercial banks and private institutions. </div>
 
                    <div className="aboutEgoras_card">
-                   <div className="subSectionC_Card">
+                   <div className="subSectionC_Card" data-aos="fade-right" data-aos-duration="3000">
                        <div className="subSectionC_Next add">Precious</div>
                        <div className="cardText"><Link to="/loan-approval-governance"> <ArrowBack className="SubForwardIcon"/></Link> <div style={{textAlign:'right'}}>Loan Approval<br/>Governance</div> </div>
                    </div>
-                     <div className="subSectionC_Card Card12">
+                     <div className="subSectionC_Card Card12" data-aos="fade-right" data-aos-duration="3000">
                        <div className="subSectionC_Next">Next</div>
                        <div className="cardText"><div >Interest Sharing<br/>Formula </div><Link to="/interest-sharing-formular"><ArrowForward className="SubForwardIcon"/></Link></div>
                    </div>

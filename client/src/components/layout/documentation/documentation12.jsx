@@ -310,6 +310,7 @@ const Documentation12 = () => {
             <div className="aboutEgoras_H" data-aos="fade-up">
               Governance Vote
             </div>
+                <div className=" aboutEgoras_P" data-aos="fade-up" data-aos-duration="3000">The governance Vote function consists of the request ID,requestType, the vote Power and the _accept(true/false). The functions also send an approval /declinal governance request to the protocol. </div>
 
             <div className="aboutEgoras_card">
               <div className="subSectionC_Card">

@@ -106,6 +106,50 @@
   position: relative;
 }
 
+.products-menu {
+  position: absolute;
+  background: #fff;
+  padding: 1em;
+  left: -26px;
+  box-shadow: 2px 1px 4px #d5d5d5;
+  border-radius: 0px 0px 5px 5px;
+  display: none;
+  transition: 1.5s linear;
+}
+.products-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #ffffff00;
+  border-bottom: 10px solid #ebebeb;
+}
+.menu2 {
+  left: 0;
+}
+.product .css-i4bv87-MuiSvgIcon-root {
+  display: none;
+}
+.company .css-i4bv87-MuiSvgIcon-root {
+  display: none;
+}
+.ArrowUpIcon,
+.ArrowUpIcon2 {
+  display: none;
+}
+.drop-borrow {
+  font-size: 14px;
+}
+.drop-borrow-link {
+  font-size: 12px;
+  color: #000;
+}
+.drop-borrow-link:hover {
+  color: #229e54;
+}
 .docs:hover,
 .about:hover {
   color: #229e54;

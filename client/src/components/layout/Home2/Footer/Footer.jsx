@@ -100,9 +100,9 @@ const Footer = () => {
             <div className="footerCard2">
               <div className="footerCardTitle">General</div>
               <div className="footerLinks">
-                <a href="/" className="c1link1 a">
+                {/* <a href="/" className="c1link1 a">
                   Home
-                </a>
+                </a> */}
                 <a href="/explore_loans" className="c1link1" target="_blank">
                   Explore Collaterals
                 </a>
@@ -118,9 +118,9 @@ const Footer = () => {
                 <a href="#howitworks" className="c1link1 a">
                   How it works
                 </a>
-                <a href="#token" className="c1link1">
+                {/* <a href="#token" className="c1link1">
                   Tokens
-                </a>
+                </a> */}
                 <a
                   href="https://www.youtube.com/channel/UCHfi5EwXig46xp5Dx8hVBHQ/videos"
                   className="c1link1"
@@ -140,8 +140,23 @@ const Footer = () => {
                 <a href="/terms-conditions" className="c1link1" target="_blank">
                   Terms & conditions
                 </a>
-                <a href="#partners" className="c1link1" target="_blank">
+                {/* <a href="#partners" className="c1link1" target="_blank">
                   Partners
+                </a> */}
+              </div>
+            </div>
+
+            <div className="footerCard2">
+              <div className="footerCardTitle">Tokens</div>
+              <div className="footerLinks">
+                {/* <a href="/egr-token" className="c1link1" target="_blank">
+                  EGR
+                </a> */}
+                <a href="/eusd-token" className="c1link1" target="_blank">
+                  EUSD
+                </a>
+                <a href="/egc" className="c1link1" target="_blank">
+                  EGC
                 </a>
               </div>
             </div>
@@ -172,9 +187,9 @@ const Footer = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <div className="footerLinks">
-                    <a href="/" className="c1link1 a">
+                    {/* <a href="/" className="c1link1 a">
                       Home
-                    </a>
+                    </a> */}
                     <a
                       href="/explore_loans"
                       className="c1link1"
@@ -204,9 +219,6 @@ const Footer = () => {
                   <div className="footerLinks">
                     <a href="#howitworks" className="c1link1 a">
                       How it works
-                    </a>
-                    <a href="#token" className="c1link1">
-                      Tokens
                     </a>
                     <a
                       href="https://www.youtube.com/channel/UCHfi5EwXig46xp5Dx8hVBHQ/videos"
@@ -238,8 +250,30 @@ const Footer = () => {
                     >
                       Terms & conditions
                     </a>
-                    <a href="#partners" className="c1link1" target="_blank">
+                    {/* <a href="#partners" className="c1link1" target="_blank">
                       Partners
+                    </a> */}
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel2a-content"
+                  id="panel2a-header"
+                >
+                  <Typography className={classes.heading}>Tokens</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <div className="footerLinks">
+                    {/* <a href="/egr-token" className="c1link1 a" target="_blank">
+                      EGR
+                    </a> */}
+                    <a href="/eusd-token" className="c1link1" target="_blank">
+                      EUSD
+                    </a>
+                    <a href="/egc" className="c1link1" target="_blank">
+                      EGC
                     </a>
                   </div>
                 </AccordionDetails>

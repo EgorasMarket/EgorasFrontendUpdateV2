@@ -83,7 +83,6 @@ import Login from "./components/auth/Login";
 import Categories from "./components/layout/categories/Categories";
 import Status from "./components/layout/status/Status";
 import TermsAndConditions from "./components/layout/Home2/Terms&Condition/TermsAndConditions";
-import TokenEGC from "./components/layout/Home2/tokens/TokenEGC";
 import TokenEGR from "./components/layout/Home2/tokens/TokenEGR";
 import TokenEUSD from "./components/layout/Home2/tokens/TokenEUSD";
 import NewHome from "./components/layout/home/NewHome";
@@ -122,6 +121,8 @@ import Explore_Loans_Page2 from "./components/layout/Explore_Loan/exploreLoanSec
 import Explore_Loans_Page3 from "./components/layout/Explore_Loan/exploreLoanSection10";
 import Explore_Loans_Page4 from "./components/layout/Explore_Loan/exploreLoanSection11";
 import Explore_Loans_Page5 from "./components/layout/Explore_Loan/exploreLoanSection12";
+import EGC from "./components/layout/EGC/egc";
+
 
 const App = () => {
   useEffect(() => {
@@ -226,6 +227,7 @@ const App = () => {
                   <Route exact path="/confirmation" component={Opd} />
                   {/* <Route exact path='/about' component={About} /> */}
                   <Route exact path="/about" component={About} />
+                  <Route exact path="/egc" component={EGC} />
                   <Route exact path="/createloan2" component={Createloan} />
                   <Route exact path="/createloan" component={Createloan2} />
                   <Route
@@ -378,7 +380,6 @@ const App = () => {
                     component={Documentation19}
                   />
                   <Route exact path="/egr-token" component={TokenEGR} />
-                  <Route exact path="/egc-token" component={TokenEGC} />
                   <Route exact path="/eusd-token" component={TokenEUSD} />
 
                   <Route exact path="/login" component={Login} />

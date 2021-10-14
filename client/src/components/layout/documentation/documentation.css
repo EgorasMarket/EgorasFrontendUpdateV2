@@ -1,38 +1,39 @@
 .documentationSection {
   display: flex;
   align-items: center;
-  padding: 10em 2em 10em 3em;
+  padding: 10em 5em 10em 6em;
   padding-bottom: 2em;
 }
-
-@media (max-width: 768px) {
-  .documentationSection {
-    display: flex;
-    flex-direction: column;
-  }
+.lendingPartner{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.step1{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.step2{
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+.stringCompany{
+  padding:15px 30px;
+  background-color:#229e54 ;
+  color:#fff;
+  margin-bottom: 35px;
+  width:80%;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+#fada{
+  letter-spacing: 0.04em;
 }
 
-@media (max-width: 768px) {
-  .documentationSection2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .subSectionAH1 {
-    font-size: 38px;
-  }
-}
-@media (max-width: 768px) {
-  .subSectionB {
-    display: none;
-  }
-  .aboutEgoras_card {
-    display: flex;
-    flex-direction: column;
-  }
-  .subSectionC {
-    margin-left: 2px;
-  }
-}
+
+
 
 .subSectionA {
   flex: 1;
@@ -40,36 +41,56 @@
 .subSectionA_Img {
   flex: 1;
 }
-@media (max-width: 768px) {
-  .subSectionA_Img {
-    margin-top: 30px;
-  }
-}
+
 .subSectionAH1 {
   font-weight: 800;
 }
-@media (min-width: 321px) and (max-width: 426px) {
-  .subSectionC_Card {
-    width: 90%;
-  }
-}
-@media (min-width: 427px) and (max-width: 768px) {
-  .subSectionC_Card {
-    width: 60%;
-  }
-}
 
-@media (min-width: 769px) {
-  .subSectionAH1 {
-    font-size: 50px;
-  }
+.loansFee{
+  font-size: 18px;
+  color:#000;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-@media (min-width: 1020px) {
-  .subSectionAH1 {
-    font-size: 60px;
-  }
+.loansFee1{
+  font-weight: 700;
+  margin-bottom: 8px;
+  color:#000;
 }
+.fased{
+  margin-bottom: 25px;
+}
+.loansFee2{
+  color:gray;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+.fune{
+  padding:15px 20px;
+  color:#fff;
+  background-color: #229e54;
+  border-radius: 5px;
+  width:80%;
+  letter-spacing: 0.004em;
+  margin-bottom: 20px;
+}
+.Solidity4{
+  font-weight: bold;
+  color:#000;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.Solidity6{
+  background-color: #229e54;
+  padding:15px 20px;
+  width:80%;
+  border-radius: 5px;
+  color:#fff;
+  margin-bottom: 30px;
 
+}
 .subSectionA_P {
   margin-top: 20px;
   color: #e7a98a;
@@ -77,7 +98,7 @@
 }
 .documentationSection2 {
   display: flex;
-  padding: 2em 2em 2em 3em;
+  padding: 2em 5em 2em 6em;
 }
 
 .subSectionB {
@@ -87,35 +108,19 @@
   flex: 4;
 }
 
-@media (min-width: 992px) {
-  .subSectionC {
-    margin-left: 30px;
-  }
-}
+
 .subSectionB_Sidebar_Link {
   list-style: none;
   border-radius: 8px;
-  padding: 13px 15px;
+  padding: 10px 15px;
   width: 80%;
-  margin: 7px 0px;
+  margin: 3px 0px;
 }
 .subSectionB_SidebarA {
   text-decoration: none;
 }
-@media (max-width: 768px) {
-  .positionImg1,
-  .positionImg {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .documentationSection2 {
-    padding: 2em 1em;
-  }
-  .aboutEgoras_P {
-    width: 100%;
-  }
-}
+
+
 /* .subSectionB_SidebarA:hover{
 background-color: cyan;
 } */
@@ -166,9 +171,9 @@ background-color: cyan;
   color: #e7a98a;
 }
 .subSectionB_SidebarA {
-  color: black;
-  font-weight: 400;
-  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
 }
 .subSectionC_Line {
   width: 8%;
@@ -188,16 +193,8 @@ background-color: cyan;
   border-radius: 10px;
   box-shadow: 0px 0px 15px #f1f1f1;
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-  .subSectionC_Card {
-    width: 60%;
-  }
-}
-@media (min-width: 1025px) {
-  .subSectionC_Card {
-    width: 40%;
-  }
-}
+
+
 .subSectionC_Card:hover {
   border-top: 2px solid #55bc7e;
 }
@@ -247,21 +244,249 @@ background-color: cyan;
   font-weight: 600;
   margin-bottom: 40px;
 }
-@media (max-width: 768px) {
-  .aboutEgoras_H {
-    font-size: 30px;
-  }
-}
+
 .aboutEgoras_P {
   margin-bottom: 30px;
-  line-height: 35px;
+  line-height: 30px;
   font-size: 14px;
   font-weight: 400;
   color: gray;
 }
+
+.aboutEgoras_P2 {
+  margin-bottom: 10px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+}
+
+
+
+.aboutEgorasImg {
+  margin-bottom: 40px;
+}
+.aboutEgoras_card {
+  display: flex;
+}
+
+
+.subSectionC_Next.add {
+  text-align: right;
+}
+.requireMas{
+  padding:20px 25px;
+  background-color:#229e54 ;
+  width:80%;
+  color:#fff;
+  margin-bottom: 30px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.subSectionA_Img {
+  width: 100%;
+}
+.companyName{
+  font-weight: 700;
+  font-size: 16px;
+  color:black;
+}
+.web2{
+  background-color:#229e54 ;
+  color:#fff;
+  padding:10p 5px;
+  margin-bottom: 30px;
+}
+.web1{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.uint{
+  padding:20px 30px;
+  background-color:#4ddb86 ;
+  color:#fff;
+  font-size:14px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  width:80%;
+  
+}
+.uint23{
+  padding-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 2px;
+}
+.uint26{
+  font-weight: bold;
+  color:#000;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.saf{
+  margin-bottom: 30px;
+}
+.uint27{
+ 
+  width:80%;
+  overflow-x: auto; 
+  margin-bottom: 30px;
+}
+.uint33{
+  color:#fff;
+  
+}
+.uint67{
+  background-color:#4ddb86 ;
+  padding:20px 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.imgZoom{
+  cursor: zoom-in;
+}
+#deptP{
+  cursor: zoom-in;
+}
+.imgZoom2{
+  width:100%;
+  height: 100%;
+  background-color: #fff;
+  top:0;
+  position: fixed;
+  z-index: 100;
+  padding: 30px 30px;
+  text-align: center;
+  cursor: zoom-out;
+}
+.zoom2{
+width:100%;
+transition: transform 300ms ease 0s;
+transform: translate3d(-37px, -1px, 0px) scale(2.03784);
+cursor: zoom-out;
+    position: absolute;
+    transition: transform 300ms ease 0s;
+    transform: translate3d(-37px, -1px, 0px) scale(2.03784);
+    transform-origin: center center;
+    will-change: transform, top, left;
+    top: 186px;
+    left: 386px;
+    width: 651px;
+    height: 255px;
+    
+}
+#faceMe1{
+  display:none;
+}
+#faceMe6{
+  display:none;
+}
+@media (max-width: 768px) {
+  .subSectionC_Card {
+    margin: 5px auto 25px auto;
+  }
+  .subSectionC_Line {
+    margin: 4px auto 40px auto;
+  }
+}
+@media (max-width: 678px) {
+  .EGOimg {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .documentationSection {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .documentationSection2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .subSectionAH1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .subSectionA_Img {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .documentationSection2 {
+    padding: 2em 1em;
+  }
+  .aboutEgoras_P {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .subSectionB {
+    display: none;
+  }
+  .aboutEgoras_card {
+    display: flex;
+    flex-direction: column;
+  }
+  .subSectionC {
+    margin-left: 2px;
+  }
+}
+@media (min-width: 321px) and (max-width: 426px) {
+  .subSectionC_Card {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .positionImg1,
+  .positionImg {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .subSectionC {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 427px) and (max-width: 768px) {
+  .subSectionC_Card {
+    width: 60%;
+  }
+}
+
+@media (min-width: 769px) {
+  .subSectionAH1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1020px) {
+  .subSectionAH1 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1025px) {
+  .subSectionC_Card {
+    width: 40%;
+  }
+}
 @media (min-width: 769px) {
   .aboutEgoras_P {
+    width: 80%;
+  }
+  .aboutEgoras_P2 {
     width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .aboutEgoras_H {
+    font-size: 30px;
   }
 }
 @media (max-width: 320px) {
@@ -272,39 +497,10 @@ background-color: cyan;
     margin-left: 0px;
   }
 }
-
-@media (max-width: 768px) {
-  .subSectionC_Card {
-    margin: 5px auto 25px auto;
-  }
-  .subSectionC_Line {
-    margin: 4px auto 40px auto;
-  }
-}
-
-.aboutEgorasImg {
-  margin-bottom: 40px;
-}
-.aboutEgoras_card {
-  display: flex;
-}
 @media (min-width: 992px) {
   .Card12 {
     margin-left: 15px;
   }
-}
-
-.subSectionC_Next.add {
-  text-align: right;
-}
-@media (max-width: 678px) {
-  .EGOimg {
-    width: 100%;
-  }
-}
-
-.subSectionA_Img {
-  width: 100%;
 }
 @media (max-width: 768px) {
 }
