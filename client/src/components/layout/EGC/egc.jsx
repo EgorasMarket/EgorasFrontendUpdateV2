@@ -53,7 +53,7 @@ const Egc = () => {
 
       <div className="houseDivCu">
         <div className="secondCu filter2">
-          <div className="widthAjustBA">
+          <div className="widthAjustBA dis-flex">
             <img src="img/vector1.svg" alt="" width="400" className="REWIND" />
           </div>
           <div className="widthAjustBA">
@@ -114,7 +114,7 @@ const Egc = () => {
       {/* third section start */}
       <section className="second-eusd-token-section">
         <div className="container">
-          <div className="nft-area2">
+          <div className="nft-area2 reverse">
             <div
               className="nft-img-area2"
               style={{ display: "inline-flex", width: "100%" }}

@@ -584,7 +584,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .filter2 {
     display: flex;
     flex-direction: column;
@@ -601,6 +601,49 @@ body {
   }
   .Random1 {
     font-size: 20px;
+  }
+  .allNone {
+    text-align: center;
+    width: 100%;
+    margin: 0px auto 8px auto;
+    font-size: 22px;
+  }
+  .allNone1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .widthAjust {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+  }
+  .REWIND {
+    width: 75%;
+    margin: auto;
+  }
+
+  .widthAjustBA {
+    width: 100%;
+  }
+  .dis-flex {
+    display: flex;
+  }
+  .earn1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .earn3 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .reverse {
+    flex-direction: column;
   }
 }
 
@@ -623,34 +666,9 @@ body {
   .houseDivCu {
     width: 90%;
   }
-  .widthAjustBA {
-    width: 50%;
-  }
   .REWIND {
     width: 80%;
     margin: auto;
-  }
-  .earn1 {
-    width: 80%;
-    margin: auto;
-    text-align: left;
-    font-size: 22px;
-  }
-  .earn3 {
-    width: 80%;
-    margin: auto;
-    text-align: left;
-  }
-  .allNone {
-    text-align: left;
-    width: 80%;
-    margin: 0px auto 8px auto;
-    font-size: 22px;
-  }
-  .allNone1 {
-    width: 75%;
-    margin: auto;
-    text-align: left;
   }
 }
 

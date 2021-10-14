@@ -585,6 +585,7 @@ h1.eusd-token-page {
     flex-direction: column-reverse;
     grid-row-gap: 20px;
   }
+
   .nft-area3 {
     flex-direction: column;
     grid-row-gap: 20px;
@@ -608,6 +609,7 @@ h1.eusd-token-page {
     font-size: 24px;
     font-weight: 700;
   }
+
 }
 @media screen and (max-width: 375px) {
   .tokenCardflex-txt {
