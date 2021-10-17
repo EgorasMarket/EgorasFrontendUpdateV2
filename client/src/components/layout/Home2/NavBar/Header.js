@@ -425,7 +425,10 @@ const Header = () => {
                   id="ArrowDownIcon2"
                   className="ArrowDownIcon"
                 />
-                <ArrowDropUpIcon id="ArrowUpIcon2" className="ArrowUpIcon" />
+                <ArrowDropUpIcon
+                  id="ArrowUpIcon2"
+                  className="ArrowUpIcon"
+                />
                 <div className="products-menu menu2" id="products-menu2">
                   <a href="/about" className="drop-borrow-link">
                     About Us

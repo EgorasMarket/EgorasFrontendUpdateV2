@@ -95,6 +95,7 @@
   position: relative;
   color: #383838;
   position: relative;
+  margin-right: 20px;
 }
 .company {
   margin-right: 10px;
@@ -136,10 +137,10 @@
 .company .css-i4bv87-MuiSvgIcon-root {
   display: none;
 }
-.ArrowUpIcon,
+/* .ArrowUpIcon,
 .ArrowUpIcon2 {
   display: none;
-}
+} */
 .drop-borrow {
   font-size: 14px;
 }

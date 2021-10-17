@@ -135,8 +135,9 @@ const TokenEUSD = () => {
                 <p className="span4a-txts">Receive your eNFTs with ease</p>
 
                 <p className="span4b-txts">
-                  There's no complicated process when you want to the eNFTs. The
-                  products will be shipped seamlessly after the lockup period.
+                  There's no complicated process when you want to redeem the
+                  eNFTs. The products will be shipped seamlessly after the
+                  lockup period.
                 </p>
               </div>
             </div>
