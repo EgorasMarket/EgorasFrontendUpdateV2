@@ -60,15 +60,23 @@ const responsive = {
     items: 6,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1220 },
     items: 5,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1220, min: 1024 },
+    items: 4,
+  },
+  tabletMedium: {
+    breakpoint: { max: 1024, min: 800 },
     items: 3,
   },
+  tabletSmall: {
+    breakpoint: { max: 800, min: 500 },
+    items: 2,
+  },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 500, min: 0 },
     items: 1,
   },
 };
@@ -577,11 +585,6 @@ const LoanDetails = ({ match, loans, messenger }) => {
               <div className="projectTitle">
                 <h1 className="gttitle">Recent collaterals</h1>
               </div>
-
-              <a href="#" className="projectsLink">
-                Explore collaterals
-                <div className="projectsLinkHover"></div>
-              </a>
             </div>
 
             {/* Carousel start==============================
