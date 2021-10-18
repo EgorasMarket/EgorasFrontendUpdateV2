@@ -269,43 +269,43 @@ const Header = () => {
 
   // open dropdown menu
   const dropDownOpen1 = () => {
-    const dropUpIcon = document.getElementById("ArrowUpIcon");
+    // const dropUpIcon = document.getElementById("ArrowUpIcon");
     const dropDownIcon = document.getElementById("ArrowDownIcon");
     const dropMenu = document.getElementById("products-menu");
 
-    dropDownIcon.style.display = "none";
-    dropUpIcon.style.display = "inline-block";
+    dropDownIcon.classList.add("rotate");
+    // dropUpIcon.style.display = "inline-block";
 
     dropMenu.style.display = "block";
   };
   const dropDownClose1 = () => {
-    const dropUpIcon = document.getElementById("ArrowUpIcon");
+    // const dropUpIcon = document.getElementById("ArrowUpIcon");
     const dropDownIcon = document.getElementById("ArrowDownIcon");
     const dropMenu = document.getElementById("products-menu");
 
-    dropDownIcon.style.display = "inline-block";
-    dropUpIcon.style.display = "none";
+    dropDownIcon.classList.remove("rotate");
+    // dropUpIcon.style.display = "none";
 
     dropMenu.style.display = "none";
   };
   // open dropdown menu
   const dropDownOpen2 = () => {
-    const dropUpIcon = document.getElementById("ArrowUpIcon2");
+    // const dropUpIcon = document.getElementById("ArrowUpIcon2");
     const dropDownIcon = document.getElementById("ArrowDownIcon2");
     const dropMenu = document.getElementById("products-menu2");
 
-    dropDownIcon.style.display = "none";
-    dropUpIcon.style.display = "inline-block";
+    dropDownIcon.classList.add("rotate");
+    // dropUpIcon.style.display = "inline-block";
 
     dropMenu.style.display = "block";
   };
   const dropDownClose2 = () => {
-    const dropUpIcon = document.getElementById("ArrowUpIcon2");
+    // const dropUpIcon = document.getElementById("ArrowUpIcon2");
     const dropDownIcon = document.getElementById("ArrowDownIcon2");
     const dropMenu = document.getElementById("products-menu2");
 
-    dropDownIcon.style.display = "inline-block";
-    dropUpIcon.style.display = "none";
+    dropDownIcon.classList.remove("rotate");
+    // dropUpIcon.style.display = "none";
 
     dropMenu.style.display = "none";
   };
@@ -392,11 +392,12 @@ const Header = () => {
                 id="product"
               >
                 Products
-                <ArrowDropDownIcon
+                <img
+                  src="/img/arrow-down-icon.svg"
+                  alt="..."
                   id="ArrowDownIcon"
                   className="ArrowDownIcon"
                 />
-                <ArrowDropUpIcon id="ArrowUpIcon" className="ArrowUpIcon" />
                 <div className="products-menu " id="products-menu">
                   <h6 className="drop-borrow">Borrower</h6>
                   <a
@@ -421,11 +422,13 @@ const Header = () => {
                 onMouseOut={dropDownClose2}
               >
                 Company
-                <ArrowDropDownIcon
+                <img
+                  src="/img/arrow-down-icon.svg"
+                  alt="..."
                   id="ArrowDownIcon2"
-                  className="ArrowDownIcon"
+                  className="ArrowDownIcon2"
                 />
-                <ArrowDropUpIcon id="ArrowUpIcon2" className="ArrowUpIcon2" />
+                {/* <ArrowDropUpIcon id="ArrowUpIcon2" className="ArrowUpIcon2" /> */}
                 <div className="products-menu menu2" id="products-menu2">
                   <a href="/about" className="drop-borrow-link">
                     About Us
@@ -439,6 +442,7 @@ const Header = () => {
                   </a>
                 </div>
               </div>
+
               {/* ===================================================
               ===========================
               ========================================== */}
