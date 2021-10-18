@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { EditorState, convertToRaw } from "draft-js";
-import draftToHtml from 'draftjs-to-html';
+import draftToHtml from "draftjs-to-html";
 import { Editor } from "react-draft-wysiwyg";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -20,15 +20,19 @@ import Select from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import "../../../css/createloan.css";
 import { FormGroup } from "@mui/material";
-import { creatLoan } from "../../../web3/index"
+import { creatLoan } from "../../../web3/index";
 import { parseEther } from "@ethersproject/units";
 import { image, add } from "../../../actions/loans";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faCircleNotch, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlus,
+  faCircleNotch,
+  faCheckCircle,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   Web3ReactProvider,
   useWeb3React,
-  UnsupportedChainIdError
+  UnsupportedChainIdError,
 } from "@web3-react/core";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -67,24 +71,23 @@ const Input = styled("input")({
 });
 
 const AssetCategories = [
-  { value: 'Laptops and Computers' },
-  { value: 'Mobile Phones' },
-  { value: 'Tablets' },
-  { value: 'Smart Watches' },
-  { value: 'Accessories for Mobile Phones' },
+  { value: "Laptops and Computers" },
+  { value: "Mobile Phones" },
+  { value: "Tablets" },
+  { value: "Smart Watches" },
+  { value: "Accessories for Mobile Phones" },
   { value: "T.V and DVD Equipments" },
-  { value: 'Headphones' },
-  { value: 'Printers and Scanners' },
-  { value: 'Furnitures' },
-  { value: 'Home Appliances' },
-  { value: 'Kitchen Appliances' },
-  { value: 'Shoes' },
-  { value: 'Bags' },
-  { value: 'Industrial Ovens' },
-  { value: 'Generators' },
-  { value: 'Salon Equipments' },
-
-
+  { value: "Headphones" },
+  { value: "Printers and Scanners" },
+  { value: "Furnitures" },
+  { value: "Home Appliances" },
+  { value: "Kitchen Appliances" },
+  { value: "Shoes" },
+  { value: "Bags" },
+  { value: "Industrial Ovens" },
+  { value: "Generators" },
+  { value: "Salon Equipments" },
+  { value: "Industrial Equipments" },
 ];
 
 // =====================================================================
@@ -94,7 +97,7 @@ const AssetCategories = [
 // =====================================================================
 // =====================================================================
 // =====================================================================
-const Createloan2 = props => {
+const Createloan2 = (props) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [btnText, setBtnText] = useState("Save & deploy");
@@ -113,7 +116,7 @@ const Createloan2 = props => {
     activate,
     deactivate,
     active,
-    error
+    error,
   } = context;
   const [formData, setFormData] = useState({
     loan_title: "",
@@ -129,8 +132,6 @@ const Createloan2 = props => {
     isLoan: true,
     story: "",
     loan_amount: "",
-
-
   });
 
   const onEditorStateChange = (editorState) => {
@@ -138,24 +139,35 @@ const Createloan2 = props => {
 
     setFormData({ ...formData, story: text });
     setEditorState(editorState);
-  }
+  };
 
-  const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
-  const { loan_title, asset_img, asset_img2, asset_img3, asset_img4, loan_duration, inventory_fee, branch_name, loan_fees, story, loan_amount } = formData;
+  const onChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const {
+    loan_title,
+    asset_img,
+    asset_img2,
+    asset_img3,
+    asset_img4,
+    loan_duration,
+    inventory_fee,
+    branch_name,
+    loan_fees,
+    story,
+    loan_amount,
+  } = formData;
 
   const [value, setValue] = React.useState(0);
   const [loan_category, SetLoan_category] = React.useState("");
 
-  const handleChange = (event, ) => {
+  const handleChange = (event) => {
     SetLoan_category(event.target.value);
   };
   const handleChange1 = (event, newValue) => {
-
-
     setValue(newValue);
   };
 
-  const onFileChange = e => {
+  const onFileChange = (e) => {
     var image;
     e.preventDefault();
 
@@ -177,8 +189,7 @@ const Createloan2 = props => {
           // console.log(srcData);
 
           setFormData({ ...formData, asset_img: srcData });
-
-        }
+        };
         fileReader.readAsDataURL(e.target.files[0]);
       }
     } else if (e.currentTarget.id === "asset_img2") {
@@ -199,8 +210,7 @@ const Createloan2 = props => {
           // console.log(srcData);
 
           setFormData({ ...formData, asset_img2: srcData2 });
-
-        }
+        };
         fileReader2.readAsDataURL(e.target.files[0]);
       }
     } else if (e.currentTarget.id === "asset_img3") {
@@ -221,8 +231,7 @@ const Createloan2 = props => {
           // console.log(srcData);
 
           setFormData({ ...formData, asset_img3: srcData3 });
-
-        }
+        };
         fileReader3.readAsDataURL(e.target.files[0]);
       }
     } else if (e.currentTarget.id === "asset_img4") {
@@ -243,22 +252,25 @@ const Createloan2 = props => {
           // console.log(srcData);
 
           setFormData({ ...formData, asset_img4: srcData4 });
-
-        }
+        };
         fileReader4.readAsDataURL(e.target.files[0]);
       }
     }
-
-
-  }
+  };
 
   const submitLoan = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     // console.log(loan_title, asset_img, loan_duration, branch_name, loan_fees, story, loan_amount);
 
-    const body = JSON.stringify({ loan_category, branch_name, loan_duration, story, arrayImg: imgObj.join(), inventory_fee })
-
+    const body = JSON.stringify({
+      loan_category,
+      branch_name,
+      loan_duration,
+      story,
+      arrayImg: imgObj.join(),
+      inventory_fee,
+    });
 
     let lDuration = parseInt(loan_duration);
     let date = new Date();
@@ -272,7 +284,8 @@ const Createloan2 = props => {
       imgObj[0],
       formData.isLoan,
       body,
-      library.getSigner());
+      library.getSigner()
+    );
     if (ret.status == true) {
       setIsLoading(false);
 
@@ -285,65 +298,57 @@ const Createloan2 = props => {
       setBtnText("Save & Deploy");
       props.messenger("Did not complete successfully", "danger");
     }
-
-  }
+  };
 
   const [arrayImg, setArrayImg] = useState({
-    imgObj: []
+    imgObj: [],
   });
 
   const { imgObj } = arrayImg;
 
-
-  const onDelete = e => {
+  const onDelete = (e) => {
     let data = imgObj;
 
     const index = e.currentTarget.id;
 
     data.splice(index, data.length);
-    setArrayImg({ ...arrayImg, ['imgObj']: data })
-
-  }
+    setArrayImg({ ...arrayImg, ["imgObj"]: data });
+  };
 
   const uploadImg = async (imgId) => {
-    setBtnTextUpload("Saving...")
+    setBtnTextUpload("Saving...");
     setIsUploading(true);
 
     let data = imgObj;
 
     let res = await props.image(asset_img);
-    setBtnTextUpload("Upload")
+    setBtnTextUpload("Upload");
     setIsUploading(false);
     if (typeof res.data.image !== undefined) {
       let imgData = res.data.image;
 
-      SetCover_image(imgData)
+      SetCover_image(imgData);
 
       let d = {
-        imgData
-      }
+        imgData,
+      };
 
       data.push(imgData);
 
-      setArrayImg({ ...arrayImg, ['imgObj']: data })
+      setArrayImg({ ...arrayImg, ["imgObj"]: data });
     }
+  };
 
-
-
-
-
-
-  }
-
-
-  const isStageOneIsValid = loan_title.length > 0 && asset_img.length > 0 && branch_name.length > 0 && parseInt(loan_duration) > 0 && loan_category !== "";
-
-
+  const isStageOneIsValid =
+    loan_title.length > 0 &&
+    asset_img.length > 0 &&
+    branch_name.length > 0 &&
+    parseInt(loan_duration) > 0 &&
+    loan_category !== "";
 
   return (
     <Fragment>
       {!isSuccess ? (
-
         <section className="createLoanSection" style={{ padding: "12em 4em" }}>
           <Tabs
             value={value}
@@ -359,45 +364,41 @@ const Createloan2 = props => {
                 <h2>Upload Photo</h2>
                 <p className="upload-para">
                   Upload a square image that represents your
-        <br /> campaign, 640 x 640 recommended resolution
-      </p>
-                <div className='row'>
-                  <div className='col-md-6'>
+                  <br /> campaign, 640 x 640 recommended resolution
+                </p>
+                <div className="row">
+                  <div className="col-md-6">
                     <input
                       type="file"
-                      name='asset_img'
-                      id='asset_img'
-                      onChange={e => onFileChange(e)}
+                      name="asset_img"
+                      id="asset_img"
+                      onChange={(e) => onFileChange(e)}
                       className="btn btn-sm uploadButton"
-
                     />
-                    <Button variant="contained"
-                      onClick={e => uploadImg(1)}
-                      className="submit-button mt-3 getLoan">
-
-                      {isUploading ? <FontAwesomeIcon icon={faCircleNotch} spin /> : null}{" "}
+                    <Button
+                      variant="contained"
+                      onClick={(e) => uploadImg(1)}
+                      className="submit-button mt-3 getLoan"
+                    >
+                      {isUploading ? (
+                        <FontAwesomeIcon icon={faCircleNotch} spin />
+                      ) : null}{" "}
                       {btnTextUpload}
                     </Button>
-
                   </div>
-
-
-
                 </div>
                 <div className="row">
-                  {
-                    imgObj.map((image, i) => (
-
-                      <div className="image-wrapper">
-                        <div className="image" style={{ backgroundImage: `url(${image})` }}>
-
-                        </div>
-                        <button id={i} onClick={e => onDelete(e)}>X</button>
-                      </div>
-
-
-                    ))
-                  }
+                  {imgObj.map((image, i) => (
+                    <div className="image-wrapper">
+                      <div
+                        className="image"
+                        style={{ backgroundImage: `url(${image})` }}
+                      ></div>
+                      <button id={i} onClick={(e) => onDelete(e)}>
+                        X
+                      </button>
+                    </div>
+                  ))}
                 </div>
               </div>
               <br />
@@ -407,7 +408,9 @@ const Createloan2 = props => {
                   id="outlined-basic"
                   label="Loan title"
                   variant="outlined"
-                  name="loan_title" value={loan_title} onChange={e => onChange(e)}
+                  name="loan_title"
+                  value={loan_title}
+                  onChange={(e) => onChange(e)}
                 />
               </div>
               <br />
@@ -417,8 +420,10 @@ const Createloan2 = props => {
                   id="outlined-basic"
                   label="Loan amount"
                   variant="outlined"
-                  type='number'
-                  name="loan_amount" value={loan_amount} onChange={e => onChange(e)}
+                  type="number"
+                  name="loan_amount"
+                  value={loan_amount}
+                  onChange={(e) => onChange(e)}
                 />
               </div>
               <br />
@@ -428,8 +433,10 @@ const Createloan2 = props => {
                   id="outlined-basic"
                   label="Inventory Fee"
                   variant="outlined"
-                  type='number'
-                  name="inventory_fee" value={inventory_fee} onChange={e => onChange(e)}
+                  type="number"
+                  name="inventory_fee"
+                  value={inventory_fee}
+                  onChange={(e) => onChange(e)}
                 />
               </div>
               <br />
@@ -439,7 +446,9 @@ const Createloan2 = props => {
                   id="outlined-basic"
                   label="Branch name"
                   variant="outlined"
-                  name="branch_name" value={branch_name} onChange={e => onChange(e)}
+                  name="branch_name"
+                  value={branch_name}
+                  onChange={(e) => onChange(e)}
                 />
               </div>
               <br />
@@ -452,7 +461,9 @@ const Createloan2 = props => {
                 <h5>Loan Category</h5>
                 {/* <InputLabel id="demo-simple-select-label">loan category</InputLabel> */}
                 <FormControl fullWidth>
-                  <InputLabel id="demo-simple-select-label">Select Category</InputLabel>
+                  <InputLabel id="demo-simple-select-label">
+                    Select Category
+                  </InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
@@ -461,7 +472,6 @@ const Createloan2 = props => {
                     onChange={handleChange}
                   >
                     {AssetCategories.map((option) => (
-
                       <MenuItem key={option.value} value={option.value}>
                         {option.value}
                       </MenuItem>
@@ -482,18 +492,22 @@ const Createloan2 = props => {
                   label="Loan duration"
                   variant="outlined"
                   id="loan_duration"
-                  type='number'
-                  name="loan_duration" value={loan_duration} onChange={e => onChange(e)}
+                  type="number"
+                  name="loan_duration"
+                  value={loan_duration}
+                  onChange={(e) => onChange(e)}
                 />
               </div>
               <br />
               <div className="col-md-12 margin">
-                <Button variant="contained"
+                <Button
+                  variant="contained"
                   disabled={!isStageOneIsValid}
-                  onClick={e => setValue(1)}
-                  className="submit-button">
+                  onClick={(e) => setValue(1)}
+                  className="submit-button"
+                >
                   Save & Continue
-      </Button>
+                </Button>
               </div>
             </div>
           </TabPanel>
@@ -513,12 +527,21 @@ const Createloan2 = props => {
                 />
               </div>
               <div className="col-md-12 margin">
-                <Button onClick={e => setValue(0)} variant="contained" className="submit-button">
+                <Button
+                  onClick={(e) => setValue(0)}
+                  variant="contained"
+                  className="submit-button"
+                >
                   Go back
-      </Button>
-                <Button variant="contained" onClick={submitLoan} className="submit-button">
-
-                  {isLoading ? <FontAwesomeIcon icon={faCircleNotch} spin /> : null}{" "}
+                </Button>
+                <Button
+                  variant="contained"
+                  onClick={submitLoan}
+                  className="submit-button"
+                >
+                  {isLoading ? (
+                    <FontAwesomeIcon icon={faCircleNotch} spin />
+                  ) : null}{" "}
                   {btnText}
                 </Button>
               </div>
@@ -528,38 +551,38 @@ const Createloan2 = props => {
           <img src="/img/blur-drop.png" alt="..." className="blur-background" />
         </section>
       ) : (
-          <div className="col-md-12 mt-4" style={{ marginTop: "150px" }}>
+        <div className="col-md-12 mt-4" style={{ marginTop: "150px" }}>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h1 className="text-center">
+            <FontAwesomeIcon icon={faCheckCircle} /> <br />
+            Success
+          </h1>
+          <p className="text-center">
+            Transaction was successful.
             <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <h1 className="text-center">
-              <FontAwesomeIcon icon={faCheckCircle} /> <br />
-              Success
-            </h1>
-            <p className="text-center">Transaction was successful.
-            <br />
-
-              <a
-                className="btn btn-link text-success"
-                href={"https://bscscan.com/tx/" + hash}
-                target="_blank"
-              >
-                View on bscscan
-  </a>
-              <br></br>
-              <br></br>
-              <a href="/createloan" className="btn btn-success">Continue</a>
-            </p>
-
-          </div>
-        )}
+            <a
+              className="btn btn-link text-success"
+              href={"https://bscscan.com/tx/" + hash}
+              target="_blank"
+            >
+              View on bscscan
+            </a>
+            <br></br>
+            <br></br>
+            <a href="/createloan" className="btn btn-success">
+              Continue
+            </a>
+          </p>
+        </div>
+      )}
     </Fragment>
-
   );
-}
+};
 
 // export default Createloan2;
 

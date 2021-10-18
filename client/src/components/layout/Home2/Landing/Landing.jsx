@@ -424,7 +424,7 @@ const Landing = ({
                   <br /> collateral.
                   <br />
                   <p className="howCard1TextsP">
-                    Select your item and tel us about
+                    Select your item and tell us about
                     <br /> the current condition, and our <br />
                     advanced AI tech will make the
                     <br /> perfect value for you.
