@@ -20,6 +20,7 @@ import KitchenIcon from "@mui/icons-material/Kitchen";
 
 import "../../../css/getloan.css";
 import "../../../css/getloanmobile.css";
+import DisplayMoney from "../../DisplayMoney";
 
 const responsive = {
   superLargeDesktop: {
@@ -78,6 +79,7 @@ const GetLoan = () => {
     }
   };
 
+ 
   return (
     <div>
       {/* hero section start */}
@@ -267,7 +269,7 @@ const GetLoan = () => {
                     <div className="assets-data-name">Phones & Accessories</div>
                   </td>
                   <td className="assets-category-data1b">
-                    <div className="assets-data-name">₦150</div>
+                    <div className="assets-data-name"><DisplayMoney amount="150" /></div>
                   </td>
                   <td className="assets-category-data-last">
                     <div className="assets-data-name-last">
@@ -297,7 +299,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦150 - ₦200</div>
+                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -327,7 +329,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦150 - ₦200</div>
+                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -358,7 +360,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦150 - ₦200</div>
+                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -389,7 +391,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200 - ₦400</div>
+                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -417,7 +419,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200 - ₦400</div>
+                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -448,7 +450,7 @@ const GetLoan = () => {
                     <div className="assets-data-name">Phones & Accessories</div>
                   </td>
                   <td className="assets-category-data1b">
-                    <div className="assets-data-name">₦150</div>
+                    <div className="assets-data-name"><DisplayMoney amount="150" /></div>
                   </td>
                   <td className="assets-category-data-last">
                     <div className="assets-data-name-last">
@@ -478,7 +480,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦150 - ₦200</div>
+                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -508,7 +510,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦150 - ₦200</div>
+                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -539,7 +541,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦150 - ₦200</div>
+                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -570,7 +572,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200 - ₦400</div>
+                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -598,7 +600,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200 - ₦400</div>
+                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -632,7 +634,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200 - ₦400</div>
+                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -663,7 +665,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦150 - ₦200</div>
+                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -697,7 +699,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦150 - ₦200</div>
+                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -731,7 +733,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200 - ₦300</div>
+                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="300" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -765,7 +767,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200 - ₦300</div>
+                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="300" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -799,7 +801,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200 - ₦400</div>
+                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -833,7 +835,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦150 - ₦200</div>
+                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -867,7 +869,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200 - ₦400</div>
+                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -905,7 +907,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦150 - ₦200</div>
+                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -943,7 +945,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦200 - ₦400</div>
+                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -979,7 +981,7 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name">₦600 - ₦1500</div>
+                      <div className="assets-data-name"><DisplayMoney amount="600" /> - <DisplayMoney amount="1500" /></div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">

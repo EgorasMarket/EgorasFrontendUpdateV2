@@ -60,15 +60,23 @@ const responsive = {
     items: 6,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1220 },
     items: 5,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1220, min: 1024 },
+    items: 4,
+  },
+  tabletMedium: {
+    breakpoint: { max: 1024, min: 800 },
     items: 3,
   },
+  tabletSmall: {
+    breakpoint: { max: 800, min: 500 },
+    items: 2,
+  },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 500, min: 0 },
     items: 1,
   },
 };
@@ -277,6 +285,7 @@ const LoanDetails = ({ match, loans, messenger }) => {
       .get(api_url + "/api/loans/get/by/id/" + match.params.id, null, config)
       .then(function (response) {
         setLoanData(response.data.data[0]);
+        console.log(response.data.data);
         let backed = response.data.data[0].backed;
         let votingThreshold = response.data.data[0].votingThreshold;
         if (response.data.data[0].is_approved) {
@@ -629,11 +638,6 @@ const LoanDetails = ({ match, loans, messenger }) => {
               <div className="projectTitle">
                 <h1 className="gttitle">Recent collaterals</h1>
               </div>
-
-              <a href="#" className="projectsLink">
-                Explore collaterals
-                <div className="projectsLinkHover"></div>
-              </a>
             </div>
 
             {/* Carousel start==============================
@@ -646,7 +650,7 @@ const LoanDetails = ({ match, loans, messenger }) => {
             >
               {allLoansData.map((loan, i) => {
                 // if (loan.loan_category === getCategory) {
-                // console.log(loan);
+                 console.log(loan);
 
                 // console.log(loan.loan_category);
                 let percent = 0;

@@ -12,6 +12,7 @@ module.exports = db.sequelize.define("blocks", {
     type: Sequelize.INTEGER(11),
     allowNull: true,
   },
+  blockType: Sequelize.STRING(200),
   createdAt: Sequelize.DATE,
   updatedAt: Sequelize.DATE,
 });
