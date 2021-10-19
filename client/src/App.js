@@ -126,6 +126,7 @@ import EGC from "./components/layout/EGC/egc";
 
 const App = () => {
   useEffect(() => {
+    localStorage.setItem("xrate", 410);
     Aos.init({});
     const config = {
       headers: {
@@ -133,12 +134,18 @@ const App = () => {
       },
     };
     try {
-      axios
+        axios
         .get("https://geolocation-db.com/json/", null, config)
         .then((data) => {
-          console.log(data);
+          console.log(data, "The Country");
+          localStorage.setItem("origin", data.data.country_name);
+          
         });
-    } catch (err) {}
+     
+      
+    } catch (err) {
+      console.log(err, "Call from exchange rate");
+    }
   }, []);
 
   function getLibrary(provider) {

@@ -30,11 +30,295 @@ var bscMainNet2 = "https://bsc-dataseed1.defibit.io/";
 //var infura = "https://rinkeby.infura.io/v3/9d829b0bd9654959af7001c81f6da717";
 var web3 = new Web3(bscMainNet);
 
+
+// var task = cron.schedule("* * * * *",  () =>  {
+ 
+//  try {
+//   Loans.update({
+//     isActiveVotingPeriod: true,                
+//     }, {
+//       where: {
+//         countDown:{
+//         [Op.lte]: new Date()
+//       }
+//       }
+//     }).then((res) => {
+//       console.log(res);
+//     })
+
+// //UPDATE `companies` SET `isActiveVotingPeriod`= 1 WHERE NOW() >= ``
+
+//  Blocks.findOne({
+//     order: [
+//       ['id', 'DESC']
+//     ]
+//   }).then((data) =>{
+//     let blockNo = 0;
+//     if (data) {
+//       blockNo = data.dataValues.block_no;
+//     }
+//     var egoras = JSON.parse(
+//       fs.readFileSync(__dirname + "/abi/loan.json", "utf8")
+//     );
+
+//     var contract = new web3.eth.Contract(egoras.abi, egoras.address);
+
+    
+
+//      //contract.getPastEvents("LoanCreated", {fromBlock: 0}, function(err, events){console.log(events)});
+     
+//     contract
+//       .getPastEvents("allEvents", {
+//         fromBlock: blockNo + 1,
+//         toBlock: (blockNo + 5000)
+
+//       })
+//       .then(function (events) {
+       
+//        if(events.length > 0){
+//         events.forEach(function (event) {
+//           switch (event.event) {
+//             case "RequestCreated":
+//               let changeto = 0;
+//               if(event.returnValues._requestType == 0){
+//                 changeto = event.returnValues._changeTo;
+
+//               }else{
+//                 changeto = web3.utils.fromWei(event.returnValues._changeTo.toString())
+//               }
+//               Requests.findOne({ where: {requestID: event.returnValues._requestID} })
+//         .then(function(obj) {
+//             // update
+//             if(obj)
+//                 return obj.update({
+//                 reason: event.returnValues._reason,
+//                 requestID: event.returnValues._requestID, 
+//                 changeTo: changeto, requestType: event.returnValues._requestType, 
+//                 creator: event.returnValues._creator, transaction_hash: event.transactionHash, 
+//                 isApproved: 0, isActiveVotingPeriod: 0, validated: 0,
+//                 declined: 0, accepted: 0, countDown: new Date(event.returnValues._votingPeriod * 1000)
+//                 } ).then((res) => {
+//                   Blocks.create({block_no: event.blockNumber})
+//                   console.log(res);
+//                 })
+//             // insert
+//             return Requests.create(
+//               {
+//                 reason: event.returnValues._reason,
+//                 requestID: event.returnValues._requestID, 
+//                 changeTo: changeto, requestType: event.returnValues._requestType, 
+//                 creator: event.returnValues._creator, transaction_hash: event.transactionHash, 
+//                 isApproved: 0, isActiveVotingPeriod: 0, validated: 0,
+//                 declined: 0, accepted: 0, countDown: new Date(event.returnValues._votingPeriod * 1000)
+//                 }
+//             ).then((res) => {
+//               Blocks.create({block_no: event.blockNumber})
+//               console.log(res);
+//             })
+//         })
+              
+//               break;
+//             case "ApproveLoan":
+//               Loans.update({
+//                 validated: true,
+//                 is_approved: event.returnValues.state
+                                
+//                 }, {
+//                   where: {
+//                     loanID: event.returnValues._loanID
+//                   }
+//                 }).then((res) => {
+//                   Blocks.create({block_no: event.blockNumber})
+//                   console.log(res);
+//                 })
+
+//               break;
+//             case "CompanyApproved":
+//               Companies.findOne({
+//                 where: {
+//                   address: event.returnValues.companyAddress
+//                 },
+//                 order: [
+//                   ['id', 'DESC']
+//                 ]
+//               }).then((data) =>{
+//                Companies.update({
+//                 validated: true,
+//                 isApproved: event.returnValues.state
+                 
+                  
+//                 }, {
+//                   where: {
+//                     id: data.dataValues.id
+//                   }
+//                 }).then((res) => {
+//                   Blocks.create({block_no: event.blockNumber})
+//                   console.log(res);
+//                 })
+  
+  
+              
+//               });
+//               break;
+//             case "VotedForRequest":
+//               Requests.update({
+//                 accepted: web3.utils.fromWei(event.returnValues._positiveVote.toString()),
+//                 declined: web3.utils.fromWei(event.returnValues._negativeVote.toString())
+                 
+                  
+//                 }, {
+//                   where: {
+//                     requestID: event.returnValues._requestID
+//                   }
+//                 }).then((res) => {
+//                   Voters.create({
+//                     tracker: event.returnValues._requestID,
+//                     address: event.returnValues._voter,
+//                     transaction_hash: event.transactionHash,
+//                     type: event.returnValues._accept,
+//                     which: "request"
+//                   }).then((data) =>{
+//                     Blocks.create({block_no: event.blockNumber})
+//                   })
+                  
+//                 })
+//               break;
+          
+//             case "Confirmed":
+//               Loans.findOne({
+//                 where: {
+//                   loanID: event.returnValues._loanID
+//                 },
+//                 order: [
+//                   ['id', 'DESC']
+//                 ]
+//               }).then((data) =>{
+//                 Loans.update({
+//                   votingThreshold: web3.utils.fromWei(event.returnValues._votingThreshold.toString()),
+//                   is_display: true,
+//                   isConfirmed: true
+//                 }, {
+//                   where: {
+//                     id: data.dataValues.id
+//                   }
+//                 }).then((res) => {
+//                   Blocks.create({block_no: event.blockNumber})
+//                   console.log(res);
+//                 })
+
+
+              
+//               });
+            
+//               break;
+          
+//             case "LoanCreated":
+            
+//               let meta = JSON.parse(event.returnValues._metadata);
+              
+//               console.log(meta);
+//                Loans.create(
+//                  {
+//                   loanID: event.returnValues.newLoanID,
+//                   loan_duration: meta.loan_duration,
+//                   category: meta.loan_category,
+//                   branch_name: meta.branch_name,
+//                   story: meta.story,
+//                   title: event.returnValues._title,
+//                   cover_image: event.returnValues._image_url,
+//                   other_images: meta.arrayImg.toString(),
+//                   due_date: new Date(event.returnValues._length * 1000),
+//                   backed: 0,
+//                   isLoan: event.returnValues._isLoan,
+//                   creator: event.returnValues._creator,
+//                   transaction_hash: event.transactionHash,
+//                   is_approved: false,
+//                   loan_amount: web3.utils.fromWei(event.returnValues._amount.toString()),
+//                   inventry_fee: web3.utils.fromWei(event.returnValues._inventoryFee.toString()),
+//                   isConfirmed: event.returnValues._isConfirmed
+//                  }
+            
+//                 ).then((res) => {
+//                   Blocks.create({block_no: event.blockNumber})
+//                   console.log(res);
+//                 })
+                
+//               break;
+
+//               case "Voted":
+//               console.log(event);
+//               Loans.update({
+//                 backed: web3.utils.fromWei(event.returnValues._totalBackedAmount.toString()),
+               
+                 
+                  
+//                 }, {
+//                   where: {
+//                     loanID: event.returnValues.loanID
+//                   }
+//                 }).then((res) => {
+//                   Voters.create({
+//                     tracker: event.returnValues.loanID,
+//                     address: event.returnValues.voter,
+//                     transaction_hash: event.transactionHash,
+//                     type: 1,
+//                     which: "loan"
+//                   }).then((data) =>{
+//                     Blocks.create({block_no: event.blockNumber})
+//                   })
+//                 })
+//                break;
+             
+               
+//             default:
+              
+//               Blocks.create({block_no: event.blockNumber})
+//               break;
+//           }
+          
+//         });
+//        }else {
+//         web3.eth.getBlockNumber().then((blockN) => {
+//           blockNumber = 0;
+//           if((blockNo + 5000) > blockN){
+//             blockNumber = blockN;
+//             Blocks.create({block_no: blockNumber})
+//           }else{
+//             blockNumber = (blockNo + 5000)
+//             Blocks.create({block_no: blockNumber})
+//           }
+         
+//         })
+
+
+       
+        
+//        }
+//         // end of lop
+        
+//         // let data = await Product.decrement({quantity: qty}, { where: { id, quantity: {
+//         //   [Op.gte]: qty
+//         // } } });
+       
+//       }).catch(er =>{
+//         console.log(er);
+//       })
+//     console.log("Running", blockNo);
+//   })
+//  } catch (error) {
+//    console.log(error.message, "Topel");
+//  }
+
+
+ 
+// });
+
+
 // @route Get api/users/get/managers
 // @desc Get all managers on the system
 // @access Private
 router.get("/loan-created", async (req, res) => {
-
+  let block = parseInt(req.params.block);
   Blocks.findOne({
     where: {blockType: "LoanCreated"},
     order: [
@@ -42,10 +326,8 @@ router.get("/loan-created", async (req, res) => {
     ]
   }).then((data) =>{
     let blockNo = 0;
-    let found = false;
     if (data) {
       blockNo = data.dataValues.block_no;
-      found = true;
     }
     var egoras = JSON.parse(
       fs.readFileSync(__dirname + "/abi/loan.json", "utf8")
@@ -56,8 +338,8 @@ router.get("/loan-created", async (req, res) => {
     try {
       contract
     .getPastEvents("LoanCreated", {
-      fromBlock: blockNo + 1,
-      toBlock: (blockNo + 5000)
+      fromBlock: block + 1,
+      toBlock: (block + 5000)
 
     })
     .then(function (events) {
@@ -91,20 +373,7 @@ router.get("/loan-created", async (req, res) => {
                  }
             
                 ).then((res) => {
-                  if(found){
-                    Blocks.update({
-                      block_no: event.blockNumber
-                      }, {
-                        where: {
-                          blockType: "LoanCreated"
-                        }
-                      }).then((res) => {
-                        console.log(res);
-                      })
-                  }else{
-                    Blocks.create({block_no: event.blockNumber, blockType: "LoanCreated"})
-                  }
-                  
+                  Blocks.create({block_no: event.blockNumber})
                   console.log(res);
                 })
                 
@@ -117,37 +386,10 @@ router.get("/loan-created", async (req, res) => {
           blockNumber = 0;
           if((blockNo + 5000) > blockN){
             blockNumber = blockN;
-
-            if(found){
-              Blocks.update({
-                block_no: blockNumber
-                }, {
-                  where: {
-                    blockType: "LoanCreated"
-                  }
-                }).then((res) => {
-                  console.log(res);
-                })
-            }else{
-              Blocks.create({block_no: blockNumber, blockType: "LoanCreated"})
-            }
-            
+            Blocks.create({block_no: blockNumber})
           }else{
             blockNumber = (blockNo + 5000)
-            if(found){
-              Blocks.update({
-                block_no: blockNumber
-                }, {
-                  where: {
-                    blockType: "LoanCreated"
-                  }
-                }).then((res) => {
-                  console.log(res);
-                })
-            }else{
-              Blocks.create({block_no: blockNumber, blockType: "LoanCreated"})
-            }
-            
+            Blocks.create({block_no: blockNumber})
           }
          
         })
@@ -156,395 +398,11 @@ router.get("/loan-created", async (req, res) => {
        
         
        }
-    }).catch(err => {
-      console.log( "In");
     });
-    res.status(200).send({ status: true});
   } catch (error) {
       res.status(500).send({ status: false, events: [], message: "internal error"});
      
-    console.log(error, "Out");
-  }
-
-
-  })
- 
-});
-
-
-router.get("/confirm", async (req, res) => {
-
-  Blocks.findOne({
-    where: {blockType: "Confirmed"},
-    order: [
-      ['id', 'DESC']
-    ]
-  }).then((data) =>{
-    let blockNo = 0;
-    let found = false;
-    if (data) {
-      blockNo = data.dataValues.block_no;
-      found = true;
-    }
-    var egoras = JSON.parse(
-      fs.readFileSync(__dirname + "/abi/loan.json", "utf8")
-    );
-
-    var contract = new web3.eth.Contract(egoras.abi, egoras.address);
-
-    try {
-      contract
-    .getPastEvents("Confirmed", {
-      fromBlock: blockNo + 1,
-      toBlock: (blockNo + 5000)
-
-    })
-    .then(function (events) {
-      if(events.length > 0){
-        events.forEach(function (event) {
-          if(event.event == "Confirmed"){
-              Loans.findOne({
-                where: {
-                  loanID: event.returnValues._loanID
-                },
-                order: [
-                  ['id', 'DESC']
-                ]
-              }).then((data) =>{
-                Loans.update({
-                  votingThreshold: web3.utils.fromWei(event.returnValues._votingThreshold.toString()),
-                  is_display: true,
-                  isConfirmed: true
-                }, {
-                  where: {
-                    id: data.dataValues.id
-                  }
-                }).then((res) => {
-                  if(found){
-                    Blocks.update({
-                      block_no: event.blockNumber
-                      }, {
-                        where: {
-                          blockType: "Confirmed"
-                        }
-                      }).then((res) => {
-                        console.log(res);
-                      })
-                  }else{
-                    Blocks.create({block_no: event.blockNumber, blockType: "Confirmed"})
-                  }
-                 
-                  console.log(res);
-                })
-
-
-              
-              });
-            
-
-          }
-        })
-      }else {
-        web3.eth.getBlockNumber().then((blockN) => {
-          blockNumber = 0;
-          if((blockNo + 5000) > blockN){
-            blockNumber = blockN;
-
-            if(found){
-              Blocks.update({
-                block_no: blockNumber
-                }, {
-                  where: {
-                    blockType: "Confirmed"
-                  }
-                }).then((res) => {
-                  console.log(res);
-                })
-            }else{
-              Blocks.create({block_no: blockNumber, blockType: "Confirmed"})
-            }
-            
-          }else{
-            blockNumber = (blockNo + 5000)
-            if(found){
-              Blocks.update({
-                block_no: blockNumber
-                }, {
-                  where: {
-                    blockType: "Confirmed"
-                  }
-                }).then((res) => {
-                  console.log(res);
-                })
-            }else{
-              Blocks.create({block_no: blockNumber, blockType: "Confirmed"})
-            }
-            
-          }
-         
-        })
-
-
-       
-        
-       }
-    }).catch(err => {
-      console.log( "In");
-    });
-    res.status(200).send({ status: true});
-  } catch (error) {
-      res.status(500).send({ status: false, events: [], message: "internal error"});
-     
-    console.log(error, "Out");
-  }
-
-
-  })
- 
-});
-
-router.get("/voted", async (req, res) => {
-
-  Blocks.findOne({
-    where: {blockType: "Voted"},
-    order: [
-      ['id', 'DESC']
-    ]
-  }).then((data) =>{
-    let blockNo = 0;
-    let found = false;
-    if (data) {
-      blockNo = data.dataValues.block_no;
-      found = true;
-    }
-    var egoras = JSON.parse(
-      fs.readFileSync(__dirname + "/abi/loan.json", "utf8")
-    );
-
-    var contract = new web3.eth.Contract(egoras.abi, egoras.address);
-
-    try {
-      contract
-    .getPastEvents("Voted", {
-      fromBlock: blockNo + 1,
-      toBlock: (blockNo + 5000)
-
-    })
-    .then(function (events) {
-      if(events.length > 0){
-        events.forEach(function (event) {
-          if(event.event == "Voted"){
-            
-              console.log(event);
-              Loans.update({
-                backed: web3.utils.fromWei(event.returnValues._totalBackedAmount.toString()),
-              
-                
-                  
-                }, {
-                  where: {
-                    loanID: event.returnValues.loanID
-                  }
-                }).then((res) => {
-                  Voters.create({
-                    tracker: event.returnValues.loanID,
-                    address: event.returnValues.voter,
-                    transaction_hash: event.transactionHash,
-                    type: 1,
-                    which: "loan"
-                  }).then((data) =>{
-                    if(found){
-                      Blocks.update({
-                        block_no: event.blockNumber
-                        }, {
-                          where: {
-                            blockType: "Voted"
-                          }
-                        }).then((res) => {
-                          console.log(res);
-                        })
-                    }else{
-                      Blocks.create({block_no: event.blockNumber, blockType: "Voted"})
-                    }
-                  })
-                })
-            
-
-          }
-        })
-      }else {
-        web3.eth.getBlockNumber().then((blockN) => {
-          blockNumber = 0;
-          if((blockNo + 5000) > blockN){
-            blockNumber = blockN;
-
-            if(found){
-              Blocks.update({
-                block_no: blockNumber
-                }, {
-                  where: {
-                    blockType: "Voted"
-                  }
-                }).then((res) => {
-                  console.log(res);
-                })
-            }else{
-              Blocks.create({block_no: blockNumber, blockType: "Voted"})
-            }
-            
-          }else{
-            blockNumber = (blockNo + 5000)
-            if(found){
-              Blocks.update({
-                block_no: blockNumber
-                }, {
-                  where: {
-                    blockType: "Voted"
-                  }
-                }).then((res) => {
-                  console.log(res);
-                })
-            }else{
-              Blocks.create({block_no: blockNumber, blockType: "Voted"})
-            }
-            
-          }
-         
-        })
-
-
-       
-        
-       }
-    }).catch(err => {
-      console.log( "In");
-    });
-    res.status(200).send({ status: true});
-  } catch (error) {
-      res.status(500).send({ status: false, events: [], message: "internal error"});
-     
-    console.log(error, "Out");
-  }
-
-
-  })
- 
-});
-
-
-router.get("/approve", async (req, res) => {
-
-  Blocks.findOne({
-    where: {blockType: "ApproveLoan"},
-    order: [
-      ['id', 'DESC']
-    ]
-  }).then((data) =>{
-    let blockNo = 0;
-    let found = false;
-    if (data) {
-      blockNo = data.dataValues.block_no;
-      found = true;
-    }
-    var egoras = JSON.parse(
-      fs.readFileSync(__dirname + "/abi/loan.json", "utf8")
-    );
-
-    var contract = new web3.eth.Contract(egoras.abi, egoras.address);
-
-    try {
-      contract
-    .getPastEvents("ApproveLoan", {
-      fromBlock: blockNo + 1,
-      toBlock: (blockNo + 5000)
-
-    })
-    .then(function (events) {
-      if(events.length > 0){
-        events.forEach(function (event) {
-          if(event.event == "ApproveLoan"){
-            
-              console.log(event);
-              Loans.update({           validated: true,
-                is_approved: event.returnValues.state
-                                
-                }, {
-                  where: {
-                    loanID: event.returnValues._loanID
-                  }
-                }).then((res) => {
-                  if(found){
-                    Blocks.update({
-                      block_no: event.blockNumber
-                      }, {
-                        where: {
-                          blockType: "ApproveLoan"
-                        }
-                      }).then((res) => {
-                        console.log(res);
-                      })
-                  }else{
-                    Blocks.create({block_no: event.blockNumber, blockType: "ApproveLoan"})
-                  }
-                  console.log(res);
-                 })
-             
-            
-
-          }
-        })
-      }else {
-        web3.eth.getBlockNumber().then((blockN) => {
-          blockNumber = 0;
-          if((blockNo + 5000) > blockN){
-            blockNumber = blockN;
-
-            if(found){
-              Blocks.update({
-                block_no: blockNumber
-                }, {
-                  where: {
-                    blockType: "ApproveLoan"
-                  }
-                }).then((res) => {
-                  console.log(res);
-                })
-            }else{
-              Blocks.create({block_no: blockNumber, blockType: "ApproveLoan"})
-            }
-            
-          }else{
-            blockNumber = (blockNo + 5000)
-            if(found){
-              Blocks.update({
-                block_no: blockNumber
-                }, {
-                  where: {
-                    blockType: "ApproveLoan"
-                  }
-                }).then((res) => {
-                  console.log(res);
-                })
-            }else{
-              Blocks.create({block_no: blockNumber, blockType: "ApproveLoan"})
-            }
-            
-          }
-         
-        })
-
-
-       
-        
-       }
-    }).catch(err => {
-      console.log( "In");
-    });
-    res.status(200).send({ status: true});
-  } catch (error) {
-      res.status(500).send({ status: false, events: [], message: "internal error"});
-     
-    console.log(error, "Out");
+    console.log(error);
   }
 
 

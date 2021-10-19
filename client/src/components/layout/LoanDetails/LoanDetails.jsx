@@ -91,6 +91,7 @@ const LoanDetails = ({ match, loans, messenger }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [btnText, setBtnText] = useState("Back it");
   const [stage, setStage] = useState(0);
+  const [xdata, setXdata] = useState({});
   const onExited = () => setStatus(<img src="/down.png" alt="" />);
   const [text, setText] = useState("");
   const [nodata, setNodata] = useState(false);
@@ -267,10 +268,24 @@ const LoanDetails = ({ match, loans, messenger }) => {
     }
   };
   useEffect(() => {
+    let isNaira = false;
+   
+    let origin = localStorage.getItem("origin");
+    let xrate = localStorage.getItem("xrate");
+
+    if(origin !== undefined && origin == "Nigeria"){
+      isNaira = true;
+     
+    }
+    setXdata({...xdata, 
+    ['isNaira']: isNaira,
+    ['xrate']: xrate
+    })
     axios
       .get(api_url + "/api/loans/get/by/id/" + match.params.id, null, config)
       .then(function (response) {
         setLoanData(response.data.data[0]);
+        console.log(response.data.data);
         let backed = response.data.data[0].backed;
         let votingThreshold = response.data.data[0].votingThreshold;
         if (response.data.data[0].is_approved) {
@@ -436,13 +451,27 @@ const LoanDetails = ({ match, loans, messenger }) => {
               <div className="card-amount">
                 <img src="/img/coin-icon.svg" alt="" className="coin" />
                 <p className="amount">
-                  $
-                  <NumberFormat
+                {xdata.isNaira ? (<span>&#8358;</span>): "$"}
+                 {
+                   xdata.isNaira ? (
+
+                    <NumberFormat
+                    thousandSeparator={true}
+                    thousandsGroupStyle="usd"
+                    displayType={"text"}
+                    value={parseFloat(parseFloat(loanData.loan_amount) * xdata.xrate).toFixed(2)}
+                  />
+                   ) : (
+                    <NumberFormat
                     thousandSeparator={true}
                     thousandsGroupStyle="usd"
                     displayType={"text"}
                     value={parseFloat(loanData.loan_amount)}
                   />
+                   )
+                 }
+                 
+                 
                 </p>
               </div>
             </div>
@@ -473,13 +502,25 @@ const LoanDetails = ({ match, loans, messenger }) => {
                 <div className="detailsCard1">
                   <p className="ldTitle1">Market Value</p>
                   <h1 className="ldAmount1">
-                    $
+                  {xdata.isNaira ? (<span>&#8358;</span>): "$"}
+                 {
+                   xdata.isNaira ? (
+
                     <NumberFormat
-                      thousandSeparator={true}
-                      thousandsGroupStyle="usd"
-                      displayType={"text"}
-                      value={parseFloat(loanData.loan_amount)}
-                    />
+                    thousandSeparator={true}
+                    thousandsGroupStyle="usd"
+                    displayType={"text"}
+                    value={parseFloat(parseFloat(loanData.loan_amount) * xdata.xrate).toFixed(2)}
+                  />
+                   ) : (
+                    <NumberFormat
+                    thousandSeparator={true}
+                    thousandsGroupStyle="usd"
+                    displayType={"text"}
+                    value={parseFloat(loanData.loan_amount)}
+                  />
+                   )
+                 }
                   </h1>
                 </div>
 
@@ -487,13 +528,25 @@ const LoanDetails = ({ match, loans, messenger }) => {
                 <div className="detailsCard1">
                   <p className="ldTitle1">Loan Amount</p>
                   <h1 className="ldAmount1">
-                    $
+                  {xdata.isNaira ? (<span>&#8358;</span>): "$"}
+                 {
+                   xdata.isNaira ? (
+
                     <NumberFormat
-                      thousandSeparator={true}
-                      thousandsGroupStyle="usd"
-                      displayType={"text"}
-                      value={parseFloat(loanData.loan_amount)}
-                    />
+                    thousandSeparator={true}
+                    thousandsGroupStyle="usd"
+                    displayType={"text"}
+                    value={parseFloat(parseFloat(loanData.loan_amount) * xdata.xrate).toFixed(2)}
+                  />
+                   ) : (
+                    <NumberFormat
+                    thousandSeparator={true}
+                    thousandsGroupStyle="usd"
+                    displayType={"text"}
+                    value={parseFloat(loanData.loan_amount)}
+                  />
+                   )
+                 }
                   </h1>
                 </div>
 
@@ -597,7 +650,7 @@ const LoanDetails = ({ match, loans, messenger }) => {
             >
               {allLoansData.map((loan, i) => {
                 // if (loan.loan_category === getCategory) {
-                // console.log(loan);
+                 console.log(loan);
 
                 // console.log(loan.loan_category);
                 let percent = 0;
@@ -656,12 +709,25 @@ const LoanDetails = ({ match, loans, messenger }) => {
                           }}
                         >
                           <div className="img-amount">
-                            <NumberFormat
-                              value={parseFloat(loan.loan_amount)}
-                              displayType={"text"}
-                              thousandSeparator={true}
-                              prefix={"$"}
-                            />
+                          {xdata.isNaira ? (<span>&#8358;</span>): "$"}
+                 {
+                   xdata.isNaira ? (
+
+                    <NumberFormat
+                    thousandSeparator={true}
+                    thousandsGroupStyle="usd"
+                    displayType={"text"}
+                    value={parseFloat(parseFloat(loan.loan_amount) * xdata.xrate).toFixed(2)}
+                  />
+                   ) : (
+                    <NumberFormat
+                    thousandSeparator={true}
+                    thousandsGroupStyle="usd"
+                    displayType={"text"}
+                    value={parseFloat(loan.loan_amount)}
+                  />
+                   )
+                 }
                           </div>
                         </div>
                       </div>

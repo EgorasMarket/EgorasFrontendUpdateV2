@@ -191,6 +191,15 @@ const Explore_loans = ({ loans, fetch }) => {
           {!categoryChange ? (
             !isEmpty ? (
               generalData.map((loan, i) => {
+                let isNaira = false;
+                let amount = loan.loan_amount;
+                let origin = localStorage.getItem("origin");
+                let xrate = localStorage.getItem("xrate");
+
+                if(origin !== undefined && origin == "Nigeria"){
+                  isNaira = true;
+                  amount = (parseFloat(amount) * xrate).toFixed(2);
+                }
                 return (
                   <Fragment>
                     <Link to={`loan-details/${loan.id}`}>
@@ -204,12 +213,12 @@ const Explore_loans = ({ loans, fetch }) => {
 
                         <p className="retailButton">{loan.category}</p>
                         <div className="pTag">
-                          $
+                          {isNaira ? (<span>&#8358;</span>) : "$"}
                           <NumberFormat
                             thousandSeparator={true}
                             thousandsGroupStyle="usd"
                             displayType={"text"}
-                            value={parseFloat(loan.loan_amount)}
+                            value={parseFloat(amount)}
                           />
                         </div>
                         <div className="forIdentity">{loan.title}</div>
