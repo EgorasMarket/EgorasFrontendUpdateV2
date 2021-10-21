@@ -32,7 +32,7 @@ const Whitepaper = () => {
     let link = e.currentTarget.id;
     setActiveLink(link);
     setActiveMenu("notDetails-accord ");
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     console.log(e.currentTarget.id);
   };
 
