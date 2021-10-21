@@ -41,6 +41,25 @@ const responsive = {
     items: 1,
   },
 };
+const responsive1 = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 600 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 600, min: 0 },
+    items: 1,
+  },
+};
 
 const GetLoan = () => {
   const [page, setPage] = useState("change");
@@ -79,7 +98,6 @@ const GetLoan = () => {
     }
   };
 
- 
   return (
     <div>
       {/* hero section start */}
@@ -269,7 +287,9 @@ const GetLoan = () => {
                     <div className="assets-data-name">Phones & Accessories</div>
                   </td>
                   <td className="assets-category-data1b">
-                    <div className="assets-data-name"><DisplayMoney amount="150" /></div>
+                    <div className="assets-data-name">
+                      <DisplayMoney amount="150" />
+                    </div>
                   </td>
                   <td className="assets-category-data-last">
                     <div className="assets-data-name-last">
@@ -299,7 +319,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="150" /> -{" "}
+                        <DisplayMoney amount="200" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -329,7 +352,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="150" /> -{" "}
+                        <DisplayMoney amount="200" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -360,7 +386,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="150" /> -{" "}
+                        <DisplayMoney amount="200" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -391,7 +420,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="200" /> -{" "}
+                        <DisplayMoney amount="400" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -419,7 +451,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="200" /> -{" "}
+                        <DisplayMoney amount="400" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -450,7 +485,9 @@ const GetLoan = () => {
                     <div className="assets-data-name">Phones & Accessories</div>
                   </td>
                   <td className="assets-category-data1b">
-                    <div className="assets-data-name"><DisplayMoney amount="150" /></div>
+                    <div className="assets-data-name">
+                      <DisplayMoney amount="150" />
+                    </div>
                   </td>
                   <td className="assets-category-data-last">
                     <div className="assets-data-name-last">
@@ -480,7 +517,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="150" /> -{" "}
+                        <DisplayMoney amount="200" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -510,7 +550,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="150" /> -{" "}
+                        <DisplayMoney amount="200" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -541,7 +584,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="150" /> -{" "}
+                        <DisplayMoney amount="200" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -572,7 +618,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="200" /> -{" "}
+                        <DisplayMoney amount="400" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -600,7 +649,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="200" /> -{" "}
+                        <DisplayMoney amount="400" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -634,7 +686,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="200" /> -{" "}
+                        <DisplayMoney amount="400" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -665,7 +720,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="150" /> -{" "}
+                        <DisplayMoney amount="200" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -699,7 +757,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="150" /> -{" "}
+                        <DisplayMoney amount="200" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -733,7 +794,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="300" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="200" /> -{" "}
+                        <DisplayMoney amount="300" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -767,7 +831,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="300" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="200" /> -{" "}
+                        <DisplayMoney amount="300" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -801,7 +868,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="200" /> -{" "}
+                        <DisplayMoney amount="400" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -835,7 +905,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="150" /> -{" "}
+                        <DisplayMoney amount="200" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -869,7 +942,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="200" /> -{" "}
+                        <DisplayMoney amount="400" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -907,7 +983,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="150" /> - <DisplayMoney amount="200" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="150" /> -{" "}
+                        <DisplayMoney amount="200" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -945,7 +1024,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="200" /> - <DisplayMoney amount="400" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="200" /> -{" "}
+                        <DisplayMoney amount="400" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -981,7 +1063,10 @@ const GetLoan = () => {
                   </td>
                   <td className="assets-category-data1b">
                     <div className="assets-data">
-                      <div className="assets-data-name"><DisplayMoney amount="600" /> - <DisplayMoney amount="1500" /></div>
+                      <div className="assets-data-name">
+                        <DisplayMoney amount="600" /> -{" "}
+                        <DisplayMoney amount="1500" />
+                      </div>
                     </div>
                   </td>
                   <td className="assets-category-data-last">
@@ -1482,7 +1567,7 @@ const GetLoan = () => {
 ==============================================
 ============================= */}
             <Carousel
-              responsive={responsive}
+              responsive={responsive1}
               className="storiesCard"
               showDots={false}
               infinite={true}
@@ -1502,9 +1587,8 @@ const GetLoan = () => {
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Meet Mrs Faith, She used Egoras
-                    <br /> micro-credit to restore her failing
-                    <br /> farm business.
+                    Meet Mrs Faith, She used Egoras micro-credit to restore her
+                    failing farm business.
                   </h5>
                   <h6 className="storiesCardDate">19 Apr 2021</h6>
                 </div>
@@ -1523,10 +1607,8 @@ const GetLoan = () => {
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Meet Mrs Onyiyechi, She used Egoras
-                    <br /> microcredit to expand her
-                    <br />
-                    small business
+                    Meet Mrs Onyiyechi, She used Egoras microcredit to expand
+                    her small business
                   </h5>
                   <h6 className="storiesCardDate">19 Apr 2021</h6>
                 </div>
@@ -1545,10 +1627,8 @@ const GetLoan = () => {
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Meet Mrs Elizabeth, She used Egoras
-                    <br /> microcredit to expand her
-                    <br />
-                    grocery business.
+                    Meet Mrs Elizabeth, She used Egoras microcredit to expand
+                    her grocery business.
                   </h5>
                   <h6 className="storiesCardDate">19 Apr 2021</h6>
                 </div>
@@ -1567,10 +1647,8 @@ const GetLoan = () => {
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Mrs Chidinma Happiness used Egoras
-                    <br /> Micro-credit to expand her
-                    <br />
-                    grocery business
+                    Mrs Chidinma Happiness used Egoras Micro-credit to expand
+                    her grocery business
                   </h5>
                   <h6 className="storiesCardDate">1 Apr 2021</h6>
                 </div>
@@ -1589,9 +1667,8 @@ const GetLoan = () => {
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Meet Mrs Justina Kelechi, a small <br />
-                    business owner that used Egoras <br />
-                    microcredit to grow her business
+                    Meet Mrs Justina Kelechi, a small business owner that used
+                    Egoras microcredit to grow her business
                   </h5>
                   <h6 className="storiesCardDate">1 Apr 2021</h6>
                 </div>
@@ -1610,8 +1687,7 @@ const GetLoan = () => {
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Meet Mr Chinemerem, An Egoras <br />
-                    borrower
+                    Meet Mr Chinemerem, An Egoras borrower
                   </h5>
                   <h6 className="storiesCardDate">28 Mar 2021</h6>
                 </div>
@@ -1630,8 +1706,7 @@ const GetLoan = () => {
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Meet Mrs Chidinma Ogu,
-                    <br /> an Egoras borrower
+                    Meet Mrs Chidinma Ogu, an Egoras borrower
                   </h5>
                   <h6 className="storiesCardDate">28 Mar 2021</h6>
                 </div>
@@ -1650,8 +1725,7 @@ const GetLoan = () => {
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Meet Mrs Faith Akpan, An Egoras <br />
-                    borrower
+                    Meet Mrs Faith Akpan, An Egoras borrower
                   </h5>
                   <h6 className="storiesCardDate">28 Mar 2021</h6>
                 </div>
@@ -1689,9 +1763,7 @@ const GetLoan = () => {
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Mrs Gloria Omoreke just doubled
-                    <br /> her profits with Egoras
-                    <br />
+                    Mrs Gloria Omoreke just doubled her profits with Egoras
                     Micro-credit
                   </h5>
                   <h6 className="storiesCardDate">23 Mar 2021</h6>

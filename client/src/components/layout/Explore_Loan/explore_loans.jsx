@@ -26,6 +26,7 @@ const allCategories = [
   { value: "Industrial Ovens" },
   { value: "Generators" },
   { value: "Salon Equipments" },
+  { value: "Industrial Equipments" }
 ];
 
 const Explore_loans = ({ loans, fetch }) => {
@@ -118,7 +119,7 @@ const Explore_loans = ({ loans, fetch }) => {
     <div ClassName="exploreLoanSection">
       <div className="exploreLoansHeader">
         <div className="exploreLoansInsideDiv1">
-          <h1 className="exploreLoansH1">Explore Loans</h1>
+          <h1 className="exploreLoansH1">Explore Collaterals</h1>
           <p className="exploreLoansP">FROM EGORAS MICRO-FINANCE</p>
         </div>
         <div className="exploreLoansInsideDiv2">
@@ -196,7 +197,7 @@ const Explore_loans = ({ loans, fetch }) => {
                 let origin = localStorage.getItem("origin");
                 let xrate = localStorage.getItem("xrate");
 
-                if(origin !== undefined && origin == "Nigeria"){
+                if (origin !== undefined && origin == "Nigeria") {
                   isNaira = true;
                   amount = (parseFloat(amount) * xrate).toFixed(2);
                 }
@@ -213,7 +214,7 @@ const Explore_loans = ({ loans, fetch }) => {
 
                         <p className="retailButton">{loan.category}</p>
                         <div className="pTag">
-                          {isNaira ? (<span>&#8358;</span>) : "$"}
+                          {isNaira ? <span>&#8358;</span> : "$"}
                           <NumberFormat
                             thousandSeparator={true}
                             thousandsGroupStyle="usd"

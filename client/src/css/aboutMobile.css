@@ -60,6 +60,25 @@
     font-size: 60px;
   }
   /* hero section end */
+  .photo-imgs {
+    width: 100%;
+  }
+  .width {
+    margin: 0;
+  }
+  .top-align {
+    flex-direction: column-reverse;
+  }
+  .missiontxt {
+    text-align: left;
+  }
+
+  .about-us-section-2 .img-divs-second {
+    width: 100%;
+  }
+  .width-img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 565px) {

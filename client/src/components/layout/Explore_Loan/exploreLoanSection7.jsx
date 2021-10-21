@@ -9,7 +9,7 @@ const ExploreLoanSection7 = () => {
         <div className="exploreLoanSection">
              <div className="exploreLoansHeader">
                 <div className="exploreLoansInsideDiv1">
-                    <h1 className="exploreLoansH1">Explore Loans</h1>
+                    <h1 className="exploreLoansH1">Explore Collaterals</h1>
                     <p className="exploreLoansP">FROM EGORAS MICRO-FINANCE</p>
                 </div>
                 <div className="exploreLoansInsideDiv2">

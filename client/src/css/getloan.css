@@ -337,7 +337,7 @@
   padding-bottom: 1em;
   position: relative;
   text-align: center;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .collateral-cat-header {
@@ -422,7 +422,7 @@
   padding-bottom: 2em;
   position: relative;
   background: #fbfbfb;
-    overflow: hidden;
+  overflow: hidden;
 }
 .all-categories {
   display: none;
@@ -667,7 +667,7 @@
 }
 
 .gttitle {
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 800;
   color: #373737;
 }
@@ -808,7 +808,7 @@
   padding: 4em 0em;
   padding-bottom: 6em;
   position: relative;
-    overflow: hidden;
+  overflow: hidden;
 }
 .gtbenefitsSection .container {
   max-width: 1302px;
@@ -880,7 +880,7 @@
 
 .discountSection {
   padding: 4em 8em;
-    overflow: hidden;
+  overflow: hidden;
   position: relative;
   /* color: aliceblue; */
   background: #ffffff;
@@ -1039,14 +1039,14 @@
   position: relative;
   /* color: aliceblue; */
   background: #f8fffb;
-    overflow: hidden;
+  overflow: hidden;
 }
 .savingsSection2 {
   padding: 4em 8em;
   position: relative;
   /* color: aliceblue; */
   background: #f8fffb;
-    overflow: hidden;
+  overflow: hidden;
 }
 .savingsArea {
   display: flex;
@@ -1156,7 +1156,7 @@
 .gtstoriesSection {
   position: relative;
   padding: 2em 0em;
-    overflow: hidden;
+  overflow: hidden;
 }
 iframe {
   border: 0;
@@ -1291,8 +1291,8 @@ iframe {
 .gtPartnersArea {
   transform: translateZ(0);
   min-width: 2800px;
-  animation: nonStop 120s linear 0s infinite normal none running;
-  -webkit-animation: nonStop 120s linear 0s infinite normal none running;
+  animation: nonStop 60s linear 0s infinite normal none running;
+  -webkit-animation: nonStop 60s linear 0s infinite normal none running;
   display: flex;
   margin-top: 55px;
   position: relative;
@@ -1356,7 +1356,7 @@ iframe {
   padding: 4em 0em;
   position: relative;
   background: #ffffff;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .gtcompareArea {
@@ -1438,7 +1438,7 @@ hr {
 
 .gtexploreSection {
   padding: 4em 0em;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .gtexploreArea {

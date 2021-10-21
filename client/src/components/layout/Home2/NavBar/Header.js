@@ -155,6 +155,11 @@ const Header = () => {
         document.getElementById("Header").style.display = "none";
       });
     }
+    if (currentPage === "/whitepaper") {
+      setshowHeader(() => {
+        document.getElementById("headerSection").style.position = "relative";
+      });
+    }
   });
 
   // page hide element
@@ -312,7 +317,7 @@ const Header = () => {
 
   return (
     <div id="Header">
-      <section className="headerSection">
+      <section className="headerSection" id="headerSection">
         <div className="container-fluid header">
           <div className="header-area">
             <a href="/" className="egrLogo2Cont">
@@ -408,8 +413,8 @@ const Header = () => {
                   </a>
                   <hr />
                   <h6 className="drop-borrow">Validator</h6>
-                  <a href="/explore_loans" className="drop-borrow-link">
-                    Explore loans
+                  <a href="/explore_collaterals" className="drop-borrow-link">
+                    Explore Collaterals
                   </a>
                 </div>
               </div>
@@ -439,6 +444,10 @@ const Header = () => {
                     className="drop-borrow-link"
                   >
                     Blog
+                  </a>
+                  <hr />
+                  <a href="/whitepaper" className="drop-borrow-link">
+                    White Paper
                   </a>
                 </div>
               </div>
@@ -523,7 +532,7 @@ const Header = () => {
                             Get loan
                           </a>
                           <a
-                            href="/explore_loans"
+                            href="/explore_collaterals"
                             className="c1link1"
                             target="_blank"
                           >
@@ -561,6 +570,13 @@ const Header = () => {
                             target="_blank"
                           >
                             Blog
+                          </a>
+                          <a
+                            href="/whitepaper"
+                            className="c1link1"
+                            target="_blank"
+                          >
+                            White Paper
                           </a>
                         </div>
                       </AccordionDetails>

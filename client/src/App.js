@@ -123,6 +123,7 @@ import Explore_Loans_Page4 from "./components/layout/Explore_Loan/exploreLoanSec
 import Explore_Loans_Page5 from "./components/layout/Explore_Loan/exploreLoanSection12";
 import EGC from "./components/layout/EGC/egc";
 
+import Whitepaper from "./components/layout/Home2/Whitepaper/Whitepaper";
 
 const App = () => {
   useEffect(() => {
@@ -134,15 +135,12 @@ const App = () => {
       },
     };
     try {
-        axios
+      axios
         .get("https://geolocation-db.com/json/", null, config)
         .then((data) => {
           console.log(data, "The Country");
           localStorage.setItem("origin", data.data.country_name);
-          
         });
-     
-      
     } catch (err) {
       console.log(err, "Call from exchange rate");
     }
@@ -274,7 +272,7 @@ const App = () => {
                   />
 
                   <Route
-                    path="/explore_loans"
+                    path="/explore_collaterals"
                     exact
                     component={Explore_Loans}
                   />
@@ -381,6 +379,7 @@ const App = () => {
                   />
                   <Route exact path="/egr-token" component={TokenEGR} />
                   <Route exact path="/eusd-token" component={TokenEUSD} />
+                  <Route exact path="/whitepaper" component={Whitepaper} />
 
                   <Route exact path="/login" component={Login} />
                   {/* <Route exact path='/token-metrics' component={TokenMetrics} /> */}

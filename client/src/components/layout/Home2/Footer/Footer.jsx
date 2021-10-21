@@ -46,6 +46,9 @@ const Footer = () => {
     if (FooterHide === "/dashboard/egr-balance") {
       document.getElementById("FooterId").style.display = "none";
     }
+    if (FooterHide === "/whitepaper") {
+      document.getElementById("FooterId").style.display = "none";
+    }
   });
 
   const classes = useStyles();
@@ -103,7 +106,11 @@ const Footer = () => {
                 {/* <a href="/" className="c1link1 a">
                   Home
                 </a> */}
-                <a href="/explore_loans" className="c1link1" target="_blank">
+                <a
+                  href="/explore_collaterals"
+                  className="c1link1"
+                  target="_blank"
+                >
                   Explore Collaterals
                 </a>
                 <a href="/documentation" className="c1link1" target="_blank">
@@ -191,7 +198,7 @@ const Footer = () => {
                       Home
                     </a> */}
                     <a
-                      href="/explore_loans"
+                      href="/explore_collaterals"
                       className="c1link1"
                       target="_blank"
                     >

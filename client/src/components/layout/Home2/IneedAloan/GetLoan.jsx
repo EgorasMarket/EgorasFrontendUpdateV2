@@ -32,6 +32,25 @@ const responsive = {
     items: 1,
   },
 };
+const responsive1 = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 600 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 600, min: 0 },
+    items: 1,
+  },
+};
 
 const GetLoan = () => {
   const [page, setPage] = useState("change");
@@ -106,16 +125,8 @@ const GetLoan = () => {
             </div>
 
             <div className="hero-images">
-              <img
-                src="/img/phone-hero2.svg"
-                alt=""
-                className="gtheroPhone"
-              />
-              <img
-                src="/img/egrdebitCard.png"
-                alt=""
-                className="gtdebitCard"
-              />
+              <img src="/img/phone-hero2.svg" alt="" className="gtheroPhone" />
+              <img src="/img/egrdebitCard.png" alt="" className="gtdebitCard" />
               <img src="/img/shape-egg.svg" alt="" className="gteggShape" />
               <img src="/img/dots.svg" alt="" className="gtdots" />
               <img
@@ -571,11 +582,7 @@ const GetLoan = () => {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <img
-                src="/img/atm-cards.png"
-                alt=""
-                className="atmcard-Image"
-              />
+              <img src="/img/atm-cards.png" alt="" className="atmcard-Image" />
             </div>
           </div>
         </div>
@@ -667,7 +674,7 @@ const GetLoan = () => {
 ==============================================
 ============================= */}
             <Carousel
-              responsive={responsive}
+              responsive={responsive1}
               className="storiesCard"
               showDots={false}
               infinite={true}
@@ -1160,11 +1167,7 @@ const GetLoan = () => {
                 <h4 className="cardContentTitles">Other Lenders</h4>
                 <div className="content-img">
                   {" "}
-                  <img
-                    src="/img/egoras-logo.svg"
-                    alt=""
-                    className="Content"
-                  />
+                  <img src="/img/egoras-logo.svg" alt="" className="Content" />
                 </div>
               </div>
               <hr />
@@ -1301,11 +1304,7 @@ const GetLoan = () => {
               </div>
             </div>
 
-            <img
-              src="/img/explore-dots.svg"
-              alt=""
-              className="gtexploreDots"
-            />
+            <img src="/img/explore-dots.svg" alt="" className="gtexploreDots" />
             <img
               src="/img/explore-shape.svg"
               alt=""

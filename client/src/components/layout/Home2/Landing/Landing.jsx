@@ -90,11 +90,11 @@ const responsive2 = {
     items: 2,
   },
   tabletMedium: {
-    breakpoint: { max: 900, min: 464 },
+    breakpoint: { max: 900, min: 600 },
     items: 2,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 600, min: 0 },
     items: 1,
   },
 };
@@ -321,7 +321,7 @@ const Landing = ({
                 to access interest free loans instantly with their used item(s).
               </p>
               <div className="heroButton">
-                <a href="/explore" className="heroBtn">
+                <a href="/explore_collaterals" className="heroBtn">
                   See Collaterals
                 </a>
               </div>
@@ -586,7 +586,7 @@ const Landing = ({
                 <h1 className="gttitle">Recent collaterals</h1>
               </div>
 
-              <a href="#" className="projectsLink">
+              <a href="/explore_collaterals" className="projectsLink">
                 Explore collaterals
                 <div className="projectsLinkHover"></div>
               </a>
@@ -1077,8 +1077,8 @@ const Landing = ({
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
                     Meet Mrs Faith, She used Egoras
-                    <br /> micro-credit to restore her failing
-                    <br /> farm business.
+                   micro-credit to restore her failing
+                   farm business.
                   </h5>
                   <h6 className="storiesCardDate">19 Apr 2021</h6>
                 </div>
@@ -1098,8 +1098,8 @@ const Landing = ({
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
                     Meet Mrs Onyiyechi, She used Egoras
-                    <br /> microcredit to expand her
-                    <br />
+                    microcredit to expand her
+                  
                     small business
                   </h5>
                   <h6 className="storiesCardDate">19 Apr 2021</h6>
@@ -1120,8 +1120,8 @@ const Landing = ({
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
                     Meet Mrs Elizabeth, She used Egoras
-                    <br /> microcredit to expand her
-                    <br />
+                    microcredit to expand her
+                    
                     grocery business.
                   </h5>
                   <h6 className="storiesCardDate">19 Apr 2021</h6>
@@ -1142,8 +1142,8 @@ const Landing = ({
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
                     Mrs Chidinma Happiness used Egoras
-                    <br /> Micro-credit to expand her
-                    <br />
+                   Micro-credit to expand her
+                  
                     grocery business
                   </h5>
                   <h6 className="storiesCardDate">1 Apr 2021</h6>
@@ -1163,8 +1163,8 @@ const Landing = ({
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Meet Mrs Justina Kelechi, a small <br />
-                    business owner that used Egoras <br />
+                    Meet Mrs Justina Kelechi, a small 
+                    business owner that used Egoras 
                     microcredit to grow her business
                   </h5>
                   <h6 className="storiesCardDate">1 Apr 2021</h6>
@@ -1184,7 +1184,7 @@ const Landing = ({
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Meet Mr Chinemerem, An Egoras <br />
+                    Meet Mr Chinemerem, An Egoras 
                     borrower
                   </h5>
                   <h6 className="storiesCardDate">28 Mar 2021</h6>
@@ -1205,7 +1205,7 @@ const Landing = ({
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
                     Meet Mrs Chidinma Ogu,
-                    <br /> an Egoras borrower
+                    an Egoras borrower
                   </h5>
                   <h6 className="storiesCardDate">28 Mar 2021</h6>
                 </div>
@@ -1224,7 +1224,7 @@ const Landing = ({
                 </div>
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
-                    Meet Mrs Faith Akpan, An Egoras <br />
+                    Meet Mrs Faith Akpan, An Egoras 
                     borrower
                   </h5>
                   <h6 className="storiesCardDate">28 Mar 2021</h6>
@@ -1264,8 +1264,8 @@ const Landing = ({
                 <div className="storiesCardTxts">
                   <h5 className="storiesCardTitle">
                     Mrs Gloria Omoreke just doubled
-                    <br /> her profits with Egoras
-                    <br />
+                    her profits with Egoras
+                  
                     Micro-credit
                   </h5>
                   <h6 className="storiesCardDate">23 Mar 2021</h6>

@@ -16,11 +16,11 @@ const responsive = {
     items: 3,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1024, min: 600 },
     items: 2,
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 600, min: 0 },
     items: 1,
   },
 };
@@ -29,195 +29,250 @@ const About = () => {
   return (
     <div>
       {/* hero section start */}
-      <section className="gtheroSection">
+      <section className="gtheroSection about-us-section">
         <div className="container">
           <div className="gtheroArea">
             <div
-              className="gtheroTxts"
+              className="gtheroTxts width"
               data-aos="fade-up"
               // data-aos="fade-up"
               // data-aos-easing="linear"
               // data-aos-once="false"
             >
-              <h1 className="heroTitle3">Our Mission</h1>
-              <p className="gtheroCaption" style={{ color: "#000" }}>
-                Egoras mission is to provide zero interest
-                <br />
-                credit for all humanity.
+              <h1 className="heroTitle3 title-3">
+                Transforming Micro-credit in Africa, and the rest of the world.
+              </h1>
+              <p className="gtheroCaption caption2" style={{ color: "#000" }}>
+                Egoras micro-financing platform offers micro-credit to small
+                entrepreneurs and individuals who cannot take shelter of banks
+                for banking and other services.
               </p>
             </div>
 
             <div
-              className="hero-images"
+              className="hero-images photo-imgs"
               style={{ margin: 0 }}
               data-aos="fade-up"
             >
-              <img src="/img/aboutPhone.svg" alt="" className="aboutPhone" />
+              <div className="img-divs">
+                <div className="imgdiv1 flexauto1">
+                  <img
+                    src="/img/photoshoot/about-img1.jpg"
+                    className="about-img1"
+                    alt=""
+                  />
+                </div>
+                <div className="imgdiv1 flexauto2">
+                  <img
+                    src="/img/photoshoot/about-img2.jpg"
+                    className="about-img1"
+                    alt=""
+                  />
+                </div>
+                <div className="imgdiv1 margin-img">
+                  <img
+                    src="/img/photoshoot/about-img3.jpg"
+                    className="about-img1"
+                    alt=""
+                  />
+                </div>
+                <div className="imgdiv1">
+                  <img
+                    src="/img/photoshoot/about-img4.jpg"
+                    className="about-img1"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       {/* hero section end */}
       {/* =================================================================================================================================================================================================================================================================== */}
-
-      {/* Tokens Section Start */}
-      <section className="tokenSection">
+      {/* hero section start */}
+      <section className="gtheroSection about-us-section  about-us-section-2">
         <div className="container">
-          <div className="aboutArea" data-aos="fade-up">
-            <div className="aboutTxts">
-              <div className="AboutLine"></div>
-              <div className="loanDetailsTitle">
-                <h1 className="gttitle">About Us</h1>
+          <div className="gtheroArea top-align">
+            <div
+              className="hero-images width-img"
+              style={{ margin: 0 }}
+              data-aos="fade-up"
+            >
+              <div className="img-divs-second">
+                <div className="imgdiv1-second ">
+                  <img
+                    src="/img/photoshoot/about-img5.jpg"
+                    className="about-img1-second"
+                    alt=""
+                  />
+                </div>
+                <div className="imgdiv1-second ">
+                  <img
+                    src="/img/photoshoot/about-img6.jpg"
+                    className="about-img1-second"
+                    alt=""
+                  />
+                </div>
+                <div className="imgdiv1-second margin-img ">
+                  <img
+                    src="/img/photoshoot/about-img7.jpg"
+                    className="about-img1-second  img-7 "
+                    alt=""
+                  />
+                </div>
+                <div className="imgdiv1-second ">
+                  <img
+                    src="/img/photoshoot/about-img8.jpg"
+                    className="about-img1-second  img-8 "
+                    alt=""
+                  />
+                </div>
+                <div className="imgdiv1-second">
+                  <img
+                    src="/img/photoshoot/about-img9.jpg"
+                    className="about-img1-second"
+                    alt=""
+                  />
+                </div>
+                <div className="imgdiv1-second">
+                  <img
+                    src="/img/photoshoot/about-img10.jpg"
+                    className="about-img1-second"
+                    alt=""
+                  />
+                </div>
+                <div className="imgdiv1-second imgdiv1-second-last">
+                  <img
+                    src="/img/photoshoot/about-img11.jpg"
+                    className="about-img1-second img-11"
+                    alt=""
+                  />
+                </div>
               </div>
+            </div>
+            <div
+              className="gtheroTxts column"
+              data-aos="fade-up"
+              // data-aos="fade-up"
+              // data-aos-easing="linear"
+              // data-aos-once="false"
+            >
+              <div className="missiontxt">
+                <h1 className="heroTitle3 title-3">Our Mission</h1>
+                <p className="gtheroCaption caption2" style={{ color: "#000" }}>
+                  Egoras mission is to provide zero interest credit for all
+                  humanity.
+                </p>
+              </div>
+              <div className="missiontxt">
+                <h1 className="heroTitle3 title-3">Our Values</h1>
+
+                <div className="values-cont">
+                  <div className="txt-flex">
+                    <img src="/img/b-icon1a.svg" alt="" className="bIcon1" />
+                    <h1 className="valuetitle">Achieve more with less.</h1>
+                  </div>
+                  <p className="mission-para">
+                    We look for less expensive ways to achieve our goals. We
+                    think twice when it comes to spending and aggresive in
+                    cutting cost.
+                  </p>
+                </div>
+                <div className="values-cont">
+                  <div className="txt-flex">
+                    <img src="/img/b-icon2a.svg" alt="" className="bIcon1" />
+                    <h1 className="valuetitle">Stay excited and hungry.</h1>
+                  </div>
+                  <p className="mission-para">
+                    We are always eager to to achieve more and we are never
+                    comfortable with any level. We are not afraid of taking risk
+                    in order to reach our goals.
+                  </p>
+                </div>
+                <div className="values-cont">
+                  <div className="txt-flex">
+                    <img src="/img/b-icon3a.svg" alt="" className="bIcon1" />
+                    <h1 className="valuetitle">
+                      {" "}
+                      Overwhelm users with amazing service.
+                    </h1>
+                  </div>
+                  <p className="mission-para">
+                    We strive to look for ways to provide access to funding to
+                    our users at zero cost. We make sure that we provide a
+                    service that is very stress-free.
+                  </p>
+                </div>
+                <div className="values-cont">
+                  <div className="txt-flex">
+                    <img src="/img/b-icon4a.svg" alt="" className="bIcon1" />
+                    <h1 className="valuetitle"> We are family.</h1>
+                  </div>
+                  <p className="mission-para">
+                    We are one family united by one one mission and love. We
+                    sincerely care about each other's welfare and we make sure
+                    that everyone is properly taken care of.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* hero section end */}
+
+      {/* =============================================================================================================================================================================================================================================
+      {/* =================================================================================================================================================================================================================================================================== */}
+
+      {/* about-egoras-section */}
+      <section className="about-egoras-team">
+        <div className="container">
+          <div className="egoras-team-area">
+            <div className="gthowItWorksTitle">
+              <h1 className="gttitle">Our Story</h1>
               <p className="AboutUsPara">
-                A few years ago, a small team of people determined to distrupt
-                the lending sector
-                <br /> launched a decentralised micro-finance protocol on
-                Binance Smart Chain.
-                <br /> Thousands of small businesses increased their profit
-                margin because of
-                <br />
-                the little interest associated with our loans. <br /> <br />
+                Egoras was founded in 2019 by a team of entrepreneurs,
+                ex-bankers and engineers determined to distrupt the lending
+                sector launched a decentralised micro-finance protocol on
+                blockchain. Thousands of small businesses increased their profit
+                margin because of the little interest associated with our loans.
                 Today we are even more determined and have built an
-                interest-free <br />
-                decentralised protocol across multiple blockchains.
-                <br /> <br />
-                Our protocol can help you get access to funding within 5mins
-                <br /> at a zero-interest rate.
+                interest-free decentralised protocol across multiple
+                blockchains. Our protocol can help you get access to funding
+                within 5mins at a zero-interest rate.
+                {/* <br /> <br /> */}
+                {/* Today we are even more determined and have built an
+                interest-free decentralised protocol across multiple
+                blockchains. */}
+                {/* <br />
+                Our protocol can help you get access to funding within 5mins at
+                a zero-interest rate.
                 <br /> <br />
                 Your micro collaterals are represented on blockchain, so you can
-                easily
-                <br /> transfer ownership or even sell your collaterals.
+                easily transfer ownership or even sell your collaterals.
                 <br /> <br />
                 So no matter where you live in the world, we are here to help
-                you have
-                <br /> access to interest-free loans.
+                you have access to interest-free loans. */}
               </p>
             </div>
-          </div>
-        </div>
-
-        <img src="/img/token-dots.svg" alt="" className="tokenDots" />
-      </section>
-      {/* Tokens Section End */}
-      {/* =================================================================================================================================================================================================================================================================== */}
-      {/* Benefits Section start */}
-      <section className="benefitsSection">
-        <div className="container">
-          <div className="gttitleLine"></div>
-          <div className="gthowItWorksTitle">
-            <h1 className="gttitle">Our Values</h1>
-          </div>
-
-          <div className="gtbenefitsArea">
-            <div
-              className="gtbenefitCard1"
-              data-aos="fade-up"
-              data-aos-duration="2s"
-              data-aos-easing="linear"
-              data-aos-once="false"
-            >
-              <div className="gtbCardIcon">
-                <img src="/img/b-icon1a.svg" alt="" className="bIcon" />
-              </div>
-              <div className="gtbCardTexts">
-                <h1 className="gtbCardTitle">
-                  Achieve more with
-                  <br />
-                  less.
-                </h1>
-                <p className="gtbCardPara">
-                  We look for less expensive ways
-                  <br />
-                  to achieve our goals. We think <br />
-                  twice when it comes to spending <br />
-                  and aggresive in cutting cost.
-                </p>
-              </div>
-            </div>
-
-            <div
-              className="gtbenefitCard2"
-              data-aos="fade-up"
-              data-aos-duration="1s"
-              data-aos-easing="linear"
-              data-aos-once="false"
-            >
-              <div className="gtbCardIcon">
-                <img src="/img/b-icon2a.svg" alt="" className="bIcon" />
-              </div>
-              <div className="gtbCardTexts">
-                <h1 className="gtbCardTitle">Stay excited and hungry.</h1>
-                <p className="gtbCardPara">
-                  We are always eager to to achieve
-                  <br />
-                  more and we are never comfortable <br />
-                  with any level. We are not
-                  <br />
-                  afraid of taking risk in order
-                  <br />
-                  to reach our goals.
-                </p>
-              </div>
-            </div>
-
-            <div
-              className="gtbenefitCard3"
-              data-aos="fade-up"
-              data-aos-duration="1s"
-              data-aos-easing="linear"
-              data-aos-once="false"
-            >
-              <div className="gtbCardIcon">
-                <img src="/img/b-icon3a.svg" alt="" className="bIcon" />
-              </div>
-              <div className="gtbCardTexts">
-                <h1 className="gtbCardTitle">
-                  Overwhelm users with
-                  <br /> amazing service.
-                </h1>
-                <p className="gtbCardPara">
-                  We strive to look for ways to provide
-                  <br />
-                  access to funding to our users at zero
-                  <br />
-                  cost. We make sure that we provide
-                  <br />a service that is very stress-free.
-                </p>
-              </div>
-            </div>
-
-            <div
-              className="gtbenefitCard4"
-              data-aos="fade-up"
-              data-aos-duration="1s"
-              data-aos-easing="linear"
-              data-aos-once="false"
-            >
-              <div className="gtbCardIcon">
-                <img src="/img/b-icon4a.svg" alt="" className="bIcon" />
-              </div>
-              <div className="gtbCardTexts">
-                <h1 className="gtbCardTitle">We are family</h1>
-                <p className="gtbCardPara">
-                  We are one family united by one <br />
-                  one mission and love. We sincerely
-                  <br />
-                  care about each other's welfare and
-                  <br />
-                  we make sure that everyone is <br />
-                  properly taken care of.
-                </p>
-              </div>
+            <div className="egoras-team-picture">
+              <img
+                src="/img/photoshoot/about-imgbiga.jpg"
+                alt=""
+                style={{ width: "100%", borderRadius: "10px" }}
+              />
             </div>
           </div>
         </div>
-
-        <img src="/img/right-back-drop.svg" alt="" className="gtrightBack" />
-        <img src="/img/shape-egg2.svg" alt="" className="gteggShape2" />
       </section>
-      {/* Benefits Section start */}
-      {/* =================================================================================================================================================================================================================================================================== */}
+      {/* about-egoras-section */}
+      {/* ================================================== */}
+      {/* ================================================== */}
+      {/* ================================================== */}
+      {/* ================================================== */}
+      {/* ================================================== */}
+      {/* ================================================== */}
       {/* Stories Section Start  */}
       <section className="gtstoriesSection">
         <div className="container">
