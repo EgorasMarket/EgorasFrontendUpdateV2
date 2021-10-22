@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+// import VisibilitySensor from "react-visibility-sensor";
 import { Link } from "react-router-dom";
+import { Twitter, Facebook, YouTube, Instagram } from "@material-ui/icons";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
@@ -26,26 +28,289 @@ const Whitepaper = () => {
 
   const [activeLink, setActiveLink] = useState("abstract-link");
   const [activeMenu, setActiveMenu] = useState("details-accord  ");
-  // const [scrolledLink, setScrolledLink] = useState('abstract-link')
 
+  const sections = document.querySelectorAll(".section");
+  const navLi = document.querySelectorAll("nav .container ul li");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    var white_layer_1 = document.getElementById("white_layer_1");
+    var bounding1 = white_layer_1.getBoundingClientRect();
+
+    var white_layer_2 = document.getElementById("white_layer_2");
+    var bounding2 = white_layer_2.getBoundingClientRect();
+
+    var white_layer_3 = document.getElementById("white_layer_3");
+    var bounding3 = white_layer_3.getBoundingClientRect();
+
+    var white_layer_4 = document.getElementById("white_layer_4");
+    var bounding4 = white_layer_4.getBoundingClientRect();
+
+    var white_layer_5 = document.getElementById("white_layer_5");
+    var bounding5 = white_layer_5.getBoundingClientRect();
+
+    var white_layer_6 = document.getElementById("white_layer_6");
+    var bounding6 = white_layer_6.getBoundingClientRect();
+
+    var white_layer_7 = document.getElementById("white_layer_7");
+    var bounding7 = white_layer_7.getBoundingClientRect();
+
+    var white_layer_8 = document.getElementById("white_layer_8");
+    var bounding8 = white_layer_8.getBoundingClientRect();
+
+    var white_layer_9 = document.getElementById("white_layer_9");
+    var bounding9 = white_layer_9.getBoundingClientRect();
+
+    var white_layer_10 = document.getElementById("white_layer_10");
+    var bounding10 = white_layer_10.getBoundingClientRect();
+
+    var white_layer_11 = document.getElementById("white_layer_11");
+    var bounding11 = white_layer_11.getBoundingClientRect();
+
+    var white_layer_12 = document.getElementById("white_layer_12");
+    var bounding12 = white_layer_12.getBoundingClientRect();
+
+    var white_layer_13 = document.getElementById("white_layer_13");
+    var bounding13 = white_layer_13.getBoundingClientRect();
+
+    var white_layer_14 = document.getElementById("white_layer_14");
+    var bounding14 = white_layer_14.getBoundingClientRect();
+
+    var white_layer_15 = document.getElementById("white_layer_15");
+    var bounding15 = white_layer_15.getBoundingClientRect();
+
+    var white_layer_16 = document.getElementById("white_layer_16");
+    var bounding16 = white_layer_16.getBoundingClientRect();
+
+    var white_layer_17 = document.getElementById("white_layer_17");
+    var bounding17 = white_layer_17.getBoundingClientRect();
+
+    var white_layer_18 = document.getElementById("white_layer_18");
+    var bounding18 = white_layer_18.getBoundingClientRect();
+    // console.log(bounding1);
+
+    if (
+      bounding1.top >= 0 &&
+      bounding1.left >= 0 &&
+      bounding1.right <=
+        (window.innerWidth || document.white_layer_1.clientWidth) &&
+      bounding1.bottom <=
+        (window.innerHeight || document.white_layer_1.clientHeight)
+    ) {
+      setActiveLink("abstract-link");
+    } else if (
+      bounding2.top >= 0 &&
+      bounding2.left >= 0 &&
+      bounding2.right <=
+        (window.innerWidth || document.white_layer_2.clientWidth) &&
+      bounding2.bottom >=
+        (window.innerHeight || document.white_layer_2.clientHeight)
+    ) {
+      setActiveLink("intro-link");
+    } else if (
+      bounding3.top >= 1 &&
+      bounding3.left >= 0 &&
+      bounding3.right <=
+        (window.innerWidth || document.white_layer_3.clientWidth) &&
+      bounding3.bottom <=
+        (window.innerHeight || document.white_layer_3.clientHeight)
+    ) {
+      setActiveLink("dcentralized-link");
+    } else if (
+      bounding4.top >= 0 &&
+      bounding4.left >= 0 &&
+      bounding4.right <=
+        (window.innerWidth || document.white_layer_4.clientWidth) &&
+      bounding4.bottom <=
+        (window.innerHeight || document.white_layer_4.clientHeight)
+    ) {
+      setActiveLink("lending-link");
+    } else if (
+      bounding5.top >= 0 &&
+      bounding5.left >= 0 &&
+      bounding5.right <=
+        (window.innerWidth || document.white_layer_5.clientWidth) &&
+      bounding5.bottom <=
+        (window.innerHeight || document.white_layer_5.clientHeight)
+    ) {
+      setActiveLink("collat-approve-link");
+    } else if (
+      bounding6.top >= 5 &&
+      bounding6.left >= 0 &&
+      bounding6.right <=
+        (window.innerWidth || document.white_layer_6.clientWidth) &&
+      bounding6.bottom <=
+        (window.innerHeight || document.white_layer_6.clientHeight)
+    ) {
+      setActiveLink("non-fungible-link");
+    } else if (
+      bounding7.top >= 0 &&
+      bounding7.left >= 0 &&
+      bounding7.right <=
+        (window.innerWidth || document.white_layer_7.clientWidth) &&
+      bounding7.bottom <=
+        (window.innerHeight || document.white_layer_7.clientHeight)
+    ) {
+      setActiveLink("nft-link");
+    } else if (
+      bounding8.top >= 0 &&
+      bounding8.left >= 0 &&
+      bounding8.right <=
+        (window.innerWidth || document.white_layer_8.clientWidth) &&
+      bounding8.bottom <=
+        (window.innerHeight || document.white_layer_8.clientHeight)
+    ) {
+      setActiveLink("micro-collat-link");
+    } else if (
+      bounding9.top <= 0 &&
+      bounding9.left >= 0 &&
+      bounding9.right <=
+        (window.innerWidth || document.white_layer_9.clientWidth) &&
+      bounding9.bottom >=
+        (window.innerHeight || document.white_layer_9.clientHeight)
+    ) {
+      setActiveLink("stable-link");
+    } else if (
+      bounding10.top >= 0 &&
+      bounding10.left >= 0 &&
+      bounding10.right <=
+        (window.innerWidth || document.white_layer_10.clientWidth) &&
+      bounding10.bottom <=
+        (window.innerHeight || document.white_layer_10.clientHeight)
+    ) {
+      setActiveLink("token-economy-link");
+    } else if (
+      bounding11.top >= 0 &&
+      bounding11.left >= 0 &&
+      bounding11.right <=
+        (window.innerWidth || document.white_layer_11.clientWidth) &&
+      bounding11.bottom <=
+        (window.innerHeight || document.white_layer_11.clientHeight)
+    ) {
+      setActiveLink("egr-eusd-link");
+    } else if (
+      bounding12.top >= 0 &&
+      bounding12.left >= 0 &&
+      bounding12.right <=
+        (window.innerWidth || document.white_layer_12.clientWidth) &&
+      bounding12.bottom <=
+        (window.innerHeight || document.white_layer_12.clientHeight)
+    ) {
+      setActiveLink("eusd-func-link");
+    } else if (
+      bounding13.top >= 0 &&
+      bounding13.left >= 0 &&
+      bounding13.right <=
+        (window.innerWidth || document.white_layer_13.clientWidth) &&
+      bounding13.bottom <=
+        (window.innerHeight || document.white_layer_13.clientHeight)
+    ) {
+      setActiveLink("gen-eusd-link");
+    } else if (
+      bounding14.top >= 0 &&
+      bounding14.left >= 0 &&
+      bounding14.right <=
+        (window.innerWidth || document.white_layer_14.clientWidth) &&
+      bounding14.bottom <=
+        (window.innerHeight || document.white_layer_14.clientHeight)
+    ) {
+      setActiveLink("gov-eusd-link");
+    } else if (
+      bounding15.top >= 0 &&
+      bounding15.left >= 0 &&
+      bounding15.right <=
+        (window.innerWidth || document.white_layer_15.clientWidth) &&
+      bounding15.bottom <=
+        (window.innerHeight || document.white_layer_15.clientHeight)
+    ) {
+      setActiveLink("egr-gov-link");
+    } else if (
+      bounding16.top >= 0 &&
+      bounding16.left >= 0 &&
+      bounding16.right <=
+        (window.innerWidth || document.white_layer_16.clientWidth) &&
+      bounding16.bottom <=
+        (window.innerHeight || document.white_layer_16.clientHeight)
+    ) {
+      setActiveLink("egr-credit-link");
+    } else if (
+      bounding17.top >= 0 &&
+      bounding17.left >= 0 &&
+      bounding17.right <=
+        (window.innerWidth || document.white_layer_17.clientWidth) &&
+      bounding17.bottom <=
+        (window.innerHeight || document.white_layer_17.clientHeight)
+    ) {
+      setActiveLink("facilitate-link");
+    } else if (
+      bounding18.top >= 0 &&
+      bounding18.left >= 0 &&
+      bounding18.right <=
+        (window.innerWidth || document.white_layer_18.clientWidth) &&
+      bounding18.bottom <=
+        (window.innerHeight || document.white_layer_18.clientHeight)
+    ) {
+      setActiveLink("conclusion-link");
+    }
+
+    // sections.forEach((section) => {
+    //   const sectionTop = section.offsetTop;
+    //   const sectionHeight = section.clientHeight;
+    //   // eslint-disable-next-line no-restricted-globals
+    //   // if (pageYOffset >= sectionTop - sectionHeight / 3) {
+    //   //   current = section.getAttribute("id");
+    //   // }
+
+    //   // eslint-disable-next-line no-restricted-globals
+    //   // console.log(pageYOffset);
+    //   // console.log(sectionTop);
+    //   // console.log(sectionHeight);
+    //   // console.log(current);
+
+    //   // if (current === "white_layer_1") {
+    //   //   setActiveLink("abstract-link");
+    //   // } else if (current === "white_layer_2") {
+    //   //   setActiveLink("intro-link");
+    //   // } else if (current === "white_layer_3") {
+    //   //   setActiveLink("dcentralized-link");
+    //   // } else if (current === "white_layer_4") {
+    //   //   setActiveLink("lending-link");
+    //   // } else if (current === "white_layer_5") {
+    //   //   setActiveLink("collat-approve-link");
+    //   // }
+    // });
+  });
+
+  // window.scroll = (e) => {
+  //   let link = e.currentTarget.id;
+  //   const my = document.getElementById("white_layer_2");
+  //   const myTop = my.offsetTop;
+  //   if (myTop > 10) {
+  //     setActiveLink(link);
+  //   }
+  // };
+
+  // console.log(sections);
   const toggleActive = (e) => {
     let link = e.currentTarget.id;
     setActiveLink(link);
     setActiveMenu("notDetails-accord ");
-    // window.scrollTo(0, 0);
+
     console.log(e.currentTarget.id);
   };
 
   const toggleActiveDrop = () => {
     setActiveMenu("details-accord ");
   };
+  // const toggleScroll = (e) => {
+  //   let link = e.currentTarget.id;
+  //   setActiveLink("details-accord ");
+  // };
 
-  // const toggleScrolledLink = (e) => {
-  //   let scrolledLink=e.currentTarget.id
-  // }
   const classes = useStyles();
   return (
-    <div>
+    <div className="white-paper-div">
       <section className="whitepaper-section">
         <div className="whitepaper-area">
           <div className="whitepaper-side-bar">
@@ -57,7 +322,7 @@ const Whitepaper = () => {
                   href="#white_layer_1"
                   className={
                     activeLink == "abstract-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   id="abstract-link"
@@ -74,7 +339,7 @@ const Whitepaper = () => {
                   href="#white_layer_2"
                   className={
                     activeLink == "intro-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -91,7 +356,7 @@ const Whitepaper = () => {
                   href="#white_layer_3"
                   className={
                     activeLink == "dcentralized-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -108,7 +373,7 @@ const Whitepaper = () => {
                   href="#white_layer_4"
                   className={
                     activeLink == "lending-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -125,7 +390,7 @@ const Whitepaper = () => {
                   href="#white_layer_5"
                   className={
                     activeLink == "collat-approve-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -142,7 +407,7 @@ const Whitepaper = () => {
                   href="#white_layer_6"
                   className={
                     activeLink == "non-fungible-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -159,7 +424,7 @@ const Whitepaper = () => {
                   href="#white_layer_7"
                   className={
                     activeLink == "nft-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -176,7 +441,7 @@ const Whitepaper = () => {
                   href="#white_layer_8"
                   className={
                     activeLink == "micro-collat-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -193,7 +458,7 @@ const Whitepaper = () => {
                   href="#white_layer_9"
                   className={
                     activeLink == "stable-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -210,7 +475,7 @@ const Whitepaper = () => {
                   href="#white_layer_10"
                   className={
                     activeLink == "token-economy-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -227,7 +492,7 @@ const Whitepaper = () => {
                   href="#white_layer_11"
                   className={
                     activeLink == "egr-eusd-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -244,7 +509,7 @@ const Whitepaper = () => {
                   href="#white_layer_12"
                   className={
                     activeLink == "eusd-func-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -261,7 +526,7 @@ const Whitepaper = () => {
                   href="#white_layer_13"
                   className={
                     activeLink == "gen-eusd-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -278,7 +543,7 @@ const Whitepaper = () => {
                   href="#white_layer_14"
                   className={
                     activeLink == "gov-eusd-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -295,7 +560,7 @@ const Whitepaper = () => {
                   href="#white_layer_15"
                   className={
                     activeLink == "egr-gov-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -312,7 +577,7 @@ const Whitepaper = () => {
                   href="#white_layer_16"
                   className={
                     activeLink == "egr-credit-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -329,7 +594,7 @@ const Whitepaper = () => {
                   href="#white_layer_17"
                   className={
                     activeLink == "facilitate-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -346,7 +611,7 @@ const Whitepaper = () => {
                   href="#white_layer_18"
                   className={
                     activeLink == "conclusion-link"
-                      ? "sidebar-link1    sidebar-link1-active"
+                      ? "sidebar-link1 sidebar-link1-active"
                       : "sidebar-link1"
                   }
                   onClick={toggleActive}
@@ -392,7 +657,7 @@ const Whitepaper = () => {
                         href="#white_layer_1"
                         className={
                           activeLink == "abstract-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         id="abstract-link"
@@ -409,7 +674,7 @@ const Whitepaper = () => {
                         href="#white_layer_2"
                         className={
                           activeLink == "intro-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -426,7 +691,7 @@ const Whitepaper = () => {
                         href="#white_layer_3"
                         className={
                           activeLink == "dcentralized-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -443,7 +708,7 @@ const Whitepaper = () => {
                         href="#white_layer_4"
                         className={
                           activeLink == "lending-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -460,7 +725,7 @@ const Whitepaper = () => {
                         href="#white_layer_5"
                         className={
                           activeLink == "collat-approve-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -477,7 +742,7 @@ const Whitepaper = () => {
                         href="#white_layer_6"
                         className={
                           activeLink == "non-fungible-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -494,7 +759,7 @@ const Whitepaper = () => {
                         href="#white_layer_7"
                         className={
                           activeLink == "nft-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -511,7 +776,7 @@ const Whitepaper = () => {
                         href="#white_layer_8"
                         className={
                           activeLink == "micro-collat-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -528,7 +793,7 @@ const Whitepaper = () => {
                         href="#white_layer_9"
                         className={
                           activeLink == "stable-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -545,7 +810,7 @@ const Whitepaper = () => {
                         href="#white_layer_10"
                         className={
                           activeLink == "token-economy-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -562,7 +827,7 @@ const Whitepaper = () => {
                         href="#white_layer_11"
                         className={
                           activeLink == "egr-eusd-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -579,7 +844,7 @@ const Whitepaper = () => {
                         href="#white_layer_12"
                         className={
                           activeLink == "eusd-func-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -596,7 +861,7 @@ const Whitepaper = () => {
                         href="#white_layer_13"
                         className={
                           activeLink == "gen-eusd-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -613,7 +878,7 @@ const Whitepaper = () => {
                         href="#white_layer_14"
                         className={
                           activeLink == "gov-eusd-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -630,7 +895,7 @@ const Whitepaper = () => {
                         href="#white_layer_15"
                         className={
                           activeLink == "egr-gov-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -647,7 +912,7 @@ const Whitepaper = () => {
                         href="#white_layer_16"
                         className={
                           activeLink == "egr-credit-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -664,7 +929,7 @@ const Whitepaper = () => {
                         href="#white_layer_17"
                         className={
                           activeLink == "facilitate-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -681,7 +946,7 @@ const Whitepaper = () => {
                         href="#white_layer_18"
                         className={
                           activeLink == "conclusion-link"
-                            ? "sidebar-link1    sidebar-link1-active"
+                            ? "sidebar-link1 sidebar-link1-active"
                             : "sidebar-link1"
                         }
                         onClick={toggleActive}
@@ -706,11 +971,24 @@ const Whitepaper = () => {
           {/* ================================ */}
           {/* ================================ */}
           {/* ================================ */}
+
           <div className="whitepaper-layers">
+            {/* <section className="section" id="home">
+              <h1>Home</h1>
+            </section>
+            <section className="section" id="about">
+              <h1>About</h1>
+            </section>
+            <section className="section" id="contact">
+              <h1>Contact</h1>
+            </section>
+            <section className="section" id="footer">
+              <h1>Footer</h1>
+            </section> */}
             <div className="whitepaperHeading">
               Egoras Decentralized micro-finance protocol.
             </div>
-            <div className="whitepaper-layer1" id="white_layer_1">
+            <div className="section whitepaper-layer1" id="white_layer_1">
               <h1 className="layer-header">Abstract</h1>
               <p className="layer-paragraph1" id="abstract-para">
                 It is estimated that over two billion people around the globe
@@ -726,7 +1004,7 @@ const Whitepaper = () => {
                 services in these communities around the globe. This whitepaper,
                 therefore, explores how Egoras protocol can solve real-life
                 problems such as helping people start businesses, supporting
-                small and medium-sized enterprises access funds for expansion;
+                small and medium-sized enterprises access funds for expansion,
                 and enabling families to attend to the needs while maintaining
                 good collateralization on-chain.
               </p>
@@ -734,12 +1012,12 @@ const Whitepaper = () => {
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer2">
+            <div className="section whitepaper-layer2" id="white_layer_2">
               <h1 className="layer-header" id="intro">
                 Introduction
               </h1>
 
-              <p className="layer-paragraph2" id="white_layer_2">
+              <p className="layer-paragraph2">
                 It was thought that the advent of microfinance in the 1970s and
                 1980s would eradicate or drastically reduce the pervading
                 poverty at the time. However, four decades into the pioneering
@@ -757,20 +1035,20 @@ const Whitepaper = () => {
                 banking System. This is because most microfinance institutions
                 operate as Non-Governmental Organizations (NGOs), and they are
                 reliant on financial institutions such as commercial banks for
-                stabilized funding to carry out their own lending activities.
-                This overdependence of microfinance institutions on banks makes
-                them incompetent as lending partners. Finally, there is the
-                problem of over-indebtedness. Notably, the microfinance sector
-                gives loans without collateral, and this increases the risk of
-                bad debts. Egoras microfinance protocol seeks to address the
+                stabilized funding to carry out their lending activities. This
+                overdependence of microfinance institutions on banks makes them
+                incompetent as lending partners. Finally, there is the problem
+                of over-indebtedness. Notably, the microfinance sector gives
+                loans without collateral, and this increases the risk of bad
+                debts. Egoras microfinance protocol seeks to address the
                 challenges identified above. Addressing the challenges would
                 mean that loans should be given at zero interest and collaterals
                 should be required to get the loans. This also means a
                 microfinance institution, not dependent on mainstream banks. To
                 solve the high-interest rate problem, Egoras protocol introduces
                 on-chain governance where the collateral is validated by the
-                people, in which no central body or company determine the
-                collateral to be accepted and process the loans at a
+                people, in which no central body or company determines the
+                collateral to be accepted and processes the loans at a
                 zero-interest rate. In other words, the borrower doesn’t pay
                 interest. To address the dependence issue, the Egoras protocol
                 uses a stable-value asset system to make sure that Egoras
@@ -786,7 +1064,8 @@ const Whitepaper = () => {
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer3" id="white_layer_3">
+
+            <div className="section whitepaper-layer3" id="white_layer_3">
               <h1 className="layer-header">
                 Decentralized Autonomous Organization
               </h1>
@@ -824,32 +1103,32 @@ const Whitepaper = () => {
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer4" id="white_layer_4">
+            <div className="section whitepaper-layer4" id="white_layer_4">
               <h1 className="layer-header">Lending Partner Governance</h1>
               Most microfinance institutions function as registered
               Non-Governmental Organizations (NGOs), they are dependent on
               financial institutions such as commercial banks for stabilized
-              funding to carry out their own lending activities. Most of these
+              funding to carry out their lending activities. Most of these
               commercial banks are private institutions charging a higher rate
               of interest. They also sanction loans for shorter periods. The
               massive dependence of Microfinance institutions on banks makes
               them incompetent as lending partners. On Egoras, Microfinance
-              banks, NGOs or any lending firm can validate borrowers or small
+              banks, NGOs, or any lending firm can validate borrowers or small
               business owners and work with Egoras to distribute the loans to
               small businesses or any borrower that wants to borrow funds from
               Egoras. These microfinance banks or organizations are curated by
               the people and people get to decide which organization can get
               access to the Egoras treasury system. When a user requires a loan,
-              the user will contact a microfinance bank or organization that
-              have been approved by Egoras token holders to validate the user
-              and post the loans on Egoras protocol. This organization validates
-              the user’s information. The kind of collaterals and features are
-              also uploaded by the validating organizations.
+              the user will contact a microfinance bank or organization that has
+              been approved by Egoras token holders to validate the user and
+              post the loans on Egoras protocol. This organization validates the
+              user’s information. The kind of collaterals and features are also
+              uploaded by the validating organizations.
             </div>
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer5" id="white_layer_5">
+            <div className="section whitepaper-layer5" id="white_layer_5">
               <h1 className="layer-header">Collateral Approval Governance</h1>
               It is to be noted that the current microfinance sector managed by
               NGOs and microfinance bank approve loans for borrowers after
@@ -869,7 +1148,7 @@ const Whitepaper = () => {
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer6" id="white_layer_6">
+            <div className="section whitepaper-layer6" id="white_layer_6">
               <h1 className="layer-header">Non-Fungible Token (NFT)</h1>A
               non-fungible token (NFT) is a unique and non-interchangeable unit
               of data stored on a digital ledger (blockchain). NFTs can be used
@@ -888,20 +1167,19 @@ const Whitepaper = () => {
               stress the microfinance industry. The microfinance sector gives
               loans without collateral, which increases the risk of bad debts.
               Fast-paced growth needs proper infrastructural planning, which the
-              Indian microfinance sector evidently lacks. Egoras microfinance
-              protocol addresses these challenges identified above by providing
-              loans at zero interest and collaterals should be required to get
-              the loans. The collaterals are represented as NFTs (Non - Fungible
-              Tokens). This means collateral ownership can be transferred easily
-              without undergoing rigorous legal works. Collaterals can be
-              claimed after the loan period. All transactions are recorded as
-              NFTs on a public Blockchain. (Thus, every transaction is public
-              and immutable).
+              Indian microfinance sector lacks. Egoras microfinance protocol
+              addresses these challenges identified above by providing loans at
+              zero interest and collaterals should be required to get the loans.
+              The collaterals are represented as NFTs (Non - Fungible Tokens).
+              This means collateral ownership can be transferred easily without
+              undergoing rigorous legal works. Collaterals can be claimed after
+              the loan period. All transactions are recorded as NFTs on a public
+              Blockchain. (Thus, every transaction is public and immutable).
             </div>
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer6" id="white_layer_7">
+            <div className="section whitepaper-layer6" id="white_layer_7">
               <h1 className="layer-header">NFT Farming</h1> NFT farming is an
               emerging concept which involves staking NFTs for a reward or
               staking tokens for an NFT as a reward. It’s the merger of NFT
@@ -920,12 +1198,12 @@ const Whitepaper = () => {
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer6" id="white_layer_8">
+            <div className="section whitepaper-layer6" id="white_layer_8">
               <h1 className="layer-header">Micro-Collateral Smart contracts</h1>{" "}
               Anyone can leverage up any personal properties as collateral to
               generate eUSD on Egoras microfinance protocol. Egoras Collateral
               Assets are physical assets represented on blockchain as NFTs and
-              is approved by Egoras governance. The microfinance banks and
+              are approved by Egoras governance. The microfinance banks and
               organizations hold collateral assets deposited by a user and the
               microfinance smart contract holds the digital equivalent and the
               governance smart contract permits the user to generate eUSD but
@@ -940,36 +1218,36 @@ const Whitepaper = () => {
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer6" id="white_layer_9">
-              <h1 className="layer-header"> Stable Currency</h1> The biggest
-              hurdle to the use of cryptocurrencies as a meduim of exchange is
-              its volatility. People are unlikely to want to buy a volatile
+            <div className="section whitepaper-layer6" id="white_layer_9">
+              <h1 className="layer-header"> Stable Currency</h1>The biggest
+              hurdle to the use of cryptocurrencies as a medium of exchange is
+              their volatility. People are unlikely to want to buy a volatile
               cryptocurrency to use it for payment or accept a volatile
-              cryptocurrency for loans, since the purchasing power of their
+              cryptocurrency for loans since the purchasing power of their
               accounts would fluctuate widely with market demand for the
               currency. Merchants who accept cryptocurrencies are likely to
-              convert to fiat upon payment, because their business model does
-              not involve speculating on cryptocurrencies. And the most
-              successful cryptocurrencies today are not just volatile but
-              deflationary – their success leads to their price rising; as a
-              result, prices denominated in the currency fall. Rational
-              behaviour would be to use such currencies as a store of value
-              rather than a medium of exchange, and in practice that is what has
-              happened. Stable-value cryptocurrencies would bring a number of
-              benefits to the cryptocurrency ecosystem. For one, stable prices
-              remove a considerable barrier for using cryptocurrencies as a
-              medium-of-exchange; salaries, prices of goods, fixed obligations,
-              can all be set in a stable value cryptocurrency without requiring
-              either party to speculate on the future value of the currency.
-              Further, financial contracts are more easily built with a stable
-              value coin, because the issuer can separate the function of the
-              contract from the price risk of the currency in which it’s
-              denominated. While a single stable-value currency would be
-              helpful, a thriving cryptoeconomy is best-served by a family of
-              stable-value currencies, much as it is well-served by the family
-              of variable-value cryptoassets that we have today. Certainly a
+              convert to fiat upon payment because their business model does not
+              involve speculating on cryptocurrencies. And the most successful
+              cryptocurrencies today are not just volatile but deflationary –
+              their success leads to their price rising; as a result, prices
+              denominated in the currency fall. Rational behavior would be to
+              use such currencies as a store of value rather than a medium of
+              exchange, and in practice, that is what has happened. Stable-value
+              cryptocurrencies would bring several benefits to the
+              cryptocurrency ecosystem. For one, stable prices remove a
+              considerable barrier for using cryptocurrencies as a medium of
+              exchange; salaries, prices of goods, fixed obligations, can all be
+              set in a stable value cryptocurrency without requiring either
+              party to speculate on the future value of the currency. Further,
+              financial contracts are more easily built with a stable value
+              coin, because the issuer can separate the function of the contract
+              from the price risk of the currency in which it’s denominated.
+              While a single stable-value currency would be helpful, a thriving
+              crypto economy is best served by a family of stable-value
+              currencies, much as it is well-served by the family of
+              variable-value crypto assets that we have today. Certainly, a
               cryptocurrency pegged to the US Dollar has several uses, from
-              social payments in the US, to user-initiated dollarization in
+              social payments in the US to user-initiated dollarization in
               hyper-inflationary markets, to the efficient settlement of
               high-frequency crypto-asset trades. At the same time, a
               cryptocurrency pegged to the Euro would also be useful for many
@@ -984,7 +1262,7 @@ const Whitepaper = () => {
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer6" id="white_layer_10">
+            <div className="section whitepaper-layer6" id="white_layer_10">
               <h1 className="layer-header"> Egoras Token Economy</h1> The Egoras
               Protocol interacts with Four kinds of tokens:
               <div className="sub-texts-para">
@@ -994,7 +1272,7 @@ const Whitepaper = () => {
               </div>
               <div className="sub-texts-para">
                 • The Egoras token (EGR)—a governance cryptocurrency used to
-                govern Egoras microfinance protocol.{" "}
+                govern Egoras microfinance protocol.
               </div>
               <div className="sub-texts-para">
                 • The Egoras Credit (EGC)- The utility token of the Egoras
@@ -1008,14 +1286,14 @@ const Whitepaper = () => {
                 least 100% of the value of all EgorasUSD tokens. Many of the
                 collateral tokens will be tokenized real-world assets such as
                 tokenized electrical appliances, household appliances e.t.c, and
-                the portfolio will start off relatively simple and diversify
-                over time as more asset classes are tokenized.
+                the portfolio will start relatively simple and diversify over
+                time as more asset classes are tokenized.
               </div>
             </div>
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer6" id="white_layer_11">
+            <div className="section whitepaper-layer6" id="white_layer_11">
               <h1 className="layer-header"> The EgorasUSD(EUSD)</h1> The EUSD
               Stable coin is a decentralized, collateral-backed cryptocurrency
               pegged to United States Dollar. EUSD is built on the Ethereum
@@ -1026,7 +1304,7 @@ const Whitepaper = () => {
               decline the loan request. The loan request approved creates EUSD
               which the microfinance banks send directly to the borrowers. Users
               can also buy EUSD from exchanges, or simply receive it as a means
-              of payment. Every EUSD in circulation is over-collateralised,
+              of payment. Every EUSD in circulation is over-collateralized,
               meaning that the value of the collateral is higher than the value
               of the EUSD debt, and all EUSD transactions are publicly viewable
               on the Ethereum blockchain.
@@ -1034,13 +1312,13 @@ const Whitepaper = () => {
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer6" id="white_layer_12">
+            <div className="section whitepaper-layer6" id="white_layer_12">
               <h1 className="layer-header"> Functions of EUSD</h1>
               <div className="sub-texts-para">
                 <span className="sub-texts-indent">1. </span> Store of value:
                 Stablecoins keep or preserve values over a long period because
                 of the lower associated volatility levels. EUSD is a store of
-                value, so it is designed to preserves value for a long period of
+                value, so it is designed to preserve value for a long period of
                 time.
               </div>
               <div className="sub-texts-para">
@@ -1063,15 +1341,15 @@ const Whitepaper = () => {
               <div className="sub-texts-para">
                 <span className="sub-texts-indent"> 4.</span> Lending: EUSD can
                 be used to settle the debt in Egoras microfinance protocol.
-                (e.g., Microfinance Banks, NGOs or Egoras lending partners pays
+                (e.g., Microfinance Banks, NGOs, or Egoras lending partners pay
                 back debt and interest with EUSD on Egoras microfinance
-                protocol).
+                protocol)..
               </div>
             </div>
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer6" id="white_layer_13">
+            <div className="section whitepaper-layer6" id="white_layer_13">
               <h1 className="layer-header"> Steps to Generate EUSD</h1>
               <div className="sub-texts-para">
                 <span className="sub-texts-indent">1. </span> Create Partnership
@@ -1083,7 +1361,7 @@ const Whitepaper = () => {
               <div className="sub-texts-para">
                 <span className="sub-texts-indent"> 2.</span> Get
                 approved/declined by EGR holders: Egoras token (EGR) holders
-                curate the request of microfinance banks, NGOs or Money Lenders
+                curate the request of microfinance banks, NGOs, or Money Lenders
                 to become a lending partner, they decide if they will either
                 approve or decline the request from the organizations.
               </div>
@@ -1092,7 +1370,7 @@ const Whitepaper = () => {
                 request: Approved microfinance banks or NGOs can post loan
                 requests to Egoras microfinance protocol and get EGR holders to
                 either approve or decline the loans. If the loans are approved,
-                then the organization receives EUSD in their approved
+                then the organization receives EUSD in its approved
                 organizational wallets.
               </div>
               <div className="sub-texts-para">
@@ -1107,7 +1385,7 @@ const Whitepaper = () => {
             {/* ========================= */}
             {/* ========================= */}
             {/* ========================= */}
-            <div className="whitepaper-layer6" id="white_layer_14">
+            <div className="section whitepaper-layer6" id="white_layer_14">
               <h1 className="layer-header">
                 {" "}
                 Steps To Govern the Generation Of EUSD
@@ -1115,7 +1393,7 @@ const Whitepaper = () => {
               <div className="sub-texts-para">
                 <span className="sub-texts-indent">1. </span> Validate
                 Microfinance bank partnership request: Approve/decline
-                partnership requests of microfinance banks, NGOs or
+                partnership requests of microfinance banks, NGOs, or
                 organizations with money lenders licenses. Read through the
                 documents provided by these organizations before approving or
                 declining the requests.
@@ -1123,8 +1401,8 @@ const Whitepaper = () => {
               <div className="sub-texts-para">
                 <span className="sub-texts-indent"> 2.</span>Validate the Loan
                 request: Read through the loan request by these organizations;
-                ask the lending team questions in order to get to know the
-                borrower before approving/declining the loan request.
+                ask the lending team questions to get to know the borrower
+                before approving/declining the loan request.
               </div>
               <div className="sub-texts-para">
                 <span className="sub-texts-indent"> 3.</span> Claim your
@@ -1138,7 +1416,7 @@ const Whitepaper = () => {
             {/* ========================= */}
             {/* ========================= */}
             {/* ========================= */}
-            <div className="whitepaper-layer6" id="white_layer_15">
+            <div className="section whitepaper-layer6" id="white_layer_15">
               <h1 className="layer-header"> Egoras Governance Token (EGR)</h1>
               In contrast to EUSD which is a stablecoin that is suitable for
               payments and savings, EGR is a token that has a volatile price
@@ -1159,19 +1437,19 @@ const Whitepaper = () => {
               proposal” and can be activated to implement changes to the risk
               parameters of the system. There is a simple app available that
               allows any EGR holder to easily vote with their EGR by using
-              metamask, ledger and fortmatic. More advanced features are planned
-              for the future, such as delegating your votes to a proxy voter,
-              and the ability to safely vote with EGR held in cold storage. If
-              EGR holders are highly competent and govern the protocol well, The
-              egoras credit system will get adopted and will always remain
-              overcollateralized.
+              metamask, ledger, and fortmatic. More advanced features are
+              planned for the future, such as delegating your votes to a proxy
+              voter, and the ability to safely vote with EGR held in cold
+              storage. If EGR holders are highly competent and govern the
+              protocol well, The egoras credit system will get adopted and will
+              always remain overcollateralized.
             </div>
 
             {/* ========================= */}
             {/* ========================= */}
             {/* ========================= */}
             {/* ========================= */}
-            <div className="whitepaper-layer6" id="white_layer_16">
+            <div className="section whitepaper-layer6" id="white_layer_16">
               <h1 className="layer-header">The Egoras Credit (EGC)</h1>
               As a utility token, EGR is required for paying the inventory fees
               accrued on Loans that have been used to generate eUSD in the
@@ -1185,7 +1463,7 @@ const Whitepaper = () => {
             {/* ========================= */}
             {/* ========================= */}
             {/* ========================= */}
-            <div className="whitepaper-layer6" id="white_layer_17">
+            <div className="section whitepaper-layer6" id="white_layer_17">
               <h1 className="layer-header">
                 How does EGC Facilitate the stability of EgorasUSD
               </h1>
@@ -1209,12 +1487,12 @@ const Whitepaper = () => {
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
-            <div className="whitepaper-layer6" id="white_layer_18">
+            <div className="section whitepaper-layer6" id="white_layer_18">
               <h1 className="layer-header"> Conclusion</h1>
               <div className="sub-texts-para last">
                 Egoras microfinance protocol addresses the challenges facing the
-                microfinance industry like high interest rates, over-dependency
-                on banks and over-indebtedness.
+                microfinance industry like high-interest rates, over-dependency
+                on banks, and over-indebtedness.
               </div>
               <div className="sub-texts-para last">
                 Egoras protocol allows microfinance organizations to get loans
@@ -1232,6 +1510,284 @@ const Whitepaper = () => {
           </div>
         </div>
         {/* <div className="container"></div> */}
+      </section>
+
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      <section className="footerSection">
+        <div className="container">
+          <div className="footerArea">
+            <div className="footerCard1">
+              <a href="#">
+                {" "}
+                <img
+                  src="/img/egoras-logo.svg"
+                  alt="..."
+                  className="egr2-logo"
+                />
+              </a>
+
+              <div className="footerIcons">
+                <a
+                  href="https://twitter.com/egorasmarket"
+                  className="twitter"
+                  target="_blank"
+                >
+                  <Twitter />
+                </a>
+                <a
+                  href="https://web.facebook.com/egorasmarket/"
+                  className="twitter"
+                  target="_blank"
+                >
+                  <Facebook />
+                </a>
+                <a
+                  href="https://instagram.com/egorasofficial"
+                  className="twitter"
+                  target="_blank"
+                >
+                  <Instagram />
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCHfi5EwXig46xp5Dx8hVBHQ"
+                  className="twitter"
+                  target="_blank"
+                >
+                  <YouTube />
+                </a>
+              </div>
+            </div>
+
+            <div className="footerCard2">
+              <div className="footerCardTitle">General</div>
+              <div className="footerLinks">
+                {/* <a href="/" className="c1link1 a">
+                  Home
+                </a> */}
+                <a
+                  href="/explore_collaterals"
+                  className="c1link1"
+                  target="_blank"
+                >
+                  Explore Collaterals
+                </a>
+                <a href="/whitepaper" className="c1link1" target="_blank">
+                  White Paper
+                </a>
+              </div>
+            </div>
+
+            <div className="footerCard2">
+              <div className="footerCardTitle">About Us</div>
+              <div className="footerLinks">
+                <a href="#howitworks" className="c1link1 a">
+                  How it works
+                </a>
+                {/* <a href="#token" className="c1link1">
+                  Tokens
+                </a> */}
+                <a
+                  href="https://www.youtube.com/channel/UCHfi5EwXig46xp5Dx8hVBHQ/videos"
+                  className="c1link1"
+                  target="_blank"
+                >
+                  Stories
+                </a>
+              </div>
+            </div>
+
+            <div className="footerCard2">
+              <div className="footerCardTitle">Legal</div>
+              <div className="footerLinks">
+                <a href="/privacy" className="c1link1 a" target="_blank">
+                  Privacy policy
+                </a>
+                <a href="/terms-conditions" className="c1link1" target="_blank">
+                  Terms & conditions
+                </a>
+                {/* <a href="#partners" className="c1link1" target="_blank">
+                  Partners
+                </a> */}
+              </div>
+            </div>
+
+            <div className="footerCard2">
+              <div className="footerCardTitle">Tokens</div>
+              <div className="footerLinks">
+                {/* <a href="/egr-token" className="c1link1" target="_blank">
+                  EGR
+                </a> */}
+                <a href="/eusd-token" className="c1link1" target="_blank">
+                  EUSD
+                </a>
+                <a href="/egc" className="c1link1" target="_blank">
+                  EGC
+                </a>
+              </div>
+            </div>
+
+            <div className="footerCard2">
+              <div className="footerCardTitle">Contact Us</div>
+              <div className="footerLinks">
+                <a href="https://t.me/egorasmarket" className="c1link1 a">
+                  Get in Touch Today
+                </a>
+                <a href="" className="c1link1"></a>
+                <a href="/" className="c1linklast">
+                  cs@egoras.com
+                </a>
+              </div>
+            </div>
+
+            {/* =================================
+            ==================== */}
+            <div className="footerCard3">
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography className={classes.heading}>General </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <div className="footerLinks">
+                    {/* <a href="/" className="c1link1 a">
+                      Home
+                    </a> */}
+                    <a
+                      href="/explore_collaterals"
+                      className="c1link1"
+                      target="_blank"
+                    >
+                      Explore Collaterals
+                    </a>
+                    <a
+                      href="/documentation"
+                      className="c1link1"
+                      target="_blank"
+                    >
+                      Documentation
+                    </a>
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel2a-content"
+                  id="panel2a-header"
+                >
+                  <Typography className={classes.heading}>About Us</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <div className="footerLinks">
+                    <a href="#howitworks" className="c1link1 a">
+                      How it works
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UCHfi5EwXig46xp5Dx8hVBHQ/videos"
+                      className="c1link1"
+                      target="_blank"
+                    >
+                      Stories
+                    </a>
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel2a-content"
+                  id="panel2a-header"
+                >
+                  <Typography className={classes.heading}>Legal</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <div className="footerLinks">
+                    <a href="/privacy" className="c1link1 a" target="_blank">
+                      Privacy policy
+                    </a>
+                    <a
+                      href="/terms-conditions"
+                      className="c1link1"
+                      target="_blank"
+                    >
+                      Terms & conditions
+                    </a>
+                    {/* <a href="#partners" className="c1link1" target="_blank">
+                      Partners
+                    </a> */}
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel2a-content"
+                  id="panel2a-header"
+                >
+                  <Typography className={classes.heading}>Tokens</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <div className="footerLinks">
+                    {/* <a href="/egr-token" className="c1link1 a" target="_blank">
+                      EGR
+                    </a> */}
+                    <a href="/eusd-token" className="c1link1" target="_blank">
+                      EUSD
+                    </a>
+                    <a href="/egc" className="c1link1" target="_blank">
+                      EGC
+                    </a>
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel2a-content"
+                  id="panel2a-header"
+                >
+                  <Typography className={classes.heading}>
+                    Contact Us
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <div className="footerLinks">
+                    <a href="https://t.me/egorasmarket" className="c1link1 a">
+                      Get in Touch Today
+                    </a>
+                    <a href="" className="c1link1"></a>
+                    <a href="/" className="c1linklast">
+                      cs@egoras.com
+                    </a>
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+            </div>
+          </div>
+          <hr></hr>
+          <h5 className="footerBottomPara">
+            ©️ 2021 Egoras Technologies LTD(RC - 1832671). All rights reserved .
+          </h5>
+        </div>
       </section>
     </div>
   );

@@ -113,8 +113,8 @@ const Footer = () => {
                 >
                   Explore Collaterals
                 </a>
-                <a href="/documentation" className="c1link1" target="_blank">
-                  Documentation
+                <a href="/whitepaper" className="c1link1" target="_blank">
+                  White Paper
                 </a>
               </div>
             </div>
