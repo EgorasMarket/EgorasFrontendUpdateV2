@@ -88,7 +88,6 @@ const Whitepaper = () => {
 
     var white_layer_18 = document.getElementById("white_layer_18");
     var bounding18 = white_layer_18.getBoundingClientRect();
-    // console.log(bounding1);
 
     if (
       bounding1.top >= 0 &&
@@ -253,45 +252,37 @@ const Whitepaper = () => {
     ) {
       setActiveLink("conclusion-link");
     }
-
-    // sections.forEach((section) => {
-    //   const sectionTop = section.offsetTop;
-    //   const sectionHeight = section.clientHeight;
-    //   // eslint-disable-next-line no-restricted-globals
-    //   // if (pageYOffset >= sectionTop - sectionHeight / 3) {
-    //   //   current = section.getAttribute("id");
-    //   // }
-
-    //   // eslint-disable-next-line no-restricted-globals
-    //   // console.log(pageYOffset);
-    //   // console.log(sectionTop);
-    //   // console.log(sectionHeight);
-    //   // console.log(current);
-
-    //   // if (current === "white_layer_1") {
-    //   //   setActiveLink("abstract-link");
-    //   // } else if (current === "white_layer_2") {
-    //   //   setActiveLink("intro-link");
-    //   // } else if (current === "white_layer_3") {
-    //   //   setActiveLink("dcentralized-link");
-    //   // } else if (current === "white_layer_4") {
-    //   //   setActiveLink("lending-link");
-    //   // } else if (current === "white_layer_5") {
-    //   //   setActiveLink("collat-approve-link");
-    //   // }
-    // });
   });
 
-  // window.scroll = (e) => {
-  //   let link = e.currentTarget.id;
-  //   const my = document.getElementById("white_layer_2");
-  //   const myTop = my.offsetTop;
-  //   if (myTop > 10) {
-  //     setActiveLink(link);
-  //   }
-  // };
+  // ==========================
+  // ==========================
+  // ==========================
+  // ==========================
+  window.addEventListener("scroll", () => {
+    let current = "";
 
-  // console.log(sections);
+    var footer_id = document.getElementById("footer_id");
+    var boundingFoot = footer_id.getBoundingClientRect();
+    var sideMenu = document.getElementById("whitepaper-side-bar");
+    // console.log(bounding1);
+
+    if (
+      boundingFoot.top >= 90 &&
+      boundingFoot.left >= 0 &&
+      boundingFoot.right <=
+        (window.innerWidth || document.footer_id.clientWidth) &&
+      boundingFoot.bottom <=
+        (window.innerHeight || document.footer_id.clientHeight)
+    ) {
+      sideMenu.classList.add("bottom-sidebar");
+      sideMenu.classList.remove("on-scroll-sidebar");
+    } else {
+      sideMenu.classList.add("on-scroll-sidebar");
+      sideMenu.classList.remove("bottom-sidebar");
+    }
+    console.log("i am working ooo");
+  });
+
   const toggleActive = (e) => {
     let link = e.currentTarget.id;
     setActiveLink(link);
@@ -303,17 +294,17 @@ const Whitepaper = () => {
   const toggleActiveDrop = () => {
     setActiveMenu("details-accord ");
   };
-  // const toggleScroll = (e) => {
-  //   let link = e.currentTarget.id;
-  //   setActiveLink("details-accord ");
-  // };
 
   const classes = useStyles();
   return (
     <div className="white-paper-div">
       <section className="whitepaper-section">
         <div className="whitepaper-area">
-          <div className="whitepaper-side-bar">
+          <div
+            className="on-scroll-sidebar"
+            id="whitepaper-side-bar"
+            // onScroll={myFunction}
+          >
             {/* ============== */}
             {/* ============== */}
             <div className="sidebar-links">
@@ -611,8 +602,8 @@ const Whitepaper = () => {
                   href="#white_layer_18"
                   className={
                     activeLink == "conclusion-link"
-                      ? "sidebar-link1 sidebar-link1-active"
-                      : "sidebar-link1"
+                      ? "sidebar-link1 marg-bottom sidebar-link1-active "
+                      : "sidebar-link1 marg-bottom"
                   }
                   onClick={toggleActive}
                   id="conclusion-link"
@@ -1529,7 +1520,7 @@ const Whitepaper = () => {
       {/* =================== */}
       {/* =================== */}
       {/* =================== */}
-      <section className="footerSection">
+      <section className="footerSection" id="footer_id">
         <div className="container">
           <div className="footerArea">
             <div className="footerCard1">
