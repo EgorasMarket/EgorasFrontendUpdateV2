@@ -84,10 +84,13 @@ const AssetCategories = [
   { value: "Kitchen Appliances" },
   { value: "Shoes" },
   { value: "Bags" },
-  { value: "Industrial Ovens" },
+  { value: "Office Equipments" },
+  { value: "Survey Equipments" },
+  { value: "Musical Equipments" },
+  { value: "Workout Equipments" },
+  { value: "Industrial Equipments" },
   { value: "Generators" },
   { value: "Salon Equipments" },
-  { value: "Industrial Equipments" },
 ];
 
 // =====================================================================

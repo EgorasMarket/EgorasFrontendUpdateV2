@@ -155,6 +155,11 @@ const GetLoan = () => {
           </div>
         </div>
         <img src="/img/blur-drop.png" alt="" className="blurDrop" />
+        <img
+          src="/img/icons/left-blur.png"
+          alt=""
+          className="blur-white-bga2abab"
+        />
       </section>
       {/* hero section end */}
 

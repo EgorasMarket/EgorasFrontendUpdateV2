@@ -59,8 +59,8 @@ const Whitepaper = () => {
     var white_layer_8 = document.getElementById("white_layer_8");
     var bounding8 = white_layer_8.getBoundingClientRect();
 
-    var white_layer_9 = document.getElementById("white_layer_9");
-    var bounding9 = white_layer_9.getBoundingClientRect();
+    // var white_layer_9 = document.getElementById("white_layer_9");
+    // var bounding9 = white_layer_9.getBoundingClientRect();
 
     var white_layer_10 = document.getElementById("white_layer_10");
     var bounding10 = white_layer_10.getBoundingClientRect();
@@ -161,16 +161,19 @@ const Whitepaper = () => {
         (window.innerHeight || document.white_layer_8.clientHeight)
     ) {
       setActiveLink("micro-collat-link");
-    } else if (
-      bounding9.top <= 0 &&
-      bounding9.left >= 0 &&
-      bounding9.right <=
-        (window.innerWidth || document.white_layer_9.clientWidth) &&
-      bounding9.bottom >=
-        (window.innerHeight || document.white_layer_9.clientHeight)
-    ) {
-      setActiveLink("stable-link");
-    } else if (
+    }
+
+    // else if (
+    //   bounding9.top <= 0 &&
+    //   bounding9.left >= 0 &&
+    //   bounding9.right <=
+    //     (window.innerWidth || document.white_layer_9.clientWidth) &&
+    //   bounding9.bottom >=
+    //     (window.innerHeight || document.white_layer_9.clientHeight)
+    // ) {
+    //   setActiveLink("stable-link");
+    // }
+    else if (
       bounding10.top >= 0 &&
       bounding10.left >= 0 &&
       bounding10.right <=
@@ -444,7 +447,7 @@ const Whitepaper = () => {
               {/* ============== */}
               {/* ============== */}
               {/* ============== */}
-              <div className="sidebar-link1a">
+              {/* <div className="sidebar-link1a">
                 <a
                   href="#white_layer_9"
                   className={
@@ -457,7 +460,7 @@ const Whitepaper = () => {
                 >
                   Stable Currency{" "}
                 </a>
-              </div>
+              </div> */}
               {/* ============== */}
               {/* ============== */}
               {/* ============== */}
@@ -779,7 +782,7 @@ const Whitepaper = () => {
                     {/* ============== */}
                     {/* ============== */}
                     {/* ============== */}
-                    <div className="sidebar-link1a">
+                    {/* <div className="sidebar-link1a">
                       <a
                         href="#white_layer_9"
                         className={
@@ -792,7 +795,7 @@ const Whitepaper = () => {
                       >
                         Stable Currency{" "}
                       </a>
-                    </div>
+                    </div> */}
                     {/* ============== */}
                     {/* ============== */}
                     {/* ============== */}
@@ -988,14 +991,14 @@ const Whitepaper = () => {
                 project”) attempts to be part of the solution to this problem by
                 expanding financial access and inclusion to unserved or
                 underserved communities. The protocol achieves its mission by
-                on-chain Governance and a stable-value asset. The protocol
+                on-chain governance and a stable-value asset. The protocol
                 serves as a source of capital for the unserved or underserved
                 communities. In addition, the project seeks to improve the
                 quality of financial services as well as lower the cost of the
                 services in these communities around the globe. This whitepaper,
                 therefore, explores how Egoras protocol can solve real-life
                 problems such as helping people start businesses, supporting
-                small and medium-sized enterprises access funds for expansion,
+                small and medium-sized enterprises access funds for expansion;
                 and enabling families to attend to the needs while maintaining
                 good collateralization on-chain.
               </p>
@@ -1026,30 +1029,41 @@ const Whitepaper = () => {
                 banking System. This is because most microfinance institutions
                 operate as Non-Governmental Organizations (NGOs), and they are
                 reliant on financial institutions such as commercial banks for
-                stabilized funding to carry out their lending activities. This
-                overdependence of microfinance institutions on banks makes them
-                incompetent as lending partners. Finally, there is the problem
-                of over-indebtedness. Notably, the microfinance sector gives
-                loans without collateral, and this increases the risk of bad
-                debts. Egoras microfinance protocol seeks to address the
-                challenges identified above. Addressing the challenges would
-                mean that loans should be given at zero interest and collaterals
-                should be required to get the loans. This also means a
-                microfinance institution, not dependent on mainstream banks. To
-                solve the high-interest rate problem, Egoras protocol introduces
-                on-chain governance where the collateral is validated by the
-                people, in which no central body or company determines the
-                collateral to be accepted and processes the loans at a
-                zero-interest rate. In other words, the borrower doesn’t pay
-                interest. To address the dependence issue, the Egoras protocol
-                uses a stable-value asset system to make sure that Egoras
-                protocol doesn’t lack the funds or liquidity for the loans and
-                these stable-value assets are governed by the people. Finally,
-                the Egoras protocol introduces collateral lending to address
-                over-indebtedness in the microfinance sector. In this regard,
-                small businesses’ assets will be converted to non-fungible
-                tokens, and they represent the collateral. These assets will be
-                sold off when the borrower defaults in repaying the loan.
+                stabilized funding to carry out their own lending activities.
+                This overdependence of microfinance institutions on banks makes
+                them incompetent as lending partners. Finally, there is the
+                problem of over-indebtedness. Notably, the microfinance sector
+                gives loans without collateral, and this increases the risk of
+                bad debts.
+                <br />
+                <br />
+                Egoras microfinance protocol seeks to address the challenges
+                identified above. Addressing the challenges would mean that
+                loans should be given at zero interest and collaterals should be
+                required to get the loans. This also means a microfinance
+                institution, not dependent on mainstream banks.
+                <br />
+                <br />
+                To solve the high-interest rate problem, Egoras protocol
+                introduces on-chain governance where the collateral is validated
+                by the people. In this regard, no central body or company will
+                determine the collateral to be accepted and loans will be
+                processed at a zero-interest rate. In other words, the borrowers
+                do not pay interest.
+                <br />
+                <br />
+                To address the dependence issue, the Egoras protocol uses a
+                stable-value asset system to make sure that Egoras protocol does
+                not lack the funds or liquidity for the loans and these
+                stable-value assets are governed by the people.
+                <br />
+                <br />
+                Finally, the Egoras protocol introduces collateral lending to
+                address over-indebtedness in the microfinance sector. In this
+                regard, small businesses’ assets will be converted to
+                non-fungible tokens, and they represent the collateral. These
+                assets will be sold off when the borrower defaults in repaying
+                the loan
               </p>
             </div>
             {/* ==================== */}
@@ -1060,61 +1074,53 @@ const Whitepaper = () => {
               <h1 className="layer-header">
                 Decentralized Autonomous Organization
               </h1>
-              A decentralized autonomous organization (DAO) is an entity with no
-              central leadership. Decisions get made from the bottom-up,
-              governed by a community organized around a specific set of rules
-              enforced on a blockchain. DAOs are internet-native organizations
-              collectively owned and managed by their members. Decisions are
-              made via proposals the group votes on during a specified period. A
-              DAO works without hierarchical management and can have a large
-              number of purposes. As noted earlier, one of the biggest barriers
-              in the microfinance sector is the high- interest rate which is
-              very high when compared with mainstream banks. The financial
-              success of MFIs is limited when compared to commercial banks. The
-              centuries-old banking system has a strong foothold and is slowly
-              evolving to meet the needs of the times. Most Microfinance
-              Institutions charge a very high rate of interest (12-30%) when
-              compared to commercial banks (8-12%). For any microfinance
-              institution to achieve its purpose then the interest rate should
-              be zero. The best way to achieve this is to give the power back to
-              the people, whereby users can vote to increase or reduce the
-              inventory fees and they are also incentivized as they participate
-              in these processes. As a decentralized autonomous organization, no
-              company fixes outrageous interest or declines loan requests. The
-              users vote the inventory fees of their choice and also vote in the
-              approval and declining of loans. Whereas the current microfinance
-              space is managed by NGOs, microfinance banks, or individuals and
-              regulated by the government, the whole process on Egoras protocol
-              is governed by the people. No third party makes the decisions, and
-              all data are secured on Egoras smart contract which is built on
-              Binance smart chains. Egoras protocol is not owned by any
-              foundation nor any firm. It is a decentralized organization
-              governed by the people.
+              For any microfinance institution to achieve its purpose, the
+              interest rate should be zero percent subject to payment of
+              inventory and processing fees. Notably, one of the main causes of
+              high interest rates charged by microfinance institutions is the
+              centralized governance model where arbitrary and outrageous
+              interests are fixed by the individuals in charge. Decentralization
+              of governance is therefore a solution to the high interest rates.
+              Egoras protocol adopts a Decentralized Autonomous Organization
+              (DAO) system where there is no central leadership; and decisions
+              are made by members of the system through group votes during a
+              specified period. In this way, users can vote to increase or
+              reduce the applicable inventory fees and they are also
+              incentivized as they participate in the process. As a
+              decentralized autonomous organization, no company fixes outrageous
+              interest or declines loan requests. The users vote the inventory
+              fees of their choice and also vote in the approval and declining
+              of loans. Whereas the current microfinance space is managed by
+              NGOs, microfinance banks, or individuals and regulated by the
+              government, the whole process on Egoras protocol is governed by
+              the people. No third party makes the decisions, and all data are
+              secured on Egoras smart contract which is built on Binance Smart
+              Chains. Egoras protocol is not owned by any foundation nor any
+              firm. It is a decentralized organization governed by the people.
             </div>
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
             <div className="section whitepaper-layer4" id="white_layer_4">
               <h1 className="layer-header">Lending Partner Governance</h1>
-              Most microfinance institutions function as registered
-              Non-Governmental Organizations (NGOs), they are dependent on
-              financial institutions such as commercial banks for stabilized
-              funding to carry out their lending activities. Most of these
-              commercial banks are private institutions charging a higher rate
-              of interest. They also sanction loans for shorter periods. The
-              massive dependence of Microfinance institutions on banks makes
-              them incompetent as lending partners. On Egoras, Microfinance
-              banks, NGOs, or any lending firm can validate borrowers or small
-              business owners and work with Egoras to distribute the loans to
-              small businesses or any borrower that wants to borrow funds from
-              Egoras. These microfinance banks or organizations are curated by
-              the people and people get to decide which organization can get
-              access to the Egoras treasury system. When a user requires a loan,
-              the user will contact a microfinance bank or organization that has
-              been approved by Egoras token holders to validate the user and
-              post the loans on Egoras protocol. This organization validates the
-              user’s information. The kind of collaterals and features are also
-              uploaded by the validating organizations.
+              Most microfinance institutions depend on financial institutions
+              such as commercial banks for stabilized funding. This massive
+              dependence of microfinance institutions on banks makes them
+              unreliable in achieving the goals of microfinance as originally
+              conceived. The Egoras protocol does not rely or depend on
+              commercial banks. Rather, on Egoras, Microfinance banks, NGOs or
+              any lending firms or companies (collectively “lending partners”)
+              can validate borrowers or small business owners and work with
+              Egoras to distribute the loans to small businesses or any borrower
+              that wants to borrow funds from Egoras. These lending partners are
+              curated by users and community get to decide which lending partner
+              can get access to the Egoras treasury system. When an individual
+              requires a loan, the individual will contact a lending partner
+              that have been approved by Egoras token holders to validate the
+              individual and post the loans on Egoras protocol. The lending
+              partner validates the user’s information. The kind of collaterals
+              and its features to be used for the loan are also uploaded by the
+              validating lending partner.
             </div>
             {/* ==================== */}
             {/* ==================== */}
@@ -1127,64 +1133,58 @@ const Whitepaper = () => {
               protocol uses a crowdsourced knowledge to approve or decline
               collaterals backing the loans. The people vote if the collaterals
               should be approved or declined, and the people also share in the
-              risk of the loans. Egoras holders approve this loan within after a
-              certain threshold is reached. Data are provided for Egorasholders
-              to make the correct governance decisions and the votes are
-              determined by the voting weight (vote weight is determined by the
-              amount of Egorastoken locked in the microfinance smart contract).
+              risk of the loans.
+              <br />
+              <br />
+              Egoras holders approve this loan within after a certain threshold
+              is reached. Data are provided for Egorasholders to make the
+              correct governance decisions and the votes are determined by the
+              voting weight (vote weight is determined by the amount of
+              Egorastoken locked in the microfinance smart contract).
+              <br />
+              <br />
               Egoras holders share in the risk of the loans, and they are
               rewarded for their participation in the governance process by
-              receiving all interest accruing from the loans.
+              receiving portions of the inventory fee for the loans.
             </div>
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
             <div className="section whitepaper-layer6" id="white_layer_6">
-              <h1 className="layer-header">Non-Fungible Token (NFT)</h1>A
-              non-fungible token (NFT) is a unique and non-interchangeable unit
-              of data stored on a digital ledger (blockchain). NFTs can be used
-              to represent easily reproducible items such as photos, videos,
-              audio, and other types of digital files as unique items (analogous
-              to a certificate of authenticity) and use blockchain technology to
-              establish a verified and public proof of ownership. Copies of the
-              original file are not restricted to the owner of the NFT and can
-              be copied and shared like any file. The lack of interchangeability
-              (fungibility) distinguishes NFTs from blockchain cryptocurrencies,
-              such as Bitcoin. The microfinance sector deals with marginalized
-              sections of the society intending to improve their standard of
-              living, and thus over-indebtedness poses a severe challenge to its
-              growth. The growing trend of multiple borrowing by clients and
-              inefficient risk management are the most significant factors that
-              stress the microfinance industry. The microfinance sector gives
-              loans without collateral, which increases the risk of bad debts.
-              Fast-paced growth needs proper infrastructural planning, which the
-              Indian microfinance sector lacks. Egoras microfinance protocol
-              addresses these challenges identified above by providing loans at
-              zero interest and collaterals should be required to get the loans.
-              The collaterals are represented as NFTs (Non - Fungible Tokens).
-              This means collateral ownership can be transferred easily without
+              <h1 className="layer-header">Non-Fungible Token (NFT)</h1>
+              The microfinance sector mostly gives uncollateralized loan which
+              in turn increases the risk of bad debt. Egoras microfinance
+              protocol addresses this challenge by providing loans at zero
+              interest with collaterals required to get the loans. The
+              collaterals are represented as Non - Fungible Tokens (NFTs). NFT
+              is a unique and non-interchangeable unit of data stored on a
+              digital ledger (blockchain) and can be used to represent
+              reproducible items. NFTS can be used to establish a verified and
+              public proof of ownership. The implication for Egoras Protocol is
+              that collateral ownership can be transferred easily without
               undergoing rigorous legal works. Collaterals can be claimed after
-              the loan period. All transactions are recorded as NFTs on a public
-              Blockchain. (Thus, every transaction is public and immutable).
+              the loan period. Every transaction is public and immutable as all
+              transactions are recorded as NFTs on a public Blockchain.
             </div>
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
             <div className="section whitepaper-layer6" id="white_layer_7">
-              <h1 className="layer-header">NFT Farming</h1> NFT farming is an
-              emerging concept which involves staking NFTs for a reward or
-              staking tokens for an NFT as a reward. It’s the merger of NFT
-              technology and decentralized finance (Defi). In short, picture NFT
-              farming is similar to yield farming, but instead, it involves NFTs
-              as either a reward or the staked token. Ultimately NFT farming
-              creates liquidity and utility for NFTs that would otherwise hardly
-              do anything. Egoras eNFT farming builds off the concept of token
-              staking and liquidity farming, with users staking native tokens to
-              earn an additional yield through an NFT-based reward. Unlike
-              traditional staking, which pays out the reward in the natively
-              staked token, through egoras NFT farming, users can obtain NFTs
-              assets redeemable for offline goods. These earnable NFTs can vary
-              greatly depending on the token being staked.
+              <h1 className="layer-header">NFT Farming</h1>
+              In simple terms, NFT farming is concerned with staking NFTs for a
+              reward or staking tokens for an NFT as a reward. It combines NFT
+              technology and decentralized finance (Defi). Ultimately NFT
+              farming creates liquidity and utility for NFTs that would
+              otherwise hardly do anything.
+              <br />
+              <br />
+              Egoras NFT farming furthers the concept of token staking and
+              liquidity farming, with users staking native tokens to earn an
+              additional yield through an NFT-based reward. Unlike traditional
+              staking, which pays out the reward in the natively staked token,
+              users, through Egoras NFT farming, can obtain NFTs assets
+              redeemable for offline goods. These earnable NFTs can vary greatly
+              depending on the amount of token being staked.
             </div>
             {/* ==================== */}
             {/* ==================== */}
@@ -1192,24 +1192,28 @@ const Whitepaper = () => {
             <div className="section whitepaper-layer6" id="white_layer_8">
               <h1 className="layer-header">Micro-Collateral Smart contracts</h1>{" "}
               Anyone can leverage up any personal properties as collateral to
-              generate eUSD on Egoras microfinance protocol. Egoras Collateral
-              Assets are physical assets represented on blockchain as NFTs and
-              are approved by Egoras governance. The microfinance banks and
-              organizations hold collateral assets deposited by a user and the
-              microfinance smart contract holds the digital equivalent and the
-              governance smart contract permits the user to generate eUSD but
-              generating eUSD also accrues debt. This debt effectively locks the
-              deposited physical collateral assets and the digital collateral
-              assets inside the microfinance smart contract until it is later
-              covered by paying back an equivalent amount of eUSD, at which
-              point the owner can again withdraw their collateral. Active loans
-              are always collateralized in excess, meaning that the value of the
-              collateral is higher than the value of the debt.
+              generate eUSD on Egoras microfinance protocol. Egoras collateral
+              assets are physical assets represented on blockchain as NFTs and
+              is approved by Egoras governance.
+              <br />
+              <br />
+              The lending partners hold collateral assets deposited by a user
+              and the microfinance smart contract holds the digital equivalent
+              while the governance smart contract permits the user to generate
+              eUSD but generating eUSD also accrues debt.
+              <br />
+              <br />
+              This debt effectively locks the deposited physical collateral
+              assets and the digital collateral assets inside the microfinance
+              smart contract until it is later covered by paying back an
+              equivalent amount of eUSD, at which point the owner can again
+              withdraw their collateral. Active loans are always collateralized
+              in excess, meaning that the value of the collateral is higher than
+              the value of the debt.
             </div>
             {/* ==================== */}
             {/* ==================== */}
-            {/* ==================== */}
-            <div className="section whitepaper-layer6" id="white_layer_9">
+            {/* <div className="section whitepaper-layer6" id="white_layer_9">
               <h1 className="layer-header"> Stable Currency</h1>The biggest
               hurdle to the use of cryptocurrencies as a medium of exchange is
               their volatility. People are unlikely to want to buy a volatile
@@ -1249,7 +1253,7 @@ const Whitepaper = () => {
               to hedge price risk in their lives by denominating a portion of
               their personal economy in currencies that are stable vis-a-vis the
               price of the goods they regularly use.
-            </div>
+            </div> */}
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
@@ -1266,7 +1270,7 @@ const Whitepaper = () => {
                 govern Egoras microfinance protocol.
               </div>
               <div className="sub-texts-para">
-                • The Egoras Credit (EGC)- The utility token of the Egoras
+                • The Egoras Credit (EGC) - The utility token of the Egoras
                 protocol to facilitate the stability of the EUSD.
               </div>
               <div className="sub-texts-para">
@@ -1277,28 +1281,33 @@ const Whitepaper = () => {
                 least 100% of the value of all EgorasUSD tokens. Many of the
                 collateral tokens will be tokenized real-world assets such as
                 tokenized electrical appliances, household appliances e.t.c, and
-                the portfolio will start relatively simple and diversify over
-                time as more asset classes are tokenized.
+                the portfolio will start off relatively simple and diversify
+                over time as more asset classes are tokenized.
               </div>
             </div>
             {/* ==================== */}
             {/* ==================== */}
             {/* ==================== */}
             <div className="section whitepaper-layer6" id="white_layer_11">
-              <h1 className="layer-header"> The EgorasUSD(EUSD)</h1> The EUSD
-              Stable coin is a decentralized, collateral-backed cryptocurrency
-              pegged to United States Dollar. EUSD is built on the Ethereum
-              blockchain and can be held on any Ethereum wallet. It can be spent
-              the way the U.S. Dollar is spent. Microfinance banks and NGOs
-              generate EUSD by posting a loan backed by collateral assets into
-              the Egoras microfinance protocol and EGR holders approve or
-              decline the loan request. The loan request approved creates EUSD
-              which the microfinance banks send directly to the borrowers. Users
-              can also buy EUSD from exchanges, or simply receive it as a means
-              of payment. Every EUSD in circulation is over-collateralized,
-              meaning that the value of the collateral is higher than the value
-              of the EUSD debt, and all EUSD transactions are publicly viewable
-              on the Ethereum blockchain.
+              <h1 className="layer-header"> The EgorasUSD(EUSD)</h1>
+              The EUSD stable coin is a decentralized, collateral-backed
+              cryptocurrency pegged to United States Dollar. EUSD is built on
+              the Ethereum blockchain and can be held on any Ethereum wallet. It
+              can be spent the way the U.S. Dollar is spent.
+              <br />
+              <br />
+              Egoras Lending Partners generate EUSD by posting a loan backed by
+              collateral assets into the Egoras microfinance protocol and EGR
+              holders approve or decline the loan request. The loan request
+              approved creates EUSD which the microfinance banks send directly
+              to the borrowers.
+              <br />
+              <br />
+              Users can also buy EUSD from exchanges, or simply receive it as a
+              means of payment. Every EUSD in circulation is
+              over-collateralised, meaning that the value of the collateral is
+              higher than the value of the EUSD debt, and all EUSD transactions
+              are publicly viewable on the Ethereum blockchain.
             </div>
             {/* ==================== */}
             {/* ==================== */}
@@ -1306,11 +1315,10 @@ const Whitepaper = () => {
             <div className="section whitepaper-layer6" id="white_layer_12">
               <h1 className="layer-header"> Functions of EUSD</h1>
               <div className="sub-texts-para">
-                <span className="sub-texts-indent">1. </span> Store of value:
-                Stablecoins keep or preserve values over a long period because
-                of the lower associated volatility levels. EUSD is a store of
-                value, so it is designed to preserve value for a long period of
-                time.
+                <span className="sub-texts-indent">1. </span>Store of Value:
+                EUSD being a stable coin serves as a store of value because of
+                the lower associated volatility levels. EUSD is designed to
+                preserve value for a long period of time.
               </div>
               <div className="sub-texts-para">
                 <span className="sub-texts-indent"> 2.</span> The Medium of
@@ -1332,9 +1340,9 @@ const Whitepaper = () => {
               <div className="sub-texts-para">
                 <span className="sub-texts-indent"> 4.</span> Lending: EUSD can
                 be used to settle the debt in Egoras microfinance protocol.
-                (e.g., Microfinance Banks, NGOs, or Egoras lending partners pay
+                (e.g., Microfinance Banks, NGOs or other lending partners pay
                 back debt and interest with EUSD on Egoras microfinance
-                protocol)..
+                protocol).
               </div>
             </div>
             {/* ==================== */}
@@ -1344,31 +1352,31 @@ const Whitepaper = () => {
               <h1 className="layer-header"> Steps to Generate EUSD</h1>
               <div className="sub-texts-para">
                 <span className="sub-texts-indent">1. </span> Create Partnership
-                Request: Any legally registered microfinance bank or NGO can
-                create a partnership request on Egoras microfinance protocol by
-                filling the partnership form with all the detailed information
-                about the organization.
+                Request: Any legally registered microfinance bank or NGO or duly
+                licensed money lending company can create a partnership request
+                on Egoras microfinance protocol by filling the partnership form
+                with all the detailed information about the organization..
               </div>
               <div className="sub-texts-para">
                 <span className="sub-texts-indent"> 2.</span> Get
                 approved/declined by EGR holders: Egoras token (EGR) holders
-                curate the request of microfinance banks, NGOs, or Money Lenders
-                to become a lending partner, they decide if they will either
+                curate the request of microfinance banks, NGOs or money lenders
+                to become a lending partner, and decide if they will either
                 approve or decline the request from the organizations.
               </div>
               <div className="sub-texts-para">
-                <span className="sub-texts-indent"> 3.</span> Post your loan
-                request: Approved microfinance banks or NGOs can post loan
-                requests to Egoras microfinance protocol and get EGR holders to
-                either approve or decline the loans. If the loans are approved,
-                then the organization receives EUSD in its approved
-                organizational wallets.
+                <span className="sub-texts-indent"> 3.</span> Post loan request:
+                Approved lending partner can post loan requests to Egoras
+                microfinance protocol and get EGR holders to either approve or
+                decline the loans. If the loans are approved, then the
+                organization receives EUSD in their approved organizational
+                wallets.
               </div>
               <div className="sub-texts-para">
                 <span className="sub-texts-indent"> 4.</span> Pay Back the Debt:
-                The microfinance banks or NGOs must pay down or completely pay
-                back the EUSD she generated, plus the interest fee that
-                continuously accrues on the outstanding debt.
+                The lending partner must pay down or completely pay back the
+                EUSD generated, plus the inventory fee that continuously accrues
+                on the collateral.
               </div>
             </div>
 
@@ -1382,24 +1390,22 @@ const Whitepaper = () => {
                 Steps To Govern the Generation Of EUSD
               </h1>
               <div className="sub-texts-para">
-                <span className="sub-texts-indent">1. </span> Validate
-                Microfinance bank partnership request: Approve/decline
-                partnership requests of microfinance banks, NGOs, or
-                organizations with money lenders licenses. Read through the
-                documents provided by these organizations before approving or
-                declining the requests.
+                <span className="sub-texts-indent">1. </span> Validate Lending
+                Partnership Request: Approve/decline partnership requests of
+                microfinance banks, NGOs or organizations with money lenders
+                licenses. Read through the documents provided by these
+                organizations before approving or declining the requests.
               </div>
               <div className="sub-texts-para">
-                <span className="sub-texts-indent"> 2.</span>Validate the Loan
-                request: Read through the loan request by these organizations;
-                ask the lending team questions to get to know the borrower
-                before approving/declining the loan request.
+                <span className="sub-texts-indent"> 2.</span> Validate the Loan
+                Request: Read through the loan request by these lending
+                partners; ask the lending team questions in order to get to know
+                the borrower before approving/declining the loan request.
               </div>
               <div className="sub-texts-para">
-                <span className="sub-texts-indent"> 3.</span> Claim your
-                rewards: Claim your reward block rewards created through
-                inflationary monetary policy and interest accrued from debt from
-                businesses holding EUSD.
+                <span className="sub-texts-indent"> 3.</span> Claim Rewards:
+                Claim your block rewards created through inflationary monetary
+                policy and inventory fee from businesses holding EUSD.
               </div>
             </div>
 
@@ -1413,27 +1419,34 @@ const Whitepaper = () => {
               payments and savings, EGR is a token that has a volatile price
               because of its unique supply mechanics and role on the Egoras
               protocol. EGR is a governance token. There exists a maximum of
-              100M EGR. As a governance token, EGR is used by EGR holders to
-              vote for the risk management and business logic of the Egoras
-              Protocol. Risk management is crucial for the success and survival
-              of the system and is done in practice by voting on specific risk
-              parameters for each loan and lending partner. The risk parameters
-              need to be set rigorously to correspond to the risk profile of the
-              loans and the lending partner in the system. The voting process
-              for the governance of the system is done through continuous
-              approval voting. This means every EGR holder can vote for any
-              number of proposals with the EGR he holds and can submit a new
-              proposal or withdraw his votes at any point in time. The proposal
-              that has the most votes from all EGR holders becomes the “top
-              proposal” and can be activated to implement changes to the risk
-              parameters of the system. There is a simple app available that
-              allows any EGR holder to easily vote with their EGR by using
-              metamask, ledger, and fortmatic. More advanced features are
-              planned for the future, such as delegating your votes to a proxy
-              voter, and the ability to safely vote with EGR held in cold
-              storage. If EGR holders are highly competent and govern the
-              protocol well, The egoras credit system will get adopted and will
-              always remain overcollateralized.
+              100M EGR.
+              <br />
+              <br />
+              As a governance token, EGR is used by EGR holders to vote for the
+              risk management and business logic of the Egoras Protocol. Risk
+              management is crucial for the success and survival of the system
+              and is done in practice by voting on specific risk parameters for
+              each loan and lending partner. The risk parameters need to be set
+              rigorously to correspond to the risk profile of the loans and the
+              lending partner in the system.
+              <br />
+              <br />
+              The voting process for the governance of the system is done
+              through continuous approval voting. This means every EGR holder
+              can vote for any number of proposals with the EGR he holds and can
+              submit a new proposal or withdraw his votes at any point in time.
+              The proposal that has the most votes from all EGR holders becomes
+              the “top proposal” and can be activated to implement changes to
+              the risk parameters of the system.
+              <br />
+              <br />
+              There is a simple app available that allows any EGR holder to
+              easily vote with their EGR by using metamask, ledger and
+              fortmatic. More advanced features are planned for the future, such
+              as delegating your votes to a proxy voter, and the ability to
+              safely vote with EGR held in cold storage. If EGR holders are
+              highly competent and govern the protocol well, The Egoras credit
+              system will get adopted and will always remain overcollateralized.
             </div>
 
             {/* ========================= */}
@@ -1443,7 +1456,7 @@ const Whitepaper = () => {
             <div className="section whitepaper-layer6" id="white_layer_16">
               <h1 className="layer-header">The Egoras Credit (EGC)</h1>
               As a utility token, EGR is required for paying the inventory fees
-              accrued on Loans that have been used to generate eUSD in the
+              accrued on Loans that have been used to generate EUSD in the
               Egoras Protocol. Only EGC can pay these fees, and when paid the
               EGC is burned, removing it from the supply. This means that if the
               adoption and demand for EUSD and Egoras Credit system increases,
@@ -1456,24 +1469,24 @@ const Whitepaper = () => {
             {/* ========================= */}
             <div className="section whitepaper-layer6" id="white_layer_17">
               <h1 className="layer-header">
-                How does EGC Facilitate the stability of EgorasUSD
+                How EGC Facilitates the stability of EgorasUSD
               </h1>
-              If demand goes down for the EgorasUSD, prices will fall on
-              secondary markets. What happens then? Suppose the redemption price
-              of eUSD is $1.00. If the price of eUSD on the open market is
-              $0.98, arbitrageurs will be incentivized to buy it up and redeem
-              it with the Egoras smart contract for $1.00 worth of EGC or eNFTs.
-              They’ll continue buying on open markets until there is no more
+              If demand goes down for the EUSD, prices will fall on secondary
+              markets. What happens then? Suppose the redemption price of EUSD
+              is $1.00. If the price of EUSD on the open market is $0.98,
+              arbitrageurs will be incentivized to buy it up and redeem it with
+              the Egoras smart contract for $1.00 worth of EGC or eNFTs. They
+              will continue buying in the open markets until there is no more
               money to be made, which is when the market price matches the
               redemption price of $1.00. The same mechanism works in reverse
-              when demand goes up. If the price of eUSD on the open market is
+              when demand goes up. If the price of EUSD in the open market is
               $1.02, arbitrageurs will be incentivized to purchase newly minted
-              eUSD tokens for $1.00 worth of either collateral or Egoras Credit
-              tokens (the latter only if there is an excess pool of eUSD tokens
-              available), and immediately sell them on the open market. They’ll
-              continue selling on open markets until there is no more money to
-              be made, which is when the market price matches the purchase price
-              of $1.00.
+              EUSD tokens for $1.00 worth of either collateral or Egoras Credit
+              tokens (the latter only if there is an excess pool of EUSD tokens
+              available), and immediately sell them in the open market. They’ll
+              continue selling in the open markets until there is no more money
+              to be made, which is when the market price matches the purchase
+              price of $1.00.
             </div>
             {/* ==================== */}
             {/* ==================== */}
@@ -1482,17 +1495,17 @@ const Whitepaper = () => {
               <h1 className="layer-header"> Conclusion</h1>
               <div className="sub-texts-para last">
                 Egoras microfinance protocol addresses the challenges facing the
-                microfinance industry like high-interest rates, over-dependency
-                on banks, and over-indebtedness.
+                microfinance industry like high interest rates, over-dependency
+                on banks and over-indebtedness.
               </div>
               <div className="sub-texts-para last">
                 Egoras protocol allows microfinance organizations to get loans
-                at zero interest rate in eUSD, converting the collaterals of
+                at zero interest rate in EUSD, converting the collaterals of
                 small business owners into digital assets and represented on
                 blockchain as NFTs.
               </div>
               <div className="sub-texts-para last">
-                eUSD is a decentralized stable coin that is not issued or
+                EUSD is a decentralized stable coin that is not issued or
                 administered by any centralized actor or trusted intermediary or
                 counterparty. It is unbiased and borderless —available to
                 anyone, anywhere.
@@ -1520,6 +1533,8 @@ const Whitepaper = () => {
       {/* =================== */}
       {/* =================== */}
       {/* =================== */}
+
+      <img src="/img/blur-drop.png" alt="" className="blur-white-bggg" />
       <section className="footerSection" id="footer_id">
         <div className="container">
           <div className="footerArea">

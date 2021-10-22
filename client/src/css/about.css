@@ -21,6 +21,58 @@
   width: 135%;
 }
 
+.blur-white-bg {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.blur-white-bga {
+  position: absolute;
+  width: 410px;
+  left: 0;
+  z-index: -1;
+  top: 305px;
+}
+.blur-white-bg2 {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* z-index: -1; */
+}
+
+.top-align {
+  position: relative;
+  z-index: 5;
+}
+.blur-white-bga2 {
+  position: absolute;
+  width: 410px;
+  left: 0;
+  /* z-index: -1; */
+  bottom: 0;
+}
+.blur-white-bga3 {
+  position: absolute;
+  width: 265px;
+  right: 0;
+  /* z-index: -1; */
+  top: 224px;
+}
+.blur-white-bga4 {
+  position: absolute;
+  width: 265px;
+  left: 0;
+  /* z-index: -1; */
+  bottom: 0;
+}
+.egoras-team-area {
+  position: relative;
+  z-index: 5;
+}
+
 .title-3 {
   line-height: 57px;
 }
@@ -186,6 +238,8 @@
 
 section.about-egoras-team {
   padding: 4em 0em;
+  position: relative;
+  overflow: hidden;
 }
 /* ================================= */
 /* ================================= */

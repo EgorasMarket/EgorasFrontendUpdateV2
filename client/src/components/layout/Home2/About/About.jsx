@@ -87,6 +87,8 @@ const About = () => {
             </div>
           </div>
         </div>
+        <img src="/img/blur-drop.png" alt="" className="blur-white-bg" />
+        <img src="/img/icons/left-blur.png" alt="" className="blur-white-bga" />
       </section>
       {/* hero section end */}
       {/* =================================================================================================================================================================================================================================================================== */}
@@ -219,6 +221,12 @@ const About = () => {
             </div>
           </div>
         </div>
+        <img src="/img/blur-drop.png" alt="" className="blur-white-bg2" />
+        <img
+          src="/img/icons/left-blur.png"
+          alt=""
+          className="blur-white-bga2"
+        />
       </section>
       {/* hero section end */}
 
@@ -265,6 +273,16 @@ const About = () => {
             </div>
           </div>
         </div>
+        <img
+          src="/img/icons/right-brown-blur.png"
+          alt=""
+          className="blur-white-bga3"
+        />
+        <img
+          src="/img/icons/left-blur.png"
+          alt=""
+          className="blur-white-bga4"
+        />
       </section>
       {/* about-egoras-section */}
       {/* ================================================== */}

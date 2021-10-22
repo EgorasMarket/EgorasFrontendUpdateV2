@@ -21,7 +21,13 @@
   position: relative;
   transition: 1s ease-in-out;
 }
-
+.blur-white-bggg {
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
 .notDetails-accord {
   display: none !important;
 }
