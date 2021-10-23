@@ -205,11 +205,11 @@ const Footer = () => {
                       Explore Collaterals
                     </a>
                     <a
-                      href="/documentation"
+                      href="/whitepaper"
                       className="c1link1"
                       target="_blank"
                     >
-                      Documentation
+                   White Paper
                     </a>
                   </div>
                 </AccordionDetails>
