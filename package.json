@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@rumess/react-flip-countdown": "^1.2.3",
     "aos": "^2.3.4",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.1",

@@ -1455,7 +1455,7 @@ const Whitepaper = () => {
             {/* ========================= */}
             <div className="section whitepaper-layer6" id="white_layer_16">
               <h1 className="layer-header">The Egoras Credit (EGC)</h1>
-              As a utility token, EGR is required for paying the inventory fees
+              As a utility token, EGC is required for paying the inventory fees
               accrued on Loans that have been used to generate EUSD in the
               Egoras Protocol. Only EGC can pay these fees, and when paid the
               EGC is burned, removing it from the supply. This means that if the

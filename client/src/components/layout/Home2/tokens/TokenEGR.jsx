@@ -11,7 +11,9 @@ import {
   PieChart,
   Pie,
 } from "recharts";
-
+import AssessmentIcon from "@mui/icons-material/Assessment";
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
+import AutorenewIcon from "@mui/icons-material/Autorenew";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
 import "../../../../css/token.css";
@@ -120,34 +122,38 @@ const TokenEGR = () => {
           <div className="row margin">
             <div class="col-md-3 mx-md-0 px-md-0">
               <div class="stats-widget">
-                <img src="/img/naira-icon.svg" className="naira-icon" />
+                <MonetizationOnIcon className="naira-icon" />
                 <div class="stats-label">Price</div>
-                <div class="stats-value">$0.896079</div>
+                <div class="stats-value">$0.0181</div>
               </div>
             </div>
             <div class="col-md-3 mx-md-0 px-md-0">
               <div class="stats-widget">
-                <img src="/img/naira-icon.svg" className="naira-icon" />
+                <AssessmentIcon className="naira-icon" />
                 <div class="stats-label">Market Cap</div>
-                <div class="stats-value">$319,073,971</div>
+                <div class="stats-value">$779,384</div>
               </div>
             </div>
             <div class="col-md-3 mx-md-0 px-md-0">
               <div class="stats-widget">
-                <img src="/img/naira-icon.svg" className="naira-icon" />
+                <AutorenewIcon className="naira-icon" />
                 <div class="stats-label">Circulating Supply</div>
                 <div class="stats-value">
-                  356,077,948
+                  43,071,715.00
                   <div class="egc-label">EGR</div>
                 </div>
               </div>
             </div>
             <div class="col-md-3 mx-md-0 px-md-0">
               <div class="stats-widget">
-                <img src="/img/naira-icon.svg" className="naira-icon" />
+                <img
+                  src="/img/stacked-coins.svg"
+                  alt=""
+                  className="naira-icon"
+                />
                 <div class="stats-label">Total Supply</div>
                 <div class="stats-value">
-                  1,000,000,000
+                  100,000,000
                   <div class="egc-label">EGR</div>
                 </div>
               </div>

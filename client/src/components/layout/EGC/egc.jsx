@@ -1,56 +1,95 @@
 import { textAlign } from "@mui/system";
 import React from "react";
+import FlipCountdown from "@rumess/react-flip-countdown";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+
 import "./egc.css";
+
+import "./countdown.css";
 
 const Egc = () => {
   return (
     <div>
-      <section className="tokenSection2 text-black" id="token">
-        <div class="eusd-token-page container">
-          <div class="eusd-token-page hero text-center">
-            <div class="eusd-token-page circle"></div>
-            <div class="eusd-token-page circle circle2"></div>
-            <div class="eusd-token-page circle circle3"></div>
-            <div class="eusd-token-page circle circle4"></div>
-            <img
-              src="/img/token-hero-center-blur2.png"
-              alt="Waves"
-              class="eusd-token-page waves"
-            />
-            <img
-              src="/img/EGC-LOGO.svg"
-              alt="EGC coin"
-              class="eusd-token-page coin"
-            />
-            <div class="eusd-token-page d-flex flex-column align-items-center">
-              <div class="eusd-token-page ticker-symbol">
-                EgorasCredit (EGC)
+      <section className="earning-section padding-high">
+        <div className="container">
+          <div className="nft-area2">
+            <div
+              className="nft-txt-area2 "
+              style={{ width: "100%", position: "relative", zIndex: "5" }}
+            >
+              <div className="span-txts">
+                <p className="span4a-txts strong-font">
+                  Egoras Credit-The Utility Token Of Egoras Protocol
+                </p>
+                <p className="span4b-txts">
+                  As a utility token, EGC is required for paying the inventory
+                  fees accrued on Loans that have been used to generate EUSD in
+                  the Egoras Protocol. its main purpose is to help maintain the
+                  stability of eUSD.
+                </p>
+                <p className="span4b-txts odd-color">
+                  <div className="next-claim">
+                    NEXT CLAIM IN{" "}
+                    <ArrowDownwardIcon className="next-claim-icon" />{" "}
+                  </div>
+                </p>
+                <FlipCountdown
+                  theme="light"
+                  titlePosition="bottom"
+                  hideYear
+                  hideMonth
+                  dayTitle="Days"
+                  hourTitle="Hours"
+                  minuteTitle="Minutes"
+                  secondTitle="Seconds"
+                  // size="extra-medium"
+                  // hideDay
+                  // hideHour
+                  // hideMinute
+                  // hideSecond
+                  endAt={"2021-12-12 00:00:00"} // Date/Time
+                />
+                <div className="count-down-section-btns">
+                  <button className="count-down-btn1">Distribute EGC</button>
+                  <a href="/whitepaper" className="count-down-btn2">
+                    Read White Paper
+                  </a>
+                </div>
               </div>
-              <h1 class="eusd-token-page">
-                EgorasCredit is the ultility token of the Egoras protocol.
-              </h1>
-              <button
-                style={{ marginTop: "50px" }}
-                class="jsx-4146495177 btn-hero d-flex align-items-center justify-content-center mx-auto  zIndex2"
-              >
-                Get EGC
-              </button>
+            </div>
+            <div
+              className="nft-img-area2 position-it"
+              style={{ display: "inline-flex", width: "100%" }}
+            >
+              {/* <div class="eusd-token-page hero text-center">
+                <div class="eusd-token-page  circle"></div>
+                <div class="eusd-token-page  circle circle2"></div>
+                <div class="eusd-token-page  circle circle3"></div>
+                <div class="eusd-token-page  circle circle4"></div>
+                <img
+                  src="/img/EGC-LOGO.svg"
+                  alt="OUSD coin"
+                  class="eusd-token-page coin place-egc"
+                />
+              </div> */}
+
+              <img
+                src="/img/egc-illustrationa.png"
+                alt=""
+                style={{ width: "100%" }}
+              />
             </div>
           </div>
-
-          <div class="eusd-token-page circle1"></div>
-          <div class="eusd-token-page circle1 circle2"></div>
-          <div class="eusd-token-page circle1 circle3"></div>
-          <div class="eusd-token-page circle1 circle4"></div>
-          <div class="eusd-token-page circle2a"></div>
-          <div class="eusd-token-page circle2a circle2"></div>
-          <div class="eusd-token-page circle2a circle3"></div>
-          <div class="eusd-token-page circle2a circle4"></div>
         </div>
-
-        <img src="/img/token-dots.svg" alt="" className="tokenDots" />
+        <img src="/img/blur-drop.png" alt="" className="blurDrop-token" />
       </section>
-
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
       <div className="houseDivCu">
         <div className="secondCu filter2">
           <div className="widthAjustBA dis-flex">
@@ -107,6 +146,41 @@ const Egc = () => {
         <img src="/img/blur-drop.png" alt="" className="blurDrop-token" />
         <img src="/img/shape-egg2.svg" alt="" class="gteggShape2a" />
       </div>
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+
+      {/* ============= */}
+      {/* ============= */}
+      {/* ============= */}
+      {/* ============= */}
+
+      {/* ============= */}
+      {/* ============= */}
+      {/* ============= */}
+      {/* ============= */}
+
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
+      {/* =================== */}
       {/* =================== */}
       {/* =================== */}
       {/* =================== */}

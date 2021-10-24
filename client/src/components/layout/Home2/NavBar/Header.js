@@ -440,7 +440,7 @@ const Header = () => {
                   </a>
                   <hr />
                   <a
-                    href="https://t.me/egorasmarket"
+                    href="https://egoras.medium.com/"
                     className="drop-borrow-link"
                   >
                     Blog
