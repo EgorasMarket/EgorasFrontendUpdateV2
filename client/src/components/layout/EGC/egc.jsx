@@ -76,7 +76,8 @@ const Egc = () => {
               <img
                 src="/img/egc-illustrationa.png"
                 alt=""
-                style={{ width: "100%" }}
+                // style={{ width: "100%" }}
+                className="egc-illustartiona"
               />
             </div>
           </div>
@@ -91,7 +92,7 @@ const Egc = () => {
       {/* =================== */}
       {/* =================== */}
       <div className="houseDivCu">
-        <div className="secondCu filter2">
+        <div className="secondCu filter2 reverse">
           <div className="widthAjustBA dis-flex">
             <img src="img/vector1.svg" alt="" width="400" className="REWIND" />
           </div>
@@ -111,7 +112,7 @@ const Egc = () => {
         style={{ backgroundColor: "#f2fbf6" }}
       >
         <div className="earning2">
-          <div className="earning3 filter3">
+          <div className="earning3 filter3 reverse2">
             <div className="widthAjustB">
               <div className="widthAjust1A">
                 <div className="allNone">eNFT Farming</div>

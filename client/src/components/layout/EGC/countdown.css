@@ -120,7 +120,9 @@
 .position-it {
   position: relative;
 }
-
+.egc-illustartiona {
+  width: 100%;
+}
 .eusd-token-page .place-egc {
   position: absolute;
   top: -128px;
@@ -222,13 +224,48 @@
   .flip-countdown {
     text-align: center;
   }
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
+
+  .reverse2 {
+    display: flex;
+    flex-direction: column;
+}
   .count-down-section-btns {
     justify-content: center;
+  }
+
+  .earning-section {
+    padding-bottom: 2em 0;
+  }
+
+  .egc-illustartiona {
+    width: 75%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 400px) {
   .flip-countdown.size-medium .flip-countdown-piece {
     margin: 0.5em;
+  }
+
+  .egc-illustartiona {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 380px) {
+  .count-down-btn1 {
+    padding: 0.5em 1em;
+    margin-right: 1em;
+    font-size: 12px;
+  }
+  .count-down-btn2 {
+    padding: 0.5em 1em;
+    margin-right: 1em;
+    font-size: 12px;
   }
 }
