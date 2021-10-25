@@ -131,7 +131,10 @@
   width: 220px;
   right: 0%;
 }
-
+.flip-countdown .flip-countdown-piece .flip-countdown-card {
+  display: flex;
+  justify-content: center;
+}
 .circlemy.eusd-token-page {
   position: absolute;
   bottom: 240px;
@@ -168,5 +171,64 @@
     border-radius: 303px;
     top: -292px;
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 922px) {
+  .count-down-btn1 {
+    padding: 1em 1.5em;
+  }
+  .count-down-btn2 {
+    padding: 1em 1.5em;
+  }
+
+  .strong-font {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 794px) {
+  .span4b-txts {
+    font-size: 15px;
+    width: 100%;
+  }
+  .flip-countdown.size-medium
+    .flip-countdown-piece
+    .flip-countdown-card
+    .flip-countdown-card-sec {
+    margin: 0 0.025em;
+    font-size: 42px;
+  }
+
+  .count-down-btn1 {
+    padding: 0.5em 1em;
+    margin-right: 1em;
+  }
+  .count-down-btn2 {
+    padding: 0.5em 1em;
+    margin-right: 1em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ma {
+    flex-direction: column;
+    grid-row-gap: 20px;
+  }
+
+  .span4b-txts {
+    justify-content: center;
+  }
+
+  .flip-countdown {
+    text-align: center;
+  }
+
+  .count-down-section-btns {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .flip-countdown.size-medium .flip-countdown-piece {
+    margin: 0.5em;
   }
 }

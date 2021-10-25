@@ -12,9 +12,9 @@ const Egc = () => {
     <div>
       <section className="earning-section padding-high">
         <div className="container">
-          <div className="nft-area2">
+          <div className="nft-area2 ma">
             <div
-              className="nft-txt-area2 "
+              className="nft-txt-area2  "
               style={{ width: "100%", position: "relative", zIndex: "5" }}
             >
               <div className="span-txts">
