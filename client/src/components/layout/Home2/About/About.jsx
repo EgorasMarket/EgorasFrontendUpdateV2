@@ -187,7 +187,7 @@ const About = () => {
                     <h1 className="valuetitle">Stay excited and hungry.</h1>
                   </div>
                   <p className="mission-para">
-                    We are always eager to to achieve more and we are never
+                    We are always eager to achieve more and we are never
                     comfortable with any level. We are not afraid of taking risk
                     in order to reach our goals.
                   </p>
