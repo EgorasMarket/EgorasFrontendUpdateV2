@@ -118,7 +118,7 @@ const Egc = () => {
                 <div className="allNone">eNFT Farming</div>
                 <div className="allNone1">
                   {" "}
-                  EGC holders can claims collaterals of bad debt easily. Holders
+                  EGC holders can claim collaterals of bad debt easily. Holders
                   can send EGC to the Egoras smart contract to claim redeemable
                   NFTs.
                 </div>
