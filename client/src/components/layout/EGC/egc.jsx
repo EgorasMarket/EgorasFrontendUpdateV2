@@ -1,11 +1,30 @@
 import { textAlign } from "@mui/system";
 import React from "react";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+  PieChart,
+  Pie,
+} from "recharts";
 import FlipCountdown from "@rumess/react-flip-countdown";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 import "./egc.css";
 
 import "./countdown.css";
+
+const data01 = [
+  { name: "EGC Holder", value: 100000, fill: "#229e54" },
+  { name: "Founders", value: 10000, fill: "#e4a788" },
+  { name: "Ecosystem Rewards", value: 300000, fill: "#82ca9d" },
+  { name: "Liquidity", value: 90000, fill: "#245838" },
+];
 
 const Egc = () => {
   return (
@@ -92,17 +111,24 @@ const Egc = () => {
       {/* =================== */}
       {/* =================== */}
       <div className="houseDivCu">
-        <div className="secondCu filter2 reverse">
-          <div className="widthAjustBA dis-flex">
-            <img src="img/vector1.svg" alt="" width="400" className="REWIND" />
-          </div>
-          <div className="widthAjustBA">
-            <div className="earn1">Claim Excess eUSD</div>
-            <p className="earn3">
-              EGC is elementary in the stability of EUSD. It is held in a
-              reserve smart-contract and exchanged for eUSD to balance demand
-              excess or shortage.
-            </p>
+        <div className="container">
+          <div className="secondCu filter2 reverse">
+            <div className="widthAjustBA dis-flex">
+              <img
+                src="img/vector1.svg"
+                alt=""
+                width="400"
+                className="REWIND"
+              />
+            </div>
+            <div className="widthAjustBA">
+              <div className="earn1">Claim Excess eUSD</div>
+              <p className="earn3">
+                EGC is elementary in the stability of EUSD. It is held in a
+                reserve smart-contract and exchanged for eUSD to balance demand
+                excess or shortage.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -111,29 +137,30 @@ const Egc = () => {
         className="egc-holders-section"
         style={{ backgroundColor: "#f2fbf6" }}
       >
-        <div className="earning2">
-          <div className="earning3 filter3 reverse2">
-            <div className="widthAjustB">
-              <div className="widthAjust1A">
-                <div className="allNone">eNFT Farming</div>
-                <div className="allNone1">
-                  {" "}
-                  EGC holders can claim collaterals of bad debt easily. Holders
-                  can send EGC to the Egoras smart contract to claim redeemable
-                  NFTs.
+        <div className="container">
+          <div className="earning2">
+            <div className="earning3 filter3 reverse2">
+              <div className="widthAjustB">
+                <div className="widthAjust1A">
+                  <div className="allNone">eNFT Farming</div>
+                  <div className="allNone1">
+                    {" "}
+                    EGC holders can claim collaterals of bad debt easily.
+                    Holders can send EGC to the Egoras smart contract to claim
+                    redeemable NFTs.
+                  </div>
                 </div>
               </div>
+              <div className="widthAjust">
+                <img
+                  src="img/EGORASICON.svg"
+                  alt=""
+                  width="400"
+                  className="REWIND"
+                />
+              </div>
             </div>
-            <div className="widthAjust">
-              <img
-                src="img/EGORASICON.svg"
-                alt=""
-                width="400"
-                className="REWIND"
-              />
-            </div>
-          </div>
-          {/* <div className="allNone2 filter2">
+            {/* <div className="allNone2 filter2">
                    <div style={{width:'45%',flex:'1'}}><img src="img/EGC3.svg" alt="" className="REWIND" /></div>
                    <div style={{width:'45%',flex:'1'}}>
                        <div style={{width:'80%',marginLeft:'auto' }}>
@@ -143,7 +170,9 @@ const Egc = () => {
                    </div>
                   
                </div> */}
+          </div>
         </div>
+
         <img src="/img/blur-drop.png" alt="" className="blurDrop-token" />
         <img src="/img/shape-egg2.svg" alt="" class="gteggShape2a" />
       </div>
@@ -219,6 +248,88 @@ const Egc = () => {
       {/* ==================== */}
       {/* ==================== */}
       {/* ==================== */}
+
+      <section className="chart-review-section">
+        <div className="container">
+          <div className="row">
+            <div class="col-lg-6">
+              <h3 className="staked-title">Staked amount by duration</h3>
+              <div class="desc">
+                Staked EGC is included as part of the circulating supply. You
+                can <a href="https://www.egoras.com/stake">stake your EGC</a> on
+                egoras.com
+              </div>
+              <div class="row staked-chart  align-items-center">
+                <div className="col-md-5">
+                  <PieChart width={100} height={200}>
+                    <Pie
+                      dataKey="value"
+                      data={data01}
+                      cx={20}
+                      cy={100}
+                      innerRadius={60}
+                      outerRadius={80}
+                    />
+                    <Tooltip />
+                    {/* <Legend /> */}
+                  </PieChart>
+                </div>
+
+                <div class="col">
+                  <h3 className="chartTitile font-bg"> Token Distribution </h3>
+                  <div class="desc">
+                    <div className="egc_distr m"> EGR Holders: 100,000EGC </div>
+                    <div className="egc_distr m"> Founders: 10,000EGC </div>
+                    <div className="egc_distr m">
+                      Ecosystem Rewards: 300,000 EGC{" "}
+                    </div>
+                    <div className="egc_distr m"> Liquidity: 90,000EGC </div>
+                  </div>
+                </div>
+              </div>
+              <div class="locked-token-widget">
+                <div class="title">Total Supply</div>
+                <div class="value">
+                  500,000
+                  <div class="EGR-label">EGC</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 mt-5 mt-lg-0">
+              <h3 className="staked-title">Token Distribution</h3>
+              {/* <div class="desc">
+                Circulating supply is calculated as the total supply minus the
+                EGR balances of the following wallets:
+              </div> */}
+              <div class="reserved-wallets mb-0">
+                <div class="reserved-wallet">
+                  <div class="wallet-name">EGR Holders</div>
+
+                  <div class="wallet-balance tx">100,000EGC</div>
+                </div>
+
+                <div class="reserved-wallet">
+                  <div class="wallet-name">Founders</div>
+
+                  <div class="wallet-balance tx">10,000EGC</div>
+                </div>
+
+                <div class="reserved-wallet">
+                  <div class="wallet-name">Ecosystem Rewards</div>
+
+                  <div class="wallet-balance tx">300,000EGC</div>
+                </div>
+
+                <div class="reserved-wallet">
+                  <div class="wallet-name">Liquidity</div>
+
+                  <div class="wallet-balance tx">90,000EGC</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* ==================== */}
       {/*third div*/}
 

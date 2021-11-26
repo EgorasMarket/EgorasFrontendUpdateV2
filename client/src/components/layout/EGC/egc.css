@@ -104,7 +104,6 @@ body {
   background-color: #229e54;
 }
 
-
 .houseDivCu {
   width: 70%;
   margin: 80px auto 120px auto;
@@ -715,7 +714,7 @@ body {
   }
   .allNone,
   .allNone1 {
-    width: 72%;
+    width: 100%;
     margin: 0px auto 10px auto;
     text-align: left;
   }

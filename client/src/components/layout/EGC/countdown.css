@@ -38,8 +38,8 @@
   .flip-countdown-card
   .flip-countdown-card-sec
   .card__back::after {
-  color: #ffffff;
-  background: #229e54;
+  color: #ffffff !important;
+  background: #229e54 !important; 
 }
 
 .flip-countdown {
@@ -144,7 +144,7 @@
   /* transform: translate(-50%); */
   border-radius: 305px;
   animation: circle-grow-eusd-token-page8 6s linear infinite;
-  background: #7bdba1;
+  background: #7bdba1 ;
   filter: drop-shadow(2px 4px 10px rgb(0, 0, 0));
 }
 @keyframes circle-grow-eusd-token-page8 {
