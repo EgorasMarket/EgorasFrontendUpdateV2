@@ -552,7 +552,7 @@ const About = () => {
               infinite={false}
             >
               <div className="partnerLogo1">
-                <a href="" className="partnerLink">
+                <a href="https://cointelegraph.com/" className="partnerLink">
                   {" "}
                   <img
                     src="/img/coin-telegraph.svg"
@@ -562,7 +562,7 @@ const About = () => {
                 </a>
               </div>
               <div className="partnerLogo1">
-                <a href="" className="partnerLink">
+                <a href="https://finance.yahoo.com/" className="partnerLink">
                   {" "}
                   <img
                     src="/img/YAHOOFINANCE.svg"
@@ -572,19 +572,19 @@ const About = () => {
                 </a>
               </div>
               <div className="partnerLogo1">
-                <a href="" className="partnerLink">
+                <a href="https://www.newsbtc.com/" className="partnerLink">
                   {" "}
                   <img src="/img/NEWSBTC.svg" alt="" className="partnerlog" />
                 </a>
               </div>
               <div className="partnerLogo1">
-                <a href="" className="partnerLink">
+                <a href="https://apnews.com/" className="partnerLink">
                   {" "}
                   <img src="/img/APNEWS.svg" alt="" className="partnerlog" />
                 </a>
               </div>
               <div className="partnerLogo1">
-                <a href="" className="partnerLink">
+                <a href="https://independent.ng/" className="partnerLink">
                   {" "}
                   <img
                     src="/img/INDEPENDENT.svg"
@@ -594,7 +594,7 @@ const About = () => {
                 </a>
               </div>
               <div className="partnerLogo1">
-                <a href="" className="partnerLink">
+                <a href="https://guardian.ng/" className="partnerLink">
                   {" "}
                   <img
                     src="/img/THEGUARDIAN.svg"
@@ -604,7 +604,7 @@ const About = () => {
                 </a>
               </div>
               <div className="partnerLogo1">
-                <a href="" className="partnerLink">
+                <a href="https://nairametrics.com/" className="partnerLink">
                   {" "}
                   <img
                     src="/img/NAIRAMETRICS.svg"
